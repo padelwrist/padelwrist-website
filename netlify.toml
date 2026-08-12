@@ -1,6 +1,9 @@
 [build]
   publish = "."
 
+# SEO guide pages are static directories under the published root.
+# This change intentionally triggers a fresh Netlify deploy from main.
+
 [[redirects]]
   from = "https://www.padelwrist.com/*"
   to = "https://padelwrist.com/:splat"
