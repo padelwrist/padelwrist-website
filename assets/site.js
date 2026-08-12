@@ -158,7 +158,7 @@ function showConsentBanner() {
   banner.innerHTML = `
     <div class="cookie-copy">
       <strong id="cookie-title">Website analytics</strong>
-      <p id="cookie-description">We use optional Google Analytics cookies to understand how the PadelWrist website is used. Analytics stays off unless you accept. <a href="/privacy/#website-analytics">Privacy policy</a></p>
+      <p id="cookie-description">We use optional Google Analytics cookies to understand how the PADELWRIST website is used. Analytics stays off unless you accept. <a href="/privacy/#website-analytics">Privacy policy</a></p>
     </div>
     <div class="cookie-actions">
       <button type="button" class="cookie-button cookie-button-secondary" data-cookie-reject>Reject</button>
