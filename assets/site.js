@@ -1,5 +1,16 @@
 document.documentElement.classList.add('js');
 
+function addStylesheet(id, href) {
+  if (document.getElementById(id)) return;
+  const link = document.createElement('link');
+  link.id = id;
+  link.rel = 'stylesheet';
+  link.href = href;
+  document.head.appendChild(link);
+}
+
+addStylesheet('padelwrist-launch-styles', '/assets/launch.css');
+
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
@@ -25,17 +36,7 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 // Privacy-first website analytics. GA4 is not loaded until the visitor opts in.
 const GA_MEASUREMENT_ID = 'G-815ZHZPERH';
 const CONSENT_STORAGE_KEY = 'padelwrist-analytics-consent';
-const CONSENT_STYLESHEET_ID = 'padelwrist-consent-styles';
 let analyticsLoaded = false;
-
-function addConsentStyles() {
-  if (document.getElementById(CONSENT_STYLESHEET_ID)) return;
-  const link = document.createElement('link');
-  link.id = CONSENT_STYLESHEET_ID;
-  link.rel = 'stylesheet';
-  link.href = '/assets/consent.css';
-  document.head.appendChild(link);
-}
 
 function getConsentChoice() {
   try {
@@ -123,7 +124,7 @@ function applyConsent(choice) {
 
 function showConsentBanner() {
   removeConsentBanner();
-  addConsentStyles();
+  addStylesheet('padelwrist-consent-styles', '/assets/consent.css');
 
   const banner = document.createElement('section');
   banner.className = 'cookie-banner';
@@ -160,7 +161,7 @@ function addCookieSettingsLink() {
   footerNav.appendChild(button);
 }
 
-addConsentStyles();
+addStylesheet('padelwrist-consent-styles', '/assets/consent.css');
 addCookieSettingsLink();
 
 const consentChoice = getConsentChoice();
