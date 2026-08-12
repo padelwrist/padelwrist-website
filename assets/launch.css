@@ -23,7 +23,19 @@
   letter-spacing: .035em;
 }
 .brand { letter-spacing: 0; }
-.brand-mark { transform: none; font-family: var(--brand-font); font-weight: 600; letter-spacing: -0.02em; }
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 9px;
+  background: url('/assets/padelwrist-mark.png') center / cover no-repeat;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  transform: none;
+}
 
 .site-nav a,
 .site-footer nav a,
@@ -237,6 +249,7 @@
 }
 
 @media (max-width: 680px) {
+  .brand-mark { width: 32px; height: 32px; flex-basis: 32px; border-radius: 8px; }
   .hero-simple h1 { font-size: clamp(46px, 14vw, 62px); line-height: 1.08; }
   .simple-section { padding-block: 78px; }
   .simple-device-card { padding: 30px 24px; border-radius: 22px; }
