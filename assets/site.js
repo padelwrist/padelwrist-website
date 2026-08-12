@@ -21,3 +21,154 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 
   items.forEach((item) => observer.observe(item));
 }
+
+// Privacy-first website analytics. GA4 is not loaded until the visitor opts in.
+const GA_MEASUREMENT_ID = 'G-815ZHZPERH';
+const CONSENT_STORAGE_KEY = 'padelwrist-analytics-consent';
+const CONSENT_STYLESHEET_ID = 'padelwrist-consent-styles';
+let analyticsLoaded = false;
+
+function addConsentStyles() {
+  if (document.getElementById(CONSENT_STYLESHEET_ID)) return;
+  const link = document.createElement('link');
+  link.id = CONSENT_STYLESHEET_ID;
+  link.rel = 'stylesheet';
+  link.href = '/assets/consent.css';
+  document.head.appendChild(link);
+}
+
+function getConsentChoice() {
+  try {
+    return window.localStorage.getItem(CONSENT_STORAGE_KEY);
+  } catch {
+    return null;
+  }
+}
+
+function saveConsentChoice(choice) {
+  try {
+    window.localStorage.setItem(CONSENT_STORAGE_KEY, choice);
+  } catch {
+    // Consent still applies for this page view if storage is unavailable.
+  }
+}
+
+function deleteAnalyticsCookies() {
+  document.cookie.split(';').forEach((cookie) => {
+    const name = cookie.split('=')[0].trim();
+    if (!name.startsWith('_ga')) return;
+    const expires = 'expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    document.cookie = `${name}=; ${expires}; path=/; SameSite=Lax`;
+    document.cookie = `${name}=; ${expires}; path=/; domain=.${window.location.hostname}; SameSite=Lax`;
+  });
+}
+
+function disableAnalytics() {
+  window[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
+  if (typeof window.gtag === 'function') {
+    window.gtag('consent', 'update', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+  }
+  deleteAnalyticsCookies();
+}
+
+function loadAnalytics() {
+  if (analyticsLoaded) {
+    window[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+    return;
+  }
+
+  analyticsLoaded = true;
+  window[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag(){ window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('consent', 'default', {
+    analytics_storage: 'granted',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+  });
+  window.gtag('config', GA_MEASUREMENT_ID, {
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`;
+  document.head.appendChild(script);
+}
+
+function removeConsentBanner() {
+  document.querySelector('[data-cookie-banner]')?.remove();
+}
+
+function applyConsent(choice) {
+  saveConsentChoice(choice);
+  if (choice === 'accepted') {
+    loadAnalytics();
+  } else {
+    disableAnalytics();
+  }
+  removeConsentBanner();
+}
+
+function showConsentBanner() {
+  removeConsentBanner();
+  addConsentStyles();
+
+  const banner = document.createElement('section');
+  banner.className = 'cookie-banner';
+  banner.dataset.cookieBanner = '';
+  banner.setAttribute('role', 'dialog');
+  banner.setAttribute('aria-labelledby', 'cookie-title');
+  banner.setAttribute('aria-describedby', 'cookie-description');
+  banner.innerHTML = `
+    <div class="cookie-copy">
+      <strong id="cookie-title">Website analytics</strong>
+      <p id="cookie-description">We use optional Google Analytics cookies to understand how the PadelWrist website is used. Analytics stays off unless you accept. <a href="/privacy/#website-analytics">Privacy policy</a></p>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-button cookie-button-secondary" data-cookie-reject>Reject</button>
+      <button type="button" class="cookie-button cookie-button-primary" data-cookie-accept>Accept analytics</button>
+    </div>
+  `;
+
+  banner.querySelector('[data-cookie-reject]').addEventListener('click', () => applyConsent('rejected'));
+  banner.querySelector('[data-cookie-accept]').addEventListener('click', () => applyConsent('accepted'));
+  document.body.appendChild(banner);
+}
+
+function addCookieSettingsLink() {
+  const footerNav = document.querySelector('.site-footer nav');
+  if (!footerNav || footerNav.querySelector('[data-cookie-settings]')) return;
+
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'cookie-settings-link';
+  button.dataset.cookieSettings = '';
+  button.textContent = 'Cookie settings';
+  button.addEventListener('click', showConsentBanner);
+  footerNav.appendChild(button);
+}
+
+addConsentStyles();
+addCookieSettingsLink();
+
+const consentChoice = getConsentChoice();
+if (consentChoice === 'accepted') {
+  loadAnalytics();
+} else if (consentChoice === 'rejected') {
+  disableAnalytics();
+} else {
+  disableAnalytics();
+  showConsentBanner();
+}
