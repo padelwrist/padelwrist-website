@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PadelWrist is a focused padel scoring app for Apple Watch, iPhone and iPad. Set up your match, score from your wrist and keep your devices in sync.">
+  <meta name="description" content="PadelWrist is a simple padel scoring app for iPhone, iPad and Apple Watch. Set up a match on your phone or tablet, then score from your wrist.">
   <meta name="theme-color" content="#0b0c0e">
   <meta property="og:title" content="PadelWrist — Keep score. Stay in the game.">
-  <meta property="og:description" content="Set up padel matches on iPhone or iPad, score from Apple Watch and keep your match in sync across devices.">
+  <meta property="og:description" content="Simple padel scoring across iPhone, iPad and Apple Watch.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://padelwrist.com/">
   <title>PadelWrist — Keep score. Stay in the game.</title>
   <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/launch.css">
   <script src="/assets/site.js" defer></script>
 </head>
-<body>
+<body class="home-simple">
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="shell nav-wrap">
       <a class="brand" href="/" aria-label="PadelWrist home">
@@ -30,138 +31,88 @@
   </header>
 
   <main id="main">
-    <section class="hero shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> Built for padel</p>
+    <section class="hero-simple shell">
+      <div class="reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Padel scoring for Apple devices</p>
         <h1>Keep score.<br><span>Stay in the game.</span></h1>
-        <p class="hero-intro">Set up your match on iPhone or iPad, score from Apple Watch, and keep the same live match in sync across your devices.</p>
+        <p class="hero-intro">Set up padel matches on iPhone or iPad, then score from your Apple Watch. Your active match stays in sync so you can use the device that makes sense in the moment.</p>
         <div class="hero-actions">
           <div class="store-button" aria-label="App Store download coming soon">
             <span class="apple-glyph" aria-hidden="true">●</span>
             <span><small>Coming soon to the</small>App Store</span>
           </div>
-          <a class="text-link" href="#features">Explore features <span aria-hidden="true">↓</span></a>
-        </div>
-      </div>
-
-      <div class="device-stage reveal" aria-label="PadelWrist app preview on Apple Watch and iPhone">
-        <div class="glow" aria-hidden="true"></div>
-        <div class="phone" aria-hidden="true">
-          <div class="phone-island"></div>
-          <div class="phone-screen">
-            <div class="screen-top"><span>History</span><span class="screen-avatar">PW</span></div>
-            <p class="screen-kicker">THIS WEEK</p>
-            <p class="screen-title">3 matches</p>
-            <div class="history-card win">
-              <div><small>STANDARD · TODAY</small><strong>6–4&nbsp;&nbsp; 7–5</strong></div>
-              <span>W</span>
-            </div>
-            <div class="history-card">
-              <div><small>FIXED POINTS · SAT</small><strong>21 points</strong></div>
-              <span>21</span>
-            </div>
-            <div class="history-card">
-              <div><small>STANDARD · THU</small><strong>7–6&nbsp;&nbsp; 6–3</strong></div>
-              <span>W</span>
-            </div>
-          </div>
-        </div>
-        <div class="watch" aria-hidden="true">
-          <div class="watch-crown"></div>
-          <div class="watch-body">
-            <div class="watch-screen">
-              <small>SET 2</small>
-              <div class="watch-score"><strong>40</strong><span>30</span></div>
-              <div class="watch-games"><span>YOU&nbsp; 4</span><span>THEM&nbsp; 3</span></div>
-              <div class="watch-action">POINT +</div>
-            </div>
-          </div>
+          <a class="text-link" href="#features">See what it does <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="Supported formats and devices">
-      <div class="shell proof-row">
-        <span>Apple Watch</span><i></i><span>iPhone</span><i></i><span>iPad</span><i></i><span>Standard</span><i></i><span>Fixed Points</span>
-      </div>
-    </section>
-
-    <section class="wrist-section shell" id="features">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Right on your wrist</p>
-        <h2>Score the point.<br>Forget the admin.</h2>
-        <p>One tap records the score on Apple Watch, so your phone can stay in your bag and your focus can stay on the court.</p>
-      </div>
-      <div class="score-demo reveal" aria-label="Example Apple Watch scoring interface">
-        <div class="demo-meta"><span>SET 1</span><span>03:42</span></div>
-        <div class="demo-score active"><span>You</span><strong>40</strong></div>
-        <div class="demo-score"><span>Opponents</span><strong>30</strong></div>
-        <div class="demo-sets"><span>Games</span><strong>4&nbsp;&nbsp;—&nbsp;&nbsp;3</strong></div>
-        <div class="demo-button">Add point</div>
-      </div>
-    </section>
-
-    <section class="formats-section">
+    <section class="simple-proof" aria-label="Supported devices and scoring modes">
       <div class="shell">
-        <div class="section-heading compact reveal">
-          <p class="eyebrow">Match your game</p>
-          <h2>Your format.<br>Your flow.</h2>
-        </div>
-        <div class="format-grid">
-          <article class="format-card reveal">
-            <span class="card-number">01</span>
-            <div><h3>Standard</h3><p>Track points, games, sets, deuce and tie-breaks through a classic padel match.</p></div>
-            <div class="mini-score"><strong>6</strong><span>:</span><strong>4</strong></div>
-          </article>
-          <article class="format-card blue reveal">
-            <span class="card-number">02</span>
-            <div><h3>Fixed Points</h3><p>Set a target and count every point for Americano, Mexicano and other social formats.</p></div>
-            <div class="round-pill">TARGET · 21 POINTS</div>
-          </article>
-          <article class="format-card orange-detail reveal">
-            <span class="card-number">03</span>
-            <div><h3>Flexible scoring</h3><p>Choose the match rules that fit how you actually play, then let PadelWrist handle the score.</p></div>
-            <div class="ranking-lines"><i></i><i></i><i></i></div>
-          </article>
-        </div>
+        <strong>Apple Watch</strong><i></i><strong>iPhone</strong><i></i><strong>iPad</strong><i></i><span>Standard scoring</span><i></i><span>Fixed Points</span>
       </div>
     </section>
 
-    <section class="history-section shell">
-      <div class="history-visual reveal" aria-hidden="true">
-        <div class="history-head"><span>Recent matches</span><small>View all</small></div>
-        <div class="match-row"><span class="result-badge">W</span><div><strong>Standard match</strong><small>Today · 1h 12m</small></div><b>6–4, 7–5</b></div>
-        <div class="match-row"><span class="result-badge neutral">21</span><div><strong>Fixed Points</strong><small>Saturday</small></div><b>21–17</b></div>
-        <div class="match-row"><span class="result-badge">W</span><div><strong>Standard match</strong><small>Thursday · 58m</small></div><b>7–6, 6–3</b></div>
-      </div>
+    <section class="simple-section shell" id="features">
       <div class="section-heading reveal">
-        <p class="eyebrow">Your match history</p>
-        <h2>Every match.<br>Ready to revisit.</h2>
-        <p>Keep a simple record of your matches, reopen past results and edit history when you need to.</p>
+        <p class="eyebrow">Made to stay out of the way</p>
+        <h2>Everything you need to keep the match moving.</h2>
+        <p>PadelWrist focuses on the basics: quick setup, easy scoring, live device sync and a simple history of what you played.</p>
+      </div>
+
+      <div class="simple-grid">
+        <article class="simple-card reveal">
+          <span>01 · Score</span>
+          <div>
+            <h3>Score from your wrist</h3>
+            <p>Record points from Apple Watch without reaching for your phone between every rally.</p>
+          </div>
+        </article>
+
+        <article class="simple-card reveal">
+          <span>02 · Sync</span>
+          <div>
+            <h3>One live match</h3>
+            <p>Start on iPhone or Apple Watch and continue from another supported device while the score stays together.</p>
+          </div>
+        </article>
+
+        <article class="simple-card reveal">
+          <span>03 · History</span>
+          <div>
+            <h3>Keep the result</h3>
+            <p>Review previous matches, edit results when needed and resume unfinished matches from iPhone or iPad.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="devices-section shell">
-      <div class="devices-card reveal">
+    <section class="simple-device shell reveal">
+      <div class="simple-device-card">
         <div>
-          <p class="eyebrow">One match, across your devices</p>
+          <p class="eyebrow">Across your Apple devices</p>
           <h2>Set up anywhere.<br>Score anywhere.</h2>
-          <p>Prepare a match on iPhone or iPad, start it on Apple Watch, or join an active match from another device. PadelWrist keeps the live score together so you can use whichever screen makes sense in the moment.</p>
+          <p>Prepare a match on the bigger screen, start from Apple Watch, or join an active match from iPhone. PadelWrist is designed around one shared match rather than separate device modes.</p>
         </div>
-        <div class="device-orbits" aria-hidden="true"><span class="orbit-phone">PW</span><span class="orbit-watch">40</span></div>
+        <div class="device-flow" aria-label="Example PadelWrist flow">
+          <div>1. Set up on iPhone or iPad</div>
+          <div>2. Start on phone or Apple Watch</div>
+          <div>3. Score from either device</div>
+        </div>
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="PadelWrist privacy principles">
-      <div class="shell proof-row">
-        <span>No account required</span><i></i><span>Match history stays on your devices</span><i></i><span>No advertising tracking</span>
+    <section class="privacy-note shell reveal" aria-label="Privacy highlights">
+      <div class="privacy-note-inner">
+        <strong>No account required</strong>
+        <span>Match history stays on your devices</span>
+        <span>No advertising tracking</span>
       </div>
     </section>
 
-    <section class="final-cta shell reveal">
+    <section class="simple-cta shell reveal">
       <p class="eyebrow">Game on</p>
-      <h2>Your next match<br>starts here.</h2>
-      <p>Padel scoring that stays out of the way.</p>
+      <h2>Your next match starts here.</h2>
+      <p>Simple padel scoring for iPhone, iPad and Apple Watch.</p>
       <div class="store-button light" aria-label="App Store download coming soon">
         <span class="apple-glyph" aria-hidden="true">●</span>
         <span><small>Coming soon to the</small>App Store</span>
@@ -171,7 +122,10 @@
 
   <footer class="site-footer">
     <div class="shell footer-grid">
-      <div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">PW</span><span>PadelWrist</span></a><p>Keep score. Stay in the game.</p></div>
+      <div>
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">PW</span><span>PadelWrist</span></a>
+        <p>Keep score. Stay in the game.</p>
+      </div>
       <nav aria-label="Footer navigation"><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
       <p class="copyright">© <span data-year>2026</span> PadelWrist</p>
     </div>
