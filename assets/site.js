@@ -15,6 +15,29 @@ document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
 
+function addFeedbackLinks() {
+  const feedbackUrl = 'https://padelwrist.fider.io/';
+
+  document.querySelectorAll('.site-nav, .site-footer nav').forEach((nav) => {
+    if (nav.querySelector(`a[href="${feedbackUrl}"]`)) return;
+
+    const link = document.createElement('a');
+    link.href = feedbackUrl;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = 'Feedback';
+
+    const supportLink = nav.querySelector('a[href="/support/"]');
+    if (supportLink) {
+      nav.insertBefore(link, supportLink);
+    } else {
+      nav.appendChild(link);
+    }
+  });
+}
+
+addFeedbackLinks();
+
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const items = document.querySelectorAll('.reveal');
 
