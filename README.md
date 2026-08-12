@@ -1,6 +1,6 @@
-# PadelWrist website
+# PADELWRIST website
 
-Static marketing website for the PadelWrist iOS and watchOS app.
+Static marketing website for the PADELWRIST iOS, iPadOS and watchOS app.
 
 ## Local preview
 
@@ -12,7 +12,10 @@ python3 -m http.server 4173
 
 Then open `http://localhost:4173`.
 
-## Netlify
+## Cloudflare
 
-The site uses plain HTML, CSS and JavaScript and requires no build step. The
-included `netlify.toml` publishes the repository root directly.
+The site uses plain HTML, CSS and JavaScript and requires no build step. Cloudflare Workers serves the repository root as static assets using `wrangler.jsonc`.
+
+## Legacy Netlify configuration
+
+`netlify.toml` remains in the repository from the previous Netlify deployment and is not used by Cloudflare.
