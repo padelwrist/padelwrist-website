@@ -1,3 +1,5 @@
+@import url('/assets/brand-refresh.css');
+
 .cookie-banner {
   position: fixed;
   z-index: 1000;
@@ -33,9 +35,9 @@
   font-weight: 700;
   cursor: pointer;
 }
-.cookie-button-primary { border: 1px solid #1e8fd5; background: #1e8fd5; color: #08151d; }
+.cookie-button-primary { border: 1px solid #335fff; background: #335fff; color: #fff; }
 .cookie-button-secondary { border: 1px solid rgba(255,255,255,.2); background: transparent; color: #f5f7f1; }
-.cookie-button:focus-visible, .cookie-settings-link:focus-visible { outline: 3px solid #1e8fd5; outline-offset: 3px; }
+.cookie-button:focus-visible, .cookie-settings-link:focus-visible { outline: 3px solid #335fff; outline-offset: 3px; }
 .cookie-settings-link {
   padding: 0;
   border: 0;
@@ -48,7 +50,7 @@
   cursor: pointer;
   text-align: left;
 }
-.cookie-settings-link:hover { color: #1e8fd5; }
+.cookie-settings-link:hover { color: #335fff; }
 
 @media (max-width: 680px) {
   .cookie-banner { align-items: stretch; flex-direction: column; gap: 16px; }
