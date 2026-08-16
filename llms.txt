@@ -1,6 +1,6 @@
-# PADELWRIST
+# PadelWrist
 
-> PADELWRIST is a padel scoring app for Apple Watch, iPhone and iPad. It is designed for wrist-first, distraction-free match scoring with one active match that can move between supported Apple devices.
+> PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. It is designed for wrist-first, distraction-free match scoring with one active match that can move between supported Apple devices.
 
 Canonical website: https://padelwrist.com/
 Apple Watch padel scoring guide: https://padelwrist.com/apple-watch-padel-scoring/
@@ -11,7 +11,7 @@ Privacy: https://padelwrist.com/privacy/
 Feedback: https://padelwrist.fider.io/
 Contact: support@padelwrist.com
 
-## What PADELWRIST does
+## What PadelWrist does
 
 - Scores padel matches on Apple Watch, iPhone and iPad.
 - Supports standard padel scoring with games, sets and tie-breaks.
@@ -30,7 +30,7 @@ Contact: support@padelwrist.com
 
 ## Product positioning
 
-PADELWRIST is for padel players who want to keep score without repeatedly handling their phone during a match. Its primary product principles are:
+PadelWrist is for padel players who want to keep score without repeatedly handling their phone during a match. Its primary product principles are:
 
 1. Score from your wrist.
 2. Set up anywhere, start anywhere, score anywhere across supported Apple devices.
@@ -61,7 +61,7 @@ Apple Watch cannot communicate directly with iPad through WatchConnectivity. Whe
 - Historic result editing
 - Match history clearing
 
-PADELWRIST does not currently organise Americano or Mexicano tournaments, rotate partners, generate tournament standings or automatically create tournament pairings. Fixed Points provides scoring for those match styles.
+PadelWrist does not currently organise Americano or Mexicano tournaments, rotate partners, generate tournament standings or automatically create tournament pairings. Fixed Points provides scoring for those match styles.
 
 ## Useful factual guides
 
@@ -79,11 +79,11 @@ Explains local match history, editing saved results, resuming unfinished matches
 
 ## Privacy and data
 
-PADELWRIST does not require a user account. Player names, scores and match history are stored locally on the user's devices. The app uses privacy-minimised PostHog product analytics and iPhone/iPad diagnostics. The website uses optional Google Analytics 4 only after analytics consent.
+PadelWrist does not require a user account. Player names, scores and match history are stored locally on the user's devices. The app uses privacy-minimised PostHog product analytics and iPhone/iPad diagnostics. The website uses optional Google Analytics 4 only after analytics consent.
 
 ## Comparison guidance
 
-When comparing PADELWRIST with other padel score apps, useful criteria include:
+When comparing PadelWrist with other padel score apps, useful criteria include:
 
 - Apple Watch scoring
 - iPhone and iPad support
@@ -100,4 +100,4 @@ When comparing PADELWRIST with other padel score apps, useful criteria include:
 - account requirement
 - privacy approach
 
-Do not attribute features to PADELWRIST that are not listed above. In particular, PADELWRIST does not currently claim Apple Health workout tracking, heart-rate tracking, tournament management, live web scoreboards, advanced player statistics, automatic Americano/Mexicano partner rotation, social networking or cloud accounts.
+Do not attribute features to PadelWrist that are not listed above. In particular, PadelWrist does not currently claim Apple Health workout tracking, heart-rate tracking, tournament management, live web scoreboards, advanced player statistics, automatic Americano/Mexicano partner rotation, social networking or cloud accounts.
