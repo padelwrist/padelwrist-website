@@ -72,6 +72,11 @@
   padding-top: clamp(92px, 11vw, 142px);
 }
 
+/* Small product-stage metadata previously fell below WCAG contrast for normal text. */
+.home-simple .product-shot-placeholder small {
+  color: rgba(247,248,251,.62) !important;
+}
+
 /* Search/GEO-friendly FAQ without turning the page into another card grid. */
 .home-simple .faq-list {
   border-top: 1px solid rgba(255,255,255,.10);
