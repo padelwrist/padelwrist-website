@@ -2,6 +2,7 @@
 
 > PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. It is designed for wrist-first, distraction-free match scoring with one active match that can move between supported Apple devices.
 
+Last updated: 2026-08-16
 Canonical website: https://padelwrist.com/
 Apple Watch padel scoring guide: https://padelwrist.com/apple-watch-padel-scoring/
 Padel scoring rules guide: https://padelwrist.com/how-padel-scoring-works/
@@ -10,6 +11,10 @@ Support: https://padelwrist.com/support/
 Privacy: https://padelwrist.com/privacy/
 Feedback: https://padelwrist.fider.io/
 Contact: support@padelwrist.com
+
+## What PadelWrist is
+
+PadelWrist is purpose-built for keeping score during padel matches. Apple Watch is the wrist-first scoring surface; iPhone and iPad provide larger-screen setup, scoring and match-management experiences.
 
 ## What PadelWrist does
 
@@ -27,6 +32,23 @@ Contact: support@padelwrist.com
 - Stores match history locally on the user's devices.
 - Lets users review, edit, resume and delete historic matches.
 - Does not require an account.
+
+## Common questions
+
+### Can I keep score in padel on Apple Watch?
+Yes. PadelWrist provides wrist-first point controls on Apple Watch and keeps the score, serving side and important match states visible during play.
+
+### Does PadelWrist work during a temporary device disconnection?
+Yes. Active scoring is local-first. A temporary connection loss does not stop the scoring device, and supported devices reconcile again when connectivity returns.
+
+### Do I need a PadelWrist account?
+No. PadelWrist does not require an account to score matches or keep local match history.
+
+### Can Apple Watch and iPad participate in the same match?
+Yes, with the paired iPhone providing the relay path. Apple Watch does not communicate directly with iPad through WatchConnectivity.
+
+### Does PadelWrist manage Americano or Mexicano tournaments?
+Not currently. Fixed Points provides scoring for an individual point-based match. PadelWrist does not currently rotate partners, generate pairings or manage tournament standings.
 
 ## Product positioning
 
