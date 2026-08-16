@@ -2,6 +2,12 @@ document.documentElement.classList.add('js');
 
 function addStylesheet(id, href) {
   if (document.getElementById(id)) return;
+  const existing = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find((link) => link.getAttribute('href') === href || link.href === new URL(href, window.location.href).href);
+  if (existing) {
+    existing.id ||= id;
+    return;
+  }
   const link = document.createElement('link');
   link.id = id;
   link.rel = 'stylesheet';
