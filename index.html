@@ -29,8 +29,16 @@
   {
     "@context":"https://schema.org",
     "@graph":[
-      {"@type":"WebSite","@id":"https://padelwrist.com/#website","url":"https://padelwrist.com/","name":"PadelWrist","alternateName":"PadelWrist Padel Score App","description":"Padel scoring app for Apple Watch, iPhone and iPad.","inLanguage":"en-GB"},
-      {"@type":"MobileApplication","@id":"https://padelwrist.com/#app","name":"PadelWrist","url":"https://padelwrist.com/","image":"https://padelwrist.com/assets/padelwrist-mark.png","description":"A padel scoring app for Apple Watch, iPhone and iPad with wrist-first scoring, live match continuity, spoken scores, server tracking and local match history.","applicationCategory":"SportsApplication","operatingSystem":"iOS, iPadOS, watchOS","brand":{"@type":"Brand","name":"PadelWrist"},"featureList":["Apple Watch padel scoring","iPhone and iPad padel scoring","Standard padel scoring with games, sets and tie-breaks","Fixed Points scoring for point-based match formats","Live active-match sync between iPhone and Apple Watch","Local-first offline-ready scoring","Spoken score announcements","Server tracking","Undo and score corrections","Saved players and teams","Match history","Historic match editing","Resume unfinished matches","No account required"]}
+      {"@type":"Organization","@id":"https://padelwrist.com/#organization","name":"PadelWrist","url":"https://padelwrist.com/","logo":"https://padelwrist.com/assets/padelwrist-mark.png"},
+      {"@type":"WebSite","@id":"https://padelwrist.com/#website","url":"https://padelwrist.com/","name":"PadelWrist","alternateName":"PadelWrist Padel Score App","description":"Padel scoring app for Apple Watch, iPhone and iPad.","publisher":{"@id":"https://padelwrist.com/#organization"},"inLanguage":"en-GB"},
+      {"@type":"MobileApplication","@id":"https://padelwrist.com/#app","name":"PadelWrist","url":"https://padelwrist.com/","image":"https://padelwrist.com/assets/padelwrist-mark.png","description":"A padel scoring app for Apple Watch, iPhone and iPad with wrist-first scoring, live match continuity, spoken scores, server tracking and local match history.","applicationCategory":"SportsApplication","operatingSystem":"iOS, iPadOS, watchOS","isAccessibleForFree":true,"publisher":{"@id":"https://padelwrist.com/#organization"},"featureList":["Apple Watch padel scoring","iPhone and iPad padel scoring","Standard padel scoring with games, sets and tie-breaks","Fixed Points scoring for point-based match formats","Live active-match sync between iPhone and Apple Watch","Local-first offline-ready scoring","Spoken score announcements","Server tracking","Undo and score corrections","Saved players and teams","Match history","Historic match editing","Resume unfinished matches","No account required"]},
+      {"@type":"FAQPage","@id":"https://padelwrist.com/#faq","mainEntity":[
+        {"@type":"Question","name":"What is PadelWrist?","acceptedAnswer":{"@type":"Answer","text":"PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. It tracks points, games, sets, tie-breaks and the serving side, with match history on iPhone and iPad."}},
+        {"@type":"Question","name":"Can I keep score in padel on Apple Watch?","acceptedAnswer":{"@type":"Answer","text":"Yes. PadelWrist is designed for wrist-first scoring on Apple Watch, with quick point controls, server tracking, important match states and spoken score announcements."}},
+        {"@type":"Question","name":"Does PadelWrist work if my devices temporarily disconnect?","acceptedAnswer":{"@type":"Answer","text":"Yes. Active scoring is local-first, so a temporary connection loss does not stop the scoring device. Supported devices reconcile again when connectivity returns."}},
+        {"@type":"Question","name":"Do I need a PadelWrist account?","acceptedAnswer":{"@type":"Answer","text":"No. PadelWrist does not require an account to score matches or keep local match history."}},
+        {"@type":"Question","name":"Does PadelWrist manage Americano or Mexicano tournaments?","acceptedAnswer":{"@type":"Answer","text":"Not currently. Fixed Points supports scoring an individual point-based match, but PadelWrist does not currently rotate partners, generate pairings or manage tournament standings."}}
+      ]}
     ]
   }
   </script>
@@ -54,7 +62,7 @@
     <div class="hero-copy reveal">
       <p class="eyebrow"><span class="status-dot"></span> Padel scoring across Apple Watch, iPhone and iPad</p>
       <h1>Keep the score.<br><span>Stay in the match.</span></h1>
-      <p class="hero-intro">Set up on iPhone or iPad, score from Apple Watch or the larger screen, and keep one live match moving with you without losing the state.</p>
+      <p class="hero-intro">PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. Set up on the larger screen, score from your wrist or phone, and keep one live match moving with you.</p>
       <div class="hero-actions">
         <div class="store-button" aria-label="App Store download coming soon"><span><small>Coming soon to the</small>App Store</span></div>
         <a class="text-link" href="#why">See how it works <span aria-hidden="true">↓</span></a>
@@ -125,12 +133,26 @@
     </div>
   </section>
 
+  <section class="home-section shell" id="questions">
+    <div class="home-section-head reveal">
+      <div><p class="eyebrow">Common questions</p><h2>PadelWrist, explained simply.</h2></div>
+      <p>Quick answers about Apple Watch scoring, device continuity, offline use and what the first release does and does not do.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal"><summary>What is PadelWrist?</summary><p>PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. It keeps track of points, games, sets, tie-breaks and the serving side, with match history available on iPhone and iPad.</p></details>
+      <details class="faq-item reveal"><summary>Can I keep score in padel on Apple Watch?</summary><p>Yes. Apple Watch is designed for quick in-match scoring, with the point score, server, important match states and spoken score announcements close at hand.</p></details>
+      <details class="faq-item reveal"><summary>Does PadelWrist work if my devices temporarily disconnect?</summary><p>Yes. Active scoring is local-first, so a temporary device connection loss does not stop the scoring device. Supported devices reconcile the current match again when connectivity returns.</p></details>
+      <details class="faq-item reveal"><summary>Do I need a PadelWrist account?</summary><p>No. You can score matches and keep local match history without creating an account.</p></details>
+      <details class="faq-item reveal"><summary>Does PadelWrist manage Americano or Mexicano tournaments?</summary><p>Not currently. Fixed Points supports scoring an individual point-based match, but PadelWrist does not currently rotate partners, generate pairings or manage tournament standings.</p></details>
+    </div>
+  </section>
+
   <section class="privacy-note shell reveal" aria-label="Privacy highlights"><div class="privacy-note-inner"><strong>No account required</strong><span>Match history stays on your devices</span><span>No advertising tracking</span></div></section>
 
   <section class="feedback-section shell reveal"><div class="feedback-card"><div><h2>Help shape PadelWrist.</h2><p>Found something that could be better or have an idea for what should come next? Add it to the same feedback board used from inside the app.</p></div><a class="feedback-link" href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Share feedback ↗</a></div></section>
 
   <section class="simple-cta shell reveal"><p class="eyebrow">Coming soon</p><h2>Keep the score.<br>Stay in the match.</h2><p>Padel scoring for Apple Watch, iPhone and iPad.</p><div class="store-button light" aria-label="App Store download coming soon"><span><small>Coming soon to the</small>App Store</span></div></section>
 </main>
-<footer class="site-footer"><div class="shell footer-grid"><div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">PW</span><span>PADELWRIST</span></a><p>Keep the score. Stay in the match.</p></div><nav aria-label="Footer navigation"><a href="/apple-watch-padel-scoring/">Guides</a><a href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Feedback</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav><p class="copyright">© <span data-year>2026</span> PadelWrist</p></div></footer>
+<footer class="site-footer"><div class="shell footer-grid"><div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">PW</span><span>PADELWRIST</span></a><p>Keep the score. Stay in the match.</p></div><nav aria-label="Footer navigation"><a href="/apple-watch-padel-scoring/">Apple Watch scoring</a><a href="/how-padel-scoring-works/">Scoring rules</a><a href="/padel-match-history/">Match history</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav><p class="copyright">© <span data-year>2026</span> PadelWrist</p></div></footer>
 </body>
 </html>
