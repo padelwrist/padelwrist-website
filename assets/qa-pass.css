@@ -9,24 +9,38 @@ body.page-body,
   background-color: #000;
 }
 
+/* Explicit footer surfaces and text colours for WCAG contrast. */
+footer.site-footer,
+footer.site-footer > .shell,
+footer.site-footer .footer-grid,
+footer.site-footer nav {
+  background: #000 !important;
+  background-color: #000 !important;
+}
+
 .home-simple .site-nav a,
 .page-body .site-nav a,
-.site-footer nav a,
-.cookie-settings-link {
+footer.site-footer nav a {
   color: #f4f6fa !important;
 }
 
-.cookie-settings-link {
-  background: transparent !important;
+footer.site-footer nav button.cookie-settings-link,
+footer.site-footer .cookie-settings-link {
+  color: #f4f6fa !important;
+  background: #000 !important;
+  background-color: #000 !important;
   border: 0 !important;
   box-shadow: none !important;
-  -webkit-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  opacity: 1 !important;
 }
 
-.site-footer .copyright,
-.site-footer .copyright span {
-  color: #9ea4ae !important;
+footer.site-footer p.copyright,
+footer.site-footer p.copyright span,
+footer.site-footer [data-year] {
+  color: #d7dbe2 !important;
+  opacity: 1 !important;
 }
 
 .brand-mark {
