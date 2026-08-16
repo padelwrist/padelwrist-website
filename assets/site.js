@@ -15,19 +15,8 @@ function addStylesheet(id, href) {
   document.head.appendChild(link);
 }
 
-function addDeferredStylesheet(id, href) {
-  if (document.getElementById(id)) return;
-  const link = document.createElement('link');
-  link.id = id;
-  link.rel = 'stylesheet';
-  link.href = href;
-  link.media = 'print';
-  link.onload = () => { link.media = 'all'; };
-  document.head.appendChild(link);
-}
-
-/* Keep Montserrat for the visual brand without blocking first paint on Google Fonts. */
-addDeferredStylesheet('padelwrist-brand-font', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/* Load Montserrat after document parsing so it reliably applies without blocking the initial HTML render. */
+addStylesheet('padelwrist-brand-font', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 addStylesheet('padelwrist-launch-styles', '/assets/launch.css');
 addStylesheet('padelwrist-qa-styles', '/assets/qa-pass.css');
