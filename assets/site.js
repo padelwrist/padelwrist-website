@@ -12,9 +12,67 @@ function addStylesheet(id, href) {
 addStylesheet('padelwrist-launch-styles', '/assets/launch.css');
 addStylesheet('padelwrist-qa-styles', '/assets/qa-pass.css');
 
+const isInnerPage = document.body?.classList.contains('page-body');
+if (isInnerPage) {
+  addStylesheet('padelwrist-inner-pages', '/assets/inner-pages.css');
+}
+
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
+
+function standardiseInnerPageChrome() {
+  if (!isInnerPage) return;
+
+  const primaryNav = document.querySelector('.site-header .site-nav');
+  if (primaryNav) {
+    primaryNav.innerHTML = `
+      <a href="/#why">Why PadelWrist</a>
+      <a href="/#features">Features</a>
+      <a href="/#guides">Guides</a>
+      <a href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Feedback</a>
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
+    `;
+
+    const path = window.location.pathname;
+    if (path === '/support/' || path === '/support') {
+      primaryNav.querySelector('a[href="/support/"]')?.setAttribute('aria-current', 'page');
+    } else if (path === '/privacy/' || path === '/privacy') {
+      primaryNav.querySelector('a[href="/privacy/"]')?.setAttribute('aria-current', 'page');
+    } else if (path.includes('apple-watch-padel-scoring') || path.includes('how-padel-scoring-works') || path.includes('padel-match-history')) {
+      primaryNav.querySelector('a[href="/#guides"]')?.setAttribute('aria-current', 'page');
+    }
+  }
+
+  document.querySelectorAll('.brand').forEach((brand) => {
+    brand.setAttribute('aria-label', 'PadelWrist home');
+    const mark = brand.querySelector('.brand-mark');
+    if (mark) {
+      mark.textContent = '';
+      mark.setAttribute('aria-hidden', 'true');
+    }
+    const wordmark = brand.querySelector('span:last-child');
+    if (wordmark) wordmark.textContent = 'PADELWRIST';
+  });
+
+  const footerNav = document.querySelector('.site-footer nav');
+  if (footerNav) {
+    footerNav.innerHTML = `
+      <a href="/apple-watch-padel-scoring/">Apple Watch scoring</a>
+      <a href="/how-padel-scoring-works/">Scoring rules</a>
+      <a href="/padel-match-history/">Match history</a>
+      <a href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Feedback</a>
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
+    `;
+  }
+
+  const footerTagline = document.querySelector('.site-footer .footer-grid > div > p');
+  if (footerTagline) footerTagline.textContent = 'Keep the score. Stay in the match.';
+}
+
+standardiseInnerPageChrome();
 
 function addFeedbackLinks() {
   const feedbackUrl = 'https://padelwrist.fider.io/';
