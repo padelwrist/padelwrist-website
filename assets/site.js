@@ -1,59 +1,22 @@
 document.documentElement.classList.add('js');
 
-function addStylesheet(id, href) {
-  if (document.getElementById(id)) return;
-  const existing = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
-    .find((link) => link.getAttribute('href') === href || link.href === new URL(href, window.location.href).href);
-  if (existing) {
-    existing.id ||= id;
-    return;
-  }
-  const link = document.createElement('link');
-  link.id = id;
-  link.rel = 'stylesheet';
-  link.href = href;
-  document.head.appendChild(link);
-}
+const path = window.location.pathname;
+const isHome = path === '/' || path === '';
+const isInnerPage = document.body.classList.contains('page-body');
+const isGuidesHub = path === '/guides/' || path === '/guides';
+const isSupport = path === '/support/' || path === '/support';
+const isPrivacy = path === '/privacy/' || path === '/privacy';
 
-function addScript(id, src) {
-  if (document.getElementById(id)) return;
-  const script = document.createElement('script');
-  script.id = id;
-  script.src = src;
-  script.async = false;
-  document.head.appendChild(script);
-}
-
-addStylesheet('padelwrist-brand-font', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-addStylesheet('padelwrist-launch-styles', '/assets/launch.css');
-addStylesheet('padelwrist-qa-styles', '/assets/qa-pass.css');
-
-const isInnerPage = document.body?.classList.contains('page-body');
-const isHomePage = document.body?.classList.contains('home-v2');
-if (isInnerPage) addStylesheet('padelwrist-inner-pages', '/assets/inner-pages.css');
-
-/* Shared design layers load last so one system owns typography, layout and interaction. */
-addStylesheet('padelwrist-site-polish', '/assets/site-polish.css');
-addStylesheet('padelwrist-site-responsive', '/assets/site-responsive.css');
-addStylesheet('padelwrist-site-enhance', '/assets/site-enhance.css');
-
-/* Homepage-specific art direction must load after the shared layers. */
-if (isHomePage) {
-  addStylesheet('padelwrist-home-art-direction', '/assets/home-art-direction.css');
-  addStylesheet('padelwrist-home-final-pass', '/assets/home-final-pass.css');
-  addScript('padelwrist-home-motion', '/assets/home-motion.js');
-}
+if (isGuidesHub) document.body.classList.add('guides-hub');
 
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
 
-function standardiseInnerPageChrome() {
-  if (!isInnerPage) return;
-
-  const primaryNav = document.querySelector('.site-header .site-nav');
-  if (primaryNav) {
-    primaryNav.innerHTML = `
+function standardiseChrome() {
+  const nav = document.querySelector('.site-header .site-nav');
+  if (nav) {
+    nav.innerHTML = `
       <a href="/#why">Why PadelWrist</a>
       <a href="/#features">Features</a>
       <a href="/guides/">Guides</a>
@@ -62,13 +25,12 @@ function standardiseInnerPageChrome() {
       <a href="/privacy/">Privacy</a>
     `;
 
-    const path = window.location.pathname;
-    if (path === '/support/' || path === '/support') {
-      primaryNav.querySelector('a[href="/support/"]')?.setAttribute('aria-current', 'page');
-    } else if (path === '/privacy/' || path === '/privacy') {
-      primaryNav.querySelector('a[href="/privacy/"]')?.setAttribute('aria-current', 'page');
-    } else if (path !== '/' && path !== '') {
-      primaryNav.querySelector('a[href="/guides/"]')?.setAttribute('aria-current', 'page');
+    if (isGuidesHub || (isInnerPage && !isSupport && !isPrivacy)) {
+      nav.querySelector('a[href="/guides/"]')?.setAttribute('aria-current', 'page');
+    } else if (isSupport) {
+      nav.querySelector('a[href="/support/"]')?.setAttribute('aria-current', 'page');
+    } else if (isPrivacy) {
+      nav.querySelector('a[href="/privacy/"]')?.setAttribute('aria-current', 'page');
     }
   }
 
@@ -95,23 +57,6 @@ function standardiseInnerPageChrome() {
       <a href="/privacy/">Privacy</a>
     `;
   }
-
-  const footerTagline = document.querySelector('.site-footer .footer-grid > div > p');
-  if (footerTagline) footerTagline.textContent = 'Keep the score. Stay in the match.';
-}
-
-function addFeedbackLinks() {
-  const feedbackUrl = 'https://padelwrist.fider.io/';
-  document.querySelectorAll('.site-nav, .site-footer nav').forEach((nav) => {
-    if (nav.querySelector(`a[href="${feedbackUrl}"]`)) return;
-    const link = document.createElement('a');
-    link.href = feedbackUrl;
-    link.target = '_blank';
-    link.rel = 'noopener';
-    link.textContent = 'Feedback';
-    const supportLink = nav.querySelector('a[href="/support/"]');
-    supportLink ? nav.insertBefore(link, supportLink) : nav.appendChild(link);
-  });
 }
 
 function addMobileNavigation() {
@@ -122,6 +67,7 @@ function addMobileNavigation() {
 
     const navId = nav.id || `site-nav-${index + 1}`;
     nav.id = navId;
+
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'mobile-nav-toggle';
@@ -131,36 +77,55 @@ function addMobileNavigation() {
     button.innerHTML = '<span aria-hidden="true"></span>';
     wrap.appendChild(button);
 
-    const closeMenu = () => {
+    const close = () => {
       header.classList.remove('nav-open');
       document.body.classList.remove('mobile-nav-open');
       button.setAttribute('aria-expanded', 'false');
       button.setAttribute('aria-label', 'Open navigation');
     };
-    const openMenu = () => {
+    const open = () => {
       header.classList.add('nav-open');
       document.body.classList.add('mobile-nav-open');
       button.setAttribute('aria-expanded', 'true');
       button.setAttribute('aria-label', 'Close navigation');
     };
 
-    button.addEventListener('click', () => header.classList.contains('nav-open') ? closeMenu() : openMenu());
-    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+    button.addEventListener('click', () => header.classList.contains('nav-open') ? close() : open());
+    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', close));
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && header.classList.contains('nav-open')) {
-        closeMenu();
+        close();
         button.focus();
       }
     });
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 760 && header.classList.contains('nav-open')) closeMenu();
+      if (window.innerWidth > 760 && header.classList.contains('nav-open')) close();
     });
   });
 }
 
-standardiseInnerPageChrome();
-addFeedbackLinks();
-addMobileNavigation();
+function addBreadcrumbs() {
+  if (!isInnerPage) return;
+  const heading = document.querySelector('.content-page > .page-heading');
+  if (!heading || document.querySelector('.breadcrumbs')) return;
+
+  const current = heading.querySelector('h1')?.textContent?.trim() || document.title.split('|')[0].trim();
+  const breadcrumbs = document.createElement('nav');
+  breadcrumbs.className = 'breadcrumbs';
+  breadcrumbs.setAttribute('aria-label', 'Breadcrumb');
+
+  const parts = ['<a href="/">Home</a>'];
+  if (isGuidesHub) parts.push('<span aria-current="page">Guides</span>');
+  else if (isSupport) parts.push('<span aria-current="page">Support</span>');
+  else if (isPrivacy) parts.push('<span aria-current="page">Privacy</span>');
+  else {
+    parts.push('<a href="/guides/">Guides</a>');
+    parts.push(`<span aria-current="page">${current}</span>`);
+  }
+
+  breadcrumbs.innerHTML = parts.join('<span class="breadcrumb-separator" aria-hidden="true">/</span>');
+  heading.before(breadcrumbs);
+}
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const revealItems = document.querySelectorAll('.reveal');
@@ -177,7 +142,44 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
   revealItems.forEach((item) => observer.observe(item));
 }
 
-// Privacy-first website analytics. GA4 is not loaded until the visitor opts in.
+const APP_STORE_URL = '';
+function upgradeAppStoreCtas() {
+  if (!APP_STORE_URL) return;
+
+  document.querySelectorAll('[data-app-store-cta], .store-button').forEach((element) => {
+    if (element.tagName === 'A') {
+      element.href = APP_STORE_URL;
+      element.target = '_blank';
+      element.rel = 'noopener';
+      element.classList.add('app-store-cta');
+      element.setAttribute('aria-label', 'Download PadelWrist on the App Store');
+      element.textContent = 'Download on the App Store';
+      return;
+    }
+
+    const link = document.createElement('a');
+    link.className = `${element.className} app-store-cta`;
+    link.href = APP_STORE_URL;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.setAttribute('aria-label', 'Download PadelWrist on the App Store');
+    link.textContent = 'Download on the App Store';
+    element.replaceWith(link);
+  });
+
+  if (isHome && window.matchMedia('(max-width: 760px)').matches) {
+    const sticky = document.createElement('a');
+    sticky.className = 'sticky-app-cta app-store-cta';
+    sticky.href = APP_STORE_URL;
+    sticky.target = '_blank';
+    sticky.rel = 'noopener';
+    sticky.innerHTML = '<span>Get PadelWrist</span><strong>App Store</strong>';
+    document.body.appendChild(sticky);
+    document.body.classList.add('has-sticky-app-cta');
+  }
+}
+
+/* Privacy-first analytics. GA4 is not loaded until consent is accepted. */
 const GA_MEASUREMENT_ID = 'G-815ZHZPERH';
 const CONSENT_STORAGE_KEY = 'padelwrist-analytics-consent';
 let analyticsLoaded = false;
@@ -186,7 +188,7 @@ function getConsentChoice() {
   try { return window.localStorage.getItem(CONSENT_STORAGE_KEY); } catch { return null; }
 }
 function saveConsentChoice(choice) {
-  try { window.localStorage.setItem(CONSENT_STORAGE_KEY, choice); } catch { /* in-memory consent still applies */ }
+  try { window.localStorage.setItem(CONSENT_STORAGE_KEY, choice); } catch { /* no-op */ }
 }
 function deleteAnalyticsCookies() {
   document.cookie.split(';').forEach((cookie) => {
@@ -199,11 +201,7 @@ function deleteAnalyticsCookies() {
 }
 function disableAnalytics() {
   window[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
-  if (typeof window.gtag === 'function') {
-    window.gtag('consent', 'update', {
-      analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
-    });
-  }
+  window.gtag?.('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
   deleteAnalyticsCookies();
 }
 function loadAnalytics() {
@@ -217,13 +215,8 @@ function loadAnalytics() {
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag(){ window.dataLayer.push(arguments); };
   window.gtag('js', new Date());
-  window.gtag('consent', 'default', {
-    analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
-  });
-  window.gtag('config', GA_MEASUREMENT_ID, {
-    allow_google_signals: false,
-    allow_ad_personalization_signals: false
-  });
+  window.gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+  window.gtag('config', GA_MEASUREMENT_ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
   const script = document.createElement('script');
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`;
@@ -237,7 +230,6 @@ function applyConsent(choice) {
 }
 function showConsentBanner() {
   removeConsentBanner();
-  addStylesheet('padelwrist-consent-styles', '/assets/consent.css');
   const banner = document.createElement('section');
   banner.className = 'cookie-banner';
   banner.dataset.cookieBanner = '';
@@ -269,7 +261,54 @@ function addCookieSettingsLink() {
   footerNav.appendChild(button);
 }
 
+function analyticsReady() {
+  return typeof window.gtag === 'function' && window[`ga-disable-${GA_MEASUREMENT_ID}`] !== true;
+}
+function cleanText(value) { return (value || '').replace(/\s+/g, ' ').trim().slice(0, 100); }
+function linkType(link) {
+  const href = link.getAttribute('href') || '';
+  if (link.classList.contains('app-store-cta') || href.includes('apps.apple.com')) return 'app_store';
+  if (href.startsWith('mailto:')) return 'email';
+  if (href.includes('padelwrist.fider.io')) return 'feedback';
+  if (link.closest('.site-header')) return 'header_navigation';
+  if (link.closest('.site-footer')) return 'footer_navigation';
+  if (link.closest('.breadcrumbs')) return 'breadcrumb';
+  if (link.closest('.related-guides') || link.closest('.guide-copy') || link.closest('.editorial-grid')) return 'content';
+  try { return new URL(link.href, window.location.href).origin === window.location.origin ? 'internal' : 'outbound'; }
+  catch { return 'other'; }
+}
+
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('a');
+  if (link && analyticsReady()) {
+    const type = linkType(link);
+    window.gtag('event', 'link_click', {
+      link_text: cleanText(link.textContent || link.getAttribute('aria-label')),
+      link_url: link.href,
+      link_type: type,
+      page_path: window.location.pathname
+    });
+    if (type === 'app_store') {
+      window.gtag('event', 'select_content', { content_type: 'app_store_cta', item_id: 'padelwrist' });
+    }
+  }
+
+  const button = event.target.closest('button');
+  if (button && analyticsReady() && !button.closest('[data-cookie-banner]')) {
+    window.gtag('event', 'button_click', {
+      button_text: cleanText(button.textContent || button.getAttribute('aria-label')),
+      button_type: button.classList.contains('mobile-nav-toggle') ? 'mobile_navigation' : 'interaction',
+      page_path: window.location.pathname
+    });
+  }
+});
+
+standardiseChrome();
+addMobileNavigation();
+addBreadcrumbs();
+upgradeAppStoreCtas();
 addCookieSettingsLink();
+
 const consentChoice = getConsentChoice();
 if (consentChoice === 'accepted') loadAnalytics();
 else if (consentChoice === 'rejected') disableAnalytics();
@@ -277,6 +316,3 @@ else {
   disableAnalytics();
   showConsentBanner();
 }
-
-/* SEO, breadcrumbs, CTA and interaction tracking enhancements. */
-addScript('padelwrist-site-enhance-script', '/assets/site-enhance.js');
