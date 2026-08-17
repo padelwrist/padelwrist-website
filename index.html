@@ -21,7 +21,7 @@
   <meta property="og:image" content="https://padelwrist.com/assets/padelwrist-mark.png">
   <meta property="og:image:alt" content="PadelWrist app icon showing an Apple Watch and padel ball">
   <meta property="og:locale" content="en_GB">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="PadelWrist | Padel Score App for Apple Watch, iPhone & iPad">
   <meta name="twitter:description" content="Padel scoring for Apple Watch, iPhone and iPad, with live match continuity, history and spoken scores.">
   <meta name="twitter:image" content="https://padelwrist.com/assets/padelwrist-mark.png">
@@ -37,6 +37,9 @@
         {"@type":"Question","name":"Can I keep score in padel on Apple Watch?","acceptedAnswer":{"@type":"Answer","text":"Yes. PadelWrist is designed for wrist-first scoring on Apple Watch, with quick point controls, server tracking, important match states and spoken score announcements."}},
         {"@type":"Question","name":"Does PadelWrist work if my devices temporarily disconnect?","acceptedAnswer":{"@type":"Answer","text":"Yes. Active scoring is local-first, so a temporary connection loss does not stop the scoring device. Supported devices reconcile again when connectivity returns."}},
         {"@type":"Question","name":"Do I need a PadelWrist account?","acceptedAnswer":{"@type":"Answer","text":"No. PadelWrist does not require an account to score matches or keep local match history."}},
+        {"@type":"Question","name":"How does a padel tie-break work?","acceptedAnswer":{"@type":"Answer","text":"A standard padel tie-break is normally first to seven points with a two-point margin. The opening server serves one point, then players serve in blocks of two points in the existing service order."}},
+        {"@type":"Question","name":"Can I score without an Apple Watch?","acceptedAnswer":{"@type":"Answer","text":"Yes. PadelWrist also supports scoring on iPhone and iPad. Apple Watch is designed to be the quickest live scoring surface when you are wearing one."}},
+        {"@type":"Question","name":"What is Fixed Points scoring?","acceptedAnswer":{"@type":"Answer","text":"Fixed Points counts every rally as one point instead of using love, 15, 30 and 40. It is useful for point-based social match formats."}},
         {"@type":"Question","name":"Does PadelWrist manage Americano or Mexicano tournaments?","acceptedAnswer":{"@type":"Answer","text":"Not currently. Fixed Points supports scoring an individual point-based match, but PadelWrist does not currently rotate partners, generate pairings or manage tournament standings."}}
       ]}
     ]
@@ -47,9 +50,10 @@
   <link rel="stylesheet" href="/assets/app-design.css">
   <link rel="stylesheet" href="/assets/product-shot.css">
   <link rel="stylesheet" href="/assets/impeccable-home.css">
+  <link rel="stylesheet" href="/assets/home-redesign.css">
   <script src="/assets/site.js" defer></script>
 </head>
-<body class="home-simple">
+<body class="home-simple home-v2">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="shell nav-wrap">
@@ -57,103 +61,112 @@
     <nav class="site-nav" aria-label="Primary navigation"><a href="#why">Why PadelWrist</a><a href="#features">Features</a><a href="/guides/">Guides</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
   </div>
 </header>
+
 <main id="main">
-  <section class="hero-simple shell">
-    <div class="hero-copy reveal">
-      <p class="eyebrow"><span class="status-dot"></span> Padel scoring across Apple Watch, iPhone and iPad</p>
-      <h1>Keep the score.<br><span>Stay in the match.</span></h1>
-      <p class="hero-intro">PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. Set up on the larger screen, score from your wrist or phone, and keep one live match moving with you.</p>
-      <div class="hero-actions">
-        <div class="store-button" aria-label="App Store download coming soon"><span><small>Coming soon to the</small>App Store</span></div>
-        <a class="text-link" href="#why">See how it works <span aria-hidden="true">↓</span></a>
+  <!-- Hero photography: Vincenzo Morelli / Unsplash, free under Unsplash License. -->
+  <section class="hero-v2">
+    <div class="hero-v2-media"><img src="https://images.unsplash.com/photo-1646649851800-48dba35edc76?auto=format&fit=crop&fm=jpg&q=82&w=2200" alt="Padel player striking a ball on a blue court" fetchpriority="high"></div>
+    <div class="hero-v2-inner">
+      <div class="hero-v2-copy reveal">
+        <p class="eyebrow">Padel scoring across Apple Watch, iPhone and iPad</p>
+        <h1>Keep the score.<br><span>Stay in the match.</span></h1>
+        <p class="hero-v2-intro">PadelWrist keeps the live score where it belongs: close enough to update in a second, quiet enough to disappear again before the next rally.</p>
+        <div class="hero-v2-actions">
+          <span class="hero-v2-primary" aria-label="PadelWrist is coming soon to the App Store">Coming soon to the App Store</span>
+          <a class="hero-v2-secondary" href="#features">See what it does <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-v2-meta"><span>Apple Watch first</span><span>No account required</span><span>Offline-ready scoring</span></div>
       </div>
-      <div class="device-availability" aria-label="Supported Apple devices"><span>Apple Watch</span><span>iPhone</span><span>iPad</span></div>
+
+      <aside class="hero-product-card reveal" aria-label="PadelWrist live match preview">
+        <div class="hero-product-top"><img class="hero-product-icon" src="/assets/padelwrist-mark.png" alt="PadelWrist app icon"><span class="hero-product-badge">Live match</span></div>
+        <strong>One match. Every screen.</strong>
+        <p>Prepare on a larger screen, score from your wrist, and keep the active match moving across your Apple devices.</p>
+        <div class="mini-scoreboard" aria-label="Example live score"><span class="mini-team"><small>Team One</small><b>40</b></span><i class="mini-divider"></i><span class="mini-team"><small>Team Two</small><b>30</b></span></div>
+      </aside>
+    </div>
+    <a class="home-photo-credit" href="https://unsplash.com/photos/a-man-holding-a-tennis-racquet-on-a-tennis-court-aYTK2HNocNw" target="_blank" rel="noopener">Photo: Vincenzo Morelli / Unsplash</a>
+  </section>
+
+  <section class="proof-bar-v2" aria-label="PadelWrist highlights"><div class="proof-bar-v2-inner"><strong>Apple Watch</strong><span>iPhone</span><span>iPad</span><span>Standard Match</span><span>Fixed Points</span><span>Spoken scores</span><span>Match history</span></div></section>
+
+  <section class="story-v2" id="why">
+    <div class="story-v2-head reveal">
+      <div><p class="section-kicker">Why PadelWrist</p><h2 class="section-display">The score should never become the distraction.</h2></div>
+      <p>The point of a scorer is not to give you another screen to manage. It is to keep the match state obvious, make mistakes easy to correct, and get out of the way again.</p>
     </div>
 
-    <div class="product-shot reveal" aria-label="PadelWrist product preview for Apple Watch, iPhone and iPad">
-      <div class="product-shot-placeholder">
-        <div class="product-mark-wrap"><img src="/assets/padelwrist-mark.png" alt="PadelWrist app icon"></div>
-        <div class="product-shot-kicker">Product preview</div>
-        <strong>One match across every screen.</strong>
-        <span>The final Apple Watch, iPhone and iPad product artwork will sit here, using the real in-app interface rather than a marketing mock-up.</span>
-        <small>Apple Watch · iPhone · iPad</small>
+    <div class="story-grid-v2">
+      <!-- Photography: Diana Scala / Pexels, free to use. -->
+      <figure class="story-photo reveal">
+        <img src="https://images.pexels.com/photos/35646550/pexels-photo-35646550.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Padel player standing beside a racket and ball on a blue court" loading="lazy">
+        <figcaption class="story-photo-copy"><strong>Play the rally. Tap the score. Move on.</strong></figcaption>
+      </figure>
+      <article class="story-card blue reveal"><span>Apple Watch keeps the live point score, server and important match states within one quick interaction.</span><strong>Score from your <span class="accent">wrist.</span></strong></article>
+      <article class="story-card navy reveal"><span>Start on one supported device, continue on another, and keep scoring locally through temporary connection loss.</span><strong>One logical match, not three separate copies.</strong></article>
+    </div>
+  </section>
+
+  <section class="product-band-v2" id="features">
+    <div class="product-v2">
+      <div class="product-v2-copy reveal">
+        <p class="section-kicker">Built for the whole match</p>
+        <h2 class="section-display">The interface changes with the moment.</h2>
+        <p>During play, the score is the interface. Before and after, the larger screens take over setup, history and correction. PadelWrist is designed around those different jobs instead of stretching one screen everywhere.</p>
       </div>
-    </div>
-  </section>
 
-  <section class="simple-proof" aria-label="Supported devices and scoring modes">
-    <div class="shell"><strong>Apple Watch</strong><i></i><strong>iPhone</strong><i></i><strong>iPad</strong><i></i><span>Standard Match</span><i></i><span>Fixed Points</span><i></i><span>Offline-ready</span></div>
-  </section>
-
-  <section class="home-section shell" id="why">
-    <div class="home-section-head reveal">
-      <div><p class="eyebrow">Why PadelWrist</p><h2>The score should never become the distraction.</h2></div>
-      <p>PadelWrist is built around the moment you are actually playing: the score, server and match state stay obvious, while setup and history move to the bigger screens when you need them.</p>
-    </div>
-    <div class="reason-list">
-      <article class="reason reveal"><span class="reason-index">01</span><h3>Score from your wrist</h3><p>Apple Watch keeps the point score, server and important match states close without making you reach for your phone after every rally.</p></article>
-      <article class="reason reveal"><span class="reason-index">02</span><h3>Move between devices</h3><p>Prepare on iPhone or iPad, start on Apple Watch, or open a Watch-started match on iPhone. It stays one logical match rather than separate copies.</p></article>
-      <article class="reason reveal"><span class="reason-index">03</span><h3>Keep the result afterwards</h3><p>Review set-by-set results, reuse saved players, resume unfinished matches and correct historic scores when something needs fixing later.</p></article>
-    </div>
-  </section>
-
-  <section class="home-section shell" id="features">
-    <div class="home-section-head reveal">
-      <div><p class="eyebrow">Everything in the first release</p><h2>Built for the whole match.</h2></div>
-      <p>The feature set stays focused on practical scoring rather than turning PadelWrist into a tournament manager, social network or account system.</p>
-    </div>
-    <div class="capability-grid">
-      <section class="capability reveal"><h3>Scoring</h3><ul><li>Standard padel scoring with games and sets</li><li>Best-of-three match logic and tie-breaks</li><li>Fixed Points for point-based match formats</li><li>Game point, set point and match point states</li></ul></section>
-      <section class="capability reveal"><h3>During play</h3><ul><li>Apple Watch, iPhone and iPad scoring</li><li>Server tracking and spoken score announcements</li><li>Undo and quick score corrections</li><li>Local-first scoring during temporary disconnection</li></ul></section>
-      <section class="capability reveal"><h3>Across devices</h3><ul><li>Prepare a match on iPhone or iPad for Apple Watch</li><li>Open a Watch-started active match on iPhone</li><li>Keep the active match aligned when connectivity is available</li></ul></section>
-      <section class="capability reveal"><h3>After the match</h3><ul><li>Match history on iPhone and iPad</li><li>Saved players and teams</li><li>Resume unfinished matches</li><li>Edit historic results</li><li>No account required</li></ul></section>
-    </div>
-  </section>
-
-  <section class="simple-device shell reveal">
-    <div class="simple-device-card">
-      <div class="device-heading"><p class="eyebrow">Designed for each screen</p><h2>One PadelWrist.<br>Three different jobs.</h2><p>The visual language stays consistent, but each Apple device is used for what it is actually good at rather than stretching one interface everywhere.</p></div>
-      <div class="platform-role-grid" aria-label="How PadelWrist uses each Apple device">
-        <div class="platform-role watch"><strong>Apple Watch</strong><span>Play the match. Score quickly with the most important state always visible.</span></div>
-        <div class="platform-role phone"><strong>iPhone</strong><span>Set up, score, resume, review history and manage your padel matches.</span></div>
-        <div class="platform-role pad"><strong>iPad</strong><span>Manage matches on a larger canvas or use it as a glanceable court-side scoreboard.</span></div>
+      <div class="device-stack reveal" aria-label="Illustrative PadelWrist interface across Apple Watch, iPhone and iPad">
+        <div class="device-panel watch"><div class="device-label"><span>Apple Watch</span><span>Live</span></div><div class="device-screen-title">Team One serving</div><div class="score-pair"><div><small>Team One</small><b>40</b></div><div><small>Team Two</small><b>30</b></div></div><div class="match-row"><span>Games</span><strong>4–3</strong></div><div class="match-row"><span>Sets</span><strong>1–0</strong></div></div>
+        <div class="device-panel phone"><div class="device-label"><span>iPhone</span><span>Match</span></div><div class="device-screen-title">Match in progress</div><div class="score-pair"><div><small>Team One</small><b>40</b></div><div><small>Team Two</small><b>30</b></div></div><div class="match-row"><span>Server</span><strong>Team One</strong></div><div class="match-row"><span>Format</span><strong>Standard</strong></div><div class="match-row"><span>History</span><strong>Saved locally</strong></div></div>
+        <div class="device-panel pad"><div class="device-label"><span>iPad</span><span>Courtside</span></div><div class="device-screen-title">A bigger view of the same match.</div><div class="match-row"><span>Team One</span><strong>40 · 4 · 1</strong></div><div class="match-row"><span>Team Two</span><strong>30 · 3 · 0</strong></div></div>
       </div>
     </div>
   </section>
 
-  <section class="home-section shell" id="guides">
-    <div class="home-section-head reveal">
-      <div><p class="eyebrow">Padel scoring guides</p><h2>Useful answers before you step on court.</h2></div>
-      <p>Simple guides covering wrist-first scoring, standard padel rules and keeping a useful match history.</p>
-    </div>
-    <div class="guide-grid">
-      <a class="guide-link reveal" href="/apple-watch-padel-scoring/"><span>Guide 01</span><h3>Apple Watch padel scoring</h3><p>Wrist-first scoring, spoken scores, server tracking and iPhone continuity.</p><span class="guide-arrow" aria-hidden="true">→</span></a>
-      <a class="guide-link reveal" href="/how-padel-scoring-works/"><span>Guide 02</span><h3>How padel scoring works</h3><p>15, 30, 40, games, sets, tie-breaks and best-of-three matches.</p><span class="guide-arrow" aria-hidden="true">→</span></a>
-      <a class="guide-link reveal" href="/padel-match-history/"><span>Guide 03</span><h3>Padel match history</h3><p>How to keep, edit, resume and clear match history without an account.</p><span class="guide-arrow" aria-hidden="true">→</span></a>
-    </div>
-    <p class="reveal"><a class="text-link" href="/guides/">Browse the full PadelWrist knowledge base <span aria-hidden="true">→</span></a></p>
-  </section>
-
-  <section class="home-section shell" id="questions">
-    <div class="home-section-head reveal">
-      <div><p class="eyebrow">Common questions</p><h2>PadelWrist, explained simply.</h2></div>
-      <p>Quick answers about Apple Watch scoring, device continuity, offline use and what the first release does and does not do.</p>
-    </div>
-    <div class="faq-list">
-      <details class="faq-item reveal"><summary>What is PadelWrist?</summary><p>PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. It keeps track of points, games, sets, tie-breaks and the serving side, with match history available on iPhone and iPad.</p></details>
-      <details class="faq-item reveal"><summary>Can I keep score in padel on Apple Watch?</summary><p>Yes. Apple Watch is designed for quick in-match scoring, with the point score, server, important match states and spoken score announcements close at hand.</p></details>
-      <details class="faq-item reveal"><summary>Does PadelWrist work if my devices temporarily disconnect?</summary><p>Yes. Active scoring is local-first, so a temporary device connection loss does not stop the scoring device. Supported devices reconcile the current match again when connectivity returns.</p></details>
-      <details class="faq-item reveal"><summary>Do I need a PadelWrist account?</summary><p>No. You can score matches and keep local match history without creating an account.</p></details>
-      <details class="faq-item reveal"><summary>Does PadelWrist manage Americano or Mexicano tournaments?</summary><p>Not currently. Fixed Points supports scoring an individual point-based match, but PadelWrist does not currently rotate partners, generate pairings or manage tournament standings.</p></details>
+  <section class="roles-v2">
+    <div class="roles-v2-head reveal"><p class="section-kicker">Designed for each screen</p><h2 class="section-display">One PadelWrist.<br>Three different jobs.</h2></div>
+    <div class="role-grid-v2">
+      <article class="role-v2 watch reveal"><small>01 / During play</small><div><strong>Apple Watch</strong><p>Score quickly with the most important state always visible. Server tracking, score correction and spoken announcements stay close at hand.</p></div></article>
+      <article class="role-v2 phone reveal"><small>02 / Companion</small><div><strong>iPhone</strong><p>Prepare matches, score when needed, reopen Watch-started matches, review history and manage saved players.</p></div></article>
+      <article class="role-v2 pad reveal"><small>03 / Bigger canvas</small><div><strong>iPad</strong><p>Use more space for setup, match management and a glanceable courtside view while the paired iPhone handles Watch continuity.</p></div></article>
     </div>
   </section>
 
-  <section class="privacy-note shell reveal" aria-label="Privacy highlights"><div class="privacy-note-inner"><strong>No account required</strong><span>Match history stays on your devices</span><span>No advertising tracking</span></div></section>
+  <section class="guides-band-v2" id="guides">
+    <div class="guides-v2">
+      <div class="guides-v2-head reveal"><div><p class="section-kicker">PadelWrist knowledge base</p><h2 class="section-display">Know the score before you step on court.</h2></div><p>Clear, practical explanations of padel scoring, tie-breaks, social formats and digital scorekeeping, written for players rather than rulebook lawyers.</p></div>
+      <div class="editorial-grid">
+        <a class="editorial-card reveal" href="/how-padel-scoring-works/"><img src="https://images.pexels.com/photos/31012869/pexels-photo-31012869.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Padel racket and yellow ball on a blue padel court" loading="lazy"><small>Start here</small><strong>How padel scoring works</strong></a>
+        <a class="editorial-card secondary reveal" href="/apple-watch-padel-scoring/"><img src="https://images.unsplash.com/photo-1646649851800-48dba35edc76?auto=format&fit=crop&fm=jpg&q=76&w=1000" alt="Padel player hitting a ball on court" loading="lazy"><small>On your wrist</small><strong>Apple Watch padel scoring</strong></a>
+        <a class="editorial-card plain reveal" href="/padel-tie-break-rules/"><small>Rules made simple</small><p>Seven points, two clear, one opening serve and then pairs of serves. The tie-break is easier once the pattern clicks.</p><strong>Padel tie-break rules →</strong></a>
+      </div>
+      <a class="guides-more" href="/guides/">Browse the full knowledge base <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
 
-  <section class="feedback-section shell reveal"><div class="feedback-card"><div><h2>Help shape PadelWrist.</h2><p>Found something that could be better or have an idea for what should come next? Add it to the same feedback board used from inside the app.</p></div><a class="feedback-link" href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Share feedback ↗</a></div></section>
+  <section class="faq-v2" id="questions">
+    <div class="faq-v2-layout">
+      <div class="reveal"><p class="section-kicker">Common questions</p><h2 class="section-display">PadelWrist, explained simply.</h2></div>
+      <div class="faq-list">
+        <details class="faq-item reveal"><summary>What is PadelWrist?</summary><p>PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. It keeps track of points, games, sets, tie-breaks and the serving side, with match history available on iPhone and iPad.</p></details>
+        <details class="faq-item reveal"><summary>Can I keep score in padel on Apple Watch?</summary><p>Yes. Apple Watch is designed for quick in-match scoring, with the point score, server, important match states and spoken score announcements close at hand.</p></details>
+        <details class="faq-item reveal"><summary>Can I score without an Apple Watch?</summary><p>Yes. PadelWrist also supports scoring on iPhone and iPad. Apple Watch is simply the fastest live scoring surface when you are wearing one.</p></details>
+        <details class="faq-item reveal"><summary>Does PadelWrist work if my devices temporarily disconnect?</summary><p>Yes. Active scoring is local-first, so temporary connection loss does not stop the scoring device. Supported devices reconcile the current match again when connectivity returns.</p></details>
+        <details class="faq-item reveal"><summary>Do I need a PadelWrist account?</summary><p>No. You can score matches and keep local match history without creating an account.</p></details>
+        <details class="faq-item reveal"><summary>What is Fixed Points scoring?</summary><p>Fixed Points counts every rally as one point instead of using love, 15, 30 and 40. It is useful for point-based social match formats.</p></details>
+        <details class="faq-item reveal"><summary>How does a padel tie-break work?</summary><p>A standard tie-break is normally first to seven with a two-point margin. The opening server serves one point, then players serve in blocks of two points in the existing order.</p></details>
+        <details class="faq-item reveal"><summary>Does PadelWrist manage Americano or Mexicano tournaments?</summary><p>Not currently. Fixed Points supports an individual point-based match, but PadelWrist does not currently rotate partners, generate pairings or manage tournament standings.</p></details>
+      </div>
+    </div>
+  </section>
 
-  <section class="simple-cta shell reveal"><p class="eyebrow">Coming soon</p><h2>Keep the score.<br>Stay in the match.</h2><p>Padel scoring for Apple Watch, iPhone and iPad.</p><div class="store-button light" aria-label="App Store download coming soon"><span><small>Coming soon to the</small>App Store</span></div></section>
+  <!-- Photography: Marcia Salido / Pexels, free to use. -->
+  <section class="final-v2 reveal">
+    <img src="https://images.pexels.com/photos/31012869/pexels-photo-31012869.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Padel racket and ball beside the net on a blue court" loading="lazy">
+    <div class="final-v2-copy"><p class="section-kicker">Coming soon</p><h2>Keep the score.<br>Stay in the match.</h2><p>Padel scoring for Apple Watch, iPhone and iPad, designed to demand less attention from the thing you actually came to do.</p><span class="hero-v2-primary" aria-label="PadelWrist is coming soon to the App Store">Coming soon to the App Store</span></div>
+  </section>
 </main>
-<footer class="site-footer"><div class="shell footer-grid"><div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">PW</span><span>PADELWRIST</span></a><p>Keep the score. Stay in the match.</p></div><nav aria-label="Footer navigation"><a href="/guides/">Guides</a><a href="/apple-watch-padel-scoring/">Apple Watch scoring</a><a href="/how-padel-scoring-works/">Scoring rules</a><a href="/padel-match-history/">Match history</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav><p class="copyright">© <span data-year>2026</span> PadelWrist</p></div></footer>
+
+<footer class="site-footer"><div class="shell footer-grid"><div><a class="brand" href="/" aria-label="PadelWrist home"><span class="brand-mark" aria-hidden="true">PW</span><span>PADELWRIST</span></a><p>Keep the score. Stay in the match.</p></div><nav aria-label="Footer navigation"><a href="/guides/">Guides</a><a href="/apple-watch-padel-scoring/">Apple Watch scoring</a><a href="/how-padel-scoring-works/">Scoring rules</a><a href="/padel-match-history/">Match history</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav><p class="copyright">© <span data-year>2026</span> PadelWrist</p></div></footer>
 </body>
 </html>
