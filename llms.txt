@@ -12,13 +12,28 @@ PadelWrist does not currently organise Americano or Mexicano tournaments, rotate
 
 Contact: support@padelwrist.com
 
-## Product and guides
+## Product
 
 - [PadelWrist website](https://padelwrist.com/): Product overview and primary page for PadelWrist, a padel scoring app for Apple Watch, iPhone and iPad.
 - [Padel score tracker](https://padelwrist.com/padel-score-tracker/): How PadelWrist tracks padel points, games, sets, tie-breaks, server state and match history across Apple devices.
 - [Apple Watch padel scoring](https://padelwrist.com/apple-watch-padel-scoring/): Wrist-first scoring, spoken scores, server tracking, undo, local-first behaviour and iPhone continuity.
-- [How padel scoring works](https://padelwrist.com/how-padel-scoring-works/): 15-30-40 scoring, games, sets, tie-breaks, best-of-three matches and Fixed Points.
 - [Padel match history](https://padelwrist.com/padel-match-history/): Local match history, editing saved results, resuming unfinished matches and deletion.
+
+## Padel knowledge base
+
+- [Padel guides](https://padelwrist.com/guides/): Index of PadelWrist scoring, rules, social-format and scorekeeping guides.
+- [How padel scoring works](https://padelwrist.com/how-padel-scoring-works/): 15-30-40 scoring, games, sets, tie-breaks, best-of-three matches and Fixed Points.
+- [How to keep score in padel](https://padelwrist.com/how-to-keep-score-in-padel/): Practical match scorekeeping, server tracking, changes of ends and avoiding score disputes.
+- [Padel tie-break rules](https://padelwrist.com/padel-tie-break-rules/): Seven-point tie-break scoring, two-point margin, serving order and changes of ends.
+- [Golden point vs advantage](https://padelwrist.com/golden-point-vs-advantage/): Deuce, advantage, Golden Point and the 2026 Star Point option.
+- [Padel service rules](https://padelwrist.com/padel-service-rules/): Underarm serve, bounce, waist height, diagonal boxes, second serve and service order.
+- [Padel scoring formats](https://padelwrist.com/padel-scoring-formats/): Advantage, Golden Point, Star Point, tie-breaks, super tie-breaks, mini sets and Fixed Points.
+- [Fixed Points padel scoring](https://padelwrist.com/fixed-points-padel-scoring/): Rally-point scoring for point-based matches and social formats.
+- [Americano padel scoring](https://padelwrist.com/americano-padel-scoring/): Common Americano structure, fixed-point rounds, partner rotations and individual totals.
+- [Mexicano padel scoring](https://padelwrist.com/mexicano-padel-scoring/): Ranking-influenced pairings, fixed-point rounds and individual totals.
+- [Apple Watch vs phone for padel scoring](https://padelwrist.com/apple-watch-vs-phone-padel-scoring/): Practical trade-offs between wrist and phone scorekeeping.
+- [Best padel scoring apps for Apple Watch](https://padelwrist.com/best-padel-scoring-apps-apple-watch/): Transparent comparison of current Apple Watch padel scoring approaches and use cases.
+- [Padel glossary](https://padelwrist.com/padel-glossary/): Plain-English definitions for scoring, match-format and common padel terms.
 
 ## Support and policies
 
