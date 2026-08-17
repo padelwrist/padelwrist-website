@@ -6,6 +6,9 @@
   const isPrivacy = path === '/privacy/' || path === '/privacy';
   const isGuidesHub = path === '/guides/' || path === '/guides';
 
+  if (isGuidesHub) document.body.classList.add('guides-hub');
+  else if (document.body.classList.contains('page-body')) document.body.classList.add('article-page');
+
   if (isHome) {
     if (!document.querySelector('link[href="/assets/home-art-direction.css"]')) {
       const stylesheet = document.createElement('link');
@@ -22,12 +25,20 @@
   }
 
   function loadSiteSystem() {
-    if (document.getElementById('padelwrist-site-system-v2')) return;
-    const stylesheet = document.createElement('link');
-    stylesheet.id = 'padelwrist-site-system-v2';
-    stylesheet.rel = 'stylesheet';
-    stylesheet.href = '/assets/site-system-v2.css';
-    document.head.appendChild(stylesheet);
+    if (!document.getElementById('padelwrist-site-system-v2')) {
+      const stylesheet = document.createElement('link');
+      stylesheet.id = 'padelwrist-site-system-v2';
+      stylesheet.rel = 'stylesheet';
+      stylesheet.href = '/assets/site-system-v2.css';
+      document.head.appendChild(stylesheet);
+    }
+    if (!document.getElementById('padelwrist-site-system-v3')) {
+      const components = document.createElement('link');
+      components.id = 'padelwrist-site-system-v3';
+      components.rel = 'stylesheet';
+      components.href = '/assets/site-system-v3.css';
+      document.head.appendChild(components);
+    }
   }
 
   function addBreadcrumbs() {
