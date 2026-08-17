@@ -15,20 +15,26 @@ function addStylesheet(id, href) {
   document.head.appendChild(link);
 }
 
-/* Load Montserrat after document parsing so it reliably applies without blocking the initial HTML render. */
-addStylesheet('padelwrist-brand-font', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+function addScript(id, src) {
+  if (document.getElementById(id)) return;
+  const script = document.createElement('script');
+  script.id = id;
+  script.src = src;
+  script.async = false;
+  document.head.appendChild(script);
+}
 
+addStylesheet('padelwrist-brand-font', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 addStylesheet('padelwrist-launch-styles', '/assets/launch.css');
 addStylesheet('padelwrist-qa-styles', '/assets/qa-pass.css');
 
 const isInnerPage = document.body?.classList.contains('page-body');
-if (isInnerPage) {
-  addStylesheet('padelwrist-inner-pages', '/assets/inner-pages.css');
-}
+if (isInnerPage) addStylesheet('padelwrist-inner-pages', '/assets/inner-pages.css');
 
-/* Shared design layers load last so one system owns typography, interactions and responsive layout. */
+/* Shared design layers load last so one system owns typography, layout and interaction. */
 addStylesheet('padelwrist-site-polish', '/assets/site-polish.css');
 addStylesheet('padelwrist-site-responsive', '/assets/site-responsive.css');
+addStylesheet('padelwrist-site-enhance', '/assets/site-enhance.css');
 
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
@@ -86,30 +92,19 @@ function standardiseInnerPageChrome() {
   if (footerTagline) footerTagline.textContent = 'Keep the score. Stay in the match.';
 }
 
-standardiseInnerPageChrome();
-
 function addFeedbackLinks() {
   const feedbackUrl = 'https://padelwrist.fider.io/';
-
   document.querySelectorAll('.site-nav, .site-footer nav').forEach((nav) => {
     if (nav.querySelector(`a[href="${feedbackUrl}"]`)) return;
-
     const link = document.createElement('a');
     link.href = feedbackUrl;
     link.target = '_blank';
     link.rel = 'noopener';
     link.textContent = 'Feedback';
-
     const supportLink = nav.querySelector('a[href="/support/"]');
-    if (supportLink) {
-      nav.insertBefore(link, supportLink);
-    } else {
-      nav.appendChild(link);
-    }
+    supportLink ? nav.insertBefore(link, supportLink) : nav.appendChild(link);
   });
 }
-
-addFeedbackLinks();
 
 function addMobileNavigation() {
   document.querySelectorAll('.site-header').forEach((header, index) => {
@@ -119,7 +114,6 @@ function addMobileNavigation() {
 
     const navId = nav.id || `site-nav-${index + 1}`;
     nav.id = navId;
-
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'mobile-nav-toggle';
@@ -135,7 +129,6 @@ function addMobileNavigation() {
       button.setAttribute('aria-expanded', 'false');
       button.setAttribute('aria-label', 'Open navigation');
     };
-
     const openMenu = () => {
       header.classList.add('nav-open');
       document.body.classList.add('mobile-nav-open');
@@ -143,44 +136,37 @@ function addMobileNavigation() {
       button.setAttribute('aria-label', 'Close navigation');
     };
 
-    button.addEventListener('click', () => {
-      if (header.classList.contains('nav-open')) closeMenu();
-      else openMenu();
-    });
-
+    button.addEventListener('click', () => header.classList.contains('nav-open') ? closeMenu() : openMenu());
     nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
-
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && header.classList.contains('nav-open')) {
         closeMenu();
         button.focus();
       }
     });
-
     window.addEventListener('resize', () => {
       if (window.innerWidth > 760 && header.classList.contains('nav-open')) closeMenu();
     });
   });
 }
 
+standardiseInnerPageChrome();
+addFeedbackLinks();
 addMobileNavigation();
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const items = document.querySelectorAll('.reveal');
-
+const revealItems = document.querySelectorAll('.reveal');
 if (reducedMotion || !('IntersectionObserver' in window)) {
-  items.forEach((item) => item.classList.add('is-visible'));
+  revealItems.forEach((item) => item.classList.add('is-visible'));
 } else {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
     });
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-
-  items.forEach((item) => observer.observe(item));
+  revealItems.forEach((item) => observer.observe(item));
 }
 
 // Privacy-first website analytics. GA4 is not loaded until the visitor opts in.
@@ -189,21 +175,11 @@ const CONSENT_STORAGE_KEY = 'padelwrist-analytics-consent';
 let analyticsLoaded = false;
 
 function getConsentChoice() {
-  try {
-    return window.localStorage.getItem(CONSENT_STORAGE_KEY);
-  } catch {
-    return null;
-  }
+  try { return window.localStorage.getItem(CONSENT_STORAGE_KEY); } catch { return null; }
 }
-
 function saveConsentChoice(choice) {
-  try {
-    window.localStorage.setItem(CONSENT_STORAGE_KEY, choice);
-  } catch {
-    // Consent still applies for this page view if storage is unavailable.
-  }
+  try { window.localStorage.setItem(CONSENT_STORAGE_KEY, choice); } catch { /* in-memory consent still applies */ }
 }
-
 function deleteAnalyticsCookies() {
   document.cookie.split(';').forEach((cookie) => {
     const name = cookie.split('=')[0].trim();
@@ -213,69 +189,47 @@ function deleteAnalyticsCookies() {
     document.cookie = `${name}=; ${expires}; path=/; domain=.${window.location.hostname}; SameSite=Lax`;
   });
 }
-
 function disableAnalytics() {
   window[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
   if (typeof window.gtag === 'function') {
     window.gtag('consent', 'update', {
-      analytics_storage: 'denied',
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied'
+      analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
     });
   }
   deleteAnalyticsCookies();
 }
-
 function loadAnalytics() {
   if (analyticsLoaded) {
     window[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
-    if (typeof window.gtag === 'function') {
-      window.gtag('consent', 'update', { analytics_storage: 'granted' });
-    }
+    window.gtag?.('consent', 'update', { analytics_storage: 'granted' });
     return;
   }
-
   analyticsLoaded = true;
   window[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag(){ window.dataLayer.push(arguments); };
   window.gtag('js', new Date());
   window.gtag('consent', 'default', {
-    analytics_storage: 'granted',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied'
+    analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
   });
   window.gtag('config', GA_MEASUREMENT_ID, {
     allow_google_signals: false,
     allow_ad_personalization_signals: false
   });
-
   const script = document.createElement('script');
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`;
   document.head.appendChild(script);
 }
-
-function removeConsentBanner() {
-  document.querySelector('[data-cookie-banner]')?.remove();
-}
-
+function removeConsentBanner() { document.querySelector('[data-cookie-banner]')?.remove(); }
 function applyConsent(choice) {
   saveConsentChoice(choice);
-  if (choice === 'accepted') {
-    loadAnalytics();
-  } else {
-    disableAnalytics();
-  }
+  choice === 'accepted' ? loadAnalytics() : disableAnalytics();
   removeConsentBanner();
 }
-
 function showConsentBanner() {
   removeConsentBanner();
   addStylesheet('padelwrist-consent-styles', '/assets/consent.css');
-
   const banner = document.createElement('section');
   banner.className = 'cookie-banner';
   banner.dataset.cookieBanner = '';
@@ -290,18 +244,14 @@ function showConsentBanner() {
     <div class="cookie-actions">
       <button type="button" class="cookie-button cookie-button-secondary" data-cookie-reject>Reject</button>
       <button type="button" class="cookie-button cookie-button-primary" data-cookie-accept>Accept analytics</button>
-    </div>
-  `;
-
+    </div>`;
   banner.querySelector('[data-cookie-reject]').addEventListener('click', () => applyConsent('rejected'));
   banner.querySelector('[data-cookie-accept]').addEventListener('click', () => applyConsent('accepted'));
   document.body.appendChild(banner);
 }
-
 function addCookieSettingsLink() {
   const footerNav = document.querySelector('.site-footer nav');
   if (!footerNav || footerNav.querySelector('[data-cookie-settings]')) return;
-
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'cookie-settings-link';
@@ -312,13 +262,13 @@ function addCookieSettingsLink() {
 }
 
 addCookieSettingsLink();
-
 const consentChoice = getConsentChoice();
-if (consentChoice === 'accepted') {
-  loadAnalytics();
-} else if (consentChoice === 'rejected') {
-  disableAnalytics();
-} else {
+if (consentChoice === 'accepted') loadAnalytics();
+else if (consentChoice === 'rejected') disableAnalytics();
+else {
   disableAnalytics();
   showConsentBanner();
 }
+
+/* SEO, breadcrumbs, CTA and interaction tracking enhancements. */
+addScript('padelwrist-site-enhance-script', '/assets/site-enhance.js');
