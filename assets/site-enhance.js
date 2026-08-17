@@ -21,6 +21,15 @@
     }
   }
 
+  function loadSiteSystem() {
+    if (document.getElementById('padelwrist-site-system-v2')) return;
+    const stylesheet = document.createElement('link');
+    stylesheet.id = 'padelwrist-site-system-v2';
+    stylesheet.rel = 'stylesheet';
+    stylesheet.href = '/assets/site-system-v2.css';
+    document.head.appendChild(stylesheet);
+  }
+
   function addBreadcrumbs() {
     if (!document.body.classList.contains('page-body')) return;
     const heading = document.querySelector('.content-page > .page-heading');
@@ -136,6 +145,7 @@
     }
   });
 
+  loadSiteSystem();
   addBreadcrumbs();
   upgradeAppStoreCtas();
 })();
