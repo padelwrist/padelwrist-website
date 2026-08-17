@@ -2,7 +2,7 @@
 
 > PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. It is designed for wrist-first, distraction-free match scoring with one active match that can move between supported Apple devices.
 
-Last updated: 2026-08-16.
+Last updated: 2026-08-17.
 
 PadelWrist supports standard padel scoring with games, sets and tie-breaks, Fixed Points scoring, server tracking, spoken score announcements, undo and score correction, saved players, match history, historic result editing and resuming unfinished matches. It does not require an account.
 
@@ -14,7 +14,8 @@ Contact: support@padelwrist.com
 
 ## Product and guides
 
-- [PadelWrist website](https://padelwrist.com/): Product overview, supported devices and current feature set.
+- [PadelWrist website](https://padelwrist.com/): Product overview and primary page for PadelWrist, a padel scoring app for Apple Watch, iPhone and iPad.
+- [Padel score tracker](https://padelwrist.com/padel-score-tracker/): How PadelWrist tracks padel points, games, sets, tie-breaks, server state and match history across Apple devices.
 - [Apple Watch padel scoring](https://padelwrist.com/apple-watch-padel-scoring/): Wrist-first scoring, spoken scores, server tracking, undo, local-first behaviour and iPhone continuity.
 - [How padel scoring works](https://padelwrist.com/how-padel-scoring-works/): 15-30-40 scoring, games, sets, tie-breaks, best-of-three matches and Fixed Points.
 - [Padel match history](https://padelwrist.com/padel-match-history/): Local match history, editing saved results, resuming unfinished matches and deletion.
