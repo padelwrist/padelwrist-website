@@ -29,12 +29,20 @@ addStylesheet('padelwrist-launch-styles', '/assets/launch.css');
 addStylesheet('padelwrist-qa-styles', '/assets/qa-pass.css');
 
 const isInnerPage = document.body?.classList.contains('page-body');
+const isHomePage = document.body?.classList.contains('home-v2');
 if (isInnerPage) addStylesheet('padelwrist-inner-pages', '/assets/inner-pages.css');
 
 /* Shared design layers load last so one system owns typography, layout and interaction. */
 addStylesheet('padelwrist-site-polish', '/assets/site-polish.css');
 addStylesheet('padelwrist-site-responsive', '/assets/site-responsive.css');
 addStylesheet('padelwrist-site-enhance', '/assets/site-enhance.css');
+
+/* Homepage-specific art direction must load after the shared layers. */
+if (isHomePage) {
+  addStylesheet('padelwrist-home-art-direction', '/assets/home-art-direction.css');
+  addStylesheet('padelwrist-home-final-pass', '/assets/home-final-pass.css');
+  addScript('padelwrist-home-motion', '/assets/home-motion.js');
+}
 
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
