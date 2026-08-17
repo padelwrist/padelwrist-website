@@ -26,6 +26,9 @@ if (isInnerPage) {
   addStylesheet('padelwrist-inner-pages', '/assets/inner-pages.css');
 }
 
+/* Final shared design layer. Keep this last so the same interaction and typography rules win everywhere. */
+addStylesheet('padelwrist-site-polish', '/assets/site-polish.css');
+
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
@@ -38,7 +41,7 @@ function standardiseInnerPageChrome() {
     primaryNav.innerHTML = `
       <a href="/#why">Why PadelWrist</a>
       <a href="/#features">Features</a>
-      <a href="/#guides">Guides</a>
+      <a href="/guides/">Guides</a>
       <a href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Feedback</a>
       <a href="/support/">Support</a>
       <a href="/privacy/">Privacy</a>
@@ -49,8 +52,8 @@ function standardiseInnerPageChrome() {
       primaryNav.querySelector('a[href="/support/"]')?.setAttribute('aria-current', 'page');
     } else if (path === '/privacy/' || path === '/privacy') {
       primaryNav.querySelector('a[href="/privacy/"]')?.setAttribute('aria-current', 'page');
-    } else if (path.includes('apple-watch-padel-scoring') || path.includes('how-padel-scoring-works') || path.includes('padel-match-history')) {
-      primaryNav.querySelector('a[href="/#guides"]')?.setAttribute('aria-current', 'page');
+    } else if (path !== '/' && path !== '') {
+      primaryNav.querySelector('a[href="/guides/"]')?.setAttribute('aria-current', 'page');
     }
   }
 
@@ -68,6 +71,7 @@ function standardiseInnerPageChrome() {
   const footerNav = document.querySelector('.site-footer nav');
   if (footerNav) {
     footerNav.innerHTML = `
+      <a href="/guides/">Guides</a>
       <a href="/apple-watch-padel-scoring/">Apple Watch scoring</a>
       <a href="/how-padel-scoring-works/">Scoring rules</a>
       <a href="/padel-match-history/">Match history</a>
