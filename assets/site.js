@@ -26,8 +26,9 @@ if (isInnerPage) {
   addStylesheet('padelwrist-inner-pages', '/assets/inner-pages.css');
 }
 
-/* Final shared design layer. Keep this last so the same interaction and typography rules win everywhere. */
+/* Shared design layers load last so one system owns typography, interactions and responsive layout. */
 addStylesheet('padelwrist-site-polish', '/assets/site-polish.css');
+addStylesheet('padelwrist-site-responsive', '/assets/site-responsive.css');
 
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
@@ -109,6 +110,60 @@ function addFeedbackLinks() {
 }
 
 addFeedbackLinks();
+
+function addMobileNavigation() {
+  document.querySelectorAll('.site-header').forEach((header, index) => {
+    const nav = header.querySelector('.site-nav');
+    const wrap = header.querySelector('.nav-wrap');
+    if (!nav || !wrap || wrap.querySelector('.mobile-nav-toggle')) return;
+
+    const navId = nav.id || `site-nav-${index + 1}`;
+    nav.id = navId;
+
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'mobile-nav-toggle';
+    button.setAttribute('aria-controls', navId);
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-label', 'Open navigation');
+    button.innerHTML = '<span aria-hidden="true"></span>';
+    wrap.appendChild(button);
+
+    const closeMenu = () => {
+      header.classList.remove('nav-open');
+      document.body.classList.remove('mobile-nav-open');
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-label', 'Open navigation');
+    };
+
+    const openMenu = () => {
+      header.classList.add('nav-open');
+      document.body.classList.add('mobile-nav-open');
+      button.setAttribute('aria-expanded', 'true');
+      button.setAttribute('aria-label', 'Close navigation');
+    };
+
+    button.addEventListener('click', () => {
+      if (header.classList.contains('nav-open')) closeMenu();
+      else openMenu();
+    });
+
+    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && header.classList.contains('nav-open')) {
+        closeMenu();
+        button.focus();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 760 && header.classList.contains('nav-open')) closeMenu();
+    });
+  });
+}
+
+addMobileNavigation();
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const items = document.querySelectorAll('.reveal');
