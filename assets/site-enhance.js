@@ -32,41 +32,31 @@
     heading.before(nav);
   }
 
-  function expandHomepageFaqs() {
-    if (!isHome) return;
-    const list = document.querySelector('.faq-list');
-    if (!list || list.dataset.expanded === 'true') return;
-
-    const questions = [
-      ['Does PadelWrist support tie-breaks?', 'Yes. Standard Match scoring includes games, sets and tie-breaks, so you can keep scoring through the deciding points without switching to a separate counter.'],
-      ['Can I score a match on iPhone or iPad without Apple Watch?', 'Yes. PadelWrist supports scoring on iPhone and iPad as well as Apple Watch. Apple Watch is the wrist-first option, not a requirement for every match.'],
-      ['What is Fixed Points scoring?', 'Fixed Points is designed for point-based match formats where rallies are counted directly rather than using the usual 15, 30, 40 game structure. It is useful for individual social-format matches such as those commonly played within Americano or Mexicano sessions.']
-    ];
-
-    questions.forEach(([question, answer]) => {
-      const details = document.createElement('details');
-      details.className = 'faq-item reveal is-visible';
-      details.innerHTML = `<summary>${question}</summary><p>${answer}</p>`;
-      list.appendChild(details);
-    });
-    list.dataset.expanded = 'true';
-  }
-
   function upgradeAppStoreCtas() {
     if (!APP_STORE_URL) return;
 
-    document.querySelectorAll('.store-button').forEach((element) => {
+    document.querySelectorAll('[data-app-store-cta], .store-button').forEach((element) => {
+      if (element.tagName === 'A') {
+        element.href = APP_STORE_URL;
+        element.target = '_blank';
+        element.rel = 'noopener';
+        element.classList.add('app-store-cta');
+        element.setAttribute('aria-label', 'Download PadelWrist on the App Store');
+        element.textContent = 'Download on the App Store';
+        return;
+      }
+
       const link = document.createElement('a');
       link.className = `${element.className} app-store-cta`;
       link.href = APP_STORE_URL;
       link.target = '_blank';
       link.rel = 'noopener';
       link.setAttribute('aria-label', 'Download PadelWrist on the App Store');
-      link.innerHTML = '<span><small>Download on the</small>App Store</span>';
+      link.textContent = 'Download on the App Store';
       element.replaceWith(link);
     });
 
-    if (window.matchMedia('(max-width: 760px)').matches && !document.querySelector('.sticky-app-cta')) {
+    if (isHome && window.matchMedia('(max-width: 760px)').matches && !document.querySelector('.sticky-app-cta')) {
       const sticky = document.createElement('a');
       sticky.className = 'sticky-app-cta app-store-cta';
       sticky.href = APP_STORE_URL;
@@ -94,7 +84,7 @@
     if (link.closest('.site-header')) return 'header_navigation';
     if (link.closest('.site-footer')) return 'footer_navigation';
     if (link.closest('.breadcrumbs')) return 'breadcrumb';
-    if (link.closest('.related-guides') || link.closest('.guide-grid') || link.closest('.guide-copy')) return 'content';
+    if (link.closest('.related-guides') || link.closest('.guide-grid') || link.closest('.guide-copy') || link.closest('.editorial-grid')) return 'content';
     try {
       return new URL(link.href, window.location.href).origin === window.location.origin ? 'internal' : 'outbound';
     } catch {
@@ -132,6 +122,5 @@
   });
 
   addBreadcrumbs();
-  expandHomepageFaqs();
   upgradeAppStoreCtas();
 })();
