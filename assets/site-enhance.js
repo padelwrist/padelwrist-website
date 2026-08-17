@@ -6,6 +6,21 @@
   const isPrivacy = path === '/privacy/' || path === '/privacy';
   const isGuidesHub = path === '/guides/' || path === '/guides';
 
+  if (isHome) {
+    if (!document.querySelector('link[href="/assets/home-art-direction.css"]')) {
+      const stylesheet = document.createElement('link');
+      stylesheet.rel = 'stylesheet';
+      stylesheet.href = '/assets/home-art-direction.css';
+      document.head.appendChild(stylesheet);
+    }
+    if (!document.querySelector('script[src="/assets/home-motion.js"]')) {
+      const motion = document.createElement('script');
+      motion.src = '/assets/home-motion.js';
+      motion.defer = true;
+      document.head.appendChild(motion);
+    }
+  }
+
   function addBreadcrumbs() {
     if (!document.body.classList.contains('page-body')) return;
     const heading = document.querySelector('.content-page > .page-heading');
