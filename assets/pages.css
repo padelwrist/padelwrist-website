@@ -280,19 +280,26 @@ body.page-body {
   font-size: 14px;
   line-height: 1.55;
 }
-.page-body .quick-note {
-  grid-column: 1 / span 8;
+.page-body .quick-note,
+.page-body .support-safety-note {
   width: 100%;
   margin-top: 26px;
-  padding: 24px 28px;
-  border-left: 3px solid var(--pw-orange);
-  border-radius: 0 var(--pw-radius-md) var(--pw-radius-md) 0;
+  padding: 18px 20px;
+  border: 1px solid rgba(255,107,69,.18);
+  border-radius: 14px;
   background: rgba(255,107,69,.055);
 }
-.page-body .quick-note .eyebrow { margin-bottom: 7px; color: var(--pw-orange); }
-.page-body .quick-note h2 {
+.page-body .quick-note { grid-column: 1 / span 8; }
+.page-body .quick-note .eyebrow,
+.page-body .support-safety-note .eyebrow {
+  margin: 0 0 7px;
+  color: var(--pw-orange);
+  font-size: 10px;
+}
+.page-body .quick-note h2,
+.page-body .support-safety-note p:last-child {
   margin: 0;
-  color: rgba(247,248,251,.78);
+  color: rgba(247,248,251,.76);
   font-family: var(--pw-body);
   font-size: 14px;
   font-weight: 500;
@@ -401,6 +408,7 @@ body.page-body {
   .guides-hub .guide-copy > .guide-cta { grid-column: auto; }
   .page-body .guide-cta { margin-top: 44px; padding: 26px 22px; border-radius: 20px; }
   .page-body .support-panel { padding: 26px 20px; }
-  .page-body .quick-note { padding: 20px; }
+  .page-body .quick-note,
+  .page-body .support-safety-note { padding: 16px 17px; }
   .page-body .policy-nav { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
