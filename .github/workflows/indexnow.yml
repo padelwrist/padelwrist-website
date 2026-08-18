@@ -64,3 +64,5 @@ jobs:
             200|202) exit 0 ;;
             *) exit 1 ;;
           esac
+
+# Manual trigger marker: 2026-08-18
