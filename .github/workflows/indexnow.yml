@@ -1,0 +1,66 @@
+name: Submit URLs to IndexNow
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for production deploy
+        run: sleep 60
+
+      - name: Submit sitemap URLs to IndexNow
+        shell: bash
+        env:
+          INDEXNOW_KEY: 66805d2275b749c9b7cc0cf2e9c19d95
+          SITE_HOST: padelwrist.com
+          SITEMAP_URL: https://padelwrist.com/sitemap.xml
+        run: |
+          set -euo pipefail
+
+          sitemap="$(curl --fail --silent --show-error --retry 5 --retry-delay 10 "$SITEMAP_URL")"
+
+          mapfile -t urls < <(printf '%s' "$sitemap" \
+            | grep -oE '<loc>[^<]+'</loc>' \
+            | sed -E 's#</?loc>##g' \
+            | grep -E '^https://padelwrist\.com/' \
+            | sort -u)
+
+          if [ "${#urls[@]}" -eq 0 ]; then
+            echo "No URLs found in sitemap."
+            exit 1
+          fi
+
+          url_list="$(printf '%s\n' "${urls[@]}" | jq -R . | jq -s .)"
+
+          payload="$(jq -n \
+            --arg host "$SITE_HOST" \
+            --arg key "$INDEXNOW_KEY" \
+            --arg keyLocation "https://padelwrist.com/${INDEXNOW_KEY}.txt" \
+            --argjson urlList "$url_list" \
+            '{host:$host,key:$key,keyLocation:$keyLocation,urlList:$urlList}')"
+
+          echo "Submitting ${#urls[@]} URLs to IndexNow..."
+
+          response_file="$(mktemp)"
+          status="$(curl --silent --show-error \
+            --output "$response_file" \
+            --write-out '%{http_code}' \
+            --header 'Content-Type: application/json; charset=utf-8' \
+            --data "$payload" \
+            https://api.indexnow.org/indexnow)"
+
+          cat "$response_file" || true
+          echo
+          echo "IndexNow HTTP status: $status"
+
+          case "$status" in
+            200|202) exit 0 ;;
+            *) exit 1 ;;
+          esac
