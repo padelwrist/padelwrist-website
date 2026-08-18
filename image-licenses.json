@@ -1,0 +1,56 @@
+{
+  "policyVersion": 1,
+  "reviewedOn": "2026-08-18",
+  "approvedProviders": {
+    "images.unsplash.com": {
+      "license": "Unsplash License",
+      "commercialUse": true,
+      "attributionRequired": false,
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "images.pexels.com": {
+      "license": "Pexels License",
+      "commercialUse": true,
+      "attributionRequired": false,
+      "licenseUrl": "https://www.pexels.com/legal-pages/license/"
+    }
+  },
+  "externalAssets": [
+    {
+      "assetPrefix": "https://images.unsplash.com/photo-1646649851800-48dba35edc76",
+      "sourcePage": "https://unsplash.com/photos/a-man-holding-a-tennis-racquet-on-a-tennis-court-aYTK2HNocNw",
+      "provider": "Unsplash",
+      "status": "verified-free-library"
+    },
+    {
+      "assetPrefix": "https://images.unsplash.com/photo-1646649853703-7645147474ba",
+      "sourcePage": "https://unsplash.com/photos/two-tennis-rackets-and-balls-on-a-blue-tennis-court-Cj35lHL4atY",
+      "provider": "Unsplash",
+      "status": "verified-free-library"
+    },
+    {
+      "assetPrefix": "https://images.unsplash.com/photo-1657704227277-04e8accd079e",
+      "sourcePage": "https://unsplash.com/photos/a-tennis-ball-with-a-yellow-and-black-logo-on-it-e69rGF9Cx7U",
+      "provider": "Unsplash",
+      "status": "verified-free-library"
+    },
+    {
+      "assetPrefix": "https://images.unsplash.com/photo-1661881545067-b15c94c6b7cd",
+      "sourcePage": "https://unsplash.com/photos/a-tennis-ball-in-a-net-CA3laY8sok0",
+      "provider": "Unsplash",
+      "status": "verified-free-library"
+    },
+    {
+      "assetPrefix": "https://images.pexels.com/photos/35646550/pexels-photo-35646550.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/padel-player-with-racket-and-ball-on-blue-court-35646550/",
+      "provider": "Pexels",
+      "status": "verified-free"
+    },
+    {
+      "assetPrefix": "https://images.pexels.com/photos/31012869/pexels-photo-31012869.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/padel-racket-and-ball-on-blue-court-surface-31012869/",
+      "provider": "Pexels",
+      "status": "verified-free"
+    }
+  ]
+}
