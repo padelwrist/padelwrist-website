@@ -12,33 +12,81 @@ jobs:
   indexnow:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait for production deploy
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Build URL list
+        id: urls
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          : > urls.txt
+
+          if [ "$EVENT_NAME" = 'workflow_dispatch' ]; then
+            curl --fail --silent --show-error --retry 3 https://padelwrist.com/sitemap.xml \
+              | grep -oE '<loc>[^<]+</loc>' \
+              | sed -E 's#</?loc>##g' \
+              | grep -E '^https://padelwrist\.com/' \
+              | sort -u > urls.txt
+          else
+            base="$BEFORE_SHA"
+            if [ -z "$base" ] || [ "$base" = '0000000000000000000000000000000000000000' ]; then
+              base="HEAD^"
+            fi
+
+            git diff --name-status "$base" HEAD | while read -r status path rest; do
+              candidate="$path"
+              if [[ "$status" == R* ]]; then
+                candidate="$path"
+                new_path="$rest"
+                for p in "$candidate" "$new_path"; do
+                  if [ "$p" = 'index.html' ]; then
+                    echo 'https://padelwrist.com/'
+                  elif [[ "$p" =~ ^([^/]+)/index\.html$ ]]; then
+                    echo "https://padelwrist.com/${BASH_REMATCH[1]}/"
+                  fi
+                done
+              else
+                if [ "$candidate" = 'index.html' ]; then
+                  echo 'https://padelwrist.com/'
+                elif [[ "$candidate" =~ ^([^/]+)/index\.html$ ]]; then
+                  echo "https://padelwrist.com/${BASH_REMATCH[1]}/"
+                fi
+              fi
+            done | sort -u > urls.txt
+          fi
+
+          count="$(wc -l < urls.txt | tr -d ' ')"
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          cat urls.txt
+
+      - name: Wait for Cloudflare Pages deployment
+        if: steps.urls.outputs.count != '0'
         run: sleep 60
 
-      - name: Submit sitemap URLs to IndexNow
+      - name: Verify IndexNow key is live
+        if: steps.urls.outputs.count != '0'
+        shell: bash
+        env:
+          INDEXNOW_KEY: 66805d2275b749c9b7cc0cf2e9c19d95
+        run: |
+          set -euo pipefail
+          value="$(curl --fail --silent --show-error --retry 5 --retry-delay 10 "https://padelwrist.com/${INDEXNOW_KEY}.txt")"
+          test "$value" = "$INDEXNOW_KEY"
+
+      - name: Submit changed URLs to IndexNow
+        if: steps.urls.outputs.count != '0'
         shell: bash
         env:
           INDEXNOW_KEY: 66805d2275b749c9b7cc0cf2e9c19d95
           SITE_HOST: padelwrist.com
-          SITEMAP_URL: https://padelwrist.com/sitemap.xml
         run: |
           set -euo pipefail
-
-          sitemap="$(curl --fail --silent --show-error --retry 5 --retry-delay 10 "$SITEMAP_URL")"
-
-          mapfile -t urls < <(printf '%s' "$sitemap" \
-            | grep -oE '<loc>[^<]+</loc>' \
-            | sed -E 's#</?loc>##g' \
-            | grep -E '^https://padelwrist\.com/' \
-            | sort -u)
-
-          if [ "${#urls[@]}" -eq 0 ]; then
-            echo "No URLs found in sitemap."
-            exit 1
-          fi
-
-          url_list="$(printf '%s\n' "${urls[@]}" | jq -R . | jq -s .)"
-
+          url_list="$(jq -R . < urls.txt | jq -s .)"
           payload="$(jq -n \
             --arg host "$SITE_HOST" \
             --arg key "$INDEXNOW_KEY" \
@@ -46,23 +94,16 @@ jobs:
             --argjson urlList "$url_list" \
             '{host:$host,key:$key,keyLocation:$keyLocation,urlList:$urlList}')"
 
-          echo "Submitting ${#urls[@]} URLs to IndexNow..."
-
+          echo "Submitting $(wc -l < urls.txt) changed URL(s) to IndexNow..."
           response_file="$(mktemp)"
-          status="$(curl --silent --show-error \
-            --output "$response_file" \
-            --write-out '%{http_code}' \
+          status="$(curl --silent --show-error --output "$response_file" --write-out '%{http_code}' \
             --header 'Content-Type: application/json; charset=utf-8' \
-            --data "$payload" \
-            https://api.indexnow.org/indexnow)"
-
+            --data "$payload" https://api.indexnow.org/indexnow)"
           cat "$response_file" || true
           echo
           echo "IndexNow HTTP status: $status"
+          case "$status" in 200|202) exit 0 ;; *) exit 1 ;; esac
 
-          case "$status" in
-            200|202) exit 0 ;;
-            *) exit 1 ;;
-          esac
-
-# Manual trigger marker: 2026-08-18
+      - name: No page URLs changed
+        if: steps.urls.outputs.count == '0'
+        run: echo 'No indexable page URLs changed, so there is nothing to submit.'
