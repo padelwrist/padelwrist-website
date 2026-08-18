@@ -1,9 +1,25 @@
 /* Legacy compatibility shim. Inner-page styling now lives in pages.css.
    Responsive QA overrides live here so existing inner-page templates inherit them. */
 
+@media (max-width: 1024px) {
+  .page-body .page-heading {
+    margin-bottom: clamp(52px, 6vw, 72px);
+  }
+  .guides-hub .guide-copy {
+    gap: 20px;
+  }
+  .page-body .guide-cta {
+    margin-top: 54px;
+  }
+  .page-body .related-guides {
+    margin-top: 28px;
+  }
+}
+
 @media (max-width: 920px) {
   .guides-hub .guide-copy {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .guides-hub .guide-copy > section,
@@ -25,6 +41,7 @@
 
   .page-body .check-list.plain {
     grid-template-columns: 1fr;
+    margin-top: 20px;
   }
 
   .page-body .check-list.plain li {
@@ -47,31 +64,89 @@
 @media (max-width: 760px) {
   .page-body .content-page {
     padding-top: 56px;
+    padding-bottom: 76px;
   }
-
+  .page-body .breadcrumbs {
+    margin-bottom: 20px;
+  }
+  .page-body .page-heading {
+    margin-bottom: 46px;
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+  .page-body .page-heading .eyebrow {
+    margin-bottom: 14px;
+  }
   .page-body .page-heading h1 {
     font-size: clamp(36px, 10.5vw, 50px);
     line-height: .98;
     text-wrap: balance;
   }
+  .page-body .page-heading > p:not(.eyebrow) {
+    margin-top: 18px;
+  }
 
+  .page-body .guide-copy > section {
+    padding: 30px 0;
+  }
   .guides-hub .guide-copy {
     gap: 16px;
   }
-
   .guides-hub .guide-copy > section {
     padding: 24px 20px;
     border-radius: 22px;
   }
-
   .guides-hub .guide-copy > section h2 {
     max-width: none;
+    margin-bottom: 14px;
     font-size: clamp(23px, 6.2vw, 28px);
   }
-
   .page-body .guide-copy p,
   .page-body .support-panel p,
   .page-body .policy-copy p {
     overflow-wrap: break-word;
+  }
+
+  .page-body .guide-cta {
+    margin-top: 38px;
+  }
+  .page-body .related-guides {
+    margin-top: 24px;
+    padding: 22px 0;
+    gap: 9px;
+  }
+  .page-body .support-panel .check-list li {
+    padding: 18px 0;
+  }
+  .page-body .policy-layout {
+    gap: 30px;
+  }
+  .page-body .policy-nav {
+    padding-bottom: 22px;
+  }
+  .page-body .policy-copy section {
+    padding: 34px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .page-body .page-heading h1 {
+    font-size: clamp(34px, 10vw, 46px);
+  }
+  .guides-hub .guide-copy > section {
+    padding: 22px 18px;
+  }
+  .page-body .support-panel {
+    padding: 24px 18px;
+  }
+  .page-body .support-panel .check-list li {
+    grid-template-columns: 34px 1fr;
+    gap: 12px;
+  }
+  .page-body .policy-nav {
+    grid-template-columns: 1fr;
+  }
+  .page-body .policy-nav strong {
+    grid-column: auto;
   }
 }
