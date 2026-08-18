@@ -1,0 +1,68 @@
+name: Refresh sitemap
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - '*/index.html'
+      - '!support/index.html'
+      - '!privacy/index.html'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate sitemap from public pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo '<?xml version="1.0" encoding="UTF-8"?>'
+            echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+
+            root_date="$(git log -1 --format=%cs -- index.html)"
+            echo "  <url><loc>https://padelwrist.com/</loc><lastmod>${root_date}</lastmod></url>"
+
+            while IFS= read -r file; do
+              dir="${file%/index.html}"
+              case "$dir" in
+                support|privacy) continue ;;
+              esac
+              date="$(git log -1 --format=%cs -- "$file")"
+              [ -n "$date" ] || date="$(date -u +%F)"
+              echo "  <url><loc>https://padelwrist.com/${dir}/</loc><lastmod>${date}</lastmod></url>"
+            done < <(find . -mindepth 2 -maxdepth 2 -name index.html -type f | sed 's#^./##' | sort)
+
+            for dir in support privacy; do
+              if [ -f "$dir/index.html" ]; then
+                date="$(git log -1 --format=%cs -- "$dir/index.html")"
+                echo "  <url><loc>https://padelwrist.com/${dir}/</loc><lastmod>${date}</lastmod></url>"
+              fi
+            done
+
+            echo '</urlset>'
+          } > sitemap.xml.new
+
+          mv sitemap.xml.new sitemap.xml
+
+      - name: Commit sitemap when dates or pages change
+        shell: bash
+        run: |
+          if git diff --quiet -- sitemap.xml; then
+            echo 'Sitemap already current.'
+            exit 0
+          fi
+          git config user.name 'PadelWrist SEO Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add sitemap.xml
+          git commit -m 'Refresh sitemap freshness metadata'
+          git push
