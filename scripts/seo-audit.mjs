@@ -31,9 +31,30 @@ function duplicates(records, key) {
   return [...map.entries()].filter(([, files]) => files.length > 1);
 }
 
+function collectJsonLd(html, rel) {
+  const parsed = [];
+  for (const block of html.matchAll(/<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try { parsed.push(JSON.parse(block[1])); }
+    catch (error) { throw new Error(`INVALID JSON-LD: ${rel} -> ${error.message}`); }
+  }
+  return parsed;
+}
+
+function flattenTypes(value, found = []) {
+  if (!value || typeof value !== 'object') return found;
+  if (Array.isArray(value)) {
+    value.forEach((item) => flattenTypes(item, found));
+    return found;
+  }
+  if (value['@type']) found.push(value);
+  Object.values(value).forEach((item) => flattenTypes(item, found));
+  return found;
+}
+
 const files = await walk(root);
 const records = [];
 let failures = 0;
+let warnings = 0;
 
 for (const file of files) {
   const html = await readFile(file, 'utf8');
@@ -62,7 +83,16 @@ for (const file of files) {
     }
   }
 
-  const images = [...html.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
+  if (record.title.length > 65) {
+    console.warn(`WARN long title (${record.title.length}): ${rel}`);
+    warnings++;
+  }
+  if (record.description.length > 165) {
+    console.warn(`WARN long description (${record.description.length}): ${rel}`);
+    warnings++;
+  }
+
+  const images = [...html.matchAll(/<img\b[^>]*>/gi)].map((result) => result[0]);
   for (const tag of images) {
     if (!/\balt=["'][^"']*["']/i.test(tag)) {
       console.error(`MISSING alt text: ${rel} -> ${tag.slice(0, 120)}`);
@@ -70,13 +100,30 @@ for (const file of files) {
     }
   }
 
-  const jsonLd = [...html.matchAll(/<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
-  for (const block of jsonLd) {
-    try { JSON.parse(block[1]); }
-    catch (error) {
-      console.error(`INVALID JSON-LD: ${rel} -> ${error.message}`);
-      failures++;
+  let jsonLd = [];
+  try { jsonLd = collectJsonLd(html, rel); }
+  catch (error) {
+    console.error(error.message);
+    failures++;
+  }
+
+  const entities = jsonLd.flatMap((block) => flattenTypes(block));
+  const article = entities.find((entity) => entity['@type'] === 'Article');
+  if (article) {
+    if (!article.dateModified) {
+      console.warn(`WARN Article missing dateModified: ${rel}`);
+      warnings++;
     }
+    if (!article.author) {
+      console.warn(`WARN Article missing author: ${rel}`);
+      warnings++;
+    }
+  }
+
+  const ruleLike = /(rules|scoring|tie-break|golden-point|americano|mexicano|fixed-points)/.test(rel);
+  if (ruleLike && rel !== '404.html' && !/padelfip\.com|International Padel Federation/i.test(html)) {
+    console.warn(`WARN rules/scoring page has no visible FIP source reference: ${rel}`);
+    warnings++;
   }
 }
 
@@ -87,10 +134,10 @@ for (const key of ['title', 'description', 'canonical']) {
   }
 }
 
-console.log(`Checked ${records.length} HTML files.`);
+console.log(`Checked ${records.length} HTML files: ${failures} failure(s), ${warnings} warning(s).`);
 if (failures) {
   console.error(`SEO audit failed with ${failures} issue(s).`);
   process.exitCode = 1;
 } else {
-  console.log('SEO audit passed.');
+  console.log('SEO audit passed. Warnings are editorial follow-up items, not build blockers.');
 }
