@@ -27,7 +27,7 @@ jobs:
           sitemap="$(curl --fail --silent --show-error --retry 5 --retry-delay 10 "$SITEMAP_URL")"
 
           mapfile -t urls < <(printf '%s' "$sitemap" \
-            | grep -oE '<loc>[^<]+'</loc>' \
+            | grep -oE '<loc>[^<]+</loc>' \
             | sed -E 's#</?loc>##g' \
             | grep -E '^https://padelwrist\.com/' \
             | sort -u)
