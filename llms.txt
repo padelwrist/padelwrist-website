@@ -1,16 +1,16 @@
 # PadelWrist
 
-> PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad, and publishes a practical padel knowledge base covering rules, scoring, court play, tactics, equipment and common player questions.
+> PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad, and publishes a practical padel knowledge base covering learning the sport, rules and scoring, tactics and positioning, shots and technique, equipment, social formats and scorekeeping.
 
 Last updated: 2026-08-18.
 
 PadelWrist supports standard padel scoring with games, sets and tie-breaks, Fixed Points scoring, server tracking, spoken score announcements, undo and score correction, saved players, match history, historic result editing and resuming unfinished matches. It does not require an account.
 
-Apple Watch is the primary wrist-first scoring surface. iPhone and iPad provide larger-screen setup, scoring and match-management experiences. Active scoring is local-first, so a temporary device connection loss does not stop the scoring device. Apple Watch does not communicate directly with iPad through WatchConnectivity; where both participate in the same match, the paired iPhone provides the relay path.
+Apple Watch is the primary wrist-first scoring surface. iPhone and iPad provide larger-screen setup, scoring and match-management experiences. Active scoring is local-first, so temporary device connection loss does not stop the scoring device. Apple Watch does not communicate directly with iPad through WatchConnectivity; where both participate in the same match, the paired iPhone provides the relay path.
 
 PadelWrist does not currently organise Americano or Mexicano tournaments, rotate partners, generate pairings or standings, provide social networking or cloud accounts, or claim Apple Health and heart-rate features.
 
-Rules-based knowledge-base articles use the International Padel Federation as the primary official source and show review dates where current rule status matters. Social formats are described as common formats because organiser rules vary.
+Rules-based knowledge-base articles use the International Padel Federation as the primary official source and show review dates where current rule status matters. Tactical and technique articles explain commonly taught padel principles without presenting coaching advice as official rules. Social formats are described as common formats because organiser rules vary.
 
 Contact: support@padelwrist.com
 
@@ -21,46 +21,79 @@ Contact: support@padelwrist.com
 - [Apple Watch padel scoring](https://padelwrist.com/apple-watch-padel-scoring/): Wrist-first scoring, spoken scores, server tracking, undo and local-first behaviour.
 - [Padel match history](https://padelwrist.com/padel-match-history/): Local match history, editing saved results, resuming unfinished matches and deletion.
 
-## Start here
+## Padel knowledge base
 
-- [Padel knowledge base](https://padelwrist.com/guides/): The main index for PadelWrist's padel reference content.
+- [Padel knowledge base](https://padelwrist.com/guides/): Main index organised into Learn Padel, Rules & Scoring, Tactics & Positioning, Shots & Technique, Equipment, and Formats & Scorekeeping.
+- [Padel glossary](https://padelwrist.com/padel-glossary/): Plain-English reference for scoring, court, shot, tactical, equipment and format terminology.
+- [Editorial policy](https://padelwrist.com/editorial-policy/): How rule sources, review dates, comparisons, corrections and editorial quality are handled.
+
+## Learn Padel
+
 - [What is padel?](https://padelwrist.com/what-is-padel/): Beginner introduction to the court, walls, scoring, serve and equipment.
-- [Padel rules 2026](https://padelwrist.com/padel-rules/): Serving, walls, volleys, faults, scoring and 2026 Star Point context.
-- [Padel court dimensions](https://padelwrist.com/padel-court-dimensions/): Standard 20m x 10m court, enclosure, service boxes and layout.
-- [Padel vs tennis](https://padelwrist.com/padel-vs-tennis/): Court, racket, serve, walls, tactics and beginner accessibility compared.
-- [Padel equipment for beginners](https://padelwrist.com/padel-equipment-for-beginners/): Racket, balls, shoes, clothing, overgrips and what to hire first.
-- [Can you play padel singles?](https://padelwrist.com/can-you-play-padel-singles/): Official doubles format, singles courts and informal 1v1 play.
-- [How long does a padel match last?](https://padelwrist.com/how-long-does-a-padel-match-last/): Typical duration, booking time and factors that lengthen matches.
+- [Your first padel game](https://padelwrist.com/first-padel-game/): What to expect before, during and after a first match.
+- [Common padel beginner mistakes](https://padelwrist.com/common-padel-beginner-mistakes/): Rushing the glass, split positioning, overhitting, poor lobs and incorrect overhead choices.
+- [How to play against tennis players in padel](https://padelwrist.com/playing-against-tennis-players-padel/): Using walls, lobs, net control and padel geometry against hard baseline hitters.
+- [Padel court dimensions](https://padelwrist.com/padel-court-dimensions/): Standard court layout and dimensions.
+- [Padel vs tennis](https://padelwrist.com/padel-vs-tennis/): Court, racket, serve, walls and tactical differences.
+- [Padel vs pickleball](https://padelwrist.com/padel-vs-pickleball/): Court, equipment, scoring and style compared.
+- [Can you play padel singles?](https://padelwrist.com/can-you-play-padel-singles/): Official doubles format, singles courts and informal one-v-one play.
+- [How long does a padel match last?](https://padelwrist.com/how-long-does-a-padel-match-last/): Match duration, booking time and scoring-format effects.
+- [Padel etiquette](https://padelwrist.com/padel-etiquette/): Practical on-court behaviour and communication.
 
-## Rules and scoring
+## Rules & Scoring
 
-- [How padel scoring works](https://padelwrist.com/how-padel-scoring-works/): 15-30-40, games, sets, advantage, Golden Point, Star Point and tie-breaks.
-- [How to keep score in padel](https://padelwrist.com/how-to-keep-score-in-padel/): Practical match scorekeeping, server tracking and avoiding disputes.
-- [Padel tie-break rules](https://padelwrist.com/padel-tie-break-rules/): Seven-point tie-break scoring, two-point margin and serving order.
-- [Golden Point vs advantage vs Star Point](https://padelwrist.com/golden-point-vs-advantage/): The three deuce approaches and 2026 FIP context.
+- [Padel rules 2026](https://padelwrist.com/padel-rules/): Serving, walls, volleys, faults, scoring and current Star Point context.
+- [How padel scoring works](https://padelwrist.com/how-padel-scoring-works/): 15-30-40, games, sets, Advantage, Golden Point, Star Point and tie-breaks.
 - [Padel service rules](https://padelwrist.com/padel-service-rules/): Underarm serve, bounce, waist height, diagonal boxes and second serve.
+- [How to return serve](https://padelwrist.com/how-to-return-serve-padel/): Return position, glass use, low drives and lobs.
+- [Wrong server in padel](https://padelwrist.com/wrong-server-padel/): 2026 FIP rules for service-order and wrong-side errors.
 - [Padel wall rules](https://padelwrist.com/padel-wall-rules/): Legal glass and fence rebounds, own-wall play and common mistakes.
-- [Padel scoring formats](https://padelwrist.com/padel-scoring-formats/): Advantage, deciding points, Star Point, tie-breaks, mini sets and Fixed Points.
-- [Fixed Points padel scoring](https://padelwrist.com/fixed-points-padel-scoring/): Rally-point scoring for point-based matches.
+- [Padel tie-break rules](https://padelwrist.com/padel-tie-break-rules/): Seven-point tie-break, two-point margin and service order.
+- [Golden Point vs Advantage vs Star Point](https://padelwrist.com/golden-point-vs-advantage/): Current deuce-format distinctions.
+- [Padel scoring formats](https://padelwrist.com/padel-scoring-formats/): Advantage, deciding points, Star Point, mini sets and Fixed Points.
+- [How to keep score](https://padelwrist.com/how-to-keep-score-in-padel/): Practical scorekeeping and server tracking.
+
+## Tactics & Positioning
+
+- [Padel positioning for beginners](https://padelwrist.com/padel-positioning-for-beginners/): Rear-court defence, net position and transition.
+- [Why net position matters](https://padelwrist.com/why-net-position-matters-padel/): How net control changes the available shots and rally geometry.
+- [How to move as a pair](https://padelwrist.com/move-as-pair-padel/): Doubles movement, shifting, advancing and retreating together.
+- [How to communicate with a padel partner](https://padelwrist.com/communicate-with-padel-partner/): Short calls, opponent information, middle ownership and score communication.
+- [When to lob](https://padelwrist.com/when-to-lob-padel/): Defensive and attacking lobs, depth and taking the net.
+- [How to stop getting lobbed](https://padelwrist.com/stop-getting-lobbed-padel/): Net distance, early reading, overhead decisions and retreat.
+- [When to play through the middle](https://padelwrist.com/play-middle-padel/): Reducing angles, creating uncertainty and adding margin.
+- [Who takes the middle ball?](https://padelwrist.com/who-takes-middle-ball-padel/): Handedness, height, movement and communication priorities.
+- [Left side vs right side](https://padelwrist.com/left-vs-right-side-padel/): Roles and side selection in doubles.
+- [Playing with a left-handed partner](https://padelwrist.com/left-handed-padel-partner/): Two forehands in the middle, side choice and overhead coverage.
+- [When to use the glass](https://padelwrist.com/when-to-use-glass-padel/): Deciding whether a wall rebound creates a better contact.
+- [Defending fast balls off the back glass](https://padelwrist.com/defend-fast-balls-back-glass-padel/): Spacing, compact swings and reset choices.
+- [Defending the corner glass](https://padelwrist.com/defend-corner-glass-padel/): Reading first-wall and second-wall direction.
+- [Double-glass rebounds](https://padelwrist.com/double-glass-padel/): Back-wall-first and side-wall-first rebound patterns.
+
+## Shots & Technique
+
+- [Padel shots guide](https://padelwrist.com/padel-shots-guide/): Volley, lob, bandeja, víbora, chiquita, bajada and smash.
+- [Bandeja vs víbora vs smash](https://padelwrist.com/bandeja-vs-vibora-vs-smash/): Choosing an overhead based on control, pressure or finishing opportunity.
+- [How to hit a bandeja](https://padelwrist.com/how-to-hit-bandeja-padel/): Purpose, early movement, contact, slice, targets and recovery.
+- [Chiquita vs drop shot](https://padelwrist.com/chiquita-vs-drop-shot-padel/): Different targets and tactical purposes for two soft shots.
+- [How to volley without overhitting](https://padelwrist.com/padel-volley-without-overhitting/): Compact preparation, placement, pace control and recovery.
+
+## Equipment
+
+- [Padel equipment for beginners](https://padelwrist.com/padel-equipment-for-beginners/): Racket, balls, shoes, clothing, overgrips and what to hire first.
+- [Padel racket shapes](https://padelwrist.com/padel-racket-shapes/): Round, teardrop and diamond shapes explained.
+- [Padel ball vs tennis ball](https://padelwrist.com/padel-ball-vs-tennis-ball/): Size, pressure and playing characteristics.
+
+## Formats & Scorekeeping
+
+- [Fixed Points scoring](https://padelwrist.com/fixed-points-padel-scoring/): Rally-point scoring for point-based matches.
 - [Americano padel scoring](https://padelwrist.com/americano-padel-scoring/): Common fixed-point rounds, partner rotations and individual totals.
 - [Mexicano padel scoring](https://padelwrist.com/mexicano-padel-scoring/): Ranking-influenced pairings, rounds and individual totals.
-
-## Playing and tactics
-
-- [Padel positioning for beginners](https://padelwrist.com/padel-positioning-for-beginners/): Defending, net position, moving as a pair, lobs and transition.
-- [Padel shots guide](https://padelwrist.com/padel-shots-guide/): Volley, lob, bandeja, víbora, chiquita, bajada and smash.
-- [Padel glossary](https://padelwrist.com/padel-glossary/): More than 50 scoring, court, shot, tactical, equipment and format terms.
-
-## Scorekeeping technology
-
-- [Apple Watch vs phone for padel scoring](https://padelwrist.com/apple-watch-vs-phone-padel-scoring/): Practical trade-offs between wrist and phone scorekeeping.
+- [Apple Watch vs phone scoring](https://padelwrist.com/apple-watch-vs-phone-padel-scoring/): Practical trade-offs between wrist and phone scorekeeping.
 - [Best padel scoring apps for Apple Watch](https://padelwrist.com/best-padel-scoring-apps-apple-watch/): August 2026 comparison based on current public App Store feature claims.
 
 ## Support and policies
 
 - [Support](https://padelwrist.com/support/): Help with PadelWrist on Apple Watch, iPhone and iPad.
 - [Privacy](https://padelwrist.com/privacy/): On-device match data, analytics, diagnostics and privacy rights.
-
-## Optional
-
-- [Feedback](https://padelwrist.fider.io/): Public feedback board for ideas and product suggestions.
+- [Feedback](https://padelwrist.fider.io/): Public feedback board for product ideas and padel knowledge-base suggestions.
