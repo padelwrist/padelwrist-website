@@ -1,1 +1,77 @@
-/* Legacy compatibility shim. Inner-page styling now lives in pages.css. */
+/* Legacy compatibility shim. Inner-page styling now lives in pages.css.
+   Responsive QA overrides live here so existing inner-page templates inherit them. */
+
+@media (max-width: 920px) {
+  .guides-hub .guide-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .guides-hub .guide-copy > section,
+  .guides-hub .guide-copy > .guide-cta {
+    grid-column: 1 / -1;
+  }
+
+  .guides-hub .guide-copy > section {
+    padding: clamp(24px, 4.5vw, 32px);
+  }
+
+  .guides-hub .guide-copy > section h2 {
+    max-width: 22ch;
+    font-size: clamp(24px, 4.8vw, 32px);
+    line-height: 1.08;
+    text-wrap: balance;
+    overflow-wrap: normal;
+  }
+
+  .page-body .check-list.plain {
+    grid-template-columns: 1fr;
+  }
+
+  .page-body .check-list.plain li {
+    min-height: 0;
+    padding-block: 14px;
+    align-items: flex-start;
+    line-height: 1.45;
+  }
+
+  .page-body .check-list.plain li::before {
+    top: 1.35em;
+  }
+
+  .page-body .check-list.plain li a {
+    min-height: 0;
+    display: inline;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-body .content-page {
+    padding-top: 56px;
+  }
+
+  .page-body .page-heading h1 {
+    font-size: clamp(36px, 10.5vw, 50px);
+    line-height: .98;
+    text-wrap: balance;
+  }
+
+  .guides-hub .guide-copy {
+    gap: 16px;
+  }
+
+  .guides-hub .guide-copy > section {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
+
+  .guides-hub .guide-copy > section h2 {
+    max-width: none;
+    font-size: clamp(23px, 6.2vw, 28px);
+  }
+
+  .page-body .guide-copy p,
+  .page-body .support-panel p,
+  .page-body .policy-copy p {
+    overflow-wrap: break-word;
+  }
+}
