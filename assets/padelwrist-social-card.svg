@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc"><title id="title">PadelWrist social preview</title><desc id="desc">PadelWrist padel scoring for Apple Watch, iPhone and iPad</desc><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07131e"/><stop offset="1" stop-color="#0d2433"/></linearGradient><radialGradient id="glow" cx="78%" cy="20%" r="62%"><stop offset="0" stop-color="#335fff" stop-opacity=".55"/><stop offset="1" stop-color="#335fff" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="630" rx="40" fill="url(#bg)"/><rect width="1200" height="630" rx="40" fill="url(#glow)"/><circle cx="1020" cy="116" r="8" fill="#ecfe00"/><circle cx="1052" cy="116" r="8" fill="#8099f9"/><circle cx="1084" cy="116" r="8" fill="#ff6b45"/><g transform="translate(84 94)"><rect width="116" height="116" rx="28" fill="#0d2433" stroke="#335fff" stroke-width="3"/><circle cx="84" cy="34" r="16" fill="#ecfe00"/><path d="M28 83c25-30 43-40 60-28 12 8 15 24 4 34-13 13-37 9-64-6Z" fill="#335fff"/><path d="M32 39h34c13 0 23 10 23 23v13H32Z" fill="#f7f8fb" opacity=".92"/></g><text x="236" y="148" fill="#f7f8fb" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">PadelWrist</text><text x="84" y="310" fill="#f7f8fb" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700">Keep the score.</text><text x="84" y="402" fill="#ecfe00" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700">Stay in the match.</text><text x="84" y="492" fill="#b7c0cb" font-family="Arial, Helvetica, sans-serif" font-size="34">Padel scoring for Apple Watch, iPhone and iPad.</text><g transform="translate(84 538)"><rect width="286" height="52" rx="26" fill="#335fff"/><text x="143" y="35" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Available on the App Store</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">PadelWrist social preview</title>
+<desc id="desc">PadelWrist padel scoring for Apple Watch, iPhone and iPad</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#07131e"/>
+    <stop offset="1" stop-color="#0d2433"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="78%" cy="20%" r="62%">
+    <stop offset="0" stop-color="#335fff" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#335fff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="1200" height="630" rx="40" fill="url(#bg)"/>
+<rect width="1200" height="630" rx="40" fill="url(#glow)"/>
+<circle cx="1020" cy="116" r="8" fill="#ecfe00"/>
+<circle cx="1052" cy="116" r="8" fill="#8099f9"/>
+<circle cx="1084" cy="116" r="8" fill="#ff6b45"/>
+<image href="padelwrist-mark.png" x="84" y="94" width="116" height="116"/>
+<text x="236" y="148" fill="#f7f8fb" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">PadelWrist</text>
+<text x="84" y="310" fill="#f7f8fb" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700">Keep the score.</text>
+<text x="84" y="402" fill="#ecfe00" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700">Stay in the match.</text>
+<text x="84" y="492" fill="#b7c0cb" font-family="Arial, Helvetica, sans-serif" font-size="34">Padel scoring for Apple Watch, iPhone and iPad.</text>
+<g transform="translate(84 538)">
+  <rect width="286" height="52" rx="26" fill="#335fff"/>
+  <text x="143" y="35" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Available on the App Store</text>
+</g>
+</svg>
