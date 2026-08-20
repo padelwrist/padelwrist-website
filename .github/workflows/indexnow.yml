@@ -26,7 +26,14 @@ jobs:
           set -euo pipefail
           : > urls.txt
 
+          full_submit='false'
           if [ "$EVENT_NAME" = 'workflow_dispatch' ]; then
+            full_submit='true'
+          elif git diff --name-only "$BEFORE_SHA" HEAD | grep -qx 'scripts/indexnow-full.trigger'; then
+            full_submit='true'
+          fi
+
+          if [ "$full_submit" = 'true' ]; then
             curl --fail --silent --show-error --retry 3 https://padelwrist.com/sitemap.xml \
               | grep -oE '<loc>[^<]+</loc>' \
               | sed -E 's#</?loc>##g' \
@@ -64,7 +71,7 @@ jobs:
           echo "count=$count" >> "$GITHUB_OUTPUT"
           cat urls.txt
 
-      - name: Wait for Cloudflare Pages deployment
+      - name: Wait for Cloudflare deployment
         if: steps.urls.outputs.count != '0'
         run: sleep 60
 
@@ -78,7 +85,7 @@ jobs:
           value="$(curl --fail --silent --show-error --retry 5 --retry-delay 10 "https://padelwrist.com/${INDEXNOW_KEY}.txt")"
           test "$value" = "$INDEXNOW_KEY"
 
-      - name: Submit changed URLs to IndexNow
+      - name: Submit URLs to IndexNow
         if: steps.urls.outputs.count != '0'
         shell: bash
         env:
@@ -94,7 +101,7 @@ jobs:
             --argjson urlList "$url_list" \
             '{host:$host,key:$key,keyLocation:$keyLocation,urlList:$urlList}')"
 
-          echo "Submitting $(wc -l < urls.txt) changed URL(s) to IndexNow..."
+          echo "Submitting $(wc -l < urls.txt) URL(s) to IndexNow..."
           response_file="$(mktemp)"
           status="$(curl --silent --show-error --output "$response_file" --write-out '%{http_code}' \
             --header 'Content-Type: application/json; charset=utf-8' \
