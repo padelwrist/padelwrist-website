@@ -4,6 +4,10 @@
 
 PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad. It is designed to let players keep score with minimal distraction during a match, while using larger Apple devices for setup, history and management.
 
+PadelWrist is live on the Apple App Store: https://apps.apple.com/gb/app/padelwrist/id6799725420
+
+App Store ID: `6799725420`.
+
 ## Audience
 
 Padel players who want a simple, premium scoring experience without repeatedly handling a phone during play. The product should feel immediately understandable to recreational players while remaining polished enough for frequent players.
@@ -20,6 +24,7 @@ The website should make three ideas obvious:
 
 ## Product truth
 
+- Available on the Apple App Store.
 - Apple Watch, iPhone and iPad support.
 - Standard padel scoring with games, sets and tie-breaks.
 - Fixed Points scoring for point-based formats.
