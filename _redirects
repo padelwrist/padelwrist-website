@@ -1,3 +1,8 @@
+# Serve the full PadelWrist dotted-P mark everywhere the legacy raster icon is requested.
+/assets/padelwrist-mark.png /assets/padelwrist-mark-v2.svg 302
+/favicon.png /assets/padelwrist-mark-v2.svg 302
+/favicon.ico /assets/padelwrist-mark-v2.svg 302
+
 # Canonicalise common index-file variants to the public trailing-slash URLs.
 /index / 301
 /index.html / 301
