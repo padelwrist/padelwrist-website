@@ -1,28 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
 <title id="title">PadelWrist social preview</title>
 <desc id="desc">PadelWrist padel scoring for Apple Watch, iPhone and iPad</desc>
+
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#07131e"/>
+    <stop offset="0" stop-color="#020711"/>
+    <stop offset="0.58" stop-color="#07131e"/>
     <stop offset="1" stop-color="#0d2433"/>
   </linearGradient>
-  <radialGradient id="glow" cx="78%" cy="20%" r="62%">
-    <stop offset="0" stop-color="#335fff" stop-opacity=".55"/>
+  <radialGradient id="blueGlow" cx="83%" cy="43%" r="48%">
+    <stop offset="0" stop-color="#335fff" stop-opacity=".52"/>
+    <stop offset=".52" stop-color="#335fff" stop-opacity=".16"/>
     <stop offset="1" stop-color="#335fff" stop-opacity="0"/>
   </radialGradient>
+  <linearGradient id="iconBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4168ff"/>
+    <stop offset="1" stop-color="#335fff"/>
+  </linearGradient>
+  <filter id="iconShadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000814" flood-opacity=".40"/>
+  </filter>
+  <filter id="dotShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="8" stdDeviation="5" flood-color="#2449d8" flood-opacity=".70"/>
+  </filter>
 </defs>
-<rect width="1200" height="630" rx="40" fill="url(#bg)"/>
-<rect width="1200" height="630" rx="40" fill="url(#glow)"/>
-<circle cx="1020" cy="116" r="8" fill="#ecfe00"/>
-<circle cx="1052" cy="116" r="8" fill="#8099f9"/>
-<circle cx="1084" cy="116" r="8" fill="#ff6b45"/>
-<image href="padelwrist-mark.png" x="84" y="94" width="116" height="116"/>
-<text x="236" y="148" fill="#f7f8fb" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">PadelWrist</text>
-<text x="84" y="310" fill="#f7f8fb" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700">Keep the score.</text>
-<text x="84" y="402" fill="#ecfe00" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700">Stay in the match.</text>
-<text x="84" y="492" fill="#b7c0cb" font-family="Arial, Helvetica, sans-serif" font-size="34">Padel scoring for Apple Watch, iPhone and iPad.</text>
-<g transform="translate(84 538)">
-  <rect width="286" height="52" rx="26" fill="#335fff"/>
-  <text x="143" y="35" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Available on the App Store</text>
+
+<rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+<rect width="1200" height="630" rx="36" fill="url(#blueGlow)"/>
+
+<!-- Wordmark -->
+<text x="76" y="92" fill="#ffffff" font-family="Arial, Helvetica, sans-serif"
+      font-size="30" font-weight="700" letter-spacing="6">PADELWRIST</text>
+
+<!-- Main proposition -->
+<text x="76" y="260" fill="#f7f8fb" font-family="Arial, Helvetica, sans-serif"
+      font-size="68" font-weight="700" letter-spacing="-2">KEEP THE SCORE.</text>
+<text x="76" y="350" fill="#ecfe00" font-family="Arial, Helvetica, sans-serif"
+      font-size="68" font-weight="700" letter-spacing="-2">STAY IN THE MATCH.</text>
+
+<text x="80" y="424" fill="#b7c0cb" font-family="Arial, Helvetica, sans-serif"
+      font-size="29" font-weight="400">Padel scoring for Apple Watch, iPhone and iPad.</text>
+
+<g transform="translate(80 480)">
+  <rect width="330" height="54" rx="27" fill="#335fff"/>
+  <text x="165" y="36" text-anchor="middle" fill="#ffffff"
+        font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">AVAILABLE ON THE APP STORE</text>
 </g>
+
+<!-- App icon, self-contained so social export cannot distort -->
+<g transform="translate(875 166) scale(.132)" filter="url(#iconShadow)">
+  <rect x="8" y="8" width="2032" height="2032" rx="405" fill="url(#iconBg)"/>
+  <g fill="#fff" filter="url(#dotShadow)">
+    <circle cx="602" cy="407" r="68"/><circle cx="782" cy="407" r="68"/><circle cx="962" cy="407" r="68"/><circle cx="1142" cy="407" r="68"/><circle cx="1322" cy="419" r="68"/>
+    <circle cx="602" cy="583" r="68"/><circle cx="782" cy="583" r="68"/><circle cx="962" cy="583" r="68"/><circle cx="1142" cy="583" r="68"/><circle cx="1322" cy="599" r="68"/><circle cx="1502" cy="575" r="68"/>
+    <circle cx="602" cy="759" r="68"/><circle cx="782" cy="759" r="68"/><circle cx="1398" cy="763" r="68"/><circle cx="1582" cy="755" r="68"/>
+    <circle cx="602" cy="935" r="68"/><circle cx="782" cy="935" r="68"/><circle cx="1398" cy="927" r="68"/><circle cx="1582" cy="935" r="68"/>
+    <circle cx="602" cy="1111" r="68"/><circle cx="782" cy="1111" r="68"/><circle cx="962" cy="1111" r="68"/><circle cx="1142" cy="1111" r="68"/><circle cx="1322" cy="1091" r="68"/><circle cx="1502" cy="1111" r="68"/>
+    <circle cx="602" cy="1287" r="68"/><circle cx="782" cy="1287" r="68"/><circle cx="962" cy="1287" r="68"/><circle cx="1142" cy="1287" r="68"/><circle cx="1322" cy="1267" r="68"/>
+    <circle cx="602" cy="1463" r="68"/><circle cx="782" cy="1463" r="68"/>
+    <circle cx="602" cy="1639" r="68"/><circle cx="782" cy="1639" r="68"/>
+  </g>
+</g>
+
+<circle cx="1051" cy="93" r="7" fill="#ecfe00"/>
+<circle cx="1081" cy="93" r="7" fill="#8099f9"/>
+<circle cx="1111" cy="93" r="7" fill="#ff6b45"/>
 </svg>
