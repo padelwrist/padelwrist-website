@@ -143,7 +143,7 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 }
 
 const APP_STORE_URL = 'https://apps.apple.com/gb/app/padelwrist/id6799725420';
-const APP_STORE_BADGE_URL = 'https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-gb?releaseDate=1787184000';
+const APP_STORE_BADGE_URL = '/assets/app-store-badge.svg';
 
 function makeAppStoreBadge(link, width = 150) {
   const height = Math.round(width * 83 / 250);
