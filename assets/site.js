@@ -142,37 +142,58 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
   revealItems.forEach((item) => observer.observe(item));
 }
 
-const APP_STORE_URL = '';
-function upgradeAppStoreCtas() {
-  if (!APP_STORE_URL) return;
+const APP_STORE_URL = 'https://apps.apple.com/gb/app/padelwrist/id6799725420';
+const APP_STORE_BADGE_URL = 'https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-gb?size=250x83';
 
+function makeAppStoreBadge(link, width = 150) {
+  const height = Math.round(width * 83 / 250);
+  link.href = APP_STORE_URL;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.classList.add('app-store-cta');
+  link.setAttribute('aria-label', 'Download PadelWrist on the App Store');
+  link.style.display = 'inline-flex';
+  link.style.width = `${width}px`;
+  link.style.height = `${height}px`;
+  link.style.padding = '0';
+  link.style.border = '0';
+  link.style.borderRadius = '0';
+  link.style.background = 'transparent';
+  link.style.boxShadow = 'none';
+  link.style.overflow = 'visible';
+  link.style.textDecoration = 'none';
+  link.innerHTML = `<img src="${APP_STORE_BADGE_URL}" alt="Download on the App Store" width="${width}" height="${height}" loading="lazy" style="display:block;width:100%;height:100%;object-fit:contain">`;
+  return link;
+}
+
+function upgradeAppStoreCtas() {
   document.querySelectorAll('[data-app-store-cta], .store-button').forEach((element) => {
     if (element.tagName === 'A') {
-      element.href = APP_STORE_URL;
-      element.target = '_blank';
-      element.rel = 'noopener';
-      element.classList.add('app-store-cta');
-      element.setAttribute('aria-label', 'Download PadelWrist on the App Store');
-      element.textContent = 'Download on the App Store';
+      makeAppStoreBadge(element, element.closest('.hero-v2-actions') ? 180 : 150);
       return;
     }
 
     const link = document.createElement('a');
-    link.className = `${element.className} app-store-cta`;
-    link.href = APP_STORE_URL;
-    link.target = '_blank';
-    link.rel = 'noopener';
-    link.setAttribute('aria-label', 'Download PadelWrist on the App Store');
-    link.textContent = 'Download on the App Store';
+    makeAppStoreBadge(link, element.closest('.hero-v2-actions') ? 180 : 150);
     element.replaceWith(link);
   });
 
-  if (isHome && window.matchMedia('(max-width: 760px)').matches) {
+  const footerBrand = document.querySelector('.site-footer .footer-grid > div');
+  if (footerBrand && !footerBrand.querySelector('[data-footer-app-store]')) {
+    const footerBadge = document.createElement('a');
+    footerBadge.dataset.footerAppStore = '';
+    footerBadge.style.marginTop = '18px';
+    makeAppStoreBadge(footerBadge, 150);
+    footerBrand.appendChild(footerBadge);
+  }
+
+  if (isHome && window.matchMedia('(max-width: 760px)').matches && !document.querySelector('.sticky-app-cta')) {
     const sticky = document.createElement('a');
     sticky.className = 'sticky-app-cta app-store-cta';
     sticky.href = APP_STORE_URL;
     sticky.target = '_blank';
-    sticky.rel = 'noopener';
+    sticky.rel = 'noopener noreferrer';
+    sticky.setAttribute('aria-label', 'Download PadelWrist on the App Store');
     sticky.innerHTML = '<span>Get PadelWrist</span><strong>App Store</strong>';
     document.body.appendChild(sticky);
     document.body.classList.add('has-sticky-app-cta');
