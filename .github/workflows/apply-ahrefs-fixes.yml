@@ -1,0 +1,30 @@
+name: Apply Ahrefs SEO fixes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/ahrefs-fixes.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply fixes
+        run: python scripts/ahrefs-fixes.py
+      - name: Commit generated fixes
+        run: |
+          if git diff --quiet; then
+            echo 'No changes required.'
+            exit 0
+          fi
+          git config user.name 'padelwrist'
+          git config user.email 'support@padelwrist.com'
+          git add '*.html' '*/index.html' 2>/dev/null || true
+          git commit -m 'Fix Ahrefs metadata issues'
+          git push
