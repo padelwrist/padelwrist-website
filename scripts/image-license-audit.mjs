@@ -24,18 +24,30 @@ let checked = 0;
 
 for (const file of await walk(root)) {
   const html = await readFile(file, 'utf8');
-  const urls = [...html.matchAll(/https:\/\/[^\s"'<>]+/g)].map((match) => match[0].replace(/&amp;/g, '&'));
+  const imageTags = [...html.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
 
-  for (const value of urls) {
-    let url;
-    try { url = new URL(value); } catch { continue; }
-    if (!externalImageHosts.has(url.hostname)) continue;
+  for (const tag of imageTags) {
+    const urls = [];
+    for (const attr of tag.matchAll(/\b(?:src|srcset)=["']([^"']+)["']/gi)) {
+      const value = attr[1].replace(/&amp;/g, '&');
+      if (/\bsrcset=/i.test(attr[0])) {
+        urls.push(...value.split(',').map((candidate) => candidate.trim().split(/\s+/)[0]).filter(Boolean));
+      } else {
+        urls.push(value);
+      }
+    }
 
-    checked++;
-    const base = `${url.origin}${url.pathname}`;
-    if (!approved.some((prefix) => base.startsWith(prefix))) {
-      console.error(`UNREVIEWED EXTERNAL IMAGE: ${path.relative(root, file)} -> ${base}`);
-      failures++;
+    for (const value of urls) {
+      let url;
+      try { url = new URL(value); } catch { continue; }
+      if (!externalImageHosts.has(url.hostname)) continue;
+
+      checked++;
+      const base = `${url.origin}${url.pathname}`;
+      if (!approved.some((prefix) => base.startsWith(prefix))) {
+        console.error(`UNREVIEWED EXTERNAL IMAGE: ${path.relative(root, file)} -> ${base}`);
+        failures++;
+      }
     }
   }
 }
