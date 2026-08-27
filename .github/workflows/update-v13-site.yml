@@ -1,0 +1,34 @@
+name: Update website for PadelWrist 1.3
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-v13-content.py'
+
+permissions:
+  contents: write
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply v1.3 content updates
+        run: python3 scripts/update-v13-content.py
+
+      - name: Commit generated website content
+        shell: bash
+        run: |
+          if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+            echo 'Website content already up to date.'
+            exit 0
+          fi
+          git config user.name 'PadelWrist Website Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html assets/site.js apple-watch-padel-scoring/index.html fixed-points-padel-scoring/index.html padel-match-history/index.html whats-new/index.html padel-player-statistics/index.html padel-match-sharing/index.html
+          git commit -m 'Update website for upcoming PadelWrist 1.3'
+          git push
