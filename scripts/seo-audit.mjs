@@ -139,8 +139,15 @@ for (const file of files) {
     }
   }
 
-  const ruleLike = /(rules|scoring|tie-break|golden-point|americano|mexicano|fixed-points)/.test(rel);
-  if (ruleLike && rel !== '404.html' && !/padelfip\.com|International Padel Federation/i.test(html)) {
+  const fipSourcePages = new Set([
+    'how-padel-scoring-works/index.html',
+    'padel-rules/index.html',
+    'padel-service-rules/index.html',
+    'padel-tie-break-rules/index.html',
+    'golden-point-vs-advantage/index.html',
+    'padel-scoring-formats/index.html'
+  ]);
+  if (fipSourcePages.has(rel) && !/padelfip\.com|International Padel Federation/i.test(html)) {
     console.warn(`WARN rules/scoring page has no visible FIP source reference: ${rel}`);
     warnings++;
   }
