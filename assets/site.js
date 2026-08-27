@@ -20,6 +20,7 @@ function standardiseChrome() {
       <a href="/#why">Why PadelWrist</a>
       <a href="/#features">Features</a>
       <a href="/guides/">Guides</a>
+      <a href="/whats-new/">What's next</a>
       <a href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Feedback</a>
       <a href="/support/">Support</a>
       <a href="/privacy/">Privacy</a>
@@ -52,6 +53,7 @@ function standardiseChrome() {
       <a href="/apple-watch-padel-scoring/">Apple Watch scoring</a>
       <a href="/how-padel-scoring-works/">Scoring rules</a>
       <a href="/padel-match-history/">Match history</a>
+      <a href="/whats-new/">What's next</a>
       <a href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Feedback</a>
       <a href="/support/">Support</a>
       <a href="/privacy/">Privacy</a>
