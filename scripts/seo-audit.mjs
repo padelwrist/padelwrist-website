@@ -3,6 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const skipDirs = new Set(['.git', 'node_modules']);
+const MIN_ARTICLE_WORDS = 400;
 
 async function walk(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
@@ -49,6 +50,18 @@ function flattenTypes(value, found = []) {
   if (value['@type']) found.push(value);
   Object.values(value).forEach((item) => flattenTypes(item, found));
   return found;
+}
+
+function visibleWordCount(html) {
+  const main = match(html, /<main\b[^>]*>([\s\S]*?)<\/main>/i) || html;
+  const text = main
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&(?:nbsp|amp|quot|apos|#39|#x27);/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return text ? text.split(/\s+/).length : 0;
 }
 
 const files = await walk(root);
@@ -117,6 +130,12 @@ for (const file of files) {
     if (!article.author) {
       console.warn(`WARN Article missing author: ${rel}`);
       warnings++;
+    }
+
+    const words = visibleWordCount(html);
+    if (words < MIN_ARTICLE_WORDS) {
+      console.error(`THIN Article (${words} visible words, minimum ${MIN_ARTICLE_WORDS}): ${rel}`);
+      failures++;
     }
   }
 
