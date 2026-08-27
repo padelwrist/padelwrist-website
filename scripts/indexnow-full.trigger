@@ -1,1 +1,1 @@
-Full sitemap IndexNow submission requested 2026-08-20
+Full sitemap IndexNow submission requested 2026-08-27
