@@ -1,0 +1,28 @@
+name: Publish PadelWrist 1.3 website content v2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/release-v13-live-v2.py'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: python3 scripts/release-v13-live-v2.py
+      - name: Commit website updates
+        shell: bash
+        run: |
+          git config user.name 'PadelWrist Website Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html assets/site.js whats-new/index.html padel-player-statistics/index.html padel-match-sharing/index.html padel-match-history/index.html apple-watch-padel-scoring/index.html fixed-points-padel-scoring/index.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Publish PadelWrist 1.3 website content'
+          git push
