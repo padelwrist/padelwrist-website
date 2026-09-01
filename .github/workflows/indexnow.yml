@@ -4,79 +4,44 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
 
 permissions:
   contents: read
+
+concurrency:
+  group: indexnow-full-site
+  cancel-in-progress: true
 
 jobs:
   indexnow:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Build URL list
-        id: urls
-        shell: bash
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          BEFORE_SHA: ${{ github.event.before }}
-        run: |
-          set -euo pipefail
-          : > urls.txt
-
-          full_submit='false'
-          if [ "$EVENT_NAME" = 'workflow_dispatch' ]; then
-            full_submit='true'
-          elif git diff --name-only "$BEFORE_SHA" HEAD | grep -qx 'scripts/indexnow-full.trigger'; then
-            full_submit='true'
-          fi
-
-          if [ "$full_submit" = 'true' ]; then
-            curl --fail --silent --show-error --retry 3 https://padelwrist.com/sitemap.xml \
-              | grep -oE '<loc>[^<]+</loc>' \
-              | sed -E 's#</?loc>##g' \
-              | grep -E '^https://padelwrist\.com/' \
-              | sort -u > urls.txt
-          else
-            base="$BEFORE_SHA"
-            if [ -z "$base" ] || [ "$base" = '0000000000000000000000000000000000000000' ]; then
-              base="HEAD^"
-            fi
-
-            git diff --name-status "$base" HEAD | while read -r status path rest; do
-              candidate="$path"
-              if [[ "$status" == R* ]]; then
-                candidate="$path"
-                new_path="$rest"
-                for p in "$candidate" "$new_path"; do
-                  if [ "$p" = 'index.html' ]; then
-                    echo 'https://padelwrist.com/'
-                  elif [[ "$p" =~ ^([^/]+)/index\.html$ ]]; then
-                    echo "https://padelwrist.com/${BASH_REMATCH[1]}/"
-                  fi
-                done
-              else
-                if [ "$candidate" = 'index.html' ]; then
-                  echo 'https://padelwrist.com/'
-                elif [[ "$candidate" =~ ^([^/]+)/index\.html$ ]]; then
-                  echo "https://padelwrist.com/${BASH_REMATCH[1]}/"
-                fi
-              fi
-            done | sort -u > urls.txt
-          fi
-
-          count="$(wc -l < urls.txt | tr -d ' ')"
-          echo "count=$count" >> "$GITHUB_OUTPUT"
-          cat urls.txt
 
       - name: Wait for Cloudflare deployment
-        if: steps.urls.outputs.count != '0'
+        if: github.event_name == 'push'
         run: sleep 60
 
+      - name: Build full sitemap URL list
+        id: urls
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --retry 5 --retry-delay 10 https://padelwrist.com/sitemap.xml \
+            | grep -oE '<loc>[^<]+</loc>' \
+            | sed -E 's#</?loc>##g' \
+            | grep -E '^https://padelwrist\.com/' \
+            | sort -u > urls.txt
+
+          count="$(wc -l < urls.txt | tr -d ' ')"
+          test "$count" -gt 0
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "Submitting the full sitemap: $count URL(s)"
+          cat urls.txt
+
       - name: Verify IndexNow key is live
-        if: steps.urls.outputs.count != '0'
         shell: bash
         env:
           INDEXNOW_KEY: 66805d2275b749c9b7cc0cf2e9c19d95
@@ -85,8 +50,7 @@ jobs:
           value="$(curl --fail --silent --show-error --retry 5 --retry-delay 10 "https://padelwrist.com/${INDEXNOW_KEY}.txt")"
           test "$value" = "$INDEXNOW_KEY"
 
-      - name: Submit URLs to IndexNow
-        if: steps.urls.outputs.count != '0'
+      - name: Submit full sitemap to IndexNow
         shell: bash
         env:
           INDEXNOW_KEY: 66805d2275b749c9b7cc0cf2e9c19d95
@@ -110,7 +74,3 @@ jobs:
           echo
           echo "IndexNow HTTP status: $status"
           case "$status" in 200|202) exit 0 ;; *) exit 1 ;; esac
-
-      - name: No page URLs changed
-        if: steps.urls.outputs.count == '0'
-        run: echo 'No indexable page URLs changed, so there is nothing to submit.'
