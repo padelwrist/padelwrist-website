@@ -55,7 +55,6 @@ function standardiseChrome() {
       <a href="/how-padel-scoring-works/">Scoring rules</a>
       <a href="/padel-match-history/">Match history</a>
       <a href="/padel-player-statistics/">Insights</a>
-      <a href="/padel-player-statistics/">Insights</a>
       <a href="/whats-new/">What's new</a>
       <a href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Feedback</a>
       <a href="/support/">Support</a>
@@ -192,17 +191,6 @@ function upgradeAppStoreCtas() {
     footerBrand.appendChild(footerBadge);
   }
 
-  if (footerBrand && !footerBrand.querySelector('[data-startupbase-badge]')) {
-    const startupBaseBadge = document.createElement('a');
-    startupBaseBadge.dataset.startupbaseBadge = '';
-    startupBaseBadge.href = 'https://startupbase.io/products/padelwrist?utm_source=startupbase&utm_medium=badge&utm_campaign=launch-badge-light';
-    startupBaseBadge.target = '_blank';
-    startupBaseBadge.rel = 'noopener noreferrer';
-    startupBaseBadge.style.display = 'inline-flex';
-    startupBaseBadge.style.marginTop = '14px';
-    startupBaseBadge.innerHTML = '<img src="https://statics.startupbase.io/site/badges/launched-on-sb.svg" alt="Launched on StartupBase" height="55" style="height:55px;width:auto;">';
-    footerBrand.appendChild(startupBaseBadge);
-  }
 
   if (isHome && window.matchMedia('(max-width: 760px)').matches && !document.querySelector('.sticky-app-cta')) {
     const sticky = document.createElement('a');

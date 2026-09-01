@@ -45,22 +45,19 @@
   --pw-normal: 300ms;
 }
 
-/* Keep third-party footer badges visually aligned without altering their artwork. */
-.site-footer [data-footer-app-store],
-.site-footer [data-startupbase-badge] {
+/* Keep the App Store badge aligned as a secondary footer action. */
+.site-footer [data-footer-app-store] {
+  display: flex !important;
+  width: 150px !important;
   height: 50px !important;
   margin-top: 18px !important;
-  vertical-align: top;
   align-items: center;
 }
-.site-footer [data-footer-app-store] img,
-.site-footer [data-startupbase-badge] img {
+.site-footer [data-footer-app-store] img {
+  display: block;
+  width: 150px !important;
   height: 50px !important;
-  width: auto !important;
   object-fit: contain;
-}
-.site-footer [data-startupbase-badge] {
-  margin-left: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -76,7 +73,4 @@
     --pw-grid-gap: 16px;
   }
 
-  .site-footer [data-startupbase-badge] {
-    margin-left: 8px;
-  }
 }
