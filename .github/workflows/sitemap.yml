@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: padelwrist-seo-content-writes
+  cancel-in-progress: false
+
 jobs:
   sitemap:
     runs-on: ubuntu-latest
@@ -57,6 +61,7 @@ jobs:
       - name: Commit sitemap when dates or pages change
         shell: bash
         run: |
+          set -euo pipefail
           if git diff --quiet -- sitemap.xml; then
             echo 'Sitemap already current.'
             exit 0
@@ -65,4 +70,5 @@ jobs:
           git config user.email 'actions@users.noreply.github.com'
           git add sitemap.xml
           git commit -m 'Refresh sitemap freshness metadata'
-          git push
+          git pull --rebase origin main
+          git push origin main
