@@ -35,22 +35,62 @@ Insights use recorded match history to show useful patterns such as recent form,
 
 The main guide index is https://padelwrist.com/guides/. Rules-based articles use the International Padel Federation as the primary official source and display review dates where current rule status matters. Tactical and technique articles explain commonly taught padel principles without presenting coaching advice as official rules. Social formats are described as common formats because organiser rules vary.
 
-Key references include:
+Knowledge-base pages:
 
-- https://padelwrist.com/padel-rules/
-- https://padelwrist.com/how-padel-scoring-works/
-- https://padelwrist.com/star-point-padel-scoring/
-- https://padelwrist.com/padel-service-rules/
-- https://padelwrist.com/padel-let-rules/
-- https://padelwrist.com/common-padel-faults/
-- https://padelwrist.com/padel-wall-rules/
-- https://padelwrist.com/padel-tie-break-rules/
-- https://padelwrist.com/padel-scoring-formats/
-- https://padelwrist.com/padel-glossary/
-- https://padelwrist.com/how-to-hit-vibora-padel/
-- https://padelwrist.com/how-to-play-bajada-padel/
-- https://padelwrist.com/improve-padel-serve-control/
-- https://padelwrist.com/what-to-do-after-serving-padel/
+- Americano Padel Scoring Explained: https://padelwrist.com/americano-padel-scoring/
+- Bandeja vs Víbora vs Smash in Padel: https://padelwrist.com/bandeja-vs-vibora-vs-smash/
+- Can You Play Padel Singles?: https://padelwrist.com/can-you-play-padel-singles/
+- Chiquita vs Drop Shot in Padel: What Is the Difference?: https://padelwrist.com/chiquita-vs-drop-shot-padel/
+- Common Padel Beginner Mistakes and How to Fix Them: https://padelwrist.com/common-padel-beginner-mistakes/
+- Common Padel Faults: How You Lose a Point: https://padelwrist.com/common-padel-faults/
+- How to Communicate With Your Padel Partner: https://padelwrist.com/communicate-with-padel-partner/
+- How to Defend the Corner Glass in Padel: https://padelwrist.com/defend-corner-glass-padel/
+- How to Defend Fast Balls Off the Back Glass in Padel: https://padelwrist.com/defend-fast-balls-back-glass-padel/
+- How to Play a Double-Glass Rebound in Padel: https://padelwrist.com/double-glass-padel/
+- Your First Padel Game: What to Expect: https://padelwrist.com/first-padel-game/
+- Fixed Points Padel Scoring Explained: https://padelwrist.com/fixed-points-padel-scoring/
+- Golden Point vs Advantage vs Star Point in Padel: https://padelwrist.com/golden-point-vs-advantage/
+- How Long Does a Padel Match Last?: https://padelwrist.com/how-long-does-a-padel-match-last/
+- Padel Scoring: Games, Sets & Tie-Breaks: https://padelwrist.com/how-padel-scoring-works/
+- How to Hit a Bandeja in Padel: Technique & Mistakes: https://padelwrist.com/how-to-hit-bandeja-padel/
+- How to Hit a Víbora in Padel: https://padelwrist.com/how-to-hit-vibora-padel/
+- How to Keep Score in Padel: A Practical Match Guide: https://padelwrist.com/how-to-keep-score-in-padel/
+- How to Play a Bajada in Padel: https://padelwrist.com/how-to-play-bajada-padel/
+- How to Return Serve in Padel: Position & Shot Choice: https://padelwrist.com/how-to-return-serve-padel/
+- How to Improve Your Padel Serve: https://padelwrist.com/improve-padel-serve-control/
+- How to Play With a Left-Handed Padel Partner: https://padelwrist.com/left-handed-padel-partner/
+- Left vs Right Side in Padel: Which Should You Play?: https://padelwrist.com/left-vs-right-side-padel/
+- Mexicano Padel Scoring Explained: https://padelwrist.com/mexicano-padel-scoring/
+- How to Move as a Pair in Padel: https://padelwrist.com/move-as-pair-padel/
+- Padel Ball vs Tennis Ball: Are They the Same?: https://padelwrist.com/padel-ball-vs-tennis-ball/
+- Padel Court Dimensions: Size, Walls, Net & Layout: https://padelwrist.com/padel-court-dimensions/
+- Padel Equipment for Beginners: What You Actually Need: https://padelwrist.com/padel-equipment-for-beginners/
+- Padel Etiquette: The Unwritten Rules of a Good Match: https://padelwrist.com/padel-etiquette/
+- Padel Glossary: 60+ Terms Explained: https://padelwrist.com/padel-glossary/
+- Padel Let Rules: Net Cords, Serves & Replays: https://padelwrist.com/padel-let-rules/
+- Padel Positioning for Beginners: Where Should You Stand?: https://padelwrist.com/padel-positioning-for-beginners/
+- Padel Racket Shapes: Round, Teardrop or Diamond?: https://padelwrist.com/padel-racket-shapes/
+- Padel Rules 2026: Serving, Walls, Scoring & Faults: https://padelwrist.com/padel-rules/
+- Padel Scoring Formats: Advantage, Golden & Star Point: https://padelwrist.com/padel-scoring-formats/
+- Padel Service Rules 2026: Bounce, Height, Boxes & Order: https://padelwrist.com/padel-service-rules/
+- Padel Shots Explained: Bandeja, Víbora, Chiquita & More: https://padelwrist.com/padel-shots-guide/
+- Padel Tie-Break Rules: Scoring & Serve Order: https://padelwrist.com/padel-tie-break-rules/
+- How to Volley in Padel Without Overhitting: https://padelwrist.com/padel-volley-without-overhitting/
+- Padel vs Pickleball: What's the Difference?: https://padelwrist.com/padel-vs-pickleball/
+- Padel vs Tennis: What's Different?: https://padelwrist.com/padel-vs-tennis/
+- Padel Wall Rules: When the Glass Is In Play: https://padelwrist.com/padel-wall-rules/
+- When Should You Play Through the Middle in Padel?: https://padelwrist.com/play-middle-padel/
+- How to Play Against Tennis Players in Padel: https://padelwrist.com/playing-against-tennis-players-padel/
+- Return a Padel Serve Off the Glass: https://padelwrist.com/return-padel-serve-off-glass/
+- Star Point Padel Scoring Explained: https://padelwrist.com/star-point-padel-scoring/
+- How to Stop Getting Lobbed in Padel: https://padelwrist.com/stop-getting-lobbed-padel/
+- What Is Padel? A Beginner's Guide to the Sport: https://padelwrist.com/what-is-padel/
+- What to Do After Serving in Padel: https://padelwrist.com/what-to-do-after-serving-padel/
+- When Should You Lob in Padel? Timing, Depth & Net Control: https://padelwrist.com/when-to-lob-padel/
+- When Should You Let the Ball Hit the Glass in Padel?: https://padelwrist.com/when-to-use-glass-padel/
+- Who Should Take the Middle Ball in Padel?: https://padelwrist.com/who-takes-middle-ball-padel/
+- Why Net Position Matters So Much in Padel: https://padelwrist.com/why-net-position-matters-padel/
+- What Happens If the Wrong Player Serves in Padel?: https://padelwrist.com/wrong-server-padel/
 
 ## Editorial and source notes
 
