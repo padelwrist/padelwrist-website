@@ -4,6 +4,17 @@ import path from 'node:path';
 const root = process.cwd();
 const skipDirs = new Set(['.git', 'node_modules']);
 const MIN_ARTICLE_WORDS = 400;
+const PRODUCT_PROMOTION_SIGNALS = [
+  'apps.apple.com/gb/app/padelwrist',
+  '/padel-score-tracker/',
+  '/apple-watch-padel-scoring/',
+  '/apple-watch-vs-phone-padel-scoring/',
+  '/live-padel-score-iphone/',
+  '/padel-match-history/',
+  '/padel-player-statistics/',
+  '/padel-match-sharing/'
+];
+const PRODUCT_PROMOTION_EXEMPT = new Set(['editorial-policy/index.html']);
 
 async function walk(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
@@ -135,6 +146,11 @@ for (const file of files) {
     const words = visibleWordCount(html);
     if (words < MIN_ARTICLE_WORDS) {
       console.error(`THIN Article (${words} visible words, minimum ${MIN_ARTICLE_WORDS}): ${rel}`);
+      failures++;
+    }
+
+    if (!PRODUCT_PROMOTION_EXEMPT.has(rel) && !PRODUCT_PROMOTION_SIGNALS.some((signal) => html.includes(signal))) {
+      console.error(`MISSING PadelWrist product/app route: ${rel}`);
       failures++;
     }
   }
