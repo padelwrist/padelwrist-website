@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: padelwrist-seo-content-writes
+  cancel-in-progress: false
+
 jobs:
   backfill:
     runs-on: ubuntu-latest
@@ -25,12 +29,14 @@ jobs:
       - name: Commit updated knowledge pages
         shell: bash
         run: |
+          set -euo pipefail
           if git diff --quiet -- '*/index.html'; then
             echo 'All relevant article pages already promote PadelWrist.'
             exit 0
           fi
           git config user.name 'PadelWrist SEO Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add '*/index.html'
+          git add -- '*/index.html'
           git commit -m 'Backfill PadelWrist app CTAs across knowledge base'
-          git push
+          git pull --rebase origin main
+          git push origin main
