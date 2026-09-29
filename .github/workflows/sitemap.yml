@@ -1,4 +1,4 @@
-name: Refresh sitemap
+name: Refresh discovery files and submit IndexNow
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
     paths:
       - 'index.html'
       - '*/index.html'
-      - '!support/index.html'
-      - '!privacy/index.html'
+      - 'scripts/generate-llms.py'
+      - '.github/workflows/sitemap.yml'
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  sitemap:
+  discovery:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -55,20 +55,70 @@ jobs:
 
             echo '</urlset>'
           } > sitemap.xml.new
-
           mv sitemap.xml.new sitemap.xml
 
-      - name: Commit sitemap when dates or pages change
+      - name: Generate llms.txt
+        run: python3 scripts/generate-llms.py
+
+      - name: Commit discovery files when content changes
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- sitemap.xml; then
-            echo 'Sitemap already current.'
-            exit 0
+          if git diff --quiet -- sitemap.xml llms.txt; then
+            echo 'sitemap.xml and llms.txt are already current.'
+          else
+            git config user.name 'PadelWrist SEO Bot'
+            git config user.email 'actions@users.noreply.github.com'
+            git add sitemap.xml llms.txt
+            git commit -m 'Refresh sitemap and llms discovery files'
+            git pull --rebase origin main
+            git push origin main
           fi
-          git config user.name 'PadelWrist SEO Bot'
-          git config user.email 'actions@users.noreply.github.com'
-          git add sitemap.xml
-          git commit -m 'Refresh sitemap freshness metadata'
-          git pull --rebase origin main
-          git push origin main
+
+      - name: Wait for Cloudflare deployment
+        run: sleep 75
+
+      - name: Build URL list from generated sitemap
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -oE '<loc>[^<]+</loc>' sitemap.xml \
+            | sed -E 's#</?loc>##g' \
+            | grep -E '^https://padelwrist\.com/' \
+            | sort -u > urls.txt
+          count="$(wc -l < urls.txt | tr -d ' ')"
+          test "$count" -gt 0
+          echo "Submitting $count URL(s) to IndexNow"
+
+      - name: Verify IndexNow key is live
+        shell: bash
+        env:
+          INDEXNOW_KEY: 66805d2275b749c9b7cc0cf2e9c19d95
+        run: |
+          set -euo pipefail
+          value="$(curl --fail --silent --show-error --retry 5 --retry-delay 10 "https://padelwrist.com/${INDEXNOW_KEY}.txt")"
+          test "$value" = "$INDEXNOW_KEY"
+
+      - name: Submit generated sitemap URLs to IndexNow
+        shell: bash
+        env:
+          INDEXNOW_KEY: 66805d2275b749c9b7cc0cf2e9c19d95
+          SITE_HOST: padelwrist.com
+        run: |
+          set -euo pipefail
+          url_list="$(jq -R . < urls.txt | jq -s .)"
+          payload="$(jq -n \
+            --arg host "$SITE_HOST" \
+            --arg key "$INDEXNOW_KEY" \
+            --arg keyLocation "https://padelwrist.com/${INDEXNOW_KEY}.txt" \
+            --argjson urlList "$url_list" \
+            '{host:$host,key:$key,keyLocation:$keyLocation,urlList:$urlList}')"
+
+          response_file="$(mktemp)"
+          status="$(curl --silent --show-error --output "$response_file" --write-out '%{http_code}' \
+            --header 'Content-Type: application/json; charset=utf-8' \
+            --data "$payload" https://api.indexnow.org/indexnow)"
+          cat "$response_file" || true
+          echo
+          echo "IndexNow HTTP status: $status"
+          case "$status" in 200|202) exit 0 ;; *) exit 1 ;; esac

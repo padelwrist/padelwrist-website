@@ -1,13 +1,6 @@
-name: Refresh llms.txt
+name: Refresh llms.txt manually
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'index.html'
-      - '*/index.html'
-      - 'scripts/generate-llms.py'
-      - '.github/workflows/llms.yml'
   workflow_dispatch:
 
 permissions:

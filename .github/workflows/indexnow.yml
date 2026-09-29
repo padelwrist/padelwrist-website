@@ -1,8 +1,6 @@
 name: Submit URLs to IndexNow
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
@@ -20,12 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Wait for Cloudflare deployment
-        if: github.event_name == 'push'
-        run: sleep 60
-
       - name: Build full sitemap URL list
-        id: urls
         shell: bash
         run: |
           set -euo pipefail
@@ -37,7 +30,6 @@ jobs:
 
           count="$(wc -l < urls.txt | tr -d ' ')"
           test "$count" -gt 0
-          echo "count=$count" >> "$GITHUB_OUTPUT"
           echo "Submitting the full sitemap: $count URL(s)"
           cat urls.txt
 
@@ -65,7 +57,6 @@ jobs:
             --argjson urlList "$url_list" \
             '{host:$host,key:$key,keyLocation:$keyLocation,urlList:$urlList}')"
 
-          echo "Submitting $(wc -l < urls.txt) URL(s) to IndexNow..."
           response_file="$(mktemp)"
           status="$(curl --silent --show-error --output "$response_file" --write-out '%{http_code}' \
             --header 'Content-Type: application/json; charset=utf-8' \
