@@ -19,12 +19,10 @@ function standardiseChrome() {
     nav.innerHTML = `
       <a href="/#why">Why PadelWrist</a>
       <a href="/#features">Features</a>
-      <a href="/guides/">Guides</a>
       <a href="/padel-player-statistics/">Insights</a>
       <a href="/whats-new/">What's new</a>
-      <a href="https://padelwrist.fider.io/" target="_blank" rel="noopener">Feedback</a>
+      <a href="/guides/">Guides</a>
       <a href="/support/">Support</a>
-      <a href="/privacy/">Privacy</a>
     `;
 
     if (isGuidesHub || (isInnerPage && !isSupport && !isPrivacy)) {
