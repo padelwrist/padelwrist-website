@@ -1,6 +1,8 @@
 name: Submit URLs to IndexNow
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
@@ -17,6 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Wait for Cloudflare deployment
+        if: github.event_name == 'push'
+        run: sleep 60
 
       - name: Build full sitemap URL list
         shell: bash
