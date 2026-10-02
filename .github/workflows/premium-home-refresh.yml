@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/premium-home-refresh.py'
+      - '.github/workflows/premium-home-refresh.yml'
 
 permissions:
   contents: write
