@@ -10,39 +10,64 @@
   }
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.gsap || !window.ScrollTrigger) return;
+
+  const { gsap, ScrollTrigger } = window;
+  gsap.registerPlugin(ScrollTrigger);
 
   const heroImage = document.querySelector('.hero-v2-media img');
-  const storyImage = document.querySelector('.story-photo img');
-  const finalImage = document.querySelector('.final-v2 img');
-  let ticking = false;
-
-  function updateMotion() {
-    const y = window.scrollY || 0;
-    if (heroImage) {
-      heroImage.style.transform = `translate3d(0, ${Math.min(y * 0.08, 48)}px, 0) scale(1.045)`;
-    }
-
-    [storyImage, finalImage].forEach((image) => {
-      if (!image) return;
-      const surface = image.closest('figure, section');
-      const rect = surface?.getBoundingClientRect();
-      if (!rect) return;
-      const viewport = window.innerHeight || 1;
-      const progress = (viewport - rect.top) / (viewport + rect.height);
-      const offset = Math.max(-18, Math.min(18, (progress - 0.5) * 36));
-      image.style.transform = `translate3d(0, ${offset}px, 0) scale(1.04)`;
+  if (heroImage) {
+    gsap.set(heroImage, { scale: 1.045 });
+    gsap.to(heroImage, {
+      yPercent: 8,
+      scale: 1.085,
+      ease: 'none',
+      scrollTrigger: { trigger: '.hero-v2', start: 'top top', end: 'bottom top', scrub: true }
     });
-
-    ticking = false;
   }
 
-  function requestUpdate() {
-    if (ticking) return;
-    ticking = true;
-    window.requestAnimationFrame(updateMotion);
-  }
+  gsap.from('.hero-v2-copy > *', {
+    y: 24,
+    opacity: 0,
+    duration: .85,
+    stagger: .09,
+    ease: 'power3.out',
+    delay: .12
+  });
 
-  window.addEventListener('scroll', requestUpdate, { passive: true });
-  window.addEventListener('resize', requestUpdate);
-  requestUpdate();
+  gsap.utils.toArray('.product-shot').forEach((shot, index) => {
+    gsap.fromTo(shot,
+      { y: 52 + (index * 12), scale: .965 },
+      {
+        y: 0,
+        scale: 1,
+        ease: 'power2.out',
+        scrollTrigger: { trigger: shot, start: 'top 88%', end: 'top 48%', scrub: 1 }
+      }
+    );
+
+    const image = shot.querySelector('img');
+    if (image) {
+      gsap.fromTo(image,
+        { scale: .94 },
+        {
+          scale: 1.025,
+          ease: 'none',
+          scrollTrigger: { trigger: shot, start: 'top bottom', end: 'bottom top', scrub: true }
+        }
+      );
+    }
+  });
+
+  gsap.utils.toArray('.story-photo img, .editorial-card img, .final-v2 img').forEach((image) => {
+    gsap.fromTo(image,
+      { scale: 1.015, yPercent: -2 },
+      {
+        scale: 1.065,
+        yPercent: 3,
+        ease: 'none',
+        scrollTrigger: { trigger: image.parentElement, start: 'top bottom', end: 'bottom top', scrub: true }
+      }
+    );
+  });
 })();

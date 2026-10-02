@@ -54,6 +54,8 @@
   <link rel="stylesheet" href="/assets/site.css">
   <link rel="stylesheet" href="/assets/home.css">
   <script src="/assets/site.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
   <script src="/assets/motion.js" defer></script>
 </head>
 <body class="home-simple home-v2">
@@ -78,7 +80,7 @@
           <a class="hero-v2-primary" data-app-store-cta href="https://apps.apple.com/gb/app/padelwrist/id6799725420" target="_blank" rel="noopener noreferrer" aria-label="Download PadelWrist on the App Store">Download on the App Store</a>
           <a class="hero-v2-secondary" href="#features">See what it does <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="hero-v2-meta"><span>Apple Watch first</span><span>Insights after every match</span><span>No account required</span></div>
+        <p class="hero-v2-meta">Apple Watch first · Insights after every match · No PadelWrist account required</p>
       </div>
       <aside class="hero-product-card reveal" aria-label="PadelWrist live match preview">
         <div class="hero-product-top"><img class="hero-product-icon" src="/assets/padelwrist-mark-v2.svg" alt="PadelWrist app icon"><span class="hero-product-badge">Live match</span></div>
@@ -115,10 +117,21 @@
         <h2 class="section-display">The interface changes with the moment.</h2>
         <p>During play, the score stays simple and immediate. Before and after, iPhone and iPad take over setup, searchable Match History, Insights, player analysis, notes and sharing. Each device does the job it is best at.</p>
       </div>
-      <div class="device-stack reveal" aria-label="Illustrative PadelWrist interface across Apple Watch, iPhone and iPad">
-        <div class="device-panel device-watch"><div class="device-label"><span>Apple Watch</span><span>Live</span></div><div class="device-screen-title">Team One serving</div><div class="score-pair"><div><small>Team One</small><b>40</b></div><div><small>Team Two</small><b>30</b></div></div><div class="match-row"><span>Games</span><strong>4–3</strong></div><div class="match-row"><span>Sets</span><strong>1–0</strong></div></div>
-        <div class="device-panel device-phone"><div class="device-label"><span>iPhone</span><span>Match</span></div><div class="device-screen-title">Match in progress</div><div class="score-pair"><div><small>Team One</small><b>40</b></div><div><small>Team Two</small><b>30</b></div></div><div class="match-row"><span>Server</span><strong>Team One</strong></div><div class="match-row"><span>Format</span><strong>Standard</strong></div><div class="match-row"><span>Insights</span><strong>Recent form</strong></div></div>
-        <div class="device-panel device-pad"><div class="device-label"><span>iPad</span><span>Courtside</span></div><div class="device-screen-title">A bigger view of the same match.</div><div class="match-row"><span>Team One</span><strong>40 · 4 · 1</strong></div><div class="match-row"><span>Team Two</span><strong>30 · 3 · 0</strong></div></div>
+      <div class="product-showcase reveal" aria-label="Real PadelWrist app screens">
+        <figure class="product-shot product-shot-primary">
+          <div class="product-shot-frame"><img src="/assets/iphone-play.png" alt="PadelWrist play screen on iPhone" loading="lazy" decoding="async"></div>
+          <figcaption><strong>Set up on iPhone.</strong><span>Players, format and match details are ready before the first serve.</span></figcaption>
+        </figure>
+        <div class="product-showcase-side">
+          <figure class="product-shot product-shot-watch">
+            <div class="product-shot-frame"><img src="/assets/watch-fixedpoints.png" alt="PadelWrist Fixed Points scoring on Apple Watch" loading="lazy" decoding="async"></div>
+            <figcaption><strong>Score from your wrist.</strong><span>The live interaction stays fast enough to disappear between rallies.</span></figcaption>
+          </figure>
+          <figure class="product-shot product-shot-secondary">
+            <div class="product-shot-frame"><img src="/assets/iphone-standardmatch.png" alt="PadelWrist Standard Match setup on iPhone" loading="lazy" decoding="async"></div>
+            <figcaption><strong>Keep the match useful afterwards.</strong><span>History and Insights turn a finished score into something you can learn from.</span></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
