@@ -1,0 +1,29 @@
+name: Apply premium homepage refresh
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/premium-home-refresh.py'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply gpt-taste homepage pass
+        run: python3 scripts/premium-home-refresh.py
+      - name: Commit premium homepage changes
+        shell: bash
+        run: |
+          git config user.name 'PadelWrist Website Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html assets/home.css assets/motion.js
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refine PadelWrist homepage visual design'
+          git push
