@@ -28,8 +28,16 @@ const report = [];
 for (const [viewportName, width, height] of viewports) {
   for (const [pageName, pathname] of pages) {
     const page = await browser.newPage({ viewport: { width, height }, deviceScaleFactor: 1 });
-    await page.goto(`${base}${pathname}`, { waitUntil: 'networkidle' });
+    await page.route('**/*', async (route) => {
+      const url = route.request().url();
+      if (url.startsWith(base) || url.startsWith('data:')) return route.continue();
+      if (/fonts\.gstatic\.com|cdn\.jsdelivr\.net/.test(url)) return route.continue();
+      if (/images\.unsplash\.com|images\.pexels\.com/.test(url)) return route.abort();
+      return route.continue();
+    });
     await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto(`${base}${pathname}`, { waitUntil: 'domcontentloaded', timeout: 15000 });
+    await page.waitForTimeout(250);
 
     const diagnostics = await page.evaluate(() => {
       const rect = (selector) => {
@@ -42,21 +50,17 @@ for (const [viewportName, width, height] of viewports) {
         const el = document.querySelector(selector);
         return el ? getComputedStyle(el).getPropertyValue(prop).trim() : null;
       };
-      const allRects = [...document.querySelectorAll('main section, main article, main aside, .page-heading, .story-card, .role-v2, .editorial-card, .product-shot')].map((el) => {
+      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot')].map((el) => {
         const r = el.getBoundingClientRect();
         return { tag: el.tagName, cls: el.className, x: r.x, y: r.y, width: r.width, height: r.height };
       });
       const overlaps = [];
-      for (let i = 0; i < allRects.length; i++) {
-        for (let j = i + 1; j < allRects.length; j++) {
-          const a = allRects[i], b = allRects[j];
+      for (let i = 0; i < candidates.length; i++) {
+        for (let j = i + 1; j < candidates.length; j++) {
+          const a = candidates[i], b = candidates[j];
           const overlapX = Math.max(0, Math.min(a.x + a.width, b.x + b.width) - Math.max(a.x, b.x));
           const overlapY = Math.max(0, Math.min(a.y + a.height, b.y + b.height) - Math.max(a.y, b.y));
-          if (overlapX > 2 && overlapY > 2) {
-            const contains = (a.x <= b.x && a.y <= b.y && a.x + a.width >= b.x + b.width && a.y + a.height >= b.y + b.height) ||
-              (b.x <= a.x && b.y <= a.y && b.x + b.width >= a.x + a.width && b.y + b.height >= a.y + a.height);
-            if (!contains) overlaps.push([a.cls || a.tag, b.cls || b.tag]);
-          }
+          if (overlapX > 2 && overlapY > 2) overlaps.push([a.cls || a.tag, b.cls || b.tag]);
         }
       }
       return {
@@ -95,3 +99,4 @@ await fs.writeFile(path.join(outDir, 'report.json'), JSON.stringify(report, null
 
 const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length);
 console.log(JSON.stringify({ pages: report.length, failures: failures.length, failureDetails: failures }, null, 2));
+if (failures.length) process.exitCode = 1;
