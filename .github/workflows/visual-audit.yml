@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - design/m3-system-audit
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
