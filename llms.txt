@@ -2,7 +2,7 @@
 
 > PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad, plus a practical padel knowledge base covering rules, scoring, tactics, technique, equipment and social formats.
 
-Last updated: 2026-09-29.
+Last updated: 2026-10-02.
 
 ## Product status
 
