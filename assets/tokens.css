@@ -1,5 +1,3 @@
-@import url('/assets/postlaunch.css');
-
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -10,67 +8,110 @@
 }
 
 :root {
+  /* Brand */
   --pw-blue: #335fff;
   --pw-navy: #0d2433;
   --pw-neon: #ecfe00;
   --pw-lilac: #8099f9;
   --pw-orange: #ff6b45;
   --pw-black: #000000;
+
+  /* Material-style colour roles, expressed in PadelWrist colours */
   --pw-bg: #020711;
+  --pw-surface: #07111d;
+  --pw-surface-1: #0a1623;
+  --pw-surface-2: #0d1d2b;
+  --pw-surface-3: #102434;
+  --pw-primary-container: rgba(51, 95, 255, .16);
+  --pw-secondary-container: rgba(128, 153, 249, .12);
+  --pw-error-container: rgba(255, 107, 69, .10);
   --pw-text: #f7f8fb;
-  --pw-muted: rgba(247, 248, 251, .64);
-  --pw-faint: rgba(247, 248, 251, .52);
-  --pw-line: rgba(255, 255, 255, .10);
+  --pw-muted: rgba(247, 248, 251, .68);
+  --pw-faint: rgba(247, 248, 251, .50);
+  --pw-outline: rgba(247, 248, 251, .18);
+  --pw-outline-variant: rgba(247, 248, 251, .10);
+  --pw-line: var(--pw-outline-variant);
 
-  --pw-surface-1: rgba(13, 36, 51, .32);
-  --pw-surface-2: rgba(18, 44, 62, .48);
-  --pw-surface-blue: rgba(51, 95, 255, .14);
-  --pw-surface-lilac: rgba(128, 153, 249, .11);
-
+  /* Type roles: Material 3 scale adapted to Montserrat + SF/system */
   --pw-display: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --pw-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", sans-serif;
+  --type-display-lg: clamp(52px, 6.6vw, 88px);
+  --type-display-lg-line: .96;
+  --type-display-md: clamp(44px, 5vw, 64px);
+  --type-display-md-line: 1;
+  --type-headline-lg: 32px;
+  --type-headline-lg-line: 40px;
+  --type-headline-md: 28px;
+  --type-headline-md-line: 36px;
+  --type-title-lg: 22px;
+  --type-title-lg-line: 28px;
+  --type-title-md: 16px;
+  --type-title-md-line: 24px;
+  --type-body-lg: 16px;
+  --type-body-lg-line: 24px;
+  --type-body-md: 14px;
+  --type-body-md-line: 20px;
+  --type-label-lg: 14px;
+  --type-label-lg-line: 20px;
+  --type-label-md: 12px;
+  --type-label-md-line: 16px;
 
-  --pw-container: 1240px;
+  /* 4px spacing base with constrained scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-30: 120px;
+  --space-36: 144px;
+
+  /* Expanded window size class */
+  --pw-container: 1280px;
   --pw-edge: 32px;
   --pw-grid-gap: 24px;
-  --pw-section-space: clamp(88px, 9vw, 132px);
+  --pw-columns: 12;
+  --pw-section-space: 120px;
 
+  /* Material-style shape scale */
   --pw-radius-sm: 12px;
-  --pw-radius-md: 20px;
-  --pw-radius-lg: 28px;
-  --pw-radius-xl: 34px;
+  --pw-radius-md: 16px;
+  --pw-radius-lg: 24px;
+  --pw-radius-xl: 28px;
+  --pw-radius-full: 999px;
 
-  --pw-ease: cubic-bezier(.2, .8, .2, 1);
+  --pw-ease: cubic-bezier(.2, 0, 0, 1);
   --pw-fast: 180ms;
   --pw-normal: 300ms;
 }
 
-/* Keep the App Store badge aligned as a secondary footer action. */
-.site-footer [data-footer-app-store] {
-  display: flex !important;
-  width: 150px !important;
-  height: 50px !important;
-  margin-top: 18px !important;
-  align-items: center;
-}
-.site-footer [data-footer-app-store] img {
-  display: block;
-  width: 150px !important;
-  height: 50px !important;
-  object-fit: contain;
-}
-
-@media (max-width: 1024px) {
+/* Medium window size class: 600-839px */
+@media (max-width: 839px) {
   :root {
     --pw-edge: 24px;
-    --pw-grid-gap: 20px;
+    --pw-grid-gap: 24px;
+    --pw-columns: 8;
+    --pw-section-space: 96px;
+    --type-display-lg: clamp(46px, 8vw, 64px);
+    --type-display-md: clamp(40px, 6.5vw, 54px);
   }
 }
 
-@media (max-width: 760px) {
+/* Compact window size class: below 600px */
+@media (max-width: 599px) {
   :root {
     --pw-edge: 16px;
     --pw-grid-gap: 16px;
+    --pw-columns: 4;
+    --pw-section-space: 80px;
+    --type-display-lg: clamp(40px, 11vw, 54px);
+    --type-display-md: clamp(36px, 9.5vw, 46px);
+    --type-headline-lg: 28px;
+    --type-headline-lg-line: 36px;
   }
-
 }
