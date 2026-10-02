@@ -1,0 +1,47 @@
+name: Visual design audit
+
+on:
+  push:
+    branches:
+      - design/m3-system-audit
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: visual-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run static site audits
+        run: |
+          node scripts/seo-audit.mjs
+          node scripts/stale-copy-audit.mjs
+          node scripts/image-license-audit.mjs
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Start local site
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/padelwrist-server.log 2>&1 &
+          sleep 2
+      - name: Capture responsive audit
+        run: node scripts/visual-audit.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: visual-audit
+          path: visual-audit/
+          retention-days: 7
