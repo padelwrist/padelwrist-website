@@ -8,7 +8,7 @@ PadelWrist is live on the Apple App Store: https://apps.apple.com/gb/app/padelwr
 
 App Store ID: `6799725420`.
 
-Latest verified public release: **1.5 (2 October 2026)**. Do not market in-development features as released until the App Store listing confirms availability.
+Latest verified public release: **1.7 (checked against the UK App Store on 16 October 2026)**. Version 1.7 introduces Apple Watch face complications and Smart Stack access. Version 1.6 introduced optional App Store rating prompts and a Rate PadelWrist action in Settings. Do not market in-development features as released until the App Store listing confirms availability.
 
 ## Audience
 
@@ -20,7 +20,7 @@ Padel players who want a simple, premium scoring experience during the match and
 
 The website should make four ideas obvious:
 
-1. Score every point quickly from Apple Watch in English or Spanish, including spoken announcements.
+1. Open PadelWrist from an Apple Watch face or Smart Stack, then score every point in English or Spanish, including spoken announcements.
 2. Keep the active match visible across the Apple ecosystem and share it with other PadelWrist users via a six-digit Match Code.
 3. Turn Match History into useful Insights, recent form, player analysis and searchable records.
 4. Keep control of the experience without requiring a PadelWrist account.
@@ -30,6 +30,8 @@ The website should make four ideas obvious:
 - Available on the Apple App Store.
 - Apple Watch, iPhone and iPad support.
 - English and Spanish localisation across the app, Live Activities and spoken score announcements.
+- Apple Watch face complications in circular, rectangular and inline designs, and Smart Stack shortcuts for opening PadelWrist, resuming an active match or setting up a new one (1.7).
+- Optional post-match App Store rating prompts and a Rate PadelWrist Settings option (1.6).
 - Standard padel scoring with Advantage, Golden Point, Star Point and Silver Point options.
 - Match tie-break support and Fixed Points for point-based formats.
 - Server tracking and spoken score announcements.
