@@ -8,6 +8,8 @@ PadelWrist is live on the Apple App Store: https://apps.apple.com/gb/app/padelwr
 
 App Store ID: `6799725420`.
 
+Latest verified public release: **1.5 (2 October 2026)**. Do not market in-development features as released until the App Store listing confirms availability.
+
 ## Audience
 
 Padel players who want a simple, premium scoring experience during the match and useful performance context afterwards. The product should feel immediately understandable to recreational players while offering enough depth for frequent players who care about form, partners, opponents and match history.
@@ -18,8 +20,8 @@ Padel players who want a simple, premium scoring experience during the match and
 
 The website should make four ideas obvious:
 
-1. Score every point quickly from Apple Watch.
-2. Keep the active match visible across the Apple ecosystem, including Live Activities and Dynamic Island on supported iPhones.
+1. Score every point quickly from Apple Watch in English or Spanish, including spoken announcements.
+2. Keep the active match visible across the Apple ecosystem and share it with other PadelWrist users via a six-digit Match Code.
 3. Turn Match History into useful Insights, recent form, player analysis and searchable records.
 4. Keep control of the experience without requiring a PadelWrist account.
 
@@ -27,11 +29,12 @@ The website should make four ideas obvious:
 
 - Available on the Apple App Store.
 - Apple Watch, iPhone and iPad support.
+- English and Spanish localisation across the app, Live Activities and spoken score announcements.
 - Standard padel scoring with Advantage, Golden Point, Star Point and Silver Point options.
 - Match tie-break support and Fixed Points for point-based formats.
 - Server tracking and spoken score announcements.
 - Undo and score correction.
-- Live match sharing using a Match Code.
+- Live match sharing using a six-digit Match Code, with players/spectators and host control of scoring access.
 - Match result cards and standard iOS sharing.
 - Apple Health workout recording.
 - Private iCloud sync for match history and saved players.
@@ -44,7 +47,7 @@ The website should make four ideas obvious:
 - Local-first scoring during temporary device disconnection.
 - No PadelWrist account required.
 
-Do not imply automatic shot tracking, tactical analysis, public social profiles, court booking, tournament management or automatic Americano/Mexicano partner rotation.
+Do not promote unreleased Match Assistant prompts, haptics or background alerts as available. Do not imply automatic shot tracking, tactical analysis, public social profiles, court booking, tournament management or automatic Americano/Mexicano partner rotation.
 
 ## Brand naming
 
