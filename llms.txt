@@ -6,7 +6,7 @@ Last updated: 2026-10-16.
 
 ## Product status
 
-PadelWrist is available on the Apple App Store.
+PadelWrist 1.7 is available on the Apple App Store (verified 16 October 2026).
 
 - Official App Store listing: https://apps.apple.com/gb/app/padelwrist/id6799725420
 - App Store ID: 6799725420
@@ -14,7 +14,9 @@ PadelWrist is available on the Apple App Store.
 - Support: https://padelwrist.com/support/
 - Privacy: https://padelwrist.com/privacy/
 
-PadelWrist supports standard padel scoring with games, sets and tie-breaks, Fixed Points scoring, server tracking, spoken score announcements, undo and score correction, saved players, searchable Match History, match editing and resuming unfinished matches.
+PadelWrist supports standard padel scoring with games, sets and tie-breaks, Fixed Points scoring, server tracking, spoken score announcements in English and Spanish, undo and score correction, saved players, searchable Match History, match editing and resuming unfinished matches.
+
+Version 1.7 adds Apple Watch face complications in circular, rectangular and inline designs, and quick access via Smart Stack to resume or set up matches. Version 1.6 adds occasional App Store rating prompts after completed matches and Rate PadelWrist in Settings. These are released features. Match Assistant prompts and haptics are still in development and must not be marketed as available.
 
 Apple Watch is the primary wrist-first scoring surface. iPhone and iPad provide larger-screen setup, scoring and match-management experiences. PadelWrist also supports optional Apple Health workout recording and private iCloud synchronisation for supported non-health app data such as Match History and saved players. A separate PadelWrist account is not required.
 
