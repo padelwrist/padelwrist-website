@@ -2,11 +2,11 @@
 
 > PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad, plus a practical padel knowledge base covering rules, scoring, tactics, technique, equipment and social formats.
 
-Last updated: 2026-10-02.
+Last updated: 2026-10-16.
 
 ## Product status
 
-PadelWrist is available on the Apple App Store.
+PadelWrist version 1.5 (released 2 October 2026) is the latest publicly available version verified against the UK Apple App Store.
 
 - Official App Store listing: https://apps.apple.com/gb/app/padelwrist/id6799725420
 - App Store ID: 6799725420
@@ -14,11 +14,13 @@ PadelWrist is available on the Apple App Store.
 - Support: https://padelwrist.com/support/
 - Privacy: https://padelwrist.com/privacy/
 
-PadelWrist supports standard padel scoring with games, sets and tie-breaks, Fixed Points scoring, server tracking, spoken score announcements, undo and score correction, saved players, searchable Match History, match editing and resuming unfinished matches.
+PadelWrist supports standard padel scoring with games, sets and tie-breaks, Fixed Points scoring, Advantage, Golden Point, Star Point and Silver Point, server tracking, spoken score announcements, undo and score correction, saved players, searchable Match History, match editing and resuming unfinished matches. Version 1.5 offers English and Spanish throughout iPhone, iPad, Apple Watch and Live Activities, including spoken score announcements.
+
+Live matches can be shared with a six-digit Match Code. Other PadelWrist users can join as players or spectators; the host controls who can score. Completed matches can be shared as result cards.
 
 Apple Watch is the primary wrist-first scoring surface. iPhone and iPad provide larger-screen setup, scoring and match-management experiences. PadelWrist also supports optional Apple Health workout recording and private iCloud synchronisation for supported non-health app data such as Match History and saved players. A separate PadelWrist account is not required.
 
-Insights use recorded match history to show useful patterns such as recent form, performance trends, partner and opponent records and head-to-head information. PadelWrist does not currently organise Americano or Mexicano tournaments, rotate partners, generate tournament pairings or standings, or provide a public social network.
+Insights use recorded match history to show useful patterns such as recent form, performance trends, partner and opponent records and head-to-head information. The Match Assistant feature under development is not part of this verified public release and should not be advertised as available. PadelWrist does not currently organise Americano or Mexicano tournaments, rotate partners, generate tournament pairings or standings, or provide a public social network.
 
 ## Primary product pages
 
