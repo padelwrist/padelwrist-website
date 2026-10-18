@@ -1,0 +1,77 @@
+/* Two-audience landing: clear, accessible routes for individual players and organisers. */
+.home-v2 .audience-choice { padding: clamp(64px,8vw,116px) 0; background: radial-gradient(circle at 82% 38%,rgba(51,95,255,.10),transparent 34rem),#040c17; border-bottom: 1px solid var(--pw-outline-variant); }
+.home-v2 .audience-choice-inner { width: min(var(--pw-container),calc(100% - (var(--pw-edge) * 2))); margin: auto; }
+.audience-choice-head { max-width: 840px; margin-bottom: 34px; }
+.audience-choice-head h2,.players-page h1,.players-page .players-section-title { font-family: var(--pw-display); font-weight: 600; letter-spacing: -.035em; }
+.audience-choice-head h2 { font-size: clamp(30px,4.2vw,54px); line-height: 1.1; margin: 0; }
+.audience-choice-head > p:last-child { max-width: 65ch; color: var(--pw-muted); line-height: 1.7; font-size: 17px; margin-top: 18px; }
+.audience-choice-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.audience-choice-card { padding: clamp(24px,3.5vw,46px); background: linear-gradient(145deg,#0c1e34,#08121f); border: 1px solid rgba(143,171,251,.24); border-radius: 26px; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.audience-choice-clubs { background: linear-gradient(140deg,#152347 0%,#0a1728 78%); }
+.audience-choice-label { margin: 0 0 28px; font-size: 12px; line-height: 1.5; letter-spacing: .06em; text-transform: uppercase; color: #b2c3ff; font-weight: 750; }
+.audience-choice-card h3 { font-family: var(--pw-display); font-size: clamp(26px,3.2vw,43px); line-height: 1.12; letter-spacing: -.03em; margin: 0; }
+.audience-choice-card > p:not(.audience-choice-label) { margin: 20px 0 0; line-height: 1.75; color: #cad5e6; font-size: 15px; max-width: 56ch; }
+.audience-choice-card ul { margin: 18px 0 30px; padding-left: 20px; color: #bfccdf; font-size: 14px; line-height: 2; }
+.audience-choice-card a { margin-top: auto; display: inline-flex; align-items: center; min-height: 48px; padding: 11px 22px; gap: 16px; border-radius: 999px; background: #e9efff; color: #07112b; font-weight: 750; font-size: 14px; text-decoration: none; }
+.audience-choice-card a:hover { background: #bfd0ff; }
+.audience-choice-card a:focus-visible { outline: 3px solid #d2ddff; outline-offset: 3px; }
+.audience-choice-note { margin: 22px 0 0; font-size: 12px; line-height: 1.6; color: #b4c0d2; }
+
+/* Players landing page: conversion-oriented, native PadelWrist patterns. */
+.players-page { overflow: clip; }
+.players-page .players-hero { padding: clamp(68px,8vw,120px) 0 clamp(60px,8vw,112px); display: grid; grid-template-columns: minmax(0,1.1fr) minmax(300px,.9fr); gap: clamp(32px,5vw,90px); align-items: center; }
+.players-page .players-eyebrow { display: block; color: #adbef9; margin: 0 0 22px; font-size: 12px; line-height: 1.5; letter-spacing: .12em; font-weight: 750; text-transform: uppercase; }
+.players-page h1 { font-size: clamp(43px,5.4vw,74px); line-height: 1.03; margin: 0; max-width: 14ch; }
+.players-page h1 span { color: #94abff; }
+.players-page .players-lede { font-size: clamp(17px,1.7vw,20px); line-height: 1.6; color: #cbd5e6; margin: 24px 0 0; max-width: 58ch; }
+.players-page .players-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.players-page .players-primary,.players-page .players-secondary { min-height: 48px; padding: 12px 22px; border-radius: 999px; display: inline-flex; align-items: center; gap: 14px; font-weight: 750; font-size: 14px; text-decoration: none; }
+.players-page .players-primary { background: #597aff; color: #fff; }
+.players-page .players-secondary { color: #f8faff; background: rgba(255,255,255,.08); border: 1px solid var(--pw-outline-variant); }
+.players-page a:focus-visible { outline: 3px solid #bfccff; outline-offset: 4px; }
+.players-page .players-hero-note { font-size: 12px; color: #bac5d6; margin-top: 20px; }
+.players-page .players-hero-visual { background: radial-gradient(circle at 50% 55%,rgba(80,115,255,.13),transparent 70%),#091421; padding: clamp(22px,4vw,50px); border-radius: 26px; border: 1px solid rgba(133,160,255,.22); display: flex; gap: 16px; align-items: center; justify-content: center; }
+.players-page .players-hero-visual img { width: 46%; max-width: 210px; height: auto; object-fit: contain; filter: drop-shadow(0 22px 22px rgba(0,0,0,.32)); }
+.players-page section.players-section { padding: 70px 0; border-top: 1px solid var(--pw-outline-variant); }
+.players-page .players-section-heading { margin-bottom: 30px; max-width: 800px; }
+.players-page .players-section-title { font-size: clamp(29px,3.8vw,48px); line-height: 1.14; margin: 0; }
+.players-page .players-section-heading p:last-child { color: #bdc9db; font-size: 16px; line-height: 1.75; margin: 16px 0 0; max-width: 70ch; }
+.players-page .players-feature-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.players-page .players-feature { background: #091726; border: 1px solid var(--pw-outline-variant); border-radius: 22px; padding: 28px; }
+.players-page .players-feature .players-feature-index { display: block; color: #aabfff; font-size: 12px; font-weight: 750; letter-spacing: .08em; margin-bottom: 24px; }
+.players-page .players-feature h3 { color: #fff; font-family: var(--pw-display); font-size: 22px; font-weight: 600; margin: 0 0 14px; line-height: 1.22; }
+.players-page .players-feature p { color: #becadd; font-size: 14px; line-height: 1.75; margin: 0 0 16px; }
+.players-page .players-feature a { color: #bed0ff; text-underline-offset: 4px; font-size: 14px; }
+.players-page .players-flow { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; list-style: none; padding: 0; margin: 0; }
+.players-page .players-flow li { border-top: 2px solid rgba(128,153,249,.55); padding-top: 20px; }
+.players-page .players-flow strong { color: white; display: block; font-size: 18px; margin-bottom: 8px; }
+.players-page .players-flow p { margin: 0; color: #bcc9dc; font-size: 14px; line-height: 1.7; }
+.players-page .players-bottom-cta { background: linear-gradient(115deg,#13264a,#091624); border: 1px solid rgba(153,177,255,.22); border-radius: 24px; padding: clamp(30px,5vw,60px); margin-top: 68px; }
+.players-page .players-bottom-cta h2 { font-family: var(--pw-display); font-size: clamp(28px,3.3vw,44px); margin: 0 0 14px; }
+.players-page .players-bottom-cta p { color: #c3d0e5; max-width: 65ch; line-height: 1.7; }
+.players-page .players-related { display: flex; flex-wrap: wrap; gap: 12px 30px; padding: 48px 0 80px; }
+.players-page .players-related a { font-size: 14px; color: #becfff; }
+@media (max-width: 840px) {
+ .audience-choice-grid { gap: 12px; }
+ .players-page .players-hero { grid-template-columns: 1fr; }
+ .players-page .players-hero-visual { max-width: 600px; }
+ .players-page .players-feature-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 600px) {
+ .audience-choice-grid,.players-page .players-feature-grid,.players-page .players-flow { grid-template-columns: 1fr; }
+ .audience-choice-card { padding: 28px; }
+ .home-v2 .audience-choice { padding: 62px 0; }
+ .players-page .players-hero { padding-top: 46px; }
+ .players-page .players-hero-visual { padding: 26px; }
+ .players-page section.players-section { padding: 54px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .audience-choice-card a { transition: none; }
+}
+/* Matching FAQ presentation on player landing without importing Events-specific styles. */
+.players-page .events-faq-list { max-width: 890px; }
+.players-page .events-faq-list details { border-top: 1px solid var(--pw-outline-variant); }
+.players-page .events-faq-list details:last-child { border-bottom: 1px solid var(--pw-outline-variant); }
+.players-page .events-faq-list summary { min-height: 54px; cursor: pointer; color: white; padding: 22px 32px 22px 0; font-size: 16px; font-weight: 700; line-height: 1.5; }
+.players-page .events-faq-list p { color: #bdc9db; font-size: 15px; max-width: 70ch; line-height: 1.75; margin: 0 0 26px; }
+.players-page .events-faq-list details:focus-within { outline: 2px solid #a9bfff; outline-offset: 3px; }
