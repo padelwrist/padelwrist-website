@@ -12,7 +12,7 @@ Current website-promoted release: **1.9**. The product owner has explicitly auth
 
 ## Audience
 
-Padel players who want a simple, premium scoring experience during the match and useful performance context afterwards. The product should feel immediately understandable to recreational players while offering enough depth for frequent players who care about form, partners, opponents and match history.
+Two complementary audiences: **(1) individual padel players** using the released scorekeeper on Apple Watch, iPhone and iPad, who care about intuitive scoring, History, sharing and Insights; **(2) padel clubs, coaches and social tournament hosts** exploring Events, a native iPhone/iPad organiser feature still in development. The site should make both journeys immediately visible, without conflating roadmap functionality with released app functionality.
 
 ## Primary promise
 
@@ -61,7 +61,8 @@ PadelWrist Events is separately **in development** as a native iPhone/iPad organ
 - `/play-again-padel-match/`: help for using Play Again and distinguishing it from Resume.
 - `/how-to-read-padel-match-stats/`: interpretation of trends, match volume, partner/opponent records and statistics limitations.
 - `/padel-tournament-organiser-checklist/`: organiser education, practical scoring examples and transparent rules.
-- `/events/`: a visually structured in-development overview of the native organiser workflow, Americano/Mexicano differences, score integrity and feedback. Visual scores are **labelled illustrative**, never presented as production app screenshots.
+- `/players/`: purpose-built released-app landing page for players, with Apple Watch, iPhone/iPad, live scoring, Play Again, History and Insights.
+- `/events/`: a benefits-led in-development overview for clubs and tournament hosts, with proposed event setup, players/courts, round-by-round flow, standings and host feedback. Illustrations are explicitly marked concepts. Score corrections are a minor supporting detail, not a headline selling point.
 - `/americano-vs-mexicano-padel/`: comparison of partner rotations, pairing rules, fixed-point totals and organiser decisions.
 - `/padel-tournament-score-corrections/`: practical advice on correcting official scores, approval, rank recalculation, stable Mexicano fixtures and connectivity conflicts.
 
@@ -73,4 +74,4 @@ Use **PADELWRIST** only when rendering the visual wordmark itself.
 
 ## Website mode
 
-The homepage is a **Persuade** surface. It should sell the complete match lifecycle: score on Apple Watch, keep the live match visible, then understand and share the result. Supporting guides are **Read** surfaces and should answer search intent first while introducing PadelWrist naturally where the app genuinely solves the problem.
+The homepage is a **two-audience Persuade** surface with an early, equally visible choice: Players → `/players/` and Clubs & hosts → `/events/`. Both are discoverable through primary navigation and Guides. The player route sells the released personal match lifecycle (score on Watch, share, History, Insights and Play Again); the organiser route sells the planned value for clubs (players, courts, pairing/rounds and standings), while repeatedly and truthfully identifying Events as in development. Do not use a generic App Store download CTA to imply Events is available. Supporting guides are **Read** surfaces answering intent first and routing appropriately.
