@@ -111,3 +111,18 @@
   .events-action-primary, .events-action-secondary { transition: none; }
   .events-action-primary:hover, .events-action-secondary:hover { transform: none; }
 }
+/* Organiser-first positioning: social benefits before administrative safeguards. */
+.events-preview-standings, .events-preview-standing { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 16px; padding: 16px; border: 1px solid rgba(151,177,255,.18); border-radius: 14px; background: rgba(115,142,242,.06); }
+.events-preview-standing > span { color: #9eadc4; font-size: 11px; margin-bottom: 4px; }
+.events-preview-standing strong { color: #e0e9fd; font-size: 12px; font-weight: 650; }
+.events-benefit-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.events-benefit { border: 1px solid var(--pw-outline-variant); border-radius: 22px; background: linear-gradient(145deg,#0b1a30,#08131f); padding: clamp(24px,3vw,36px); }
+.events-benefit > span,.events-host-grid article > span { display: block; color: #b0c3ff; font-size: 12px; letter-spacing: .07em; text-transform: uppercase; font-weight: 750; margin-bottom: 24px; }
+.events-benefit h3,.events-host-grid h3 { font-family: var(--pw-display); font-weight: 600; color: #fff; font-size: clamp(20px,2vw,26px); line-height: 1.26; margin: 0 0 12px; }
+.events-benefit p,.events-host-grid p { font-size: 14px; color: var(--pw-muted); line-height: 1.75; margin: 0; }
+.events-host-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.events-host-grid article { background: #0a1625; border: 1px solid var(--pw-outline-variant); border-radius: 20px; padding: clamp(22px,2.6vw,34px); }
+.events-host-note { margin: 28px 0 0; max-width: 80ch; font-size: 13px; line-height: 1.75; color: #b4c1d3; }
+.events-host-note a { color: #bfceff; text-underline-offset: 4px; }
+@media (max-width: 850px) { .events-host-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .events-benefit-grid,.events-host-grid { grid-template-columns: 1fr; } }
