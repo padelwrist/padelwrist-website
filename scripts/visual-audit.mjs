@@ -11,6 +11,9 @@ const pages = [
   ['guides', '/guides/'],
   ['typical-guide', '/how-padel-scoring-works/'],
   ['insights', '/padel-player-statistics/'],
+  ['events', '/events/'],
+  ['format-comparison', '/americano-vs-mexicano-padel/'],
+  ['tournament-corrections', '/padel-tournament-score-corrections/'],
   ['support', '/support/'],
   ['privacy', '/privacy/'],
   ['not-found', '/404.html'],
@@ -50,7 +53,7 @@ for (const [viewportName, width, height] of viewports) {
         const el = document.querySelector(selector);
         return el ? getComputedStyle(el).getPropertyValue(prop).trim() : null;
       };
-      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot')].map((el) => {
+      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot, .events-step, .events-format-card, .events-boundary-card')].map((el) => {
         const r = el.getBoundingClientRect();
         return { tag: el.tagName, cls: el.className, x: r.x, y: r.y, width: r.width, height: r.height };
       });
@@ -72,6 +75,9 @@ for (const [viewportName, width, height] of viewports) {
         pageHeading: rect('.page-heading'),
         guideCopy: rect('.guide-copy'),
         storyHeading: rect('.story-v2-head'),
+        eventsPreview: rect('.events-preview'),
+        eventsSteps: rect('.events-steps'),
+        eventsCorrection: rect('.events-integrity-grid'),
         storyGrid: rect('.story-grid-v2'),
         productHeading: rect('.product-v2-copy'),
         productGrid: rect('.product-showcase'),
