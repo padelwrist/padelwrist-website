@@ -2,11 +2,11 @@
 
 > PadelWrist is a padel scoring app for Apple Watch, iPhone and iPad, plus a practical padel knowledge base covering rules, scoring, tactics, technique, equipment and social formats.
 
-Last updated: 2026-10-16.
+Last updated: 2026-10-18.
 
 ## Product status
 
-PadelWrist 1.8 is the current website-featured release. The update is in App Store review; the last confirmed public listing showed version 1.7 (16 October 2026).
+PadelWrist 1.9 is the website-promoted release, as approved by the product owner. The merged Play Again feature runs from Match History on iPhone/iPad; separate Watch Play Again is still in development. Store listing and review status may vary by storefront.
 
 - Official App Store listing: https://apps.apple.com/gb/app/padelwrist/id6799725420
 - App Store ID: 6799725420
@@ -16,11 +16,13 @@ PadelWrist 1.8 is the current website-featured release. The update is in App Sto
 
 PadelWrist supports standard padel scoring with games, sets and tie-breaks, Fixed Points scoring, server tracking, spoken score announcements in English and Spanish, undo and score correction, saved players, searchable Match History, match editing and resuming unfinished matches.
 
-Version 1.8 introduces Match Assistant on Apple Watch with first-server, next-server and change-ends prompts, combined guidance when both change, and foreground attention haptics. The Watch-local toggle defaults on and is independent from score speech. Prompts are available in English and Spanish, with accessible player names. Serving-order reliability is improved after History edits and tie-breaks. Match Assistant is foreground-only and best effort: no background notification, promised background haptic or replayed catch-up cue. Version 1.7 added Watch face complications and Smart Stack access. Version 1.6 added optional post-match rating prompts and Rate PadelWrist in Settings.
+Version 1.9 introduces Play Again from Match History on iPhone and iPad. It reuses available players, team names and Standard/Fixed Points rules for review, then starts a new match without changing the original result; iPhone can prepare a new Watch match. Direct Watch Play Again remains under development. Version 1.8 added foreground Watch Match Assistant (first/next server and change ends), optional foreground haptics and improved server order; 1.7 added Watch face complications and Smart Stack access; 1.6 added post-match rating prompts.
 
 Apple Watch is the primary wrist-first scoring surface. iPhone and iPad provide larger-screen setup, scoring and match-management experiences. PadelWrist also supports optional Apple Health workout recording and private iCloud synchronisation for supported non-health app data such as Match History and saved players. A separate PadelWrist account is not required.
 
-Insights use recorded match history to show useful patterns such as recent form, performance trends, partner and opponent records and head-to-head information. PadelWrist does not currently organise Americano or Mexicano tournaments, rotate partners, generate tournament pairings or standings, or provide a public social network.
+Insights use recorded match history for recent form, performance trends, partner and opponent records, head-to-heads and streaks. PadelWrist does not perform automatic shot analysis or rank players publicly.
+
+PadelWrist Events is in development as a native iPhone/iPad organiser experience for Americano and Mexicano, including proposed rosters, courts, flexible rounds, published draws, organiser-confirmed results and individual standings. It is not an available tournament manager, and no launch date, pricing, public registration or bookings are offered. See https://padelwrist.com/events/ for the roadmap preview and https://padelwrist.com/padel-tournament-organiser-checklist/ for general organiser education.
 
 ## Primary product pages
 
@@ -31,6 +33,8 @@ Insights use recorded match history to show useful patterns such as recent form,
 - Match History: https://padelwrist.com/padel-match-history/
 - Insights and player statistics: https://padelwrist.com/padel-player-statistics/
 - Match sharing: https://padelwrist.com/padel-match-sharing/
+- Play Again from Match History: https://padelwrist.com/play-again-padel-match/
+- PadelWrist Events — in development: https://padelwrist.com/events/
 - What's new: https://padelwrist.com/whats-new/
 
 ## Padel knowledge base
@@ -58,6 +62,7 @@ Knowledge-base pages:
 - How to Hit a Víbora in Padel: https://padelwrist.com/how-to-hit-vibora-padel/
 - How to Keep Score in Padel: A Practical Match Guide: https://padelwrist.com/how-to-keep-score-in-padel/
 - How to Play a Bajada in Padel: https://padelwrist.com/how-to-play-bajada-padel/
+- How to Read Padel Match Stats and Insights: https://padelwrist.com/how-to-read-padel-match-stats/
 - How to Return Serve in Padel: Position & Shot Choice: https://padelwrist.com/how-to-return-serve-padel/
 - How to Improve Your Padel Serve: https://padelwrist.com/improve-padel-serve-control/
 - How to Play With a Left-Handed Padel Partner: https://padelwrist.com/left-handed-padel-partner/
@@ -76,6 +81,7 @@ Knowledge-base pages:
 - Padel Scoring Formats: Advantage, Golden & Star Point: https://padelwrist.com/padel-scoring-formats/
 - Padel Service Rules 2026: Bounce, Height, Boxes & Order: https://padelwrist.com/padel-service-rules/
 - Padel Shots Explained: Bandeja, Víbora, Chiquita & More: https://padelwrist.com/padel-shots-guide/
+- Padel Tournament Organiser Checklist | Americano & Mexicano: https://padelwrist.com/padel-tournament-organiser-checklist/
 - Padel Tie-Break Rules: Scoring & Serve Order: https://padelwrist.com/padel-tie-break-rules/
 - How to Volley in Padel Without Overhitting: https://padelwrist.com/padel-volley-without-overhitting/
 - Padel vs Pickleball: What's the Difference?: https://padelwrist.com/padel-vs-pickleball/

@@ -8,7 +8,7 @@ PadelWrist is live on the Apple App Store: https://apps.apple.com/gb/app/padelwr
 
 App Store ID: `6799725420`.
 
-Current website-promoted release: **1.8 (16 October 2026)**. The 1.8 Match Assistant implementation is merged in the app repository and has been submitted for App Store review. The product owner has explicitly authorised presenting 1.8 as the current release before approval. The latest independently verified live App Store listing was **1.7**. Do not assert that Apple approval or App Store availability has completed until confirmed. Version 1.7 introduced Watch face complications and Smart Stack; version 1.6 introduced rating prompts and the Settings rating option.
+Current website-promoted release: **1.9**. The product owner has explicitly authorised presenting 1.9 as released on the website, regardless of App Store rollout status. The merged 1.9 app feature is **Play Again from Match History on iPhone and iPad**, supporting review of previous setup, a new match or preparation for Watch from iPhone, with the original result retained. A separate direct Watch Play Again flow is still under draft review and must NOT be promoted as available. Do not represent the App Store review outcome as independently verified. 1.8 introduced foreground Watch Match Assistant; 1.7 added Watch complications and Smart Stack; 1.6 added rating feedback prompts.
 
 ## Audience
 
@@ -20,7 +20,7 @@ Padel players who want a simple, premium scoring experience during the match and
 
 The website should make four ideas obvious:
 
-1. Open PadelWrist from an Apple Watch face or Smart Stack, then score every point with optional Match Assistant guidance in English or Spanish.
+1. Score on Apple Watch in English or Spanish with optional Match Assistant guidance, then use Play Again from Match History on iPhone/iPad to repeat a familiar setup.
 2. Keep the active match visible across the Apple ecosystem and share it with other PadelWrist users via a six-digit Match Code.
 3. Turn Match History into useful Insights, recent form, player analysis and searchable records.
 4. Keep control of the experience without requiring a PadelWrist account.
@@ -32,6 +32,7 @@ The website should make four ideas obvious:
 - English and Spanish localisation across the app, Live Activities and spoken score announcements.
 - Apple Watch face complications in circular, rectangular and inline designs, and Smart Stack shortcuts for opening PadelWrist, resuming an active match or setting up a new one (1.7).
 - Optional post-match App Store rating prompts and a Rate PadelWrist Settings option (1.6).
+- Play Again in Match History on iPhone and iPad (1.9): reuse available Standard/Fixed Points settings, saved players and team names, then review and start a new session from zero. The original History result is preserved. iPhone can prepare the new setup for Apple Watch, but direct Watch Play Again remains in a draft PR. iPad cannot relay preparation directly to Watch. Replacing an active match requires confirmation.
 - Match Assistant in the actively used Apple Watch app: first server, next server and change ends prompts, combining simultaneous instructions into one prompt (1.8).
 - Native attention haptics accompanying fresh Match Assistant guidance while the Watch app is in the foreground (subject to watchOS settings and delivery); no background notifications or guaranteed background haptics (1.8).
 - A separate Watch-local Match Assistant toggle (on by default), independent of spoken score announcements; assistant prompts are available in English and Spanish, with VoiceOver-friendly names (1.8).
@@ -53,7 +54,14 @@ The website should make four ideas obvious:
 - Local-first scoring during temporary device disconnection.
 - No PadelWrist account required.
 
-Match Assistant is best-effort, foreground-only and does not provide spoken assistant instructions, system notifications or background haptic alerts. Do not promise catch-up cues after reconnect, Undo, editing or resuming a match. Do not imply automatic shot tracking, tactical analysis, public social profiles, court booking, tournament management or automatic Americano/Mexicano partner rotation.
+PadelWrist Events is separately **in development** as a native iPhone/iPad organiser feature for Americano/Mexicano. The discovery proposes rosters, courts, flexible rounds, organiser-controlled draws, official results/corrections, individual standings and optional read-only participant views. None are in the released app yet. Do not announce Events launch dates, pricing, account requirements, booking or tournament registration; developer drafts do not imply production availability. Match Assistant is best-effort, foreground-only and does not provide spoken assistant instructions, system notifications or background haptic alerts. Do not promise catch-up cues after reconnect, Undo, editing or resuming a match. Do not imply automatic shot tracking, tactical analysis, public social profiles, court booking, tournament management or automatic Americano/Mexicano partner rotation.
+
+## New website content
+
+- `/play-again-padel-match/`: help for using Play Again and distinguishing it from Resume.
+- `/how-to-read-padel-match-stats/`: interpretation of trends, match volume, partner/opponent records and statistics limitations.
+- `/padel-tournament-organiser-checklist/`: organiser education, practical scoring examples and transparent rules.
+- `/events/`: clear in-development overview of native organiser direction and optional feedback links, never a simulated live organiser portal.
 
 ## Brand naming
 
