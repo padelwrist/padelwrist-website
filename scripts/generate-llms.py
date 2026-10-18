@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 PRODUCT_PAGES = [
     ("For individual players", "https://padelwrist.com/players/"),
+    ("For clubs and tournament hosts", "https://padelwrist.com/clubs/"),
     ("Padel score tracker", "https://padelwrist.com/padel-score-tracker/"),
     ("Apple Watch padel scoring", "https://padelwrist.com/apple-watch-padel-scoring/"),
     ("Apple Watch vs phone scoring", "https://padelwrist.com/apple-watch-vs-phone-padel-scoring/"),
@@ -27,6 +28,7 @@ EXCLUDED_FROM_KB = {
     "guides",
     "editorial-policy",
     "events",
+    "clubs",
     "players",
     "play-again-padel-match",
     "whats-new",
@@ -100,7 +102,7 @@ lines = [
     "## Who PadelWrist serves",
     "",
     "For players: https://padelwrist.com/players/ presents the available scoring app, Apple Watch, live match sharing, Match History, Play Again and Insights.",
-    "For clubs, coaches and tournament hosts: https://padelwrist.com/events/ describes a separate native organiser experience in development for Americano and Mexicano sessions. It is not an available tournament manager.",
+    "For clubs, coaches and tournament hosts: https://padelwrist.com/clubs/ is the main organiser area; https://padelwrist.com/events/ describes PadelWrist Events, a separate native organiser product in development for Americano and Mexicano sessions. It is not an available tournament manager.",
     "",
     "## Primary product pages",
     "",
