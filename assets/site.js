@@ -6,6 +6,9 @@ const isInnerPage = document.body.classList.contains('page-body');
 const isGuidesHub = path === '/guides/' || path === '/guides';
 const isSupport = path === '/support/' || path === '/support';
 const isPrivacy = path === '/privacy/' || path === '/privacy';
+const isPlayers = path === '/players/' || path === '/players';
+const isClubs = ['/clubs/', '/clubs', '/events/', '/events'].includes(path);
+const isWhatsNew = path === '/whats-new/' || path === '/whats-new';
 
 if (isGuidesHub) document.body.classList.add('guides-hub');
 
@@ -16,22 +19,25 @@ document.querySelectorAll('[data-year]').forEach((element) => {
 function standardiseChrome() {
   const nav = document.querySelector('.site-header .site-nav');
   if (nav) {
+    nav.setAttribute('aria-label', 'Primary navigation');
     nav.innerHTML = `
-      <a href="/#why">Why PadelWrist</a>
+      <a href="/players/">Players</a>
+      <a href="/clubs/">Clubs</a>
       <a href="/#features">Features</a>
-      <a href="/padel-player-statistics/">Insights</a>
-      <a href="/whats-new/">What's new</a>
+      <a href="/whats-new/">What's New</a>
       <a href="/guides/">Guides</a>
       <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
     `;
 
-    if (isGuidesHub || (isInnerPage && !isSupport && !isPrivacy)) {
-      nav.querySelector('a[href="/guides/"]')?.setAttribute('aria-current', 'page');
-    } else if (isSupport) {
-      nav.querySelector('a[href="/support/"]')?.setAttribute('aria-current', 'page');
-    } else if (isPrivacy) {
-      nav.querySelector('a[href="/privacy/"]')?.setAttribute('aria-current', 'page');
-    }
+    const activeHref = isPlayers ? '/players/'
+      : isClubs ? '/clubs/'
+      : isWhatsNew ? '/whats-new/'
+      : isGuidesHub ? '/guides/'
+      : isSupport ? '/support/'
+      : isPrivacy ? '/privacy/'
+      : (isInnerPage && path !== '/404.html' ? '/guides/' : null);
+    if (activeHref) nav.querySelector(`a[href="${activeHref}"]`)?.setAttribute('aria-current', 'page');
   }
 
   document.querySelectorAll('.brand').forEach((brand) => {
@@ -48,6 +54,8 @@ function standardiseChrome() {
   const footerNav = document.querySelector('.site-footer nav');
   if (footerNav) {
     footerNav.innerHTML = `
+      <a href="/players/">Players</a>
+      <a href="/clubs/">Clubs</a>
       <a href="/guides/">Guides</a>
       <a href="/apple-watch-padel-scoring/">Apple Watch scoring</a>
       <a href="/how-padel-scoring-works/">Scoring rules</a>
@@ -101,7 +109,7 @@ function addMobileNavigation() {
       }
     });
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 760 && header.classList.contains('nav-open')) close();
+      if (window.innerWidth > 959 && header.classList.contains('nav-open')) close();
     });
   });
 }

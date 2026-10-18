@@ -9,6 +9,7 @@ await fs.mkdir(outDir, { recursive: true });
 const pages = [
   ['home', '/'],
   ['players', '/players/'],
+  ['clubs', '/clubs/'],
   ['guides', '/guides/'],
   ['typical-guide', '/how-padel-scoring-works/'],
   ['insights', '/padel-player-statistics/'],
@@ -70,6 +71,8 @@ for (const [viewportName, width, height] of viewports) {
       return {
         bodyWidth: document.body.scrollWidth,
         viewportWidth: innerWidth,
+        navLabels: [...document.querySelectorAll('.site-header .site-nav a')].map(a => a.textContent.trim()),
+        navTargets: [...document.querySelectorAll('.site-header .site-nav a')].map(a => new URL(a.href).pathname),
         horizontalOverflow: document.body.scrollWidth > innerWidth + 1,
         shell: rect('.shell'),
         header: rect('.site-header .nav-wrap'),
@@ -99,6 +102,15 @@ for (const [viewportName, width, height] of viewports) {
       };
     });
 
+    const expectedNavLabels = ['Players', 'Clubs', 'Features', "What's New", 'Guides', 'Support', 'Privacy'];
+    diagnostics.navigationCorrect = expectedNavLabels.every((label, index) => diagnostics.navLabels[index] === label);
+    diagnostics.navigationRoutesCorrect = diagnostics.navTargets[0] === '/players/' && diagnostics.navTargets[1] === '/clubs/';
+    if (width <= 959) {
+      const toggle = page.locator('.mobile-nav-toggle');
+      await toggle.click();
+      diagnostics.mobileMenuOpens = await page.locator('.site-header .site-nav').isVisible();
+      await toggle.click();
+    } else diagnostics.mobileMenuOpens = true;
     report.push({ viewport: viewportName, width, page: pageName, pathname, diagnostics });
     await page.screenshot({ path: path.join(outDir, `${viewportName}-${pageName}.png`), fullPage: true });
     await page.close();
@@ -108,6 +120,6 @@ for (const [viewportName, width, height] of viewports) {
 await browser.close();
 await fs.writeFile(path.join(outDir, 'report.json'), JSON.stringify(report, null, 2));
 
-const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length);
+const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length || !entry.diagnostics.navigationCorrect || !entry.diagnostics.navigationRoutesCorrect || !entry.diagnostics.mobileMenuOpens);
 console.log(JSON.stringify({ pages: report.length, failures: failures.length, failureDetails: failures }, null, 2));
 if (failures.length) process.exitCode = 1;

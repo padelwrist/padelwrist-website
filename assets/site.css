@@ -449,3 +449,47 @@ a.feedback-link {
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Two primary destinations; supporting pages remain in the same navigation. */
+.site-header .site-nav a[href="/players/"],
+.site-header .site-nav a[href="/clubs/"] {
+  color: var(--pw-text);
+  font-weight: 750;
+}
+.site-header .site-nav a[href="/clubs/"] { margin-right: 6px; }
+
+/* Seven menu items need compact navigation before they collide with the wordmark. */
+@media (min-width: 600px) and (max-width: 959px) {
+  .mobile-nav-toggle { display: inline-flex; z-index: 42; }
+  .site-header .site-nav {
+    display: none;
+    position: absolute;
+    z-index: 40;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: var(--space-2) var(--pw-edge) var(--space-6);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-bottom: 1px solid var(--pw-outline-variant);
+    background: rgba(2,7,17,.99);
+    box-shadow: 0 20px 50px rgba(0,0,0,.28);
+  }
+  .site-header.nav-open .site-nav { display: flex; }
+  .site-header .site-nav a {
+    min-height: 52px;
+    padding: 0;
+    margin-right: 0;
+    border-radius: 0;
+    border-bottom: 1px solid var(--pw-outline-variant);
+    font-size: 15px;
+  }
+  .site-header .site-nav a:last-child { border-bottom: 0; }
+  .site-header .site-nav a:hover,
+  .site-header .site-nav a:focus-visible,
+  .site-header .site-nav a[aria-current="page"] {
+    background: transparent;
+    color: #fff;
+  }
+}

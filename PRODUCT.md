@@ -62,7 +62,8 @@ PadelWrist Events is separately **in development** as a native iPhone/iPad organ
 - `/how-to-read-padel-match-stats/`: interpretation of trends, match volume, partner/opponent records and statistics limitations.
 - `/padel-tournament-organiser-checklist/`: organiser education, practical scoring examples and transparent rules.
 - `/players/`: purpose-built released-app landing page for players, with Apple Watch, iPhone/iPad, live scoring, Play Again, History and Insights.
-- `/events/`: a benefits-led in-development overview for clubs and tournament hosts, with proposed event setup, players/courts, round-by-round flow, standings and host feedback. Illustrations are explicitly marked concepts. Score corrections are a minor supporting detail, not a headline selling point.
+- `/clubs/`: top-level clubs and tournament hosts landing page, explaining their needs and directing to the Events product preview.
+- `/events/`: an in-development product page under Clubs, with proposed setup, players/courts, round-by-round flow, standings and host feedback. Illustrations are explicitly marked concepts. Score corrections are a minor supporting detail, not a headline selling point.
 - `/americano-vs-mexicano-padel/`: comparison of partner rotations, pairing rules, fixed-point totals and organiser decisions.
 - `/padel-tournament-score-corrections/`: practical advice on correcting official scores, approval, rank recalculation, stable Mexicano fixtures and connectivity conflicts.
 
@@ -74,4 +75,4 @@ Use **PADELWRIST** only when rendering the visual wordmark itself.
 
 ## Website mode
 
-The homepage is a **two-audience Persuade** surface with an early, equally visible choice: Players → `/players/` and Clubs & hosts → `/events/`. Both are discoverable through primary navigation and Guides. The player route sells the released personal match lifecycle (score on Watch, share, History, Insights and Play Again); the organiser route sells the planned value for clubs (players, courts, pairing/rounds and standings), while repeatedly and truthfully identifying Events as in development. Do not use a generic App Store download CTA to imply Events is available. Supporting guides are **Read** surfaces answering intent first and routing appropriately.
+The homepage is a **two-audience Persuade** surface with an early, equally visible choice: Players → `/players/` and Clubs → `/clubs/`. **Events** is an in-development product page nested under the Clubs journey at `/events/`. The main navigation labels are **Players, Clubs, Features, What’s New, Guides, Support, Privacy**. Both audience routes are discoverable from primary navigation and Guides. The player route sells the released personal match lifecycle (score on Watch, share, History, Insights and Play Again); the organiser route sells the planned value for clubs (players, courts, pairing/rounds and standings), while repeatedly and truthfully identifying Events as in development. Do not use a generic App Store download CTA to imply Events is available. Supporting guides are **Read** surfaces answering intent first and routing appropriately.
