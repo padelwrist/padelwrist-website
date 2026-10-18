@@ -93,7 +93,7 @@ lines = [
     "",
     "Insights use recorded match history for recent form, performance trends, partner and opponent records, head-to-heads and streaks. PadelWrist does not perform automatic shot analysis or rank players publicly.",
     "",
-    "PadelWrist Events is in development as a native iPhone/iPad organiser experience for Americano and Mexicano, including proposed rosters, courts, flexible rounds, published draws, organiser-confirmed results and individual standings. It is not an available tournament manager, and no launch date, pricing, public registration or bookings are offered. See https://padelwrist.com/events/ for the roadmap preview and https://padelwrist.com/padel-tournament-organiser-checklist/ for general organiser education.",
+    "PadelWrist Events is in development as a native iPhone/iPad organiser experience for Americano and Mexicano. Draft app PRs #30 and #31 contain native organiser-confirmed scores and audited corrections of current/historic results, with explicit approval and stale-edit safeguards. This development work is not merged, released or available for public tournaments. There is no launch date, pricing, public registration or booking. See https://padelwrist.com/events/ for the illustrated concept, https://padelwrist.com/americano-vs-mexicano-padel/ for a format comparison and https://padelwrist.com/padel-tournament-score-corrections/ for organiser education.",
     "",
     "## Primary product pages",
     "",
