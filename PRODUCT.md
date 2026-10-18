@@ -54,14 +54,16 @@ The website should make four ideas obvious:
 - Local-first scoring during temporary device disconnection.
 - No PadelWrist account required.
 
-PadelWrist Events is separately **in development** as a native iPhone/iPad organiser feature for Americano/Mexicano. The discovery proposes rosters, courts, flexible rounds, organiser-controlled draws, official results/corrections, individual standings and optional read-only participant views. None are in the released app yet. Do not announce Events launch dates, pricing, account requirements, booking or tournament registration; developer drafts do not imply production availability. Match Assistant is best-effort, foreground-only and does not provide spoken assistant instructions, system notifications or background haptic alerts. Do not promise catch-up cues after reconnect, Undo, editing or resuming a match. Do not imply automatic shot tracking, tactical analysis, public social profiles, court booking, tournament management or automatic Americano/Mexicano partner rotation.
+PadelWrist Events is separately **in development** as a native iPhone/iPad organiser feature for Americano/Mexicano. The current design proposes rosters, courts, flexible rounds, organiser-controlled draws, individual standings and optional read-only participant views. Stacked draft PRs #30 and #31 have native official score entry and audited corrections under development: current and historic fixtures, required reasons, explicit before/after review, durable recovery from interrupted responses and server-side stale-edit protection. These are **not merged or available in the released app**. Real-device accessibility, production authentication and further Events flows remain release gates. Do not announce Events launch dates, pricing, account requirements, booking or tournament registration; developer drafts do not imply production availability. Match Assistant is best-effort, foreground-only and does not provide spoken assistant instructions, system notifications or background haptic alerts. Do not promise catch-up cues after reconnect, Undo, editing or resuming a match. Do not imply automatic shot tracking, tactical analysis, public social profiles, court booking, tournament management or automatic Americano/Mexicano partner rotation.
 
 ## New website content
 
 - `/play-again-padel-match/`: help for using Play Again and distinguishing it from Resume.
 - `/how-to-read-padel-match-stats/`: interpretation of trends, match volume, partner/opponent records and statistics limitations.
 - `/padel-tournament-organiser-checklist/`: organiser education, practical scoring examples and transparent rules.
-- `/events/`: clear in-development overview of native organiser direction and optional feedback links, never a simulated live organiser portal.
+- `/events/`: a visually structured in-development overview of the native organiser workflow, Americano/Mexicano differences, score integrity and feedback. Visual scores are **labelled illustrative**, never presented as production app screenshots.
+- `/americano-vs-mexicano-padel/`: comparison of partner rotations, pairing rules, fixed-point totals and organiser decisions.
+- `/padel-tournament-score-corrections/`: practical advice on correcting official scores, approval, rank recalculation, stable Mexicano fixtures and connectivity conflicts.
 
 ## Brand naming
 
