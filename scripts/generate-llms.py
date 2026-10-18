@@ -8,6 +8,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 
 PRODUCT_PAGES = [
+    ("For individual players", "https://padelwrist.com/players/"),
     ("Padel score tracker", "https://padelwrist.com/padel-score-tracker/"),
     ("Apple Watch padel scoring", "https://padelwrist.com/apple-watch-padel-scoring/"),
     ("Apple Watch vs phone scoring", "https://padelwrist.com/apple-watch-vs-phone-padel-scoring/"),
@@ -26,6 +27,7 @@ EXCLUDED_FROM_KB = {
     "guides",
     "editorial-policy",
     "events",
+    "players",
     "play-again-padel-match",
     "whats-new",
     "padel-score-tracker",
@@ -94,6 +96,11 @@ lines = [
     "Insights use recorded match history for recent form, performance trends, partner and opponent records, head-to-heads and streaks. PadelWrist does not perform automatic shot analysis or rank players publicly.",
     "",
     "PadelWrist Events is in development as a native iPhone/iPad organiser experience for Americano and Mexicano. Draft app PRs #30 and #31 contain native organiser-confirmed scores and audited corrections of current/historic results, with explicit approval and stale-edit safeguards. This development work is not merged, released or available for public tournaments. There is no launch date, pricing, public registration or booking. See https://padelwrist.com/events/ for the illustrated concept, https://padelwrist.com/americano-vs-mexicano-padel/ for a format comparison and https://padelwrist.com/padel-tournament-score-corrections/ for organiser education.",
+    "",
+    "## Who PadelWrist serves",
+    "",
+    "For players: https://padelwrist.com/players/ presents the available scoring app, Apple Watch, live match sharing, Match History, Play Again and Insights.",
+    "For clubs, coaches and tournament hosts: https://padelwrist.com/events/ describes a separate native organiser experience in development for Americano and Mexicano sessions. It is not an available tournament manager.",
     "",
     "## Primary product pages",
     "",
