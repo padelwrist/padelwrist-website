@@ -68,3 +68,10 @@
 @media (prefers-reduced-motion: reduce) {
  .audience-choice-card a { transition: none; }
 }
+/* Matching FAQ presentation on player landing without importing Events-specific styles. */
+.players-page .events-faq-list { max-width: 890px; }
+.players-page .events-faq-list details { border-top: 1px solid var(--pw-outline-variant); }
+.players-page .events-faq-list details:last-child { border-bottom: 1px solid var(--pw-outline-variant); }
+.players-page .events-faq-list summary { min-height: 54px; cursor: pointer; color: white; padding: 22px 32px 22px 0; font-size: 16px; font-weight: 700; line-height: 1.5; }
+.players-page .events-faq-list p { color: #bdc9db; font-size: 15px; max-width: 70ch; line-height: 1.75; margin: 0 0 26px; }
+.players-page .events-faq-list details:focus-within { outline: 2px solid #a9bfff; outline-offset: 3px; }
