@@ -8,6 +8,7 @@ await fs.mkdir(outDir, { recursive: true });
 
 const pages = [
   ['home', '/'],
+  ['players', '/players/'],
   ['guides', '/guides/'],
   ['typical-guide', '/how-padel-scoring-works/'],
   ['insights', '/padel-player-statistics/'],
@@ -53,7 +54,7 @@ for (const [viewportName, width, height] of viewports) {
         const el = document.querySelector(selector);
         return el ? getComputedStyle(el).getPropertyValue(prop).trim() : null;
       };
-      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot, .events-step, .events-format-card, .events-boundary-card')].map((el) => {
+      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot, .audience-choice-card, .events-benefit, .events-host-grid article, .events-format-card, .events-boundary-card, .players-feature')].map((el) => {
         const r = el.getBoundingClientRect();
         return { tag: el.tagName, cls: el.className, x: r.x, y: r.y, width: r.width, height: r.height };
       });
@@ -75,6 +76,10 @@ for (const [viewportName, width, height] of viewports) {
         pageHeading: rect('.page-heading'),
         guideCopy: rect('.guide-copy'),
         storyHeading: rect('.story-v2-head'),
+        audienceChooser: rect('.audience-choice-grid'),
+        playersFeatures: rect('.players-feature-grid'),
+        eventsBenefits: rect('.events-benefit-grid'),
+        eventsHosts: rect('.events-host-grid'),
         eventsPreview: rect('.events-preview'),
         eventsSteps: rect('.events-steps'),
         eventsCorrection: rect('.events-integrity-grid'),
