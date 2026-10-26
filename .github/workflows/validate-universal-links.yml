@@ -1,0 +1,26 @@
+name: Validate PadelWrist Universal Links
+on:
+  pull_request:
+    paths:
+      - '.well-known/apple-app-site-association'
+      - 'apple-app-site-association'
+      - '_headers'
+      - '_redirects'
+      - 'join-event/**'
+      - 'join-match/**'
+      - 'scripts/check-universal-links.py'
+      - '.github/workflows/validate-universal-links.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  universal-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python3 scripts/check-universal-links.py
