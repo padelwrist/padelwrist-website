@@ -10,3 +10,9 @@
 /*/index /:splat/ 301
 /*/index.html /:splat/ 301
 /*/index.php /:splat/ 301
+
+# Browser fallback for time-limited PadelWrist invitations.
+# Workers Static Assets supports 200 proxy routes without changing the URL.
+# Keep /event/* distinct from the permanent /events/ marketing page.
+/event/* /join-event/index.html 200
+/match/* /join-match/index.html 200
