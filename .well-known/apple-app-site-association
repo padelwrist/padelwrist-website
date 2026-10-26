@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "RJZUA257YQ.com.padelwrist.PadelWrist"
+        ],
+        "components": [
+          {
+            "/": "/match/*",
+            "comment": "Existing PadelWrist Live Match Sharing invitation links"
+          },
+          {
+            "/": "/event/*",
+            "comment": "PadelWrist Events join invitations; app support currently gated to Debug/InternalBeta"
+          }
+        ]
+      }
+    ]
+  }
+}
