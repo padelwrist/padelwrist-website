@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#050916">
+  <title>Join a PadelWrist Event</title>
+  <meta name="description" content="Open an invited padel tournament in PadelWrist, or copy your private invitation to join inside the app.">
+  <link rel="canonical" href="https://padelwrist.com/join-event/">
+  <meta property="og:site_name" content="PadelWrist">
+  <meta property="og:title" content="Join a PadelWrist Event">
+  <meta property="og:description" content="Open a private PadelWrist tournament invitation with the Events-enabled app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://padelwrist.com/join-event/">
+  <meta property="og:image" content="https://padelwrist.com/assets/padelwrist-social-card.png">
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/launch.css">
+</head>
+<body class="page-body">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header solid"><div class="shell nav-wrap"><a class="brand" href="/"><span class="brand-mark">PW</span><span>PADELWRIST</span></a></div></header>
+  <main id="main" class="content-page shell">
+    <div class="page-heading">
+      <p class="eyebrow">Private tournament invitation</p>
+      <h1>You've been invited to follow a padel event.</h1>
+      <p>PadelWrist Events is currently in testing. If you have the Events-enabled app, open <strong>Events → Join Event</strong> and paste this invitation link, or scan the organiser's QR code in the app.</p>
+    </div>
+    <article class="guide-copy">
+      <section>
+        <h2>Already installed?</h2>
+        <p>Try opening the link from Messages or Notes. If it stays in your browser, copy the full invitation link and paste it into <strong>Events → Join Event</strong> in your testing build of PadelWrist.</p>
+        <button id="copy-invite" type="button" class="feedback-link">Copy invitation link</button>
+        <p id="copy-status" role="status" aria-live="polite"></p>
+      </section>
+      <section>
+        <h2>New to PadelWrist?</h2>
+        <p>PadelWrist is available for Apple Watch, iPhone and iPad. Tournament following is currently being tested and is not yet part of the public App Store release.</p>
+        <p><a class="feedback-link" href="https://apps.apple.com/gb/app/padelwrist-padel-score/id6799725420" rel="noopener noreferrer" referrerpolicy="no-referrer">See PadelWrist on the App Store</a></p>
+      </section>
+      <p>Invitation links are temporary. If this event is no longer available, ask its organiser for a new code or QR link.</p>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="shell footer-grid"><p>© PadelWrist</p><nav><a href="/events/">About PadelWrist Events</a><a href="/privacy/">Privacy</a></nav></div></footer>
+  <script>
+    document.getElementById("copy-invite").addEventListener("click", async function () {
+      const status = document.getElementById("copy-status");
+      try {
+        await navigator.clipboard.writeText(location.origin + location.pathname);
+        status.textContent = "Invitation copied. Paste it into Join Event in PadelWrist.";
+      } catch {
+        status.textContent = "Copy the full URL from your browser's address bar and paste it into PadelWrist.";
+      }
+    });
+  </script>
+</body>
+</html>
