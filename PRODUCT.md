@@ -8,11 +8,11 @@ PadelWrist is live on the Apple App Store: https://apps.apple.com/gb/app/padelwr
 
 App Store ID: `6799725420`.
 
-**2.0 release status (29 October 2026):** Submitted to Apple for App Store review. Not yet approved or publicly available. The site may explain the submitted Events features with a prominent submission-status qualification, but must not claim public availability until verified. Existing individual padel scoring is available. The current App Store storefront may still show an earlier release. Version 2.0 adds Americano/Mexicano Events on iPhone and iPad. Previous versions added Play Again (1.9), Match Assistant (1.8), Watch complications (1.7) and rating prompts (1.6). Do not imply direct Watch tournament administration or court booking/payments.
+**Version 2.0 is the current website product position (29 October 2026).** The product owner authorised the 2.0 public marketing launch, including present-tense copy for Americano and Mexicano Events on iPhone and iPad, while the 2.0 App Store submission remains under review. Do not assert that Apple has approved version 2.0 or that the App Store listing already serves this build unless independently verified. This is launch marketing, not App Store approval evidence. PadelWrist 1.9 added Play Again, 1.8 Match Assistant, 1.7 Watch complications and 1.6 rating prompts. Preserve separate Apple Watch individual scoring and iPhone/iPad event organising roles.
 
 ## Audience
 
-Two complementary audiences: **(1) individual padel players** using the released scorekeeper on Apple Watch, iPhone and iPad, who care about intuitive scoring, History, sharing and Insights; **(2) padel clubs, coaches and social tournament hosts** with Americano/Mexicano Events included in the submitted version 2.0 app, pending public release. The site should make both journeys immediately visible, without conflating roadmap functionality with released app functionality.
+Two complementary audiences: **(1) individual padel players** using the released scorekeeper on Apple Watch, iPhone and iPad, who care about intuitive scoring, History, sharing and Insights; **(2) padel clubs, coaches and social tournament hosts** using Americano/Mexicano Events on iPhone and iPad. The site should make both journeys immediately visible, without conflating roadmap functionality with released app functionality.
 
 ## Primary promise
 
@@ -54,7 +54,7 @@ The website should make four ideas obvious:
 - Local-first scoring during temporary device disconnection.
 - No PadelWrist account required.
 
-PadelWrist Events is a **version 2.0 feature submitted for App Store review, pending public release**, provided on iPhone/iPad. Organisers can set up Americano or Mexicano events, rosters, courts and points targets; review/publish draw proposals; record official match scores and corrections; manage rests and withdrawals; view individual standings and podium; and share read-only published rounds and standings by code/link. The organising device is locally authoritative and event sharing is read-only for followers. This is not a tournament cloud account, court booking system or payments service. The 2.0 submission does not guarantee a particular date of approval. Do not imply Watch tournament administration or guaranteed offline delivery of shared updates.
+PadelWrist Events is part of the version 2.0 product and is presented in the present tense across the public website. Organisers manage Americano and Mexicano player rosters, courts, fixed-point targets, proposed draws, published rounds, official scores and corrections, resting-player points, withdrawals, final standings and podium on iPhone/iPad. Participants follow published event fixtures, assignments and standings through a code or link with read-only access. The organiser device remains authoritative and works local-first; shared updates require connectivity. No court booking, payment, paid club subscription, live web tournament administration or Watch tournament organiser is implied. PadelWrist 2.0 has been submitted to Apple, but approval and App Store rollout are distinct from website marketing.
 
 ## New website content
 
@@ -67,7 +67,7 @@ PadelWrist Events is a **version 2.0 feature submitted for App Store review, pen
 - `/padel-tournament-organiser-checklist/`: organiser education, practical scoring examples and transparent rules.
 - `/players/`: purpose-built released-app landing page for players, with Apple Watch, iPhone/iPad, live scoring, Play Again, History and Insights.
 - `/clubs/`: top-level clubs and tournament hosts landing page, explaining their needs and directing to the Events product preview.
-- `/events/`: a 2.0 product page under Clubs, with submitted setup, players/courts, round-by-round flow, sharing, standings and host feedback. Illustrations remain explicitly marked examples. Score corrections are a minor supporting detail, not a headline selling point.
+- `/events/`: a 2.0 product page under Clubs, with organiser setup, players/courts, round-by-round flow, sharing, standings and host feedback. Illustrations remain explicitly marked examples. Score corrections are a minor supporting detail, not a headline selling point.
 - `/americano-vs-mexicano-padel/`: comparison of partner rotations, pairing rules, fixed-point totals and organiser decisions.
 - `/padel-tournament-score-corrections/`: practical advice on correcting official scores, approval, rank recalculation, stable Mexicano fixtures and connectivity conflicts.
 
@@ -79,4 +79,4 @@ Use **PADELWRIST** only when rendering the visual wordmark itself.
 
 ## Website mode
 
-The homepage is a **two-audience Persuade** surface with an early, equally visible choice: Players → `/players/` and Clubs → `/clubs/`. **Events** is a version 2.0 submission page nested under the Clubs journey at `/events/`. The main navigation labels are **Players, Clubs, Features, What’s New, Guides, Support, Privacy**. Both audience routes are discoverable from primary navigation and Guides. The player route sells the released personal match lifecycle (score on Watch, share, History, Insights and Play Again); the organiser route sells the planned value for clubs (players, courts, pairing/rounds and standings), while accurately identifying Events as included in version 2.0 but pending review and public release. Do not use a generic App Store download CTA to imply Events is publicly available before the 2.0 release. Supporting guides are **Read** surfaces answering intent first and routing appropriately.
+The homepage is a **two-audience Persuade** surface with an early, equally visible choice: Players → `/players/` and Clubs → `/clubs/`. **Events** is a version 2.0 product page nested under the Clubs journey at `/events/`. The main navigation labels are **Players, Clubs, Features, What’s New, Guides, Support, Privacy**. Both audience routes are discoverable from primary navigation and Guides. The player route sells the released personal match lifecycle (score on Watch, share, History, Insights and Play Again); the organiser route sells the planned value for clubs (players, courts, pairing/rounds and standings), while accurately describing Events as part of version 2.0. Do not claim Apple approved the submission or that the public App Store build is already 2.0 without verification. Supporting guides are **Read** surfaces answering intent first and routing appropriately.
