@@ -1,0 +1,74 @@
+# PadelWrist HTML and Markdown equivalents
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex, follow
+
+/
+  Link: </index.md>; rel="alternate"; type="text/markdown"
+/index.md
+  Link: </>; rel="alternate"; type="text/html"
+
+/players/
+  Link: </players.md>; rel="alternate"; type="text/markdown"
+/players.md
+  Link: </players/>; rel="alternate"; type="text/html"
+
+/clubs/
+  Link: </clubs.md>; rel="alternate"; type="text/markdown"
+/clubs.md
+  Link: </clubs/>; rel="alternate"; type="text/html"
+
+/events/
+  Link: </events.md>; rel="alternate"; type="text/markdown"
+/events.md
+  Link: </events/>; rel="alternate"; type="text/html"
+
+/whats-new/
+  Link: </whats-new.md>; rel="alternate"; type="text/markdown"
+/whats-new.md
+  Link: </whats-new/>; rel="alternate"; type="text/html"
+
+/guides/
+  Link: </guides.md>; rel="alternate"; type="text/markdown"
+/guides.md
+  Link: </guides/>; rel="alternate"; type="text/html"
+
+/padel-tournament-app/
+  Link: </padel-tournament-app.md>; rel="alternate"; type="text/markdown"
+/padel-tournament-app.md
+  Link: </padel-tournament-app/>; rel="alternate"; type="text/html"
+
+/americano-tournament-organiser/
+  Link: </americano-tournament-organiser.md>; rel="alternate"; type="text/markdown"
+/americano-tournament-organiser.md
+  Link: </americano-tournament-organiser/>; rel="alternate"; type="text/html"
+
+/mexicano-tournament-organiser/
+  Link: </mexicano-tournament-organiser.md>; rel="alternate"; type="text/markdown"
+/mexicano-tournament-organiser.md
+  Link: </mexicano-tournament-organiser/>; rel="alternate"; type="text/html"
+
+/padel-score-tracker/
+  Link: </padel-score-tracker.md>; rel="alternate"; type="text/markdown"
+/padel-score-tracker.md
+  Link: </padel-score-tracker/>; rel="alternate"; type="text/html"
+
+/apple-watch-padel-scoring/
+  Link: </apple-watch-padel-scoring.md>; rel="alternate"; type="text/markdown"
+/apple-watch-padel-scoring.md
+  Link: </apple-watch-padel-scoring/>; rel="alternate"; type="text/html"
+
+/americano-vs-mexicano-padel/
+  Link: </americano-vs-mexicano-padel.md>; rel="alternate"; type="text/markdown"
+/americano-vs-mexicano-padel.md
+  Link: </americano-vs-mexicano-padel/>; rel="alternate"; type="text/html"
+
+/padel-match-history/
+  Link: </padel-match-history.md>; rel="alternate"; type="text/markdown"
+/padel-match-history.md
+  Link: </padel-match-history/>; rel="alternate"; type="text/html"
+
+/padel-player-statistics/
+  Link: </padel-player-statistics.md>; rel="alternate"; type="text/markdown"
+/padel-player-statistics.md
+  Link: </padel-player-statistics/>; rel="alternate"; type="text/html"
