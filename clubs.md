@@ -4,19 +4,7 @@ From weekly Americano socials to competitive Mexicano evenings, set up your play
 
 **PadelWrist 2.0 Events.** Manage Americano and Mexicano sessions on iPhone and iPad, from the opening draw to the final podium.
 
-[Explore the tournament app](https://padelwrist.com/padel-tournament-app/) [See the benefits](https://padelwrist.com/clubs/#club-benefits) PADELWRIST / CLUBS Illustrative example **Friday night social** Americano · Example Players **12** Courts **3** Points **16** Round 1 · Sample fixture Court 1
-
-Alex + Sam **vs**
-
-Jamie + Taylor
-
-Round 1 · Sample fixture Court 2
-
-Jordan + Pat **vs**
-
-Casey + Chris
-
-Sample fixture data for illustration only, not a screenshot of the released app.
+[Explore the tournament app](https://padelwrist.com/padel-tournament-app/) [See the benefits](https://padelwrist.com/clubs/#club-benefits)
 
 What clubs and hosts need
 

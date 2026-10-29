@@ -6,12 +6,6 @@ Score every match on Apple Watch, iPhone and iPad. In version 2.0, clubs and soc
 
 Personal scoring available now · [Explore player features](https://padelwrist.com/players/) · Americano and Mexicano Events in 2.0
 
-Live match **One match. Every screen.**
-
-Prepare on a larger screen, score from your wrist, and keep the active match moving across your Apple devices.
-
-Team One **40****Team Two** 30 **Photo: Vincenzo Morelli / Unsplash** Apple Watch **Americano Events Mexicano Events Play Again Match Assistant Watch face complications English & Spanish Live Activities Insights Match History iCloud sync Apple Health Live sharing
-
 One sport. Two ways to play.
 
 ## What brings you to PadelWrist?
@@ -52,21 +46,33 @@ Why PadelWrist
 
 ## The score should never become the distraction.
 
-The point of a scorer is not to give you another screen to manage. It is to keep the match state obvious, make mistakes easy to correct, and get out of the way again.** Play the rally. Tap the score. Move on. **Apple Watch keeps the live point score, server and important match states within one quick interaction.** Score from your wrist. **Start on one supported device, continue on another, and keep scoring locally through temporary connection loss.** One logical match, not three separate copies. **Built for the whole match
+The point of a scorer is not to give you another screen to manage. It is to keep the match state obvious, make mistakes easy to correct, and get out of the way again.
+
+**Play the rally. Tap the score. Move on.** Apple Watch keeps the live point score, server and important match states within one quick interaction. **Score from your wrist.** Start on one supported device, continue on another, and keep scoring locally through temporary connection loss. **One logical match, not three separate copies.**
+
+Built for the whole match
 
 ## The interface changes with the moment.
 
-During play, the score stays simple and immediate. Before and after, iPhone and iPad take over setup, searchable Match History, Insights, player analysis, notes and sharing. Each device does the job it is best at.** Set up on iPhone. **Players, format and match details are ready before the first serve.** Score from your wrist. **The live interaction stays fast enough to disappear between rallies.** Choose the rules that suit your match. **Set up a Standard Match with the scoring format agreed before play.
+During play, the score stays simple and immediate. Before and after, iPhone and iPad take over setup, searchable Match History, Insights, player analysis, notes and sharing. Each device does the job it is best at.
+
+**Set up on iPhone.** Players, format and match details are ready before the first serve. **Score from your wrist.** The live interaction stays fast enough to disappear between rallies. **Choose the rules that suit your match.** Set up a Standard Match with the scoring format agreed before play.
 
 Designed for each screen
 
 ## One PadelWrist. Three different jobs.
 
-During play** Apple Watch **Open from your Watch face or Smart Stack. Match Assistant helps with the next serve and change of ends while you keep scoring from your wrist.
+During play **Apple Watch**
 
-Companion** iPhone **Prepare matches or organise Americano and Mexicano Events in 2.0, follow live scores, search Match History and explore Insights.
+Open from your Watch face or Smart Stack. Match Assistant helps with the next serve and change of ends while you keep scoring from your wrist.
 
-Bigger canvas** iPad **Use more space for tournament rosters, court assignments and standings in 2.0 alongside match setup, history and analysis.
+Companion **iPhone**
+
+Prepare matches or organise Americano and Mexicano Events in 2.0, follow live scores, search Match History and explore Insights.
+
+Bigger canvas **iPad**
+
+Use more space for tournament rosters, court assignments and standings in 2.0 alongside match setup, history and analysis.
 
 Latest release · PadelWrist 2.0
 
@@ -74,11 +80,17 @@ Latest release · PadelWrist 2.0
 
 PadelWrist expands from individual scoring to Americano and Mexicano Events. Give every round a draw, every player a court and every result its place in the standings.
 
-For players** Keep scoring from Apple Watch. **Quick point controls, spoken scores, Match Assistant, Play Again, match sharing and Insights remain central to PadelWrist.
+For players **Keep scoring from Apple Watch.**
 
-[Explore player features](https://padelwrist.com/players/) For organisers** Run Americano or Mexicano. **Build a roster, set courts and point targets, review pairings, enter results and watch individual standings develop.
+Quick point controls, spoken scores, Match Assistant, Play Again, match sharing and Insights remain central to PadelWrist.
 
-[Explore the tournament app](https://padelwrist.com/padel-tournament-app/) For the whole group** Everyone knows the next match. **Share published fixtures and standings by code or link while the organiser retains control of official scores.
+[Explore player features](https://padelwrist.com/players/) For organisers **Run Americano or Mexicano.**
+
+Build a roster, set courts and point targets, review pairings, enter results and watch individual standings develop.
+
+[Explore the tournament app](https://padelwrist.com/padel-tournament-app/) For the whole group **Everyone knows the next match.**
+
+Share published fixtures and standings by code or link while the organiser retains control of official scores.
 
 [What's new in 2.0](https://padelwrist.com/whats-new/#v2-0)
 
@@ -88,11 +100,17 @@ For clubs, coaches and social hosts
 
 PadelWrist 2.0 brings native Events to iPhone and iPad. Organisers stay in control of the draws, scores and standings while the app handles the structure.
 
-Before the first serve** Set up players and courts. **Choose Americano or Mexicano, build the roster, enter courts and decide the round points target.
+Before the first serve **Set up players and courts.**
 
-Throughout the event** Review and share each draw. **Confirm partner rotations or standings-led pairings, publish court assignments and record results.
+Choose Americano or Mexicano, build the roster, enter courts and decide the round points target.
 
-After the final round** Finish with a podium. **See individual standings, final results and completed event history, with organiser-controlled score corrections.
+Throughout the event **Review and share each draw.**
+
+Confirm partner rotations or standings-led pairings, publish court assignments and record results.
+
+After the final round **Finish with a podium.**
+
+See individual standings, final results and completed event history, with organiser-controlled score corrections.
 
 [Explore PadelWrist for clubs](https://padelwrist.com/clubs/)
 
@@ -102,7 +120,7 @@ PadelWrist knowledge base
 
 Clear, practical explanations of padel scoring, tie-breaks, social formats and digital scorekeeping, written for players rather than rulebook lawyers.
 
-[Start here** How padel scoring works **](https://padelwrist.com/how-padel-scoring-works/) [On your wrist **Apple Watch padel scoring**](https://padelwrist.com/apple-watch-padel-scoring/) [Rules made simple **Padel tie-break rules**](https://padelwrist.com/padel-tie-break-rules/) [Browse the full knowledge base](https://padelwrist.com/guides/) [Padel score tracker](https://padelwrist.com/padel-score-tracker/) [Fixed Points scoring](https://padelwrist.com/fixed-points-padel-scoring/) [Watch vs phone](https://padelwrist.com/apple-watch-vs-phone-padel-scoring/)
+[Start here **How padel scoring works**](https://padelwrist.com/how-padel-scoring-works/) [On your wrist **Apple Watch padel scoring**](https://padelwrist.com/apple-watch-padel-scoring/) [Rules made simple **Padel tie-break rules**](https://padelwrist.com/padel-tie-break-rules/) [Browse the full knowledge base](https://padelwrist.com/guides/) [Padel score tracker](https://padelwrist.com/padel-score-tracker/) [Fixed Points scoring](https://padelwrist.com/fixed-points-padel-scoring/) [Watch vs phone](https://padelwrist.com/apple-watch-vs-phone-padel-scoring/)
 
 Common questions
 

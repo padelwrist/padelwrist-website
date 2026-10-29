@@ -4,21 +4,7 @@ Organise your next padel Americano or Mexicano from iPhone or iPad. Manage playe
 
 **PadelWrist 2.0 Events.** Build an Americano or Mexicano, publish rounds, track official results and share standings with players.
 
-[Explore event features](https://padelwrist.com/events/#club-benefits) Share organiser feedback PADELWRIST / EVENTS Illustrative example **Friday Club Americano** Round 2 · Sample Players **8** Courts **2** Points **16** Court 1 · Next fixture Ready to play
-
-Alex + Sam **vs**
-
-Jamie + Taylor
-
-Court 2 · Next fixture Round 2
-
-Pat + Jordan **vs**
-
-Chris + Casey
-
-Illustrative standings **1 · Alex 28 pts****2 · Jamie 24 pts**
-
-Example court assignments and standings, not an actual app screenshot or live tournament.
+[Explore event features](https://padelwrist.com/events/#club-benefits) Share organiser feedback
 
 Made for people who bring players together
 
