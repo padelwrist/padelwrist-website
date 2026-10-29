@@ -19,6 +19,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Test HTTP content negotiation
+        run: node --test tests/content-negotiation.test.mjs
       - name: Run static SEO audit
         run: node scripts/seo-audit.mjs
       - name: Run stale launch copy audit

@@ -2,6 +2,7 @@
 /*.md
   Content-Type: text/markdown; charset=utf-8
   X-Robots-Tag: noindex, follow
+  Vary: Accept
 
 /
   Link: </index.md>; rel="alternate"; type="text/markdown"
