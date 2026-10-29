@@ -6,7 +6,7 @@ Last updated: 2026-10-29.
 
 ## Product status
 
-PadelWrist 2.0 has been submitted to the App Store for review (29 October 2026). It adds Americano and Mexicano Events to the existing individual match scorer. This is not yet an approval or public release; the downloadable App Store version currently provides individual scoring. Direct Apple Watch Play Again is not a confirmed public feature.
+PadelWrist 1.9 is the website-promoted release, as approved by the product owner. The merged Play Again feature runs from Match History on iPhone/iPad; separate Watch Play Again is still in development. Store listing and review status may vary by storefront.
 
 - Official App Store listing: https://apps.apple.com/gb/app/padelwrist/id6799725420
 - App Store ID: 6799725420
@@ -22,18 +22,14 @@ Apple Watch is the primary wrist-first scoring surface. iPhone and iPad provide 
 
 Insights use recorded match history for recent form, performance trends, partner and opponent records, head-to-heads and streaks. PadelWrist does not perform automatic shot analysis or rank players publicly.
 
-PadelWrist Events is a native organiser experience for Americano and Mexicano on iPhone and iPad, submitted in version 2.0 for review. Organisers can manage rosters, courts, draw proposals, published rounds, scores, standings, corrections, rests, withdrawals and final podium. Participants may follow published courts, fixtures and standings by code or link in read-only mode. The organising device retains authority for official results, with local-first event management. Events does not provide court reservations, fee collection or registration. See https://padelwrist.com/events/, https://padelwrist.com/padel-tournament-app/, https://padelwrist.com/americano-tournament-organiser/ and https://padelwrist.com/mexicano-tournament-organiser/.
+PadelWrist Events is in development as a native iPhone/iPad organiser experience for Americano and Mexicano. Draft app PRs #30 and #31 contain native organiser-confirmed scores and audited corrections of current/historic results, with explicit approval and stale-edit safeguards. This development work is not merged, released or available for public tournaments. There is no launch date, pricing, public registration or booking. See https://padelwrist.com/events/ for the illustrated concept, https://padelwrist.com/americano-vs-mexicano-padel/ for a format comparison and https://padelwrist.com/padel-tournament-score-corrections/ for organiser education.
 
 ## Who PadelWrist serves
 
 For players: https://padelwrist.com/players/ presents the available scoring app, Apple Watch, live match sharing, Match History, Play Again and Insights.
-For clubs, coaches and tournament hosts: https://padelwrist.com/clubs/ is the main organiser area; https://padelwrist.com/events/ introduces PadelWrist Events for Americano and Mexicano sessions in the version 2.0 submission. These features are pending Apple approval and public release.
+For clubs, coaches and tournament hosts: https://padelwrist.com/clubs/ is the main organiser area; https://padelwrist.com/events/ describes PadelWrist Events, a separate native organiser product in development for Americano and Mexicano sessions. It is not an available tournament manager.
 
 ## Primary product pages
-
-- Padel tournament app for clubs: https://padelwrist.com/padel-tournament-app/
-- Americano tournament organiser: https://padelwrist.com/americano-tournament-organiser/
-- Mexicano tournament organiser: https://padelwrist.com/mexicano-tournament-organiser/
 
 - For individual players: https://padelwrist.com/players/
 - For clubs and tournament hosts: https://padelwrist.com/clubs/
@@ -45,7 +41,7 @@ For clubs, coaches and tournament hosts: https://padelwrist.com/clubs/ is the ma
 - Insights and player statistics: https://padelwrist.com/padel-player-statistics/
 - Match sharing: https://padelwrist.com/padel-match-sharing/
 - Play Again from Match History: https://padelwrist.com/play-again-padel-match/
-- PadelWrist Events — version 2.0 submitted for review: https://padelwrist.com/events/
+- PadelWrist Events — in development: https://padelwrist.com/events/
 - What's new: https://padelwrist.com/whats-new/
 
 ## Padel knowledge base
@@ -55,6 +51,7 @@ The main guide index is https://padelwrist.com/guides/. Rules-based articles use
 Knowledge-base pages:
 
 - Americano Padel Scoring Explained: https://padelwrist.com/americano-padel-scoring/
+- How to Organise an Americano Padel Tournament: https://padelwrist.com/americano-tournament-organiser/
 - Americano vs Mexicano Padel: Differences & Rules: https://padelwrist.com/americano-vs-mexicano-padel/
 - Bandeja vs Víbora vs Smash in Padel: https://padelwrist.com/bandeja-vs-vibora-vs-smash/
 - Can You Play Padel Singles?: https://padelwrist.com/can-you-play-padel-singles/
@@ -80,6 +77,7 @@ Knowledge-base pages:
 - How to Play With a Left-Handed Padel Partner: https://padelwrist.com/left-handed-padel-partner/
 - Left vs Right Side in Padel: Which Should You Play?: https://padelwrist.com/left-vs-right-side-padel/
 - Mexicano Padel Scoring Explained: https://padelwrist.com/mexicano-padel-scoring/
+- How to Run a Mexicano Padel Tournament: https://padelwrist.com/mexicano-tournament-organiser/
 - How to Move as a Pair in Padel: https://padelwrist.com/move-as-pair-padel/
 - Padel Ball vs Tennis Ball: Are They the Same?: https://padelwrist.com/padel-ball-vs-tennis-ball/
 - Padel Court Dimensions: Size, Walls, Net & Layout: https://padelwrist.com/padel-court-dimensions/
