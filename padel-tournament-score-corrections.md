@@ -1,7 +1,3 @@
-# How to Correct Padel Tournament Scores Fairly | PadelWrist
-
-Tournament organiser guide · Results and corrections
-
 # How to correct a padel tournament score fairly.
 
 A score can be entered incorrectly even when everyone played the match properly. The important part is correcting it without losing the original result, duplicating points or unexpectedly rearranging the next round.
@@ -14,7 +10,7 @@ Record the round, court, players and exact fixture alongside the result. This ma
 
 ## Check the scoring target before making a change
 
-Americano and Mexicano events often use a fixed total of rallies. If a match was set to 16 combined points, both sides must add up to 16 once it is completed. For example, a recorded ** 10–6 ** result could need changing to ** 9–7 ** , but a replacement of 9–6 would leave one rally unaccounted for.
+Americano and Mexicano events often use a fixed total of rallies. If a match was set to 16 combined points, both sides must add up to 16 once it is completed. For example, a recorded **10–6** result could need changing to **9–7** , but a replacement of 9–6 would leave one rally unaccounted for.
 
 The organiser should confirm which team owns each score and whether the fixture was fully played. Incomplete or abandoned matches need an explicitly agreed resolution policy. Never treat a void result as a normal zero-point game merely to make the leaderboard add up.
 
@@ -50,14 +46,14 @@ None of this requires an elaborate tournament rulebook. A short written agreemen
 
 ## How PadelWrist Events fits in
 
-[ PadelWrist Events ](https://padelwrist.com/events/) provides an official-score correction workflow for Americano and Mexicano organisers on iPhone and iPad. Review and correct current or historic fixtures with a reason, clear old-versus-new scores, and safeguards against stale changes.
+[PadelWrist Events](https://padelwrist.com/events/) provides an official-score correction workflow for Americano and Mexicano organisers on iPhone and iPad. Review and correct current or historic fixtures with a reason, clear old-versus-new scores, and safeguards against stale changes.
 
-For an event you are running now, use the [ tournament organiser checklist ](https://padelwrist.com/padel-tournament-organiser-checklist/) to agree a correction policy. The released [ PadelWrist score tracker ](https://padelwrist.com/padel-score-tracker/) uses [ Fixed Points scoring ](https://padelwrist.com/fixed-points-padel-scoring/) to track an individual match but does not itself supply the complete tournament audit and standings workflow.
+For an event you are running now, use the [tournament organiser checklist](https://padelwrist.com/padel-tournament-organiser-checklist/) to agree a correction policy. The released [PadelWrist score tracker](https://padelwrist.com/padel-score-tracker/) uses [Fixed Points scoring](https://padelwrist.com/fixed-points-padel-scoring/) to track an individual match but does not itself supply the complete tournament audit and standings workflow.
 
 ## Planning an Americano or Mexicano?
 
 Explore the PadelWrist 2.0 Events experience and the safeguards used for organiser-confirmed results.
 
-[ Explore Events score integrity ](https://padelwrist.com/events/)
+[Explore Events score integrity](https://padelwrist.com/events/)
 
 Canonical HTML: https://padelwrist.com/padel-tournament-score-corrections/

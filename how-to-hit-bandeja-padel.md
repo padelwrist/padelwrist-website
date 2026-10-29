@@ -1,7 +1,3 @@
-# How to Hit a Bandeja in Padel: Technique & Mistakes | PadelWrist
-
-Shots & technique · Updated 18 August 2026
-
 # A good bandeja feels controlled because its first job is to keep you in control.
 
 The bandeja is not a weak smash. It is the overhead you use when a lob challenges your net position but does not give you a clean finishing opportunity.
@@ -36,15 +32,15 @@ If the shot was chosen to protect your net position, staying where you hit it de
 
 ## Common bandeja mistakes
 
-** Too much power: ** the shot becomes a risky flat overhead.
+**Too much power:** the shot becomes a risky flat overhead.
 
-** Facing forwards: ** you lose the body position needed for controlled slice and direction.
+**Facing forwards:** you lose the body position needed for controlled slice and direction.
 
-** Contact too far back: ** usually a movement problem before it is a racket problem.
+**Contact too far back:** usually a movement problem before it is a racket problem.
 
-** Trying to finish the point: ** you choose targets and pace that work against the shot's main purpose.
+**Trying to finish the point:** you choose targets and pace that work against the shot's main purpose.
 
-** Not recovering: ** a decent bandeja becomes tactically useless if you remain stranded behind it.
+**Not recovering:** a decent bandeja becomes tactically useless if you remain stranded behind it.
 
 ## When not to play a bandeja
 
@@ -52,12 +48,12 @@ If the lob is short and you are in a strong attacking position, a smash or more 
 
 ## Shot choice before technique
 
-Compare [ bandeja, víbora and smash ](https://padelwrist.com/bandeja-vs-vibora-vs-smash/) , then connect the shot to [ net positioning ](https://padelwrist.com/why-net-position-matters-padel/) .
+Compare [bandeja, víbora and smash](https://padelwrist.com/bandeja-vs-vibora-vs-smash/) , then connect the shot to [net positioning](https://padelwrist.com/why-net-position-matters-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/how-to-hit-bandeja-padel/

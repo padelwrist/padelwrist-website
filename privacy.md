@@ -1,12 +1,8 @@
-# PadelWrist Privacy Policy | App & Website Data
-
-Privacy
-
 # Privacy by design.
 
 This policy explains how PadelWrist handles information when you use the app, use optional features, visit this website or contact us.
 
-Last updated 29 October 2026 ** Contents **[ Who we are ](https://padelwrist.com/privacy/#who-we-are)[ App and match data ](https://padelwrist.com/privacy/#device-data)[ Event sharing ](https://padelwrist.com/privacy/#event-sharing)[ Health & fitness ](https://padelwrist.com/privacy/#health)[ Device sync ](https://padelwrist.com/privacy/#sync)[ App analytics ](https://padelwrist.com/privacy/#app-analytics)[ Purchases ](https://padelwrist.com/privacy/#purchases)[ Website analytics ](https://padelwrist.com/privacy/#website-analytics)[ Support ](https://padelwrist.com/privacy/#support)[ Lawful bases ](https://padelwrist.com/privacy/#lawful-bases)[ Sharing ](https://padelwrist.com/privacy/#sharing)[ Retention ](https://padelwrist.com/privacy/#retention)[ Your rights ](https://padelwrist.com/privacy/#rights)[ Contact ](https://padelwrist.com/privacy/#contact) 01
+Last updated 29 October 2026 **Contents**[Who we are](https://padelwrist.com/privacy/#who-we-are) [App and match data](https://padelwrist.com/privacy/#device-data) [Event sharing](https://padelwrist.com/privacy/#event-sharing) [Health & fitness](https://padelwrist.com/privacy/#health) [Device sync](https://padelwrist.com/privacy/#sync) [App analytics](https://padelwrist.com/privacy/#app-analytics) [Purchases](https://padelwrist.com/privacy/#purchases) [Website analytics](https://padelwrist.com/privacy/#website-analytics) [Support](https://padelwrist.com/privacy/#support) [Lawful bases](https://padelwrist.com/privacy/#lawful-bases) [Sharing](https://padelwrist.com/privacy/#sharing) [Retention](https://padelwrist.com/privacy/#retention) [Your rights](https://padelwrist.com/privacy/#rights) [Contact](https://padelwrist.com/privacy/#contact) 01
 
 ## Who we are
 
@@ -28,7 +24,7 @@ You control the information you enter. Player names do not need to be real names
 
 PadelWrist 2.0 introduces Americano and Mexicano Events on iPhone and iPad. When an organiser sets up an event, its data may include the event name, participants' display names, player allocations, court assignments, rounds, match scores, resting-player information, rankings, timestamps and the final results. The organiser controls the official local event record and can decide whether to publish a read-only view for participants.
 
-** If event sharing is enabled, published event information is not confined to the organiser's device. ** PadelWrist uses a limited cloud relay to make published fixtures, court assignments, results and standings available to people with an event code or shared link. This service is provided using Cloudflare infrastructure. Anyone who obtains a valid sharing code or link may be able to view the published information while sharing remains active; do not include sensitive details in event titles or player display names.
+**If event sharing is enabled, published event information is not confined to the organiser's device.** PadelWrist uses a limited cloud relay to make published fixtures, court assignments, results and standings available to people with an event code or shared link. This service is provided using Cloudflare infrastructure. Anyone who obtains a valid sharing code or link may be able to view the published information while sharing remains active; do not include sensitive details in event titles or player display names.
 
 Shared participants cannot edit official event scores or draws through the read-only link. The organiser can revoke access, and shared resources are subject to expiry. Unpublished local event information is not automatically a public tournament listing. Event sharing is not a court-booking, payment or account-registration service. PadelWrist does not publish players' HealthKit workout information as part of event sharing.
 
@@ -40,7 +36,7 @@ PadelWrist can record padel matches as workouts using Apple Health. These featur
 
 Depending on the feature and permissions you grant, PadelWrist may read or write health and fitness information needed to record or present your padel activity, such as workout activity, workout duration, active energy, heart-rate information or other workout metrics supported by the feature. The exact HealthKit data types requested are controlled through Apple's permission interface and may vary by device, operating-system version and feature.
 
-** HealthKit information is used only to provide health and fitness functionality. ** We do not use HealthKit information for advertising, marketing, profiling or cross-app tracking. We do not sell HealthKit information. We do not intentionally send HealthKit information to PostHog, Google Analytics or other product-analytics services.
+**HealthKit information is used only to provide health and fitness functionality.** We do not use HealthKit information for advertising, marketing, profiling or cross-app tracking. We do not sell HealthKit information. We do not intentionally send HealthKit information to PostHog, Google Analytics or other product-analytics services.
 
 HealthKit information remains subject to Apple's HealthKit privacy and permission controls. You can review or change PadelWrist's Health access through the Health app or your device's privacy settings. PadelWrist does not store personal HealthKit information in iCloud or use it for advertising or data-mining purposes.
 
@@ -58,7 +54,7 @@ Optional event sharing uses the limited relay described above; the organiser dec
 
 ## Product analytics in the app
 
-PadelWrist uses ** PostHog ** to help us understand how the app is used, diagnose problems and improve the product. We may send limited product-usage information such as app lifecycle activity, app version, match format, whether a match is started or completed, feature usage, device or operating-system type, general match duration, aggregate action counts and selected non-sensitive configuration options.
+PadelWrist uses **PostHog** to help us understand how the app is used, diagnose problems and improve the product. We may send limited product-usage information such as app lifecycle activity, app version, match format, whether a match is started or completed, feature usage, device or operating-system type, general match duration, aggregate action counts and selected non-sensitive configuration options.
 
 We deliberately minimise what is sent. PadelWrist does not intentionally send PostHog player or team names, individual scores, match history content, email addresses, contacts, precise location, advertising identifiers, HealthKit information, heart-rate information or free-text match content.
 
@@ -88,13 +84,13 @@ Your purchase relationship with Apple is also subject to Apple's applicable term
 
 ## Website analytics and cookies
 
-The PadelWrist website uses ** Google Analytics 4 (GA4) ** to help us understand how the website is used. Google Analytics may process pages viewed, visits and session activity, approximate geographic information, browser and device information, referring source, website interactions and a pseudonymous browser identifier stored using first-party cookies.
+The PadelWrist website uses **Google Analytics 4 (GA4)** to help us understand how the website is used. Google Analytics may process pages viewed, visits and session activity, approximate geographic information, browser and device information, referring source, website interactions and a pseudonymous browser identifier stored using first-party cookies.
 
-** Google Analytics is optional and remains disabled unless you choose “Accept analytics” in the website's cookie controls. ** Rejecting analytics does not affect your ability to use the website.
+**Google Analytics is optional and remains disabled unless you choose “Accept analytics” in the website's cookie controls.** Rejecting analytics does not affect your ability to use the website.
 
 If you accept, we use this information to understand website traffic and improve the site. We do not intentionally send names, email addresses, match information or HealthKit information to Google Analytics, and advertising-related Google signals are disabled.
 
-You can change your choice at any time using the ** Cookie settings ** control in the website footer. If you withdraw consent, Google Analytics is disabled and we attempt to remove analytics cookies set for this site.
+You can change your choice at any time using the **Cookie settings** control in the website footer. If you withdraw consent, Google Analytics is disabled and we attempt to remove analytics cookies set for this site.
 
 09
 
@@ -134,17 +130,17 @@ Unless a future feature clearly asks for it and this policy is updated where nec
 
 Where UK GDPR or EU GDPR applies, we rely on appropriate lawful bases for processing personal information.
 
-** Providing the service and purchases: ** where processing is necessary to provide app functionality, paid features, purchase restoration or something else you have requested, we process the information necessary to provide that service or perform our contract with you.
+**Providing the service and purchases:** where processing is necessary to provide app functionality, paid features, purchase restoration or something else you have requested, we process the information necessary to provide that service or perform our contract with you.
 
-** Shared tournament information: ** published event snapshots are available through an active sharing code or link until access is revoked or the shared resource expires. The organiser can manage local event records separately. Service and security logs may be retained as reasonably required for operation, reliability and abuse prevention.
+**Shared tournament information:** published event snapshots are available through an active sharing code or link until access is revoked or the shared resource expires. The organiser can manage local event records separately. Service and security logs may be retained as reasonably required for operation, reliability and abuse prevention.
 
-** Health and fitness information: ** optional HealthKit access is controlled by the permissions you grant through Apple. Where applicable data-protection law requires an additional lawful basis or condition for processing health information, we process it only for the health or fitness feature you have chosen and on the basis permitted by applicable law, including explicit consent where required.
+**Health and fitness information:** optional HealthKit access is controlled by the permissions you grant through Apple. Where applicable data-protection law requires an additional lawful basis or condition for processing health information, we process it only for the health or fitness feature you have chosen and on the basis permitted by applicable law, including explicit consent where required.
 
-** App analytics, diagnostics and improvement: ** where information processed through app analytics or diagnostics constitutes personal information, we rely on our legitimate interests in understanding how PadelWrist is used, maintaining reliability, identifying and fixing technical problems and improving the product. We minimise the privacy impact by limiting the information collected and excluding unnecessary personal, health and match information.
+**App analytics, diagnostics and improvement:** where information processed through app analytics or diagnostics constitutes personal information, we rely on our legitimate interests in understanding how PadelWrist is used, maintaining reliability, identifying and fixing technical problems and improving the product. We minimise the privacy impact by limiting the information collected and excluding unnecessary personal, health and match information.
 
-** Website analytics: ** where consent is required for Google Analytics cookies or similar technologies, we rely on your consent. You can withdraw that consent through the website's cookie controls.
+**Website analytics:** where consent is required for Google Analytics cookies or similar technologies, we rely on your consent. You can withdraw that consent through the website's cookie controls.
 
-** Operating and securing our services: ** we rely on our legitimate interests in operating, maintaining, preventing abuse and securing PadelWrist. Where necessary, we may also process information to comply with a legal obligation.
+**Operating and securing our services:** we rely on our legitimate interests in operating, maintaining, preventing abuse and securing PadelWrist. Where necessary, we may also process information to comply with a legal obligation.
 
 14
 
@@ -156,7 +152,7 @@ We use third-party service providers where necessary to operate and improve Pade
 
 We require service providers handling personal information on our behalf to provide appropriate protection consistent with applicable data-protection requirements. We may also disclose information where required by law or valid legal process.
 
-** HealthKit information is treated separately: ** we do not disclose information obtained through HealthKit to third parties for advertising, marketing or data brokerage. We will only share HealthKit-derived information where permitted by Apple, applicable law and the permissions or choices you have made.
+**HealthKit information is treated separately:** we do not disclose information obtained through HealthKit to third parties for advertising, marketing or data brokerage. We will only share HealthKit-derived information where permitted by Apple, applicable law and the permissions or choices you have made.
 
 15
 
@@ -168,15 +164,15 @@ Some service providers we use, or their subprocessors, may process information o
 
 ## How long we keep information
 
-** Local app information: ** match information, saved players and preferences stored locally remain on your device until you delete them using available app controls, remove the app, or the application data is otherwise erased. Information synchronised between your devices may remain on those devices until separately removed or erased.
+**Local app information:** match information, saved players and preferences stored locally remain on your device until you delete them using available app controls, remove the app, or the application data is otherwise erased. Information synchronised between your devices may remain on those devices until separately removed or erased.
 
-** Health and fitness information: ** HealthKit information is managed through Apple's HealthKit store and your device permissions. PadelWrist does not intentionally retain HealthKit information in our product-analytics systems or store personal HealthKit information in iCloud.
+**Health and fitness information:** HealthKit information is managed through Apple's HealthKit store and your device permissions. PadelWrist does not intentionally retain HealthKit information in our product-analytics systems or store personal HealthKit information in iCloud.
 
-** Purchases: ** entitlement and transaction information is retained only for as long as reasonably necessary to provide or restore paid functionality, maintain records, prevent fraud, resolve disputes and meet legal obligations.
+**Purchases:** entitlement and transaction information is retained only for as long as reasonably necessary to provide or restore paid functionality, maintain records, prevent fraud, resolve disputes and meet legal obligations.
 
-** Analytics and diagnostics: ** app analytics and diagnostic information is retained in accordance with our PostHog configuration and data-processing arrangements. Website analytics is retained in accordance with our Google Analytics configuration. We aim not to retain information for longer than reasonably necessary for analytics, troubleshooting, security and product improvement.
+**Analytics and diagnostics:** app analytics and diagnostic information is retained in accordance with our PostHog configuration and data-processing arrangements. Website analytics is retained in accordance with our Google Analytics configuration. We aim not to retain information for longer than reasonably necessary for analytics, troubleshooting, security and product improvement.
 
-** Support correspondence: ** support and feedback correspondence is kept for as long as reasonably necessary to respond to you, investigate the issue, maintain appropriate records or meet legal requirements.
+**Support correspondence:** support and feedback correspondence is kept for as long as reasonably necessary to respond to you, investigate the issue, maintain appropriate records or meet legal requirements.
 
 17
 

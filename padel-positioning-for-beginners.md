@@ -1,14 +1,10 @@
-# Padel Positioning for Beginners: Where Should You Stand? | PadelWrist
-
-Playing better
-
 # Padel positioning for beginners.
 
-The most useful positioning rule in padel is not a precise distance from a line. It is simpler: ** move as a pair ** . When one player attacks and the other stays behind, the court opens up.
+The most useful positioning rule in padel is not a precise distance from a line. It is simpler: **move as a pair** . When one player attacks and the other stays behind, the court opens up.
 
 ## Think in two positions
 
-For a beginner, the court is easiest to understand as two broad states. You are either ** defending from the back ** or ** attacking from the net ** . The messy middle is where many easy points are lost.
+For a beginner, the court is easiest to understand as two broad states. You are either **defending from the back** or **attacking from the net** . The messy middle is where many easy points are lost.
 
 ## When serving
 
@@ -42,12 +38,12 @@ Standing halfway between the baseline and net for too long gives you the worst o
 
 ## A practical rule for your next match
 
-Before every point, ask one question: ** are we defending or attacking? ** If the answer is different for each partner, fix the spacing before worrying about the next shot.
+Before every point, ask one question: **are we defending or attacking?** If the answer is different for each partner, fix the spacing before worrying about the next shot.
 
 ## Keep one less thing in your head.
 
 PadelWrist handles score and server tracking so you can concentrate on moving with your partner.
 
-[ See wrist-first scoring ](https://padelwrist.com/apple-watch-padel-scoring/)
+[See wrist-first scoring](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Canonical HTML: https://padelwrist.com/padel-positioning-for-beginners/

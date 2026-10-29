@@ -1,7 +1,3 @@
-# Why Net Position Matters So Much in Padel | PadelWrist
-
-Tactics & positioning · Updated 29 September 2026
-
 # The net is where you apply pressure. Getting there is only half the job.
 
 Padel is not won by standing as close to the net as possible. The advantage comes from controlling a position where you can volley before the ball drops, reduce the opponents' time and make them defend from behind you.
@@ -22,7 +18,7 @@ The classic transition is a deep lob that pushes the opposing pair backwards. On
 
 Unlike a defensive rally, the serve gives you a predictable moment to move. After serving, start advancing immediately, then balance as the receiver makes contact so you can react to the return.
 
-The goal is not to sprint all the way to the net before the ball comes back. It is to arrive in a position where the first volley is playable and the pair can establish an attacking shape. See [ what to do after serving ](https://padelwrist.com/what-to-do-after-serving-padel/) for the full serve-plus-one pattern.
+The goal is not to sprint all the way to the net before the ball comes back. It is to arrive in a position where the first volley is playable and the pair can establish an attacking shape. See [what to do after serving](https://padelwrist.com/what-to-do-after-serving-padel/) for the full serve-plus-one pattern.
 
 ## How close should you stand?
 
@@ -40,7 +36,7 @@ The net position is a team shape, not two independent spots.
 
 A deep lob tests whether you can defend your attacking position without giving it away. The bandeja is a controlled overhead used when a full smash would be risky. Play it deep, recover forwards and ask the opponents to solve another difficult ball.
 
-When the lob is more comfortable and you can attack with greater balance, a [ víbora ](https://padelwrist.com/how-to-hit-vibora-padel/) can add pressure while still preserving the attacking position.
+When the lob is more comfortable and you can attack with greater balance, a [víbora](https://padelwrist.com/how-to-hit-vibora-padel/) can add pressure while still preserving the attacking position.
 
 ## When should you deliberately retreat?
 
@@ -52,18 +48,18 @@ Good net play includes knowing when the net is temporarily lost.
 
 At beginner and intermediate level, a huge amount of padel can be understood as this loop:
 
-** Defend from the back → create a good lob → move forward together → volley and use overheads to keep the net → retreat together if the lob wins. **
+**Defend from the back → create a good lob → move forward together → volley and use overheads to keep the net → retreat together if the lob wins.**
 
 On serve, you enter that loop from the attacking side: serve, move forward, play the first volley with margin, then try to keep the net.
 
 ## Build the movement around it
 
-Read [ the serve-plus-one pattern ](https://padelwrist.com/what-to-do-after-serving-padel/) , [ how to move as a pair ](https://padelwrist.com/move-as-pair-padel/) and [ when to lob ](https://padelwrist.com/when-to-lob-padel/) .
+Read [the serve-plus-one pattern](https://padelwrist.com/what-to-do-after-serving-padel/) , [how to move as a pair](https://padelwrist.com/move-as-pair-padel/) and [when to lob](https://padelwrist.com/when-to-lob-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/why-net-position-matters-padel/

@@ -1,7 +1,3 @@
-# Americano Padel Scoring Explained | PadelWrist
-
-Social padel formats · Updated 12 September 2026
-
 # Americano scoring explained.
 
 Americano is less about winning one long match and more about collecting points across a series of short rounds with different partners. That is what makes it sociable, fast and slightly chaotic in the best way.
@@ -34,22 +30,22 @@ Because the ranking is individual, a close loss can still be valuable. Losing 15
 
 For each round, you need the two pairs, the target or total number of points, and the final points won by each side. If you are organising the whole event, you also need the rotation schedule and cumulative individual table.
 
-PadelWrist's [ Fixed Points mode ](https://padelwrist.com/fixed-points-padel-scoring/) scores an individual point-based match. In PadelWrist 2.0, the new Events area also organises Americano pairings, courts and an individual leaderboard on iPhone and iPad.
+PadelWrist's [Fixed Points mode](https://padelwrist.com/fixed-points-padel-scoring/) scores an individual point-based match. In PadelWrist 2.0, the new Events area also organises Americano pairings, courts and an individual leaderboard on iPhone and iPad.
 
 ## Americano tournament or an individual Fixed Points match?
 
-Read [ how to organise a whole Americano ](https://padelwrist.com/americano-tournament-organiser/) , [ how Mexicano differs ](https://padelwrist.com/mexicano-padel-scoring/) and [ what Fixed Points scoring means ](https://padelwrist.com/fixed-points-padel-scoring/) .
+Read [how to organise a whole Americano](https://padelwrist.com/americano-tournament-organiser/) , [how Mexicano differs](https://padelwrist.com/mexicano-padel-scoring/) and [what Fixed Points scoring means](https://padelwrist.com/fixed-points-padel-scoring/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 ## Running an Americano for a whole group
 
-Individual Fixed Points scoring is only one part of a tournament. An organiser also needs to agree rotations, court assignments, standings and a clear process for disputed results. Use our [ event organiser checklist ](https://padelwrist.com/padel-tournament-organiser-checklist/) and the [ Americano vs Mexicano comparison ](https://padelwrist.com/americano-vs-mexicano-padel/) to plan those decisions.
+Individual Fixed Points scoring is only one part of a tournament. An organiser also needs to agree rotations, court assignments, standings and a clear process for disputed results. Use our [event organiser checklist](https://padelwrist.com/padel-tournament-organiser-checklist/) and the [Americano vs Mexicano comparison](https://padelwrist.com/americano-vs-mexicano-padel/) to plan those decisions.
 
-[ PadelWrist Events ](https://padelwrist.com/events/) organises Americano draws, courts and individual standings on iPhone and iPad alongside the individual match scorekeeper.
+[PadelWrist Events](https://padelwrist.com/events/) organises Americano draws, courts and individual standings on iPhone and iPad alongside the individual match scorekeeper.
 
 Canonical HTML: https://padelwrist.com/americano-padel-scoring/

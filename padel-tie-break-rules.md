@@ -1,7 +1,3 @@
-# Padel Tie-Break Rules: Scoring & Serve Order | PadelWrist
-
-Rules · Reviewed 12 September 2026
-
 # Padel tie-break rules.
 
 At 6-6, the familiar 15, 30 and 40 disappears. A standard tie-break counts every rally as one point and normally continues until one pair reaches at least seven with a two-point lead.
@@ -18,7 +14,7 @@ Winning the standard tie-break normally records the set as 7-6.
 
 The player whose turn it is serves the opening point from the right. Service then passes to the other pair for two points, before continuing in two-point blocks through the service order already established in the set.
 
-The easiest memory aid is ** 1-2-2-2 ** : one point for the opening server, then two points per server thereafter.
+The easiest memory aid is **1-2-2-2** : one point for the opening server, then two points per server thereafter.
 
 ## A serve-order example
 
@@ -44,12 +40,12 @@ The two most common errors are switching server after every point and stopping a
 
 ## Source
 
-[ International Padel Federation official documents ](https://www.padelfip.com/documents/)
+[International Padel Federation official documents](https://www.padelfip.com/documents/)
 
 ## Lose track of the serving order?
 
 That is one of the match states a digital scorer can remove from memory.
 
-[ Apple Watch padel scoring ](https://padelwrist.com/apple-watch-padel-scoring/)
+[Apple Watch padel scoring](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Canonical HTML: https://padelwrist.com/padel-tie-break-rules/

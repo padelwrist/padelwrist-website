@@ -1,7 +1,3 @@
-# Padel Scoring: Games, Sets & Tie-Breaks | PadelWrist
-
-Padel scoring · Updated 29 September 2026
-
 # How padel scoring works.
 
 Padel uses the familiar tennis-style framework of points, games and sets. The part worth checking before a match is what happens at deuce, because advantage, deciding-point formats and the 2026 FIP Star Point system are not the same thing.
@@ -10,15 +6,15 @@ Reviewed against the current International Padel Federation rules and 2026 Star 
 
 ## The quick answer
 
-In a standard match, points move from ** love to 15, 30 and 40 ** . Games make up sets, and a match is commonly best of three sets. A set is normally won at six games with a two-game margin; at 6-6 a tie-break is normally used.
+In a standard match, points move from **love to 15, 30 and 40** . Games make up sets, and a match is commonly best of three sets. A set is normally won at six games with a two-game margin; at 6-6 a tie-break is normally used.
 
-** Point score: ** Love → 15 → 30 → 40 → game
+**Point score:** Love → 15 → 30 → 40 → game
 
-** Set: ** Normally first to 6 games by 2
+**Set:** Normally first to 6 games by 2
 
-** At 6-6: ** Tie-break, normally first to 7 points by 2
+**At 6-6:** Tie-break, normally first to 7 points by 2
 
-** Match: ** Commonly best of 3 sets
+**Match:** Commonly best of 3 sets
 
 ## Points: love, 15, 30, 40 and game
 
@@ -28,7 +24,7 @@ The first point won makes the score 15, the second 30 and the third 40. Winning 
 
 ## What happens at deuce?
 
-At 40-40 the game reaches ** deuce ** . This is where match formats can diverge, so it is worth agreeing the scoring system before the first serve.
+At 40-40 the game reaches **deuce** . This is where match formats can diverge, so it is worth agreeing the scoring system before the first serve.
 
 ### Traditional advantage
 
@@ -40,9 +36,9 @@ Some formats replace advantage with a single deciding point at deuce. The exact 
 
 ### Star Point in 2026
 
-The International Padel Federation introduced ** Star Point ** for 2026 across Premier Padel, CUPRA FIP Tour, FIP Promises and FIP Beyond. It is designed as a middle ground between traditional advantage and immediate sudden death: limited advantage play is retained, with a deciding point used at the third deuce.
+The International Padel Federation introduced **Star Point** for 2026 across Premier Padel, CUPRA FIP Tour, FIP Promises and FIP Beyond. It is designed as a middle ground between traditional advantage and immediate sudden death: limited advantage play is retained, with a deciding point used at the third deuce.
 
-That means “professional padel uses Golden Point” is no longer a safe blanket statement in 2026. Check the event's current regulations. For the exact advantage sequence and deciding-point rule, read [ Star Point padel scoring explained ](https://padelwrist.com/star-point-padel-scoring/) .
+That means “professional padel uses Golden Point” is no longer a safe blanket statement in 2026. Check the event's current regulations. For the exact advantage sequence and deciding-point rule, read [Star Point padel scoring explained](https://padelwrist.com/star-point-padel-scoring/) .
 
 ## Games make up a set
 
@@ -54,13 +50,13 @@ At 5-5, one pair can win 7-5 by taking the next two games. If it reaches 6-6, a 
 
 Tie-breaks use ordinary numbers rather than 15, 30 and 40. The usual target is seven points with a two-point margin, so 7-5 ends it but 7-6 does not. Play continues until one pair leads by two.
 
-The service order also changes within a tie-break. If that is the bit you tend to forget, see our dedicated [ padel tie-break rules ](https://padelwrist.com/padel-tie-break-rules/) guide.
+The service order also changes within a tie-break. If that is the bit you tend to forget, see our dedicated [padel tie-break rules](https://padelwrist.com/padel-tie-break-rules/) guide.
 
 ## Best of three sets
 
 A full match is commonly best of three sets: the first pair to win two sets wins the match. A straight-sets result might be 6-3, 6-4; a three-set result might be 6-4, 3-6, 6-2.
 
-Social sessions often shorten this because court bookings are time-limited. A one-set match, timed match or [ Fixed Points ](https://padelwrist.com/fixed-points-padel-scoring/) format is perfectly possible when everyone agrees the format before play.
+Social sessions often shorten this because court bookings are time-limited. A one-set match, timed match or [Fixed Points](https://padelwrist.com/fixed-points-padel-scoring/) format is perfectly possible when everyone agrees the format before play.
 
 ## Standard scoring and Fixed Points are different jobs
 
@@ -72,8 +68,7 @@ PadelWrist supports scoring an individual standard or Fixed Points match. It doe
 
 This guide uses the International Padel Federation as the primary authority for official rules. The FIP rules and competition documents can change, so competition-specific regulations always override a general explainer.
 
-[ International Padel Federation: official documents ](https://www.padelfip.com/documents/)
-[ FIP: introduction of Star Point for 2026 ](https://www.padelfip.com/2025/12/between-innovation-and-tradition-introducing-the-star-point-the-scoring-system-that-appeals-to-everyone/)
+[International Padel Federation: official documents](https://www.padelfip.com/documents/) [FIP: introduction of Star Point for 2026](https://www.padelfip.com/2025/12/between-innovation-and-tradition-introducing-the-star-point-the-scoring-system-that-appeals-to-everyone/)
 
 ## Frequently asked questions
 
@@ -97,6 +92,6 @@ Yes. PadelWrist tracks points, games, sets, tie-break state and serving order so
 
 Score from Apple Watch, iPhone or iPad while keeping your attention on the court.
 
-[ See Apple Watch scoring ](https://padelwrist.com/apple-watch-padel-scoring/)
+[See Apple Watch scoring](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Canonical HTML: https://padelwrist.com/how-padel-scoring-works/

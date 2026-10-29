@@ -1,7 +1,3 @@
-# Padel Etiquette: The Unwritten Rules of a Good Match | PadelWrist
-
-Playing together
-
 # Padel etiquette.
 
 Most of it is simple: be ready, call things clearly, respect the booking after yours, and remember that your partner is not a customer-service department for your missed volleys.
@@ -50,12 +46,12 @@ Collect balls and belongings before the booking expires where possible. The next
 
 A clear live score means fewer “was that 30-30?” conversations.
 
-[ How to keep score ](https://padelwrist.com/how-to-keep-score-in-padel/)
+[How to keep score](https://padelwrist.com/how-to-keep-score-in-padel/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-etiquette/

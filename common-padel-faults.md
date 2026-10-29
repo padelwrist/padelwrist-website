@@ -1,7 +1,3 @@
-# Common Padel Faults: How You Lose a Point | PadelWrist
-
-Rules · Reviewed 29 September 2026
-
 # The common padel faults that actually cost you points.
 
 Most rules arguments are not about obscure tournament regulations. They are about the same handful of situations: the net, two bounces, the fence, a body touch or two partners trying to hit the same ball.
@@ -28,7 +24,7 @@ You cannot reach into the opponent's side and strike the ball before it has cros
 
 A normal return has to reach the opponent's court correctly. If you hit the ball directly into their glass or metallic fence without it bouncing on the ground first, you lose the point.
 
-You may use your own glass to return the ball, provided the ball then travels over the net and bounces correctly in the opponents' court. The distinction is easy to remember: ** your own glass can be part of the shot; their wall cannot be the first landing. **
+You may use your own glass to return the ball, provided the ball then travels over the net and bounces correctly in the opponents' court. The distinction is easy to remember: **your own glass can be part of the shot; their wall cannot be the first landing.**
 
 ## Double hits
 
@@ -58,7 +54,7 @@ The glass is a playing surface you can use tactically. The fence is not a substi
 
 A first-serve fault gives you another attempt. A second consecutive fault loses the point. Common service faults include missing the correct diagonal box, striking above the permitted height, foot faults and a legal first bounce that then reaches the metallic fence before the second bounce.
 
-For the full setup, see [ padel service rules ](https://padelwrist.com/padel-service-rules/) and [ padel let rules ](https://padelwrist.com/padel-let-rules/) .
+For the full setup, see [padel service rules](https://padelwrist.com/padel-service-rules/) and [padel let rules](https://padelwrist.com/padel-let-rules/) .
 
 ## Dropping the racket or breaking the safety cord
 
@@ -72,12 +68,12 @@ Those rules cover a large share of what new players actually encounter. Then add
 
 ## Source
 
-[ International Padel Federation official rules and documents ](https://www.padelfip.com/documents/)
+[International Padel Federation official rules and documents](https://www.padelfip.com/documents/)
 
 ## Keep the rules in your head, not the score.
 
 PadelWrist can keep the live score and server visible while you concentrate on the rally itself.
 
-[ Explore Apple Watch scoring ](https://padelwrist.com/apple-watch-padel-scoring/)
+[Explore Apple Watch scoring](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Canonical HTML: https://padelwrist.com/common-padel-faults/

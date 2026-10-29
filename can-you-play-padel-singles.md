@@ -1,7 +1,3 @@
-# Can You Play Padel Singles? | PadelWrist
-
-Common questions
-
 # Can you play padel singles?
 
 Yes in practice, but standard official padel is a doubles sport. That distinction matters because a full-size doubles court behaves very differently when only one person is covering each side.
@@ -36,18 +32,18 @@ A good compromise is to use one-on-one sessions for technical work, then play re
 
 ## Source
 
-The standard-format description follows the current [ International Padel Federation Rules of Padel ](https://www.padelfip.com/documents/) .
+The standard-format description follows the current [International Padel Federation Rules of Padel](https://www.padelfip.com/documents/) .
 
 ## Playing your first proper doubles match?
 
 Understand the pair positioning before worrying about advanced shots.
 
-[ Beginner positioning ](https://padelwrist.com/padel-positioning-for-beginners/)
+[Beginner positioning](https://padelwrist.com/padel-positioning-for-beginners/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/can-you-play-padel-singles/

@@ -1,7 +1,3 @@
-# Padel vs Pickleball: What's the Difference? | PadelWrist
-
-Getting started
-
 # Padel vs pickleball.
 
 Both use solid rackets and are easier to start than many traditional racket sports. That is roughly where the similarity ends.
@@ -48,12 +44,12 @@ Padel keeps tennis-style scoring and many familiar stroke concepts, but the wall
 
 Start with the sport itself rather than the comparisons.
 
-[ What is padel? ](https://padelwrist.com/what-is-padel/)
+[What is padel?](https://padelwrist.com/what-is-padel/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-vs-pickleball/

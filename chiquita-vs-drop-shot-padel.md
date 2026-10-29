@@ -1,7 +1,3 @@
-# Chiquita vs Drop Shot in Padel: What Is the Difference? | PadelWrist
-
-Shots & technique · Updated 18 August 2026
-
 # A chiquita is not just a padel word for a drop shot.
 
 Both shots use touch and reduced pace, which is why they get confused. The important difference is where the opponents are and what you are trying to make them do next.
@@ -20,9 +16,9 @@ It is usually a much worse idea when the opponents are already standing at the n
 
 ## The easiest way to remember the difference
 
-** Chiquita: ** opponents up, you are trying to put the ball at their feet and create a weak volley.
+**Chiquita:** opponents up, you are trying to put the ball at their feet and create a weak volley.
 
-** Drop shot: ** opponents back, you are trying to make the ball stop in the empty court in front of them.
+**Drop shot:** opponents back, you are trying to make the ball stop in the empty court in front of them.
 
 ## Why the chiquita is difficult
 
@@ -40,12 +36,12 @@ If you are stretched, late or defending heavy pressure, a high-percentage lob or
 
 ## See where each shot fits
 
-Use our [ padel shots guide ](https://padelwrist.com/padel-shots-guide/) , then read [ when to lob ](https://padelwrist.com/when-to-lob-padel/) for the other major way of challenging the net.
+Use our [padel shots guide](https://padelwrist.com/padel-shots-guide/) , then read [when to lob](https://padelwrist.com/when-to-lob-padel/) for the other major way of challenging the net.
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/chiquita-vs-drop-shot-padel/

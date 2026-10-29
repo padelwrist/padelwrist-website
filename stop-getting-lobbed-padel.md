@@ -1,7 +1,3 @@
-# How to Stop Getting Lobbed in Padel | PadelWrist
-
-Tactics & positioning · Updated 27 August 2026
-
 # You cannot stop every good lob. You can stop making them easy.
 
 Getting lobbed is not always a positioning failure. A high-quality lob is meant to move you backwards. The aim is to reduce the easy lobs, recognise the good ones early and choose an overhead or retreat before you are off balance.
@@ -38,12 +34,12 @@ Watch what happens after you retreat. If you immediately rush forward again from
 
 ## Defend the lob intelligently
 
-Use [ the bandeja ](https://padelwrist.com/how-to-hit-bandeja-padel/) , [ choose the right overhead ](https://padelwrist.com/bandeja-vs-vibora-vs-smash/) and [ move as a pair ](https://padelwrist.com/move-as-pair-padel/) .
+Use [the bandeja](https://padelwrist.com/how-to-hit-bandeja-padel/) , [choose the right overhead](https://padelwrist.com/bandeja-vs-vibora-vs-smash/) and [move as a pair](https://padelwrist.com/move-as-pair-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/stop-getting-lobbed-padel/

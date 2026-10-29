@@ -1,7 +1,3 @@
-# Fixed Points Padel Scoring Explained | PadelWrist
-
-Point-based match formats · Updated 12 September 2026
-
 # Fixed Points padel scoring: every rally counts as one.
 
 Fixed Points strips away games and sets. Choose a point target or total, play the rallies, and count each one directly.
@@ -44,20 +40,20 @@ Fixed Points and Standard Match remain the two core modes today. PadelWrist offe
 
 The principle stays the same: configuration should happen before play, while the live scoring screen remains quick and uncluttered.
 
-[ Explore the latest updates → ](https://padelwrist.com/whats-new/)
+[Explore the latest updates →](https://padelwrist.com/whats-new/)
 
 ## How this differs from standard padel rules
 
-Traditional match scoring and its alternatives are defined in the [ International Padel Federation Rules of Padel ](https://www.padelfip.com/documents/) . Fixed Points as described here is a practical social or organiser-defined format, so the event rules should always take precedence.
+Traditional match scoring and its alternatives are defined in the [International Padel Federation Rules of Padel](https://www.padelfip.com/documents/) . Fixed Points as described here is a practical social or organiser-defined format, so the event rules should always take precedence.
 
 ## Playing a social session?
 
-Read [ Americano scoring ](https://padelwrist.com/americano-padel-scoring/) and [ Mexicano scoring ](https://padelwrist.com/mexicano-padel-scoring/) before choosing your round setup.
+Read [Americano scoring](https://padelwrist.com/americano-padel-scoring/) and [Mexicano scoring](https://padelwrist.com/mexicano-padel-scoring/) before choosing your round setup.
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/fixed-points-padel-scoring/

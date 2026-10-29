@@ -1,7 +1,3 @@
-# What to Do After Serving in Padel | PadelWrist
-
-Tactics & positioning · Updated 29 September 2026
-
 # The serve is only the first half of the pattern.
 
 Once the ball leaves your racket, your job changes immediately: move forward, get balanced before the return arrives and play the first volley with enough control to establish the net with your partner.
@@ -10,7 +6,7 @@ Once the ball leaves your racket, your job changes immediately: move forward, ge
 
 Do not stand behind the service line watching whether the ball lands in. Start moving forward as the serve travels so you use the time you created. The aim is to arrive in a position where you can volley rather than receive the return around your feet.
 
-The better your serve placement and depth, the more predictable that first movement becomes. If you are still working on the serve itself, read [ how to improve your padel serve ](https://padelwrist.com/improve-padel-serve-control/) .
+The better your serve placement and depth, the more predictable that first movement becomes. If you are still working on the serve itself, read [how to improve your padel serve](https://padelwrist.com/improve-padel-serve-control/) .
 
 ## Do not sprint blindly to the net
 
@@ -58,7 +54,7 @@ Good service games are not about refusing to leave the net. They are about makin
 
 For most recreational matches, remember this sequence:
 
-** Serve with a target → move forward immediately → balance as the receiver hits → play the first volley with margin → establish the net with your partner. **
+**Serve with a target → move forward immediately → balance as the receiver hits → play the first volley with margin → establish the net with your partner.**
 
 If that pattern becomes automatic, your service games feel calmer because you stop treating the serve and the first volley as unrelated shots.
 
@@ -66,6 +62,6 @@ If that pattern becomes automatic, your service games feel calmer because you st
 
 PadelWrist keeps the current score and server visible on Apple Watch so the pre-serve routine can stay simple: check the state, serve, then focus on the first volley.
 
-[ See Apple Watch scoring ](https://padelwrist.com/apple-watch-padel-scoring/)
+[See Apple Watch scoring](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Canonical HTML: https://padelwrist.com/what-to-do-after-serving-padel/

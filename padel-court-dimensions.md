@@ -1,10 +1,6 @@
-# Padel Court Dimensions: Size, Walls, Net & Layout | PadelWrist
-
-Court basics · Reviewed 27 August 2026
-
 # Padel court dimensions.
 
-A standard padel court is ** 20 metres long and 10 metres wide ** . The important bit is not only the footprint: the enclosure is part of the sport.
+A standard padel court is **20 metres long and 10 metres wide** . The important bit is not only the footprint: the enclosure is part of the sport.
 
 ## The official footprint
 
@@ -38,18 +34,18 @@ On your first visit, look at the distance from the service line to the back glas
 
 ## Source
 
-Dimensions are based on the current [ International Padel Federation Rules of Padel ](https://www.padelfip.com/documents/) . Venue construction specifications should always be checked against the full current technical requirements.
+Dimensions are based on the current [International Padel Federation Rules of Padel](https://www.padelfip.com/documents/) . Venue construction specifications should always be checked against the full current technical requirements.
 
 ## Now learn how the enclosure works.
 
 The walls are what turn the dimensions into padel.
 
-[ Padel wall rules ](https://padelwrist.com/padel-wall-rules/)
+[Padel wall rules](https://padelwrist.com/padel-wall-rules/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-court-dimensions/

@@ -1,7 +1,3 @@
-# Apple Watch Padel Scoring App | PadelWrist
-
-Apple Watch padel scoring
-
 # Keep score from your wrist.
 
 Score each point quickly on Apple Watch. PadelWrist 1.8 adds Match Assistant to help with serving order and changes of ends, while iPhone keeps the match visible and Insights help you learn afterwards.
@@ -28,7 +24,7 @@ One subtle haptic can draw your attention to new guidance while the Watch app is
 
 Prompts are available in English and Spanish, with accessible full player and team names. They are deliberately brief and do not replay after a correction, Undo, reopening History or reconnecting your devices. If a prompt is missed, the score and serving information still update normally.
 
-** During live play only: ** Match Assistant is a foreground feature and is best effort. It does not send background notifications or guarantee haptics when the Watch app is inactive. It does not add spoken Match Assistant instructions.
+**During live play only:** Match Assistant is a foreground feature and is best effort. It does not send background notifications or guarantee haptics when the Watch app is inactive. It does not add spoken Match Assistant instructions.
 
 ## More reliable serving order
 
@@ -88,7 +84,7 @@ Optional Health and workout integration lets players connect a scored match with
 
 During the match, supported iPhones can keep the score visible through Live Activities and Dynamic Island. After the match, iPhone and iPad provide the space for searchable history, recent form, player analysis and post-match Insights.
 
-[ See the latest PadelWrist updates → ](https://padelwrist.com/whats-new/)
+[See the latest PadelWrist updates →](https://padelwrist.com/whats-new/)
 
 ## Frequently asked questions
 
@@ -120,6 +116,6 @@ Yes. The active match can move between supported Apple devices, with iPhone and 
 
 See the full feature set, including match history, Fixed Points scoring and iPad support.
 
-[ View all features ](https://padelwrist.com/#features)
+[View all features](https://padelwrist.com/#features)
 
 Canonical HTML: https://padelwrist.com/apple-watch-padel-scoring/

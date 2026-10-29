@@ -1,7 +1,3 @@
-# Your First Padel Game: What to Expect | PadelWrist
-
-Getting started
-
 # Your first padel game.
 
 You do not need lessons, expensive kit or a full understanding of the rulebook before you walk onto court. You need four players, shoes you can move sideways in, and five minutes of useful context.
@@ -12,15 +8,15 @@ Check whether the venue includes racket hire and balls. Wear ordinary sports clo
 
 ## The five things worth knowing
 
-** Serve underarm. ** Bounce the ball and strike it below waist height into the diagonal service box.
+**Serve underarm.** Bounce the ball and strike it below waist height into the diagonal service box.
 
-** The serve must bounce on return. ** You cannot volley the return of serve.
+**The serve must bounce on return.** You cannot volley the return of serve.
 
-** One floor bounce. ** During the rally, the ball can bounce once on your side before you hit it.
+**One floor bounce.** During the rally, the ball can bounce once on your side before you hit it.
 
-** The glass can help you. ** After that first bounce, the ball may rebound from your wall and still be playable.
+**The glass can help you.** After that first bounce, the ball may rebound from your wall and still be playable.
 
-** Score like tennis. ** Love, 15, 30, 40 and game, with the deuce format agreed before play.
+**Score like tennis.** Love, 15, 30, 40 and game, with the deuce format agreed before play.
 
 ## Do not try to hit everything hard
 
@@ -46,12 +42,12 @@ Not winning. If you finish the session understanding the serve, returning a few 
 
 Read the rules summary next.
 
-[ Padel rules 2026 ](https://padelwrist.com/padel-rules/)
+[Padel rules 2026](https://padelwrist.com/padel-rules/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/first-padel-game/

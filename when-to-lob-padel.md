@@ -1,7 +1,3 @@
-# When Should You Lob in Padel? Timing, Depth & Net Control | PadelWrist
-
-Tactics & positioning · Updated 18 August 2026
-
 # A good lob does more than buy time. It can change who owns the net.
 
 The lob is one of padel's most important tactical shots because it turns a low defensive contact into a problem above the opponents' heads. The key is choosing it from a position where you can control enough height and depth.
@@ -44,12 +40,12 @@ Do not chase a perfect target before you can reliably land the ball deep.
 
 ## Turn defence into transition
 
-Read [ why the net matters ](https://padelwrist.com/why-net-position-matters-padel/) and [ how to move forward together ](https://padelwrist.com/move-as-pair-padel/) .
+Read [why the net matters](https://padelwrist.com/why-net-position-matters-padel/) and [how to move forward together](https://padelwrist.com/move-as-pair-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/when-to-lob-padel/

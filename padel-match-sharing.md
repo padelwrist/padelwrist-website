@@ -1,7 +1,3 @@
-# Share Padel Match Results & Live Scores | PadelWrist
-
-Live sharing · Available now
-
 # Share the score. Stay in the match.
 
 Give other PadelWrist users a way to follow the score as it happens, or share a finished result without creating a public player profile.
@@ -30,6 +26,6 @@ PadelWrist does not require a public player profile for core scoring, history or
 
 Score from your wrist, invite other users with a Match Code and share the result once the match is over.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-match-sharing/

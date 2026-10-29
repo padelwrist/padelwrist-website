@@ -1,7 +1,3 @@
-# Padel Glossary: 60+ Terms Explained | PadelWrist
-
-Reference · Updated 12 September 2026
-
 # The padel glossary.
 
 The scoring terms, Spanish shot names, wall language, tactical shorthand and social-format phrases people tend to use as if everybody already knows them.
@@ -288,30 +284,30 @@ The safety cord attached to a padel racket and worn around the wrist during play
 
 ## Useful distinctions
 
-** Tie-break ≠ super tie-break. ** A normal tie-break is typically to seven; a super tie-break is commonly to ten.
+**Tie-break ≠ super tie-break.** A normal tie-break is typically to seven; a super tie-break is commonly to ten.
 
-** Golden Point ≠ Star Point. ** They are different deuce systems.
+**Golden Point ≠ Star Point.** They are different deuce systems.
 
-** Fixed Points ≠ Americano. ** Fixed Points describes how rallies are counted; Americano also describes player rotation and standings.
+**Fixed Points ≠ Americano.** Fixed Points describes how rallies are counted; Americano also describes player rotation and standings.
 
-** Bandeja ≠ víbora. ** Both are overheads, but a bandeja is generally more controlled while a víbora is more aggressive.
+**Bandeja ≠ víbora.** Both are overheads, but a bandeja is generally more controlled while a víbora is more aggressive.
 
-** Chiquita ≠ drop shot. ** A chiquita is normally played low towards net players' feet; a drop shot tries to exploit empty short court when opponents are deeper.
+**Chiquita ≠ drop shot.** A chiquita is normally played low towards net players' feet; a drop shot tries to exploit empty short court when opponents are deeper.
 
 ## Sources
 
-Official rule terminology is checked against the current [ International Padel Federation documents ](https://www.padelfip.com/documents/) . Playing and tactical terms are explained as commonly used padel language rather than presented as formal FIP definitions.
+Official rule terminology is checked against the current [International Padel Federation documents](https://www.padelfip.com/documents/) . Playing and tactical terms are explained as commonly used padel language rather than presented as formal FIP definitions.
 
 ## Need more than a definition?
 
 The knowledge base turns these terms into full guides with examples and context.
 
-[ Browse all padel guides ](https://padelwrist.com/guides/)
+[Browse all padel guides](https://padelwrist.com/guides/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-glossary/

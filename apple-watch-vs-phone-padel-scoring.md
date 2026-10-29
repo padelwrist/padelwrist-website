@@ -1,7 +1,3 @@
-# Apple Watch vs Phone for Keeping Padel Score | PadelWrist
-
-On-court scorekeeping · Updated 27 August 2026
-
 # Apple Watch vs phone: which is better for keeping padel score?
 
 A phone has the bigger screen. A Watch is already attached to you. For live scoring, that difference matters more than almost any feature list.
@@ -30,7 +26,7 @@ For any digital scorer, offline behaviour matters. A temporary loss of connectio
 
 ## The best answer can be both
 
-There is no reason setup and live scoring need to happen on the same screen. [ PadelWrist is built around that idea ](https://padelwrist.com/apple-watch-padel-scoring/) : use iPhone or iPad when the larger canvas is useful, and Apple Watch when the match is moving. The active match should feel like one match rather than separate device copies.
+There is no reason setup and live scoring need to happen on the same screen. [PadelWrist is built around that idea](https://padelwrist.com/apple-watch-padel-scoring/) : use iPhone or iPad when the larger canvas is useful, and Apple Watch when the match is moving. The active match should feel like one match rather than separate device copies.
 
 ## Choose based on your actual match
 
@@ -38,12 +34,12 @@ If you play with an Apple Watch and score your own matches, the wrist is usually
 
 ## Thinking about a scoring app?
 
-See the [ Apple Watch scoring app guide ](https://padelwrist.com/best-padel-scoring-apps-apple-watch/) or learn [ how to keep score without losing track ](https://padelwrist.com/how-to-keep-score-in-padel/) .
+See the [Apple Watch scoring app guide](https://padelwrist.com/best-padel-scoring-apps-apple-watch/) or learn [how to keep score without losing track](https://padelwrist.com/how-to-keep-score-in-padel/) .
 
 ## One match across your Apple devices
 
 PadelWrist lets you score from Apple Watch in English or Spanish, follow Live Activities on iPhone and explore searchable Match History and Insights after the match.
 
-[ Explore Insights ](https://padelwrist.com/padel-player-statistics/) · [ See Live Activities ](https://padelwrist.com/live-padel-score-iphone/) · [ Explore Match History ](https://padelwrist.com/padel-match-history/)
+[Explore Insights](https://padelwrist.com/padel-player-statistics/) · [See Live Activities](https://padelwrist.com/live-padel-score-iphone/) · [Explore Match History](https://padelwrist.com/padel-match-history/)
 
 Canonical HTML: https://padelwrist.com/apple-watch-vs-phone-padel-scoring/

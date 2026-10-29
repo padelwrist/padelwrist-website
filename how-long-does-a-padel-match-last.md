@@ -1,14 +1,10 @@
-# How Long Does a Padel Match Last? | PadelWrist
-
-Common questions
-
 # How long does a padel match last?
 
 There is no match clock. A close three-set match can run well beyond an hour, while a one-sided result can finish quickly. For ordinary club play, court-booking length often matters more than theoretical match duration.
 
 ## The practical answer
 
-A full best-of-three match often fits somewhere around ** 60 to 90 minutes ** , but that is a planning estimate rather than a rule. Long deuce games, tie-breaks, slow rallies and a deciding third set can push a match beyond that.
+A full best-of-three match often fits somewhere around **60 to 90 minutes** , but that is a planning estimate rather than a rule. Long deuce games, tie-breaks, slow rallies and a deciding third set can push a match beyond that.
 
 ## Why there is no fixed duration
 
@@ -38,12 +34,12 @@ PadelWrist is primarily a scoring tool: its job is to keep the live match state,
 
 Understand the scoring formats before choosing how to finish a time-limited match.
 
-[ Padel scoring formats ](https://padelwrist.com/padel-scoring-formats/)
+[Padel scoring formats](https://padelwrist.com/padel-scoring-formats/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/how-long-does-a-padel-match-last/

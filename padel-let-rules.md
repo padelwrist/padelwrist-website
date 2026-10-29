@@ -1,7 +1,3 @@
-# Padel Let Rules: Net Cords, Serves & Replays | PadelWrist
-
-Serve rules · Reviewed 29 September 2026
-
 # Padel let rules without the mid-match debate.
 
 A serve touching the net is not automatically good, bad or replayed. You still have to look at where the ball lands and what it touches next.
@@ -10,7 +6,7 @@ Reviewed against Rules 7, 9 and 10 of the current International Padel Federation
 
 ## The easiest way to judge a net-cord serve
 
-Temporarily ignore the fact that the ball touched the net and ask one question: ** would the serve otherwise have been legal? **
+Temporarily ignore the fact that the ball touched the net and ask one question: **would the serve otherwise have been legal?**
 
 If the answer is yes, the net touch normally makes it a let and the serve is repeated. If the serve would still have been a fault because of where it bounced or what it touched afterwards, the net does not rescue it.
 
@@ -48,15 +44,15 @@ In casual padel, the practical principle is safety and fairness. If an unexpecte
 
 ## A quick decision guide
 
-** Serve clips net + lands legally + no fence before second bounce: ** let, replay the serve.
+**Serve clips net + lands legally + no fence before second bounce:** let, replay the serve.
 
-** Serve clips net + lands outside the correct box: ** fault.
+**Serve clips net + lands outside the correct box:** fault.
 
-** Serve clips net + lands in + hits metallic fence before second bounce: ** fault.
+**Serve clips net + lands in + hits metallic fence before second bounce:** fault.
 
-** First-serve let: ** repeat the point with two serves available.
+**First-serve let:** repeat the point with two serves available.
 
-** Second-serve let: ** repeat the second serve only.
+**Second-serve let:** repeat the second serve only.
 
 ## Why this matters for scorekeeping
 
@@ -64,12 +60,12 @@ A let does not award a point, so the score should stay exactly where it was. Tha
 
 ## Source
 
-[ International Padel Federation official rules and documents ](https://www.padelfip.com/documents/)
+[International Padel Federation official rules and documents](https://www.padelfip.com/documents/)
 
 ## Know the rule. Keep the score moving.
 
 PadelWrist keeps the live score and server visible on Apple Watch so a replayed serve does not turn into a scoring argument as well.
 
-[ Explore Apple Watch scoring ](https://padelwrist.com/apple-watch-padel-scoring/)
+[Explore Apple Watch scoring](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Canonical HTML: https://padelwrist.com/padel-let-rules/

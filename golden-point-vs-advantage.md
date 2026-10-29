@@ -1,7 +1,3 @@
-# Golden Point vs Advantage vs Star Point in Padel | PadelWrist
-
-Deuce formats · Reviewed 29 September 2026
-
 # Golden Point, advantage or Star Point?
 
 All three formats use the familiar score up to 40-40. The difference is how they end a close game.
@@ -20,7 +16,7 @@ Golden Point removes repeated advantage play. At deuce, a deciding rally settles
 
 From 2026, FIP introduced Star Point across Premier Padel, CUPRA FIP Tour, FIP Promises and FIP Beyond. It keeps limited advantage play, then uses a deciding point at the third deuce. It is deliberately a middle ground between unlimited advantage and an immediate deciding point.
 
-For the complete sequence, receiving choice and examples, read [ Star Point padel scoring explained ](https://padelwrist.com/star-point-padel-scoring/) .
+For the complete sequence, receiving choice and examples, read [Star Point padel scoring explained](https://padelwrist.com/star-point-padel-scoring/) .
 
 ## Why the distinction matters
 
@@ -40,19 +36,18 @@ A scorekeeper cannot infer the deuce rule from 40-40 alone. The selected format 
 
 ## Sources
 
-[ FIP official documents ](https://www.padelfip.com/documents/)
-[ FIP: Star Point introduction ](https://www.padelfip.com/2025/12/between-innovation-and-tradition-introducing-the-star-point-the-scoring-system-that-appeals-to-everyone/)
+[FIP official documents](https://www.padelfip.com/documents/) [FIP: Star Point introduction](https://www.padelfip.com/2025/12/between-innovation-and-tradition-introducing-the-star-point-the-scoring-system-that-appeals-to-everyone/)
 
 ## Keep the format straight.
 
 See the full scoring structure before your next match.
 
-[ How padel scoring works ](https://padelwrist.com/how-padel-scoring-works/)
+[How padel scoring works](https://padelwrist.com/how-padel-scoring-works/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/golden-point-vs-advantage/

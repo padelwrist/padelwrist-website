@@ -1,7 +1,3 @@
-# Star Point Padel Scoring Explained | PadelWrist
-
-Scoring rules · Reviewed 29 September 2026
-
 # Star Point: the 2026 padel scoring change explained.
 
 Star Point changes what happens when a game reaches deuce. It keeps some traditional advantage play, but stops a game from cycling through 40-40 indefinitely.
@@ -12,15 +8,15 @@ Reviewed against the current International Padel Federation Rules of Padel and 2
 
 At 40-40, Star Point does not immediately jump to one deciding rally. Instead, the game allows two advantage opportunities. If neither side converts those opportunities, the next deciding Star Point settles the game.
 
-** First deuce: ** play an advantage point
+**First deuce:** play an advantage point
 
-** If advantage is lost: ** return to deuce
+**If advantage is lost:** return to deuce
 
-** Second deuce: ** play another advantage point
+**Second deuce:** play another advantage point
 
-** If that advantage is lost: ** move to Star Point
+**If that advantage is lost:** move to Star Point
 
-** Star Point: ** one rally decides the game
+**Star Point:** one rally decides the game
 
 ## How the sequence works
 
@@ -42,7 +38,7 @@ Golden Point is more abrupt. In a deciding-point format, deuce is followed by on
 
 That makes Star Point a middle ground. Traditional advantage can continue through repeated deuce cycles with no fixed limit. Golden Point ends the game immediately after deuce. Star Point allows two advantage chances and then forces a decision.
 
-For a full comparison, read [ Golden Point vs Advantage vs Star Point ](https://padelwrist.com/golden-point-vs-advantage/) .
+For a full comparison, read [Golden Point vs Advantage vs Star Point](https://padelwrist.com/golden-point-vs-advantage/) .
 
 ## Where is Star Point used?
 
@@ -58,19 +54,18 @@ For players, the practical effect is simple: the first two deuce cycles still re
 
 ## What should you remember on court?
 
-The easiest mistake is treating Star Point as another name for Golden Point. It is not. Remember the sequence: ** advantage, advantage, deciding point ** .
+The easiest mistake is treating Star Point as another name for Golden Point. It is not. Remember the sequence: **advantage, advantage, deciding point** .
 
 It also helps to keep the score and server clear before the deciding rally. PadelWrist is built to keep match state visible during play so you spend less time reconstructing the score between points.
 
 ## Sources
 
-[ International Padel Federation official documents ](https://www.padelfip.com/documents/)
-[ FIP: introduction of Star Point ](https://www.padelfip.com/2025/12/between-innovation-and-tradition-introducing-the-star-point-the-scoring-system-that-appeals-to-everyone/)
+[International Padel Federation official documents](https://www.padelfip.com/documents/) [FIP: introduction of Star Point](https://www.padelfip.com/2025/12/between-innovation-and-tradition-introducing-the-star-point-the-scoring-system-that-appeals-to-everyone/)
 
 ## Keep the score, not the argument.
 
 Understand the format first, then let PadelWrist keep the live score and server visible while you play.
 
-[ Explore Apple Watch scoring ](https://padelwrist.com/apple-watch-padel-scoring/)
+[Explore Apple Watch scoring](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Canonical HTML: https://padelwrist.com/star-point-padel-scoring/

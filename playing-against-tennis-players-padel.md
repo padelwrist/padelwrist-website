@@ -1,7 +1,3 @@
-# How to Play Against Tennis Players in Padel | PadelWrist
-
-Tactics & positioning · Updated 18 August 2026
-
 # Do not try to beat a tennis player by playing tennis inside a padel court.
 
 A good tennis player can arrive at padel with excellent timing, pace and hand skills. Your advantage is that padel rewards different geometry: walls, two-player movement, controlled net pressure and shot selection matter as much as raw ball speed.
@@ -50,12 +46,12 @@ Shorter swings, more lobs, more patient overheads and moving with your partner w
 
 ## Build the padel habits
 
-Read [ when to use the glass ](https://padelwrist.com/when-to-use-glass-padel/) , [ why the net matters ](https://padelwrist.com/why-net-position-matters-padel/) and [ when to lob ](https://padelwrist.com/when-to-lob-padel/) .
+Read [when to use the glass](https://padelwrist.com/when-to-use-glass-padel/) , [why the net matters](https://padelwrist.com/why-net-position-matters-padel/) and [when to lob](https://padelwrist.com/when-to-lob-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/playing-against-tennis-players-padel/

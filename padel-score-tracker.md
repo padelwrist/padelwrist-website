@@ -1,7 +1,3 @@
-# Padel Score Tracker for Apple Watch | PadelWrist
-
-Padel score tracker
-
 # Keep every point of the match clear.
 
 PadelWrist is a padel score tracker for Apple Watch, iPhone and iPad. It handles the match state for you so you can focus on playing rather than remembering whether it is 30–40, deuce, game point or tie-break.
@@ -24,7 +20,7 @@ PadelWrist 1.8 adds Match Assistant for Apple Watch. While you are actively usin
 
 A short haptic can draw attention to a new prompt without interrupting the rally. Match Assistant is optional and independent of spoken score announcements. It does not send background notifications.
 
-The update also improves individual serving-order accuracy after edits and tie-breaks. [ See how Match Assistant works. ](https://padelwrist.com/apple-watch-padel-scoring/#match-assistant)
+The update also improves individual serving-order accuracy after edits and tie-breaks. [See how Match Assistant works.](https://padelwrist.com/apple-watch-padel-scoring/#match-assistant)
 
 ## Use the right Apple device for the moment
 
@@ -94,12 +90,12 @@ Not currently. Fixed Points can score an individual point-based match, but Padel
 
 Explore wrist-first scoring, match history and the full current feature set.
 
-[ View PadelWrist features ](https://padelwrist.com/#features)
+[View PadelWrist features](https://padelwrist.com/#features)
 
 ## Track more than the score
 
 PadelWrist lets you score from Apple Watch in English or Spanish, share a live Match Code, follow Live Activities on iPhone, then explore searchable Match History and Insights afterwards.
 
-[ Explore Insights ](https://padelwrist.com/padel-player-statistics/) · [ See Live Activities ](https://padelwrist.com/live-padel-score-iphone/) · [ Explore Match History ](https://padelwrist.com/padel-match-history/)
+[Explore Insights](https://padelwrist.com/padel-player-statistics/) · [See Live Activities](https://padelwrist.com/live-padel-score-iphone/) · [Explore Match History](https://padelwrist.com/padel-match-history/)
 
 Canonical HTML: https://padelwrist.com/padel-score-tracker/

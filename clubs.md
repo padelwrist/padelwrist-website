@@ -1,23 +1,18 @@
-# PadelWrist for Clubs | Americano & Mexicano Tournament App
-
-For clubs, coaches and hosts
-
-# Run the social.
-Enjoy the padel.
+# Run the social. Enjoy the padel.
 
 From weekly Americano socials to competitive Mexicano evenings, set up your players and courts, manage pairings, publish rounds and follow standings from one native iPhone or iPad app.
 
-** PadelWrist 2.0 Events. ** Manage Americano and Mexicano sessions on iPhone and iPad, from the opening draw to the final podium.
+**PadelWrist 2.0 Events.** Manage Americano and Mexicano sessions on iPhone and iPad, from the opening draw to the final podium.
 
-[ Explore the tournament app ](https://padelwrist.com/padel-tournament-app/)[ See the benefits ](https://padelwrist.com/clubs/#club-benefits) PADELWRIST / CLUBS Illustrative example ** Friday night social ** Americano · Example Players ** 12 ** Courts ** 3 ** Points ** 16 ** Round 1 · Sample fixture Court 1
+[Explore the tournament app](https://padelwrist.com/padel-tournament-app/) [See the benefits](https://padelwrist.com/clubs/#club-benefits) PADELWRIST / CLUBS Illustrative example **Friday night social** Americano · Example Players **12** Courts **3** Points **16** Round 1 · Sample fixture Court 1
 
-Alex + Sam ** vs **
+Alex + Sam **vs**
 
 Jamie + Taylor
 
 Round 1 · Sample fixture Court 2
 
-Jordan + Pat ** vs **
+Jordan + Pat **vs**
 
 Casey + Chris
 
@@ -67,13 +62,13 @@ Americano
 
 Typically uses planned rotations so participants play with different partners and opponents, with individual point totals across the session.
 
-[ Compare the formats → ](https://padelwrist.com/americano-vs-mexicano-padel/) Mexicano
+[Compare the formats →](https://padelwrist.com/americano-vs-mexicano-padel/) Mexicano
 
 ### Let the results guide the draw.
 
 Later-round pairings respond to confirmed standings. The organiser controls when a proposed draw becomes official.
 
-[ Explore Mexicano scoring → ](https://padelwrist.com/mexicano-padel-scoring/)
+[Explore Mexicano scoring →](https://padelwrist.com/mexicano-padel-scoring/)
 
 Made for the people behind the session
 
@@ -109,7 +104,7 @@ For individual players · Available now
 
 Score Standard Match and Fixed Points games on Apple Watch, iPhone or iPad, with Match History, sharing and Insights.
 
-[ Explore Players → ](https://padelwrist.com/players/)
+[Explore Players →](https://padelwrist.com/players/)
 
 Events · Version 2.0
 
@@ -117,7 +112,7 @@ Events · Version 2.0
 
 Bring Americano and Mexicano players, courts, published draws, official match scores and individual standings together. Use PadelWrist Events to organise rounds from one iPhone or iPad.
 
-[ Explore Events → ](https://padelwrist.com/events/)
+[Explore Events →](https://padelwrist.com/events/)
 
 Common club questions
 
@@ -145,7 +140,7 @@ Built with club organisers in mind
 
 How do you manage court time, player numbers, late arrivals and event standings today? We want feedback from club organisers, coaches and independent hosts.
 
-Share your experience [ Suggest a feature ](https://padelwrist.fider.io/)
+Share your experience [Suggest a feature](https://padelwrist.fider.io/)
 
 These are feedback channels, not court booking or tournament registration services.
 

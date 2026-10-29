@@ -1,7 +1,3 @@
-# Padel Racket Shapes: Round, Teardrop or Diamond? | PadelWrist
-
-Equipment
-
 # Round, teardrop or diamond?
 
 Racket shape is a useful shorthand for how a padel racket may feel, but it is not a complete specification. Weight, balance, foam, face material and the individual model matter too.
@@ -46,12 +42,12 @@ If you can demo a racket, use it for more than smashes. Defend a few balls off t
 
 Read the full beginner equipment guide before spending anything.
 
-[ Padel equipment for beginners ](https://padelwrist.com/padel-equipment-for-beginners/)
+[Padel equipment for beginners](https://padelwrist.com/padel-equipment-for-beginners/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-racket-shapes/

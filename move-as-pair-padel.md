@@ -1,7 +1,3 @@
-# How to Move as a Pair in Padel | PadelWrist
-
-Tactics & positioning · Updated 27 August 2026
-
 # Your partner's position changes where you should stand.
 
 Padel doubles works best when the pair attacks, defends and shifts together. The exact distance between players changes, but the principle is simple: do not leave one person solving a different rally from the other.
@@ -40,12 +36,12 @@ After every shot, ask two questions: where is the ball going, and where is my pa
 
 ## Build a team shape
 
-Continue with [ partner communication ](https://padelwrist.com/communicate-with-padel-partner/) , [ who takes the middle ball ](https://padelwrist.com/who-takes-middle-ball-padel/) and [ net positioning ](https://padelwrist.com/why-net-position-matters-padel/) .
+Continue with [partner communication](https://padelwrist.com/communicate-with-padel-partner/) , [who takes the middle ball](https://padelwrist.com/who-takes-middle-ball-padel/) and [net positioning](https://padelwrist.com/why-net-position-matters-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/move-as-pair-padel/

@@ -1,7 +1,3 @@
-# Padel Shots Explained: Bandeja, Víbora, Chiquita & More | PadelWrist
-
-Playing better
-
 # The padel shots people keep naming mid-rally.
 
 You do not need a Spanish vocabulary test to play padel. But understanding what a bandeja, víbora or chiquita is helps you understand what problem each shot is trying to solve.
@@ -48,12 +44,12 @@ The useful question is not “what is the most advanced shot I can learn?” but
 
 Learn where to stand before worrying about adding more weapons.
 
-[ Beginner positioning guide ](https://padelwrist.com/padel-positioning-for-beginners/)
+[Beginner positioning guide](https://padelwrist.com/padel-positioning-for-beginners/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-shots-guide/

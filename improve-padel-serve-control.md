@@ -1,7 +1,3 @@
-# How to Improve Your Padel Serve | PadelWrist
-
-Serve & return · Updated 29 September 2026
-
 # A better padel serve gives you an easier next ball.
 
 The serve does not need to be a winner. Its job is to start the rally on your terms, give you time to move forward and make the receiver play a return that you and your partner can handle.
@@ -10,7 +6,7 @@ The serve does not need to be a winner. Its job is to start the rally on your te
 
 Before trying to add more pace or spin, make sure the basic action is reliable. The ball must be bounced in the serving area and struck at or below waist height into the diagonal service box. A serve that is technically impressive but regularly misses the box is not helping your service game.
 
-If the rules themselves are unclear, start with the [ padel service rules ](https://padelwrist.com/padel-service-rules/) .
+If the rules themselves are unclear, start with the [padel service rules](https://padelwrist.com/padel-service-rules/) .
 
 ## Depth matters more than maximum speed
 
@@ -52,28 +48,28 @@ This is why serving harder is not automatically better. A serve you can place re
 
 Start with ten serves to one large target and record how many land deep enough. Then repeat to a second target. Only after you can control location should you add more slice or pace.
 
-A useful session is ** placement first, depth second, spin third, speed last ** . That order protects the part of the serve that matters most in a real match: consistency.
+A useful session is **placement first, depth second, spin third, speed last** . That order protects the part of the serve that matters most in a real match: consistency.
 
 ## Common serve mistakes
 
-** Chasing aces: ** the serve is usually a setup shot rather than a finishing shot.
+**Chasing aces:** the serve is usually a setup shot rather than a finishing shot.
 
-** Serving too short: ** the receiver gets to step into the return.
+**Serving too short:** the receiver gets to step into the return.
 
-** Overusing wrist: ** contact becomes difficult to repeat.
+**Overusing wrist:** contact becomes difficult to repeat.
 
-** No target: ** you hit into the box instead of serving with a tactical purpose.
+**No target:** you hit into the box instead of serving with a tactical purpose.
 
-** Watching the serve: ** you delay the move towards your first-volley position.
+**Watching the serve:** you delay the move towards your first-volley position.
 
 ## Build the whole service pattern.
 
-Once the serve itself is reliable, learn [ what to do immediately after serving ](https://padelwrist.com/what-to-do-after-serving-padel/) and how the first volley connects to net position.
+Once the serve itself is reliable, learn [what to do immediately after serving](https://padelwrist.com/what-to-do-after-serving-padel/) and how the first volley connects to net position.
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/improve-padel-serve-control/

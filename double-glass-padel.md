@@ -1,7 +1,3 @@
-# How to Play a Double-Glass Rebound in Padel | PadelWrist
-
-Walls & defence · Updated 27 August 2026
-
 # On a double glass, the wall order tells you where to move.
 
 A ball can bounce in your court and then use both the back and side glass before you return it. The difficult part is not the legality; it is learning to predict the exit after the second wall.
@@ -40,12 +36,12 @@ Then randomise the feeds. When you no longer know which wall will come first, yo
 
 ## Make the corner readable
 
-Pair this with [ corner-glass defence ](https://padelwrist.com/defend-corner-glass-padel/) and [ when to use the glass ](https://padelwrist.com/when-to-use-glass-padel/) .
+Pair this with [corner-glass defence](https://padelwrist.com/defend-corner-glass-padel/) and [when to use the glass](https://padelwrist.com/when-to-use-glass-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/double-glass-padel/

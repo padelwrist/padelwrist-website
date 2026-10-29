@@ -1,7 +1,3 @@
-# Left vs Right Side in Padel: Which Should You Play? | PadelWrist
-
-Playing better
-
 # Left side or right side?
 
 There is no rule saying one personality belongs on each side. The useful question is how your two strengths fit together and who is most comfortable taking which balls through the middle.
@@ -40,12 +36,12 @@ Pairs commonly establish preferred sides, but movement during rallies is fluid a
 
 Now learn how the pair should move together.
 
-[ Padel positioning ](https://padelwrist.com/padel-positioning-for-beginners/)
+[Padel positioning](https://padelwrist.com/padel-positioning-for-beginners/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/left-vs-right-side-padel/

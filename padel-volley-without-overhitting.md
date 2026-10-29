@@ -1,7 +1,3 @@
-# How to Volley in Padel Without Overhitting | PadelWrist
-
-Shots & technique · Updated 27 August 2026
-
 # A padel volley does not need to be hard to be aggressive.
 
 At the net, your advantage comes from taking the ball early and controlling where the opponents have to play next. Hitting harder than necessary can create a lively back-glass rebound and give away the pressure you worked to build.
@@ -38,12 +34,12 @@ A simple test is whether you are ready for the next ball. If a harder volley lea
 
 ## Build net pressure properly
 
-Read [ why net position matters ](https://padelwrist.com/why-net-position-matters-padel/) and [ when to use the middle ](https://padelwrist.com/play-middle-padel/) .
+Read [why net position matters](https://padelwrist.com/why-net-position-matters-padel/) and [when to use the middle](https://padelwrist.com/play-middle-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-volley-without-overhitting/

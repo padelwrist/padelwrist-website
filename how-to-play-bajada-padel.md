@@ -1,7 +1,3 @@
-# How to Play a Bajada in Padel | PadelWrist
-
-Shots & technique · Updated 29 September 2026
-
 # The bajada starts with space, not with power.
 
 A bajada is an attacking ball played after a high rebound from the back glass. The opportunity comes from the rebound lifting the ball into a comfortable contact zone. If you chase the glass or hit while still moving backwards, that opportunity disappears.
@@ -50,24 +46,24 @@ The principle is the same on both sides: create space, let the ball travel in fr
 
 ## Common bajada mistakes
 
-** Running into the glass: ** you get jammed by the rebound.
+**Running into the glass:** you get jammed by the rebound.
 
-** Hitting while still retreating: ** balance and direction disappear.
+**Hitting while still retreating:** balance and direction disappear.
 
-** Preparing too big: ** power increases while accuracy drops.
+**Preparing too big:** power increases while accuracy drops.
 
-** Attacking a low rebound: ** not every ball off the glass is a bajada opportunity.
+**Attacking a low rebound:** not every ball off the glass is a bajada opportunity.
 
-** Watching the shot instead of recovering: ** you miss the chance to turn pressure into net position.
+**Watching the shot instead of recovering:** you miss the chance to turn pressure into net position.
 
 ## Learn the glass before attacking from it.
 
-Start with [ when to use the glass ](https://padelwrist.com/when-to-use-glass-padel/) and [ defending fast balls off the back glass ](https://padelwrist.com/defend-fast-balls-back-glass-padel/) , then add the bajada when the rebound gives you height and time.
+Start with [when to use the glass](https://padelwrist.com/when-to-use-glass-padel/) and [defending fast balls off the back glass](https://padelwrist.com/defend-fast-balls-back-glass-padel/) , then add the bajada when the rebound gives you height and time.
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/how-to-play-bajada-padel/

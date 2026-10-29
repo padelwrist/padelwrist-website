@@ -1,7 +1,3 @@
-# Who Should Take the Middle Ball in Padel? | PadelWrist
-
-Doubles tactics · Updated 27 August 2026
-
 # The middle belongs to the player with the better ball, not automatically the player standing closer to it.
 
 Middle balls create confusion because both partners can reach them. A useful priority system considers forehand or backhand, height, who is moving forward, the direction of the ball and what the pair has agreed before the point.
@@ -42,12 +38,12 @@ The aim is not to create one rigid rule. It is to make the common decisions fami
 
 ## Remove the hesitation
 
-Use [ simple partner communication ](https://padelwrist.com/communicate-with-padel-partner/) , [ move as a pair ](https://padelwrist.com/move-as-pair-padel/) and read [ playing with a left-hander ](https://padelwrist.com/left-handed-padel-partner/) .
+Use [simple partner communication](https://padelwrist.com/communicate-with-padel-partner/) , [move as a pair](https://padelwrist.com/move-as-pair-padel/) and read [playing with a left-hander](https://padelwrist.com/left-handed-padel-partner/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/who-takes-middle-ball-padel/

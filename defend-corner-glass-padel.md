@@ -1,7 +1,3 @@
-# How to Defend the Corner Glass in Padel | PadelWrist
-
-Walls & defence · Updated 27 August 2026
-
 # The corner stops looking chaotic once you read which wall comes first.
 
 Balls entering the back corner can rebound from one wall or two. Your job is to identify the likely sequence early, create space and move towards the exit path rather than following the ball into the corner.
@@ -36,12 +32,12 @@ Have a partner feed alternating balls that reach back glass first and side glass
 
 ## Learn the rebound family
 
-Continue with [ double-glass rebounds ](https://padelwrist.com/double-glass-padel/) , [ when to use the glass ](https://padelwrist.com/when-to-use-glass-padel/) and [ fast back-glass defence ](https://padelwrist.com/defend-fast-balls-back-glass-padel/) .
+Continue with [double-glass rebounds](https://padelwrist.com/double-glass-padel/) , [when to use the glass](https://padelwrist.com/when-to-use-glass-padel/) and [fast back-glass defence](https://padelwrist.com/defend-fast-balls-back-glass-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/defend-corner-glass-padel/

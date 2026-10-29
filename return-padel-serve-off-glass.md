@@ -1,7 +1,3 @@
-# Return a Padel Serve Off the Glass | PadelWrist
-
-Serve & return · Updated 29 September 2026
-
 # Stop fighting the glass on return.
 
 A low serve into the corner feels horrible when you are new to padel. The fix is rarely a bigger swing. It is better spacing, earlier preparation and deciding sooner whether the glass is helping you or trapping you.
@@ -56,11 +52,11 @@ This removes the match pressure and gives you the repetition needed to learn the
 
 ## Three cues to remember
 
-** Space: ** do not crowd the glass.
+**Space:** do not crowd the glass.
 
-** Prepare: ** racket ready before the rebound.
+**Prepare:** racket ready before the rebound.
 
-** Compact: ** guide the return rather than taking a full swing.
+**Compact:** guide the return rather than taking a full swing.
 
 Once those become automatic, the serve into the corner stops feeling like an emergency and starts becoming a predictable pattern.
 
@@ -68,6 +64,6 @@ Once those become automatic, the serve into the corner stops feeling like an eme
 
 Use the glass when it helps, return with control and let PadelWrist keep the score and server visible while you focus on the rally.
 
-[ Explore Apple Watch scoring ](https://padelwrist.com/apple-watch-padel-scoring/)
+[Explore Apple Watch scoring](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Canonical HTML: https://padelwrist.com/return-padel-serve-off-glass/

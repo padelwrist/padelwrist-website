@@ -1,7 +1,3 @@
-# Padel Match History, Search & Results Tracker | PadelWrist
-
-Match History · PadelWrist
-
 # Your padel history should become more useful over time.
 
 Every scored match is saved as something you can find, review and learn from later. Search and filter your results, add useful context and move naturally from one match into the bigger patterns in Insights.
@@ -22,13 +18,13 @@ You can revisit completed matches, correct saved set scores when something was e
 
 New in PadelWrist 1.9, Play Again sits beneath the result in Match History on iPhone and iPad. It reopens the familiar match setup with available rules, player choices and team names ready for review. Make any changes you need, then start a fresh match from zero.
 
-The original result stays saved. An active match is not silently replaced: PadelWrist asks you to confirm if starting or preparing the rematch would end the current session. On iPhone, you can also prepare the new setup for Apple Watch. [ See the Play Again guide ](https://padelwrist.com/play-again-padel-match/) .
+The original result stays saved. An active match is not silently replaced: PadelWrist asks you to confirm if starting or preparing the rematch would end the current session. On iPhone, you can also prepare the new setup for Apple Watch. [See the Play Again guide](https://padelwrist.com/play-again-padel-match/) .
 
 ## History feeds Insights
 
 Your history is the foundation for recent form, performance trends, partner and opponent records, head-to-head analysis and post-match milestones. The more accurately you score and identify players, the more useful those views become.
 
-[ Explore PadelWrist Insights → ](https://padelwrist.com/padel-player-statistics/)
+[Explore PadelWrist Insights →](https://padelwrist.com/padel-player-statistics/)
 
 ## Sync privately with iCloud
 
@@ -60,6 +56,6 @@ Yes. Recorded matches provide the underlying data used for form, trends and play
 
 Start on Apple Watch, then use iPhone or iPad to search the result, add context and understand the pattern behind it.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-match-history/

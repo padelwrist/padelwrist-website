@@ -1,7 +1,3 @@
-# Padel Stats, Insights & Player Analysis App | PadelWrist
-
-PadelWrist Insights
-
 # Do more with every match you score.
 
 Scoring a match should leave you with more than a final result. PadelWrist Insights turns your Match History into recent form, performance trends and useful player analysis without requiring manual spreadsheets or a public player profile.
@@ -30,7 +26,7 @@ PadelWrist knows points, match state, players, formats and results. It does not 
 
 A good run of three or four matches is interesting, but it is still a small sample. Compare like with like: Standard Match results and short Fixed Points sessions do not have the same scoring structure, and the strength of your opposition can change between sessions.
 
-Partner and head-to-head records make more sense when you consider how often you have played together, rather than treating every percentage as a player rating. [ Read our practical guide to interpreting padel match statistics ](https://padelwrist.com/how-to-read-padel-match-stats/) .
+Partner and head-to-head records make more sense when you consider how often you have played together, rather than treating every percentage as a player rating. [Read our practical guide to interpreting padel match statistics](https://padelwrist.com/how-to-read-padel-match-stats/) .
 
 ## Add context to the numbers
 
@@ -44,6 +40,6 @@ PadelWrist does not require a public player profile to make Insights useful. Mat
 
 Score from Apple Watch, then open Insights on iPhone or iPad to see what your history is starting to tell you.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-player-statistics/

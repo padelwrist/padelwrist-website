@@ -1,7 +1,3 @@
-# How to Play With a Left-Handed Padel Partner | PadelWrist
-
-Doubles tactics · Updated 27 August 2026
-
 # A left-handed partner can put two forehands into the middle. That is useful only if you know who takes what.
 
 The common right-hander-left-hander pairing often places the right-hander on the left and the left-hander on the right, so both players can use forehands and overheads through the centre. It creates attacking options but also requires clear ownership.
@@ -38,12 +34,12 @@ No. Side choice also depends on level, personal strengths, return preferences an
 
 ## Make the middle an advantage
 
-Read [ who takes the middle ball ](https://padelwrist.com/who-takes-middle-ball-padel/) , [ left vs right side ](https://padelwrist.com/left-vs-right-side-padel/) and [ partner communication ](https://padelwrist.com/communicate-with-padel-partner/) .
+Read [who takes the middle ball](https://padelwrist.com/who-takes-middle-ball-padel/) , [left vs right side](https://padelwrist.com/left-vs-right-side-padel/) and [partner communication](https://padelwrist.com/communicate-with-padel-partner/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/left-handed-padel-partner/

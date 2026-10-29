@@ -1,7 +1,3 @@
-# How to Communicate With Your Padel Partner | PadelWrist
-
-Doubles tactics · Updated 27 August 2026
-
 # The best call is short, early and useful.
 
 Your partner cannot always see both opponents while moving for a lob, bandeja or ball off the glass. Communication fills in the information they are missing and helps the pair move before the next shot happens.
@@ -42,12 +38,12 @@ Say the score clearly before serving. Confirm unusual formats such as Golden Poi
 
 ## Pair communication with movement
 
-Read [ how to move as a pair ](https://padelwrist.com/move-as-pair-padel/) and [ who should take the middle ball ](https://padelwrist.com/who-takes-middle-ball-padel/) .
+Read [how to move as a pair](https://padelwrist.com/move-as-pair-padel/) and [who should take the middle ball](https://padelwrist.com/who-takes-middle-ball-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/communicate-with-padel-partner/

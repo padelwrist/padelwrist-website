@@ -1,7 +1,3 @@
-# Bandeja vs Víbora vs Smash in Padel | PadelWrist
-
-Shots & technique · Updated 29 September 2026
-
 # Three overheads. Three different jobs.
 
 When a lob comes over your head, the question is not “which overhead looks best?” It is whether you need to preserve the net, increase pressure or try to finish the point.
@@ -12,7 +8,7 @@ The bandeja is the default answer to many good lobs. It is a controlled, sliced 
 
 Choose it when the lob pushes you backwards, your balance is not ideal, or a full smash would be a gamble. The goal is usually not an immediate winner.
 
-[ Learn the bandeja technique → ](https://padelwrist.com/how-to-hit-bandeja-padel/)
+[Learn the bandeja technique →](https://padelwrist.com/how-to-hit-bandeja-padel/)
 
 ## Víbora: more aggressive pressure
 
@@ -20,7 +16,7 @@ The víbora is also an overhead with slice, but it is generally played with more
 
 It tends to suit a ball that gives you better position than a defensive bandeja but does not necessarily justify a full finishing smash.
 
-[ Learn how to hit a víbora → ](https://padelwrist.com/how-to-hit-vibora-padel/)
+[Learn how to hit a víbora →](https://padelwrist.com/how-to-hit-vibora-padel/)
 
 ## Smash: attack a genuine opportunity
 
@@ -30,13 +26,13 @@ Trying the same shot while moving backwards turns a high-value attacking option 
 
 ## A simple decision table
 
-** Deep lob, moving backwards: ** usually bandeja or retreat.
+**Deep lob, moving backwards:** usually bandeja or retreat.
 
-** Comfortable overhead with room to accelerate and slice: ** víbora can add pressure.
+**Comfortable overhead with room to accelerate and slice:** víbora can add pressure.
 
-** Short lob, balanced, strong contact: ** consider the smash.
+**Short lob, balanced, strong contact:** consider the smash.
 
-** Ball already behind you: ** stop forcing an overhead and defend the next phase.
+**Ball already behind you:** stop forcing an overhead and defend the next phase.
 
 ## Why beginners overuse the smash
 
@@ -48,12 +44,12 @@ Good shot choice is judged by what happens next. If your bandeja lets you recove
 
 ## Learn the shot that fits the ball.
 
-Start with the [ bandeja ](https://padelwrist.com/how-to-hit-bandeja-padel/) for control, add the [ víbora ](https://padelwrist.com/how-to-hit-vibora-padel/) when you have a better attacking position, and connect both to [ net positioning ](https://padelwrist.com/why-net-position-matters-padel/) .
+Start with the [bandeja](https://padelwrist.com/how-to-hit-bandeja-padel/) for control, add the [víbora](https://padelwrist.com/how-to-hit-vibora-padel/) when you have a better attacking position, and connect both to [net positioning](https://padelwrist.com/why-net-position-matters-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/bandeja-vs-vibora-vs-smash/

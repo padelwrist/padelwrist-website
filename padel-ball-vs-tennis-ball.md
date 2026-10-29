@@ -1,7 +1,3 @@
-# Padel Ball vs Tennis Ball: Are They the Same? | PadelWrist
-
-Equipment
-
 # Padel ball vs tennis ball.
 
 They look almost identical in a photo. They are not quite the same in play, and the difference matters most when the ball starts rebounding from the glass.
@@ -36,18 +32,18 @@ Do not overthink brands at the start. Buy a recognised padel ball from a reputab
 
 ## Source
 
-For current approved equipment and official specifications, see the [ International Padel Federation documents ](https://www.padelfip.com/documents/) and FIP approved-ball information.
+For current approved equipment and official specifications, see the [International Padel Federation documents](https://www.padelfip.com/documents/) and FIP approved-ball information.
 
 ## Getting your kit together?
 
 See what matters and what can wait.
 
-[ Beginner equipment guide ](https://padelwrist.com/padel-equipment-for-beginners/)
+[Beginner equipment guide](https://padelwrist.com/padel-equipment-for-beginners/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-ball-vs-tennis-ball/

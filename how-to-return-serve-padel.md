@@ -1,7 +1,3 @@
-# How to Return Serve in Padel: Position & Shot Choice | PadelWrist
-
-Serve & return · Updated 29 September 2026
-
 # Your first job on return is to stop the server getting an easy first volley.
 
 The padel return is normally played from a defensive position while the serving pair wants to move forward. A reliable return gives you time, keeps the ball low or pushes the server back before the rally develops.
@@ -14,7 +10,7 @@ Start far enough behind the service line to react to depth and leave space for a
 
 A good serve into the corner can be awkward to take immediately after the bounce. If it has enough depth and pace, allowing the glass to return it can create a cleaner contact.
 
-If this is the return that keeps beating you, use the dedicated guide to [ returning a padel serve off the glass ](https://padelwrist.com/return-padel-serve-off-glass/) . It covers spacing, early preparation and deciding whether to take the ball before or after the rebound.
+If this is the return that keeps beating you, use the dedicated guide to [returning a padel serve off the glass](https://padelwrist.com/return-padel-serve-off-glass/) . It covers spacing, early preparation and deciding whether to take the ball before or after the rebound.
 
 ## Keep the swing compact
 
@@ -38,12 +34,12 @@ The serving team begins the rally with a structural plan: serve, move forward, v
 
 ## Connect serve and return
 
-Read the [ padel service rules ](https://padelwrist.com/padel-service-rules/) , then use [ playing through the middle ](https://padelwrist.com/play-middle-padel/) and [ the lob ](https://padelwrist.com/when-to-lob-padel/) as return options.
+Read the [padel service rules](https://padelwrist.com/padel-service-rules/) , then use [playing through the middle](https://padelwrist.com/play-middle-padel/) and [the lob](https://padelwrist.com/when-to-lob-padel/) as return options.
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/how-to-return-serve-padel/

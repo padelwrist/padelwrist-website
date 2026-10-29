@@ -1,27 +1,22 @@
-# PadelWrist Events | Americano & Mexicano Tournament Organiser
-
-Clubs / Events · PadelWrist 2.0
-
-# Great padel socials.
-Easier to organise.
+# Great padel socials. Easier to organise.
 
 Organise your next padel Americano or Mexicano from iPhone or iPad. Manage players, courts and pairings, publish each round, record official scores and finish with individual standings.
 
-** PadelWrist 2.0 Events. ** Build an Americano or Mexicano, publish rounds, track official results and share standings with players.
+**PadelWrist 2.0 Events.** Build an Americano or Mexicano, publish rounds, track official results and share standings with players.
 
-[ Explore event features ](https://padelwrist.com/events/#club-benefits) Share organiser feedback PADELWRIST / EVENTS Illustrative example ** Friday Club Americano ** Round 2 · Sample Players ** 8 ** Courts ** 2 ** Points ** 16 ** Court 1 · Next fixture Ready to play
+[Explore event features](https://padelwrist.com/events/#club-benefits) Share organiser feedback PADELWRIST / EVENTS Illustrative example **Friday Club Americano** Round 2 · Sample Players **8** Courts **2** Points **16** Court 1 · Next fixture Ready to play
 
-Alex + Sam ** vs **
+Alex + Sam **vs**
 
 Jamie + Taylor
 
 Court 2 · Next fixture Round 2
 
-Pat + Jordan ** vs **
+Pat + Jordan **vs**
 
 Chris + Casey
 
-Illustrative standings ** 1 · Alex 28 pts **** 2 · Jamie 24 pts **
+Illustrative standings **1 · Alex 28 pts****2 · Jamie 24 pts**
 
 Example court assignments and standings, not an actual app screenshot or live tournament.
 
@@ -101,13 +96,13 @@ Americano
 
 Typically uses planned rotations so players meet different partners and opponents throughout the session. Individual standings add up each player's credited team points.
 
-[ Understand Americano scoring ](https://padelwrist.com/americano-padel-scoring/) Mexicano
+[Understand Americano scoring](https://padelwrist.com/americano-padel-scoring/) Mexicano
 
 ### Follow the form.
 
 Future pairings respond to confirmed standings. The organiser reviews each new proposed draw, rather than the software silently changing published fixtures.
 
-[ Understand Mexicano scoring ](https://padelwrist.com/mexicano-padel-scoring/)
+[Understand Mexicano scoring](https://padelwrist.com/mexicano-padel-scoring/)
 
 Who Events is for
 
@@ -133,7 +128,7 @@ Independent hosts
 
 Make a recurring Mexicano or Americano feel organised even when you're running it alongside playing.
 
-Organisers can also correct entered scores and review changes to historic results. [ Read our guide to fair score corrections ](https://padelwrist.com/padel-tournament-score-corrections/) .
+Organisers can also correct entered scores and review changes to historic results. [Read our guide to fair score corrections](https://padelwrist.com/padel-tournament-score-corrections/) .
 
 Part of PadelWrist 2.0
 
@@ -151,7 +146,7 @@ For players · Available now
 
 - Live match sharing
 
-[ Explore player features ](https://padelwrist.com/players/)
+[Explore player features](https://padelwrist.com/players/)
 
 New in PadelWrist 2.0
 
@@ -197,7 +192,7 @@ For coaches, clubs and social hosts
 
 Tell us about the socials and tournaments you organise: how many players and courts, which formats you run, what slows you down and what would make your club nights better. We welcome real-world feedback as clubs start using the new Events experience.
 
-Share your experience [ Suggest a feature ](https://padelwrist.fider.io/)
+Share your experience [Suggest a feature](https://padelwrist.fider.io/)
 
 Feedback links are not tournament registration, booking or payment services.
 

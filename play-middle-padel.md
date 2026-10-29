@@ -1,7 +1,3 @@
-# When Should You Play Through the Middle in Padel? | PadelWrist
-
-Tactics & positioning · Updated 27 August 2026
-
 # The middle is valuable because it gives the opponents fewer clean choices.
 
 Padel players are often taught to look for corners, but the central channel can be the safer and more disruptive target. It reduces angle, can create hesitation and often keeps you from opening the court unnecessarily.
@@ -40,12 +36,12 @@ If one opponent has left a clear gap, if you can attack a player's weaker wall d
 
 ## Use geometry, not habit
 
-Pair this guide with [ controlled volleying ](https://padelwrist.com/padel-volley-without-overhitting/) and [ who should take the middle ball ](https://padelwrist.com/who-takes-middle-ball-padel/) .
+Pair this guide with [controlled volleying](https://padelwrist.com/padel-volley-without-overhitting/) and [who should take the middle ball](https://padelwrist.com/who-takes-middle-ball-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/play-middle-padel/

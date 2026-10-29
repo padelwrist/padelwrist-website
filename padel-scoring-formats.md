@@ -1,7 +1,3 @@
-# Padel Scoring Formats: Advantage, Golden & Star Point | PadelWrist
-
-Scoring formats
-
 # Padel does not have just one way to finish a close game.
 
 The familiar 15, 30 and 40 remains the backbone of standard padel, but modern rules allow several ways to handle deuce and deciding sets. Social formats can look different again.
@@ -42,16 +38,16 @@ If you are using a scorekeeping app, set the format before the warm-up finishes.
 
 ## Source
 
-Rule descriptions on this page follow the current [ International Padel Federation Rules of Padel ](https://www.padelfip.com/documents/) . Club leagues and social events may publish their own competition-specific variations, so check the organiser’s rules where they differ.
+Rule descriptions on this page follow the current [International Padel Federation Rules of Padel](https://www.padelfip.com/documents/) . Club leagues and social events may publish their own competition-specific variations, so check the organiser’s rules where they differ.
 
 ## Need the detail?
 
-Compare [ golden point and advantage ](https://padelwrist.com/golden-point-vs-advantage/) , read the [ tie-break rules ](https://padelwrist.com/padel-tie-break-rules/) , or explore [ Fixed Points ](https://padelwrist.com/fixed-points-padel-scoring/) .
+Compare [golden point and advantage](https://padelwrist.com/golden-point-vs-advantage/) , read the [tie-break rules](https://padelwrist.com/padel-tie-break-rules/) , or explore [Fixed Points](https://padelwrist.com/fixed-points-padel-scoring/) .
 
 ## Make the most of every match
 
 PadelWrist lets you score from Apple Watch in English or Spanish, share a live Match Code, keep the match visible on iPhone and explore searchable Match History and Insights afterwards.
 
-[ Explore Insights ](https://padelwrist.com/padel-player-statistics/) · [ See Live Activities ](https://padelwrist.com/live-padel-score-iphone/) · [ Explore Match History ](https://padelwrist.com/padel-match-history/)
+[Explore Insights](https://padelwrist.com/padel-player-statistics/) · [See Live Activities](https://padelwrist.com/live-padel-score-iphone/) · [Explore Match History](https://padelwrist.com/padel-match-history/)
 
 Canonical HTML: https://padelwrist.com/padel-scoring-formats/

@@ -1,7 +1,3 @@
-# How to Organise an Americano Padel Tournament | PadelWrist
-
-Americano · Practical organiser guide
-
 # How to organise an Americano padel tournament.
 
 An Americano is a great way to get a club group playing with different people. A little preparation makes the rotations fairer and the evening easier to run.
@@ -10,7 +6,7 @@ An Americano is a great way to get a club group playing with different people. A
 
 PadelWrist 2.0 combines individual match scoring with Americano and Mexicano Events for clubs, coaches and tournament hosts.
 
-[ Explore what is new in 2.0 → ](https://padelwrist.com/whats-new/#v2-0)
+[Explore what is new in 2.0 →](https://padelwrist.com/whats-new/#v2-0)
 
 ## 1. Choose the number of players and courts
 
@@ -56,12 +52,12 @@ In PadelWrist Events, the organiser manages official scores and corrections. Par
 
 - A way to share each round and the final standings
 
-For the underlying rules, read [ how Americano scoring works ](https://padelwrist.com/americano-padel-scoring/) . For a broader checklist, see [ how to prepare a padel social ](https://padelwrist.com/padel-tournament-organiser-checklist/) .
+For the underlying rules, read [how Americano scoring works](https://padelwrist.com/americano-padel-scoring/) . For a broader checklist, see [how to prepare a padel social](https://padelwrist.com/padel-tournament-organiser-checklist/) .
 
 ## Keep the score. Run the social.
 
 PadelWrist combines wrist-first individual padel scoring with Americano and Mexicano tournament organisation in version 2.0 for iPhone and iPad.
 
-[ Explore PadelWrist on the App Store → ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Explore PadelWrist on the App Store →](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/americano-tournament-organiser/

@@ -1,7 +1,3 @@
-# Mexicano Padel Scoring Explained | PadelWrist
-
-Social padel formats
-
 # Mexicano scoring explained.
 
 Mexicano starts a little like Americano, then lets the table shape what happens next. Stronger performers tend to be grouped together as the session develops, which usually creates progressively closer rounds.
@@ -44,22 +40,22 @@ PadelWrist's Fixed Points mode scores an individual match. The new Events area i
 
 ## Rules context
 
-Mexicano is an organiser-defined social format rather than the standard match format in the [ International Padel Federation Rules of Padel ](https://www.padelfip.com/documents/) , so local event rules should always take precedence for pairings and round structure.
+Mexicano is an organiser-defined social format rather than the standard match format in the [International Padel Federation Rules of Padel](https://www.padelfip.com/documents/) , so local event rules should always take precedence for pairings and round structure.
 
 ## Still deciding which format you are playing?
 
-Compare [ Americano scoring ](https://padelwrist.com/americano-padel-scoring/) and read [ Fixed Points explained ](https://padelwrist.com/fixed-points-padel-scoring/) .
+Compare [Americano scoring](https://padelwrist.com/americano-padel-scoring/) and read [Fixed Points explained](https://padelwrist.com/fixed-points-padel-scoring/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 ## Preparing a complete Mexicano evening
 
-Because later rounds depend on confirmed standings, organisers need to review the proposed pairings before publishing new matches. See the [ Mexicano organiser guide ](https://padelwrist.com/mexicano-tournament-organiser/) and [ tournament organiser checklist ](https://padelwrist.com/padel-tournament-organiser-checklist/) , the [ format comparison ](https://padelwrist.com/americano-vs-mexicano-padel/) and our [ score corrections guide ](https://padelwrist.com/padel-tournament-score-corrections/) for scoring, courts, corrections and rest policies.
+Because later rounds depend on confirmed standings, organisers need to review the proposed pairings before publishing new matches. See the [Mexicano organiser guide](https://padelwrist.com/mexicano-tournament-organiser/) and [tournament organiser checklist](https://padelwrist.com/padel-tournament-organiser-checklist/) , the [format comparison](https://padelwrist.com/americano-vs-mexicano-padel/) and our [score corrections guide](https://padelwrist.com/padel-tournament-score-corrections/) for scoring, courts, corrections and rest policies.
 
-[ PadelWrist Events ](https://padelwrist.com/events/) is included in version 2.0. It adds native iPhone/iPad management for draws, courts, results and individual rankings.
+[PadelWrist Events](https://padelwrist.com/events/) is included in version 2.0. It adds native iPhone/iPad management for draws, courts, results and individual rankings.
 
 Canonical HTML: https://padelwrist.com/mexicano-padel-scoring/

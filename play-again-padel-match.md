@@ -1,14 +1,10 @@
-# How to Play Again With the Same Padel Settings | PadelWrist
-
-PadelWrist 1.9 · Match History guide
-
 # Play Again: repeat a padel match without starting from scratch.
 
 A rematch should take less setup than the original. Play Again brings back the match format, player choices and available rules from an earlier result, then lets you check everything before scoring a new game.
 
 ## Where to find Play Again
 
-On ** iPhone or iPad ** , open PadelWrist and go to ** Match History ** . Choose the previous match you want to repeat, then tap ** Play Again ** beneath the result. It works from completed matches, drawn matches and matches ended early, provided you can review a valid new setup.
+On **iPhone or iPad** , open PadelWrist and go to **Match History** . Choose the previous match you want to repeat, then tap **Play Again** beneath the result. It works from completed matches, drawn matches and matches ended early, provided you can review a valid new setup.
 
 You are not resuming the old score. PadelWrist opens the familiar match configuration screen so you can check the setup before creating an entirely separate match.
 
@@ -22,7 +18,7 @@ Saved Players are linked to their identities rather than guessed from display na
 
 Once you have checked the lineup and rules, start the match. The new session begins at zero, with a separate match identity and its own History record when saved. The old result stays available for review and Insights. Any old points, sets, private notes or Undo actions are not transferred into the rematch.
 
-On iPhone you can choose ** Prepare for Watch ** instead. That sends the reviewed configuration through the established preparation journey, with scoring beginning on Apple Watch. On iPad, Play Again supports local scoring and the existing court-side experience; there is no direct iPad-to-iPhone Watch preparation relay.
+On iPhone you can choose **Prepare for Watch** instead. That sends the reviewed configuration through the established preparation journey, with scoring beginning on Apple Watch. On iPad, Play Again supports local scoring and the existing court-side experience; there is no direct iPad-to-iPhone Watch preparation relay.
 
 ## What happens if you already have a match running?
 
@@ -38,14 +34,14 @@ For example, a stored match may tell PadelWrist which players participated but n
 
 ## Play Again or Resume Match?
 
-These actions solve different problems. ** Resume Match ** continues an unfinished match from its existing score and progress. ** Play Again ** starts a different match, from zero, based on a previous setup. Use Resume when play was interrupted; use Play Again for another game, a rematch or a repeated weekly pairing.
+These actions solve different problems. **Resume Match** continues an unfinished match from its existing score and progress. **Play Again** starts a different match, from zero, based on a previous setup. Use Resume when play was interrupted; use Play Again for another game, a rematch or a repeated weekly pairing.
 
 Direct Play Again on the Watch is separate development work and should not be confused with preparing a new rematch from iPhone for Watch scoring.
 
 ## Make the next game easier.
 
-Open Match History on iPhone or iPad, choose the result and select Play Again. You can keep building useful [ Insights ](https://padelwrist.com/padel-player-statistics/) as new results are saved.
+Open Match History on iPhone or iPad, choose the result and select Play Again. You can keep building useful [Insights](https://padelwrist.com/padel-player-statistics/) as new results are saved.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/play-again-padel-match/

@@ -1,7 +1,3 @@
-# PadelWrist 2.0: Americano & Mexicano Events | What's New
-
-PadelWrist release history
-
 # Changelog
 
 PadelWrist keeps evolving around one idea: make scoring effortless during the match, then make the result more useful afterwards. Explore PadelWrist 2.0 Events for Americano and Mexicano, alongside the earlier releases that introduced Apple Watch scoring, sharing, Insights and Play Again.
@@ -12,27 +8,27 @@ Latest release · Version 2.0
 
 PadelWrist now extends beyond individual padel scoring. Version 2.0 introduces native Events for clubs, coaches and tournament hosts on iPhone and iPad. Run Americano and Mexicano sessions with players, courts, round-by-round fixtures, official results and individual standings in one place.
 
-- ** Organise an event: ** Choose Americano or Mexicano, enter players, courts and your point target.
+- **Organise an event:** Choose Americano or Mexicano, enter players, courts and your point target.
 
-- ** Review smart draws: ** Plan Americano rotations or let confirmed standings inform later Mexicano pairings.
+- **Review smart draws:** Plan Americano rotations or let confirmed standings inform later Mexicano pairings.
 
-- ** Keep each round moving: ** Publish court assignments, record official scores and progress to the next draw when ready.
+- **Keep each round moving:** Publish court assignments, record official scores and progress to the next draw when ready.
 
-- ** Share with participants: ** Players can follow published fixtures, courts, results and standings by code or link in read-only mode.
+- **Share with participants:** Players can follow published fixtures, courts, results and standings by code or link in read-only mode.
 
-- ** Handle real club sessions: ** Manage resting players, withdrawals, score corrections and early finishes.
+- **Handle real club sessions:** Manage resting players, withdrawals, score corrections and early finishes.
 
-- ** Finish with the results: ** Review the final individual leaderboard, podium and completed event history.
+- **Finish with the results:** Review the final individual leaderboard, podium and completed event history.
 
 Apple Watch match scoring, Match Assistant, live match sharing, History, Insights and Play Again remain available. Events is managed on iPhone and iPad, not on Apple Watch.
 
-[ Explore PadelWrist Events → ](https://padelwrist.com/events/) · [ How the tournament organiser works → ](https://padelwrist.com/padel-tournament-app/) · [ For clubs and coaches → ](https://padelwrist.com/clubs/)
+[Explore PadelWrist Events →](https://padelwrist.com/events/) · [How the tournament organiser works →](https://padelwrist.com/padel-tournament-app/) · [For clubs and coaches →](https://padelwrist.com/clubs/)
 
 Latest release · Play Again
 
 ## Version 1.9
 
-Ready for another game? Open a previous match in History on iPhone or iPad and choose ** Play Again ** . PadelWrist brings its match setup back for review, so you can get the next match underway without rebuilding everything from scratch.
+Ready for another game? Open a previous match in History on iPhone or iPad and choose **Play Again** . PadelWrist brings its match setup back for review, so you can get the next match underway without rebuilding everything from scratch.
 
 - Find Play Again directly beneath the result in Match History, including finished, drawn or ended-early matches
 
@@ -50,7 +46,7 @@ Ready for another game? Open a previous match in History on iPhone or iPad and c
 
 Play Again is available from History on iPhone and iPad. Direct Play Again on Apple Watch is separate development work. It is not needed to prepare a new Watch match from your iPhone.
 
-[ How to use Play Again → ](https://padelwrist.com/play-again-padel-match/)
+[How to use Play Again →](https://padelwrist.com/play-again-padel-match/)
 
 Match Assistant
 
@@ -76,7 +72,7 @@ Meet Match Assistant on Apple Watch. Get timely guidance about who serves and wh
 
 Match Assistant is a foreground, best-effort Watch feature. It does not send background notifications or guarantee haptics when the app is inactive. Live scores and server tracking continue even if a prompt is missed.
 
-[ Explore how Match Assistant works → ](https://padelwrist.com/apple-watch-padel-scoring/#match-assistant)
+[Explore how Match Assistant works →](https://padelwrist.com/apple-watch-padel-scoring/#match-assistant)
 
 Apple Watch shortcuts
 
@@ -94,7 +90,7 @@ PadelWrist is now just a tap away on Apple Watch. Open the app from your Watch f
 
 - Complications and shortcuts available in English and Spanish
 
-[ Explore Apple Watch scoring → ](https://padelwrist.com/apple-watch-padel-scoring/)
+[Explore Apple Watch scoring →](https://padelwrist.com/apple-watch-padel-scoring/)
 
 Player feedback
 
@@ -154,7 +150,7 @@ Version 1.4 made completed matches much more useful and brought the live score t
 
 - Improved Insights charts, navigation, accessibility and low-data presentation
 
-[ Explore PadelWrist Insights → ](https://padelwrist.com/padel-player-statistics/)
+[Explore PadelWrist Insights →](https://padelwrist.com/padel-player-statistics/)
 
 Connected matches
 
@@ -184,7 +180,7 @@ Version 1.3 expanded PadelWrist beyond scoring with sharing, cloud continuity, w
 
 - Further match sync, recovery and reliability improvements
 
-[ Explore match sharing → ](https://padelwrist.com/padel-match-sharing/)
+[Explore match sharing →](https://padelwrist.com/padel-match-sharing/)
 
 Cross-device polish
 
@@ -260,6 +256,6 @@ The first public release established PadelWrist as a native Apple Watch-first pa
 
 Discover PadelWrist 1.9 on iPhone and iPad, including Play Again in Match History. Scoring still works with Apple Watch.
 
-[ View on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[View on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/whats-new/

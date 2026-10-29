@@ -1,7 +1,3 @@
-# How to Hit a Víbora in Padel | PadelWrist
-
-Shots & technique · Updated 29 September 2026
-
 # The víbora is an attacking overhead, not a smash with a different name.
 
 Use it when a lob gives you enough balance and height to attack with slice while still protecting the net. The shot works because of placement, spin and a low rebound, not because you swing as hard as possible.
@@ -10,7 +6,7 @@ Use it when a lob gives you enough balance and height to attack with slice while
 
 A víbora usually makes sense when you are still relatively close to the net and the lob is comfortable enough that you do not need the safer control of a bandeja. If you are moving hard backwards, reaching behind your head or losing balance, the more aggressive shot is often the wrong one.
 
-The simplest distinction is purpose: a [ bandeja ](https://padelwrist.com/how-to-hit-bandeja-padel/) protects position, while a víbora asks the defenders a more difficult question.
+The simplest distinction is purpose: a [bandeja](https://padelwrist.com/how-to-hit-bandeja-padel/) protects position, while a víbora asks the defenders a more difficult question.
 
 ## Turn early and get side-on
 
@@ -48,24 +44,24 @@ The víbora is normally part of keeping an attacking position. Once you hit, mov
 
 ## Common víbora mistakes
 
-** Using it from too far back: ** the shot becomes a desperate overhead instead of controlled pressure.
+**Using it from too far back:** the shot becomes a desperate overhead instead of controlled pressure.
 
-** Trying to hit a winner: ** overswinging reduces spin, margin and recovery.
+**Trying to hit a winner:** overswinging reduces spin, margin and recovery.
 
-** Late preparation: ** you end up underneath the ball and contact behind your body.
+**Late preparation:** you end up underneath the ball and contact behind your body.
 
-** Too much wrist: ** timing becomes unstable. Build the shot around body position and a repeatable swing first.
+**Too much wrist:** timing becomes unstable. Build the shot around body position and a repeatable swing first.
 
-** Forgetting the next ball: ** a good víbora is often a setup shot, not the end of the rally.
+**Forgetting the next ball:** a good víbora is often a setup shot, not the end of the rally.
 
 ## Choose the overhead before you swing.
 
-Compare the [ bandeja, víbora and smash ](https://padelwrist.com/bandeja-vs-vibora-vs-smash/) , then connect your overhead choice to [ net positioning ](https://padelwrist.com/why-net-position-matters-padel/) .
+Compare the [bandeja, víbora and smash](https://padelwrist.com/bandeja-vs-vibora-vs-smash/) , then connect your overhead choice to [net positioning](https://padelwrist.com/why-net-position-matters-padel/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/how-to-hit-vibora-padel/

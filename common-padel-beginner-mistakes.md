@@ -1,7 +1,3 @@
-# Common Padel Beginner Mistakes and How to Fix Them | PadelWrist
-
-Learn padel · Updated 18 August 2026
-
 # Most beginner padel mistakes are really the same three mistakes in disguise.
 
 New players usually rush the ball, carry tennis habits into a smaller court, or try to finish points before they have earned an attacking position. Fix those patterns and a surprising number of errors disappear together.
@@ -12,7 +8,7 @@ A deep ball is not automatically a ball you need to hit before it reaches the wa
 
 Beginners often step forwards and snatch at these balls because the rebound feels unfamiliar. The better habit is to read the trajectory early, give yourself room behind the bounce and decide whether the glass will help you.
 
-Read [ when to let the ball hit the glass ](https://padelwrist.com/when-to-use-glass-padel/) and the [ padel wall rules ](https://padelwrist.com/padel-wall-rules/) .
+Read [when to let the ball hit the glass](https://padelwrist.com/when-to-use-glass-padel/) and the [padel wall rules](https://padelwrist.com/padel-wall-rules/) .
 
 ## 2. Staying at the back after a good opportunity
 
@@ -58,18 +54,18 @@ This is also the problem PadelWrist is designed to reduce: score, server and mat
 
 ## What should a beginner fix first?
 
-Do not try to rebuild everything in one session. Start with one positional habit and one shot-selection habit. A good first combination is: ** use the glass instead of rushing deep balls ** , and ** move forward with your partner after a successful lob ** .
+Do not try to rebuild everything in one session. Start with one positional habit and one shot-selection habit. A good first combination is: **use the glass instead of rushing deep balls** , and **move forward with your partner after a successful lob** .
 
 Those changes improve your decision-making before you have learnt any spectacular new shots.
 
 ## The next step
 
-Continue with [ padel positioning for beginners ](https://padelwrist.com/padel-positioning-for-beginners/) , [ when to lob ](https://padelwrist.com/when-to-lob-padel/) and [ bandeja vs víbora vs smash ](https://padelwrist.com/bandeja-vs-vibora-vs-smash/) .
+Continue with [padel positioning for beginners](https://padelwrist.com/padel-positioning-for-beginners/) , [when to lob](https://padelwrist.com/when-to-lob-padel/) and [bandeja vs víbora vs smash](https://padelwrist.com/bandeja-vs-vibora-vs-smash/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/common-padel-beginner-mistakes/

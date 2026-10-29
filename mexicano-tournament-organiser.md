@@ -1,7 +1,3 @@
-# How to Run a Mexicano Padel Tournament | PadelWrist
-
-Mexicano · Practical organiser guide
-
 # How to run a Mexicano padel tournament.
 
 Mexicano changes as the scores come in. Instead of fixing every pairing before play, later rounds use the confirmed standings to suggest who should play together next.
@@ -10,7 +6,7 @@ Mexicano changes as the scores come in. Instead of fixing every pairing before p
 
 PadelWrist 2.0 combines individual match scoring with Americano and Mexicano Events for clubs, coaches and tournament hosts.
 
-[ Explore what is new in 2.0 → ](https://padelwrist.com/whats-new/#v2-0)
+[Explore what is new in 2.0 →](https://padelwrist.com/whats-new/#v2-0)
 
 ## 1. Start with the people, courts and scoring target
 
@@ -56,12 +52,12 @@ When the final round has been completed, review the standings and podium and ret
 
 - One shared source for published courts, results and standings
 
-See [ Mexicano scoring explained ](https://padelwrist.com/mexicano-padel-scoring/) , [ the Americano comparison ](https://padelwrist.com/americano-vs-mexicano-padel/) or our [ event planning checklist ](https://padelwrist.com/padel-tournament-organiser-checklist/) for more detail.
+See [Mexicano scoring explained](https://padelwrist.com/mexicano-padel-scoring/) , [the Americano comparison](https://padelwrist.com/americano-vs-mexicano-padel/) or our [event planning checklist](https://padelwrist.com/padel-tournament-organiser-checklist/) for more detail.
 
 ## Keep the score. Run the social.
 
 PadelWrist combines wrist-first individual padel scoring with Americano and Mexicano tournament organisation in version 2.0 for iPhone and iPad.
 
-[ Explore PadelWrist on the App Store → ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Explore PadelWrist on the App Store →](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/mexicano-tournament-organiser/

@@ -1,7 +1,3 @@
-# How to Keep Score in Padel: A Practical Match Guide | PadelWrist
-
-Practical scorekeeping · Updated 27 August 2026
-
 # How to keep score in padel without thinking about it all match.
 
 The rules are only half the problem. The other half is remembering the score after a long rally, who is serving, and whether you are changing ends. A simple routine makes that much easier.
@@ -36,16 +32,16 @@ Players change ends after the first, third and every subsequent odd game in the 
 
 For a casual match, calling the score may be enough. A phone works well if one person off court is scoring. When the players themselves are keeping score, a watch is usually quicker because it stays attached and can be updated immediately after the rally.
 
-The best method is the one that asks for the least attention while still keeping all four players confident in the score. If you want wrist-first scoring, see [ how PadelWrist works on Apple Watch ](https://padelwrist.com/apple-watch-padel-scoring/) .
+The best method is the one that asks for the least attention while still keeping all four players confident in the score. If you want wrist-first scoring, see [how PadelWrist works on Apple Watch](https://padelwrist.com/apple-watch-padel-scoring/) .
 
 ## Need the rules behind the routine?
 
-Read [ how padel scoring works ](https://padelwrist.com/how-padel-scoring-works/) , then keep [ the tie-break guide ](https://padelwrist.com/padel-tie-break-rules/) handy for 6-6.
+Read [how padel scoring works](https://padelwrist.com/how-padel-scoring-works/) , then keep [the tie-break guide](https://padelwrist.com/padel-tie-break-rules/) handy for 6-6.
 
 ## Make the most of every match
 
 PadelWrist lets you score from Apple Watch in English or Spanish, share a live Match Code, keep the match visible on iPhone and explore searchable Match History and Insights afterwards.
 
-[ Explore Insights ](https://padelwrist.com/padel-player-statistics/) · [ See Live Activities ](https://padelwrist.com/live-padel-score-iphone/) · [ Explore Match History ](https://padelwrist.com/padel-match-history/)
+[Explore Insights](https://padelwrist.com/padel-player-statistics/) · [See Live Activities](https://padelwrist.com/live-padel-score-iphone/) · [Explore Match History](https://padelwrist.com/padel-match-history/)
 
 Canonical HTML: https://padelwrist.com/how-to-keep-score-in-padel/

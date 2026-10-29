@@ -1,7 +1,3 @@
-# How to Defend Fast Balls Off the Back Glass in Padel | PadelWrist
-
-Walls & defence · Updated 18 August 2026
-
 # Against pace, the back glass can give you the time your hands do not have.
 
 Fast drives feel intimidating when you try to intercept everything before the wall. Letting a deep ball rebound can turn an urgent reaction into a slower, more readable second trajectory.
@@ -38,12 +34,12 @@ During warm-up, deliberately let several suitable balls reach the back glass ins
 
 ## Make the walls predictable
 
-Read [ when to use the glass ](https://padelwrist.com/when-to-use-glass-padel/) , [ corner-glass defence ](https://padelwrist.com/defend-corner-glass-padel/) and the [ wall rules ](https://padelwrist.com/padel-wall-rules/) .
+Read [when to use the glass](https://padelwrist.com/when-to-use-glass-padel/) , [corner-glass defence](https://padelwrist.com/defend-corner-glass-padel/) and the [wall rules](https://padelwrist.com/padel-wall-rules/) .
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/defend-fast-balls-back-glass-padel/

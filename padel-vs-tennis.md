@@ -1,7 +1,3 @@
-# Padel vs Tennis: What's Different? | PadelWrist
-
-Getting started
-
 # Padel vs tennis.
 
 They share a net and a familiar score, but the moment the ball reaches the glass they become very different sports.
@@ -24,11 +20,11 @@ Tennis begins with an overarm serve. Padel begins underarm: bounce the ball, str
 
 ## Walls
 
-This is the biggest difference. In padel, a ball that bounces in your court can then rebound from the glass or fence and still be returned. It rewards patience and makes defensive situations recoverable. Read the [ wall rules ](https://padelwrist.com/padel-wall-rules/) before your first game.
+This is the biggest difference. In padel, a ball that bounces in your court can then rebound from the glass or fence and still be returned. It rewards patience and makes defensive situations recoverable. Read the [wall rules](https://padelwrist.com/padel-wall-rules/) before your first game.
 
 ## Scoring
 
-The traditional structure is familiar: love, 15, 30, 40, games and sets. Deuce systems can differ, particularly in competitions, so see our [ 2026 padel scoring guide ](https://padelwrist.com/how-padel-scoring-works/) .
+The traditional structure is familiar: love, 15, 30, 40, games and sets. Deuce systems can differ, particularly in competitions, so see our [2026 padel scoring guide](https://padelwrist.com/how-padel-scoring-works/) .
 
 ## Tactics
 
@@ -44,12 +40,12 @@ Padel is generally easier to * start * . The underarm serve and compact court he
 
 Read the beginner guide before you book a court.
 
-[ What is padel? ](https://padelwrist.com/what-is-padel/)
+[What is padel?](https://padelwrist.com/what-is-padel/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-vs-tennis/

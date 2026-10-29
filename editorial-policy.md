@@ -1,14 +1,10 @@
-# PadelWrist Knowledge Base Editorial Policy
-
-Knowledge base standards
-
 # How PadelWrist writes about padel.
 
 The knowledge base exists to answer real player questions accurately and clearly. It is not a vehicle for publishing hundreds of near-identical search pages.
 
 ## Primary sources first
 
-For official rules, our primary authority is the ** International Padel Federation (FIP) ** . Where UK context is useful, we may also use the LTA. Competition-specific rules are identified as such rather than presented as universal rules.
+For official rules, our primary authority is the **International Padel Federation (FIP)** . Where UK context is useful, we may also use the LTA. Competition-specific rules are identified as such rather than presented as universal rules.
 
 ## Rules and habits are not the same thing
 
@@ -28,7 +24,7 @@ Technique and positioning articles are practical explainers, not personalised co
 
 ## Corrections
 
-If a rule, product feature or factual statement is wrong or outdated, we want to correct it. Send corrections to support@padelwrist.com or use the [ public feedback board ](https://padelwrist.fider.io/) .
+If a rule, product feature or factual statement is wrong or outdated, we want to correct it. Send corrections to support@padelwrist.com or use the [public feedback board](https://padelwrist.fider.io/) .
 
 ## Use of AI
 
@@ -36,13 +32,12 @@ Software can help with research organisation, QA and structure, but published pa
 
 ## Core sources
 
-[ International Padel Federation documents ](https://www.padelfip.com/documents/)
-[ LTA padel rules ](https://www.ltapadel.org.uk/play/how-to-get-started-playing-padel/rules/)
+[International Padel Federation documents](https://www.padelfip.com/documents/) [LTA padel rules](https://www.ltapadel.org.uk/play/how-to-get-started-playing-padel/rules/)
 
 ## Explore the result.
 
 Browse the rules, scoring, tactics and beginner guides built under this policy.
 
-[ Padel knowledge base ](https://padelwrist.com/guides/)
+[Padel knowledge base](https://padelwrist.com/guides/)
 
 Canonical HTML: https://padelwrist.com/editorial-policy/

@@ -1,7 +1,3 @@
-# Padel Equipment for Beginners: What You Actually Need | PadelWrist
-
-Getting started
-
 # Padel equipment for beginners.
 
 You need less than the shops would like you to believe. For a first session, hire a racket, wear proper court shoes and spend your money only after you know you enjoy the sport.
@@ -46,12 +42,12 @@ If you do want to spend money early, prioritise comfort rather than performance 
 
 Kit is easy. The unfamiliar bits are the serve, score and walls.
 
-[ Beginner's guide to padel ](https://padelwrist.com/what-is-padel/)
+[Beginner's guide to padel](https://padelwrist.com/what-is-padel/)
 
 ## Keep the score. Stay in the match.
 
 PadelWrist keeps points, games, sets, tie-breaks and serving order visible on Apple Watch, iPhone and iPad, so you can concentrate on playing.
 
-[ Get PadelWrist on the App Store ](https://apps.apple.com/gb/app/padelwrist/id6799725420)
+[Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 
 Canonical HTML: https://padelwrist.com/padel-equipment-for-beginners/
