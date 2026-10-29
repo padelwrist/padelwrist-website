@@ -8,11 +8,11 @@ PadelWrist is live on the Apple App Store: https://apps.apple.com/gb/app/padelwr
 
 App Store ID: `6799725420`.
 
-Current website-promoted release: **1.9**. The product owner has explicitly authorised presenting 1.9 as released on the website, regardless of App Store rollout status. The merged 1.9 app feature is **Play Again from Match History on iPhone and iPad**, supporting review of previous setup, a new match or preparation for Watch from iPhone, with the original result retained. A separate direct Watch Play Again flow is still under draft review and must NOT be promoted as available. Do not represent the App Store review outcome as independently verified. 1.8 introduced foreground Watch Match Assistant; 1.7 added Watch complications and Smart Stack; 1.6 added rating feedback prompts.
+**2.0 release status (29 October 2026):** Submitted to Apple for App Store review. Not yet approved or publicly available. The site may explain the submitted Events features with a prominent submission-status qualification, but must not claim public availability until verified. Existing individual padel scoring is available. The current App Store storefront may still show an earlier release. Version 2.0 adds Americano/Mexicano Events on iPhone and iPad. Previous versions added Play Again (1.9), Match Assistant (1.8), Watch complications (1.7) and rating prompts (1.6). Do not imply direct Watch tournament administration or court booking/payments.
 
 ## Audience
 
-Two complementary audiences: **(1) individual padel players** using the released scorekeeper on Apple Watch, iPhone and iPad, who care about intuitive scoring, History, sharing and Insights; **(2) padel clubs, coaches and social tournament hosts** exploring Events, a native iPhone/iPad organiser feature still in development. The site should make both journeys immediately visible, without conflating roadmap functionality with released app functionality.
+Two complementary audiences: **(1) individual padel players** using the released scorekeeper on Apple Watch, iPhone and iPad, who care about intuitive scoring, History, sharing and Insights; **(2) padel clubs, coaches and social tournament hosts** with Americano/Mexicano Events included in the submitted version 2.0 app, pending public release. The site should make both journeys immediately visible, without conflating roadmap functionality with released app functionality.
 
 ## Primary promise
 
@@ -54,16 +54,20 @@ The website should make four ideas obvious:
 - Local-first scoring during temporary device disconnection.
 - No PadelWrist account required.
 
-PadelWrist Events is separately **in development** as a native iPhone/iPad organiser feature for Americano/Mexicano. The current design proposes rosters, courts, flexible rounds, organiser-controlled draws, individual standings and optional read-only participant views. Stacked draft PRs #30 and #31 have native official score entry and audited corrections under development: current and historic fixtures, required reasons, explicit before/after review, durable recovery from interrupted responses and server-side stale-edit protection. These are **not merged or available in the released app**. Real-device accessibility, production authentication and further Events flows remain release gates. Do not announce Events launch dates, pricing, account requirements, booking or tournament registration; developer drafts do not imply production availability. Match Assistant is best-effort, foreground-only and does not provide spoken assistant instructions, system notifications or background haptic alerts. Do not promise catch-up cues after reconnect, Undo, editing or resuming a match. Do not imply automatic shot tracking, tactical analysis, public social profiles, court booking, tournament management or automatic Americano/Mexicano partner rotation.
+PadelWrist Events is a **version 2.0 feature submitted for App Store review, pending public release**, provided on iPhone/iPad. Organisers can set up Americano or Mexicano events, rosters, courts and points targets; review/publish draw proposals; record official match scores and corrections; manage rests and withdrawals; view individual standings and podium; and share read-only published rounds and standings by code/link. The organising device is locally authoritative and event sharing is read-only for followers. This is not a tournament cloud account, court booking system or payments service. The 2.0 submission does not guarantee a particular date of approval. Do not imply Watch tournament administration or guaranteed offline delivery of shared updates.
 
 ## New website content
+
+- `/padel-tournament-app/`: commercial-intent landing page for the native PadelWrist tournament organiser.
+- `/americano-tournament-organiser/`: practical Americano host guide.
+- `/mexicano-tournament-organiser/`: practical Mexicano host guide.
 
 - `/play-again-padel-match/`: help for using Play Again and distinguishing it from Resume.
 - `/how-to-read-padel-match-stats/`: interpretation of trends, match volume, partner/opponent records and statistics limitations.
 - `/padel-tournament-organiser-checklist/`: organiser education, practical scoring examples and transparent rules.
 - `/players/`: purpose-built released-app landing page for players, with Apple Watch, iPhone/iPad, live scoring, Play Again, History and Insights.
 - `/clubs/`: top-level clubs and tournament hosts landing page, explaining their needs and directing to the Events product preview.
-- `/events/`: an in-development product page under Clubs, with proposed setup, players/courts, round-by-round flow, standings and host feedback. Illustrations are explicitly marked concepts. Score corrections are a minor supporting detail, not a headline selling point.
+- `/events/`: a 2.0 product page under Clubs, with submitted setup, players/courts, round-by-round flow, sharing, standings and host feedback. Illustrations remain explicitly marked examples. Score corrections are a minor supporting detail, not a headline selling point.
 - `/americano-vs-mexicano-padel/`: comparison of partner rotations, pairing rules, fixed-point totals and organiser decisions.
 - `/padel-tournament-score-corrections/`: practical advice on correcting official scores, approval, rank recalculation, stable Mexicano fixtures and connectivity conflicts.
 
@@ -75,4 +79,4 @@ Use **PADELWRIST** only when rendering the visual wordmark itself.
 
 ## Website mode
 
-The homepage is a **two-audience Persuade** surface with an early, equally visible choice: Players → `/players/` and Clubs → `/clubs/`. **Events** is an in-development product page nested under the Clubs journey at `/events/`. The main navigation labels are **Players, Clubs, Features, What’s New, Guides, Support, Privacy**. Both audience routes are discoverable from primary navigation and Guides. The player route sells the released personal match lifecycle (score on Watch, share, History, Insights and Play Again); the organiser route sells the planned value for clubs (players, courts, pairing/rounds and standings), while repeatedly and truthfully identifying Events as in development. Do not use a generic App Store download CTA to imply Events is available. Supporting guides are **Read** surfaces answering intent first and routing appropriately.
+The homepage is a **two-audience Persuade** surface with an early, equally visible choice: Players → `/players/` and Clubs → `/clubs/`. **Events** is a version 2.0 submission page nested under the Clubs journey at `/events/`. The main navigation labels are **Players, Clubs, Features, What’s New, Guides, Support, Privacy**. Both audience routes are discoverable from primary navigation and Guides. The player route sells the released personal match lifecycle (score on Watch, share, History, Insights and Play Again); the organiser route sells the planned value for clubs (players, courts, pairing/rounds and standings), while accurately identifying Events as included in version 2.0 but pending review and public release. Do not use a generic App Store download CTA to imply Events is publicly available before the 2.0 release. Supporting guides are **Read** surfaces answering intent first and routing appropriately.
