@@ -1,7 +1,7 @@
 name: Generate AI-readable Markdown
 on:
   push:
-    branches: [main]
+    branches: [main, 'seo/llm-visibility-v2-20261029']
     paths:
       - 'index.html'
       - '*/index.html'
@@ -39,4 +39,4 @@ jobs:
           git config user.email 'actions@users.noreply.github.com'
           git commit -m 'Generate AI-readable Markdown from HTML'
           git pull --rebase origin main
-          git push origin HEAD:main
+          git push origin HEAD:${GITHUB_REF_NAME}
