@@ -1,0 +1,42 @@
+name: Generate AI-readable Markdown
+on:
+  push:
+    branches: [main, 'seo/llm-visibility-v2-20261029']
+    paths:
+      - 'index.html'
+      - '*/index.html'
+      - 'scripts/generate-markdown.py'
+      - '.github/workflows/markdown.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: padelwrist-seo-content-writes
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Generate from canonical HTML
+        run: python3 scripts/generate-markdown.py
+      - name: Validate
+        run: |
+          test -s index.md
+          test -s clubs.md
+          test -s players.md
+          test -s events.md
+          grep -q 'rel="alternate" type="text/markdown"' index.html
+      - name: Commit generated equivalents
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -A -- '*.md' '*.html'
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'PadelWrist SEO Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git commit -m 'Generate AI-readable Markdown from HTML'
+          git pull --rebase origin main
+          git push origin HEAD:${GITHUB_REF_NAME}
