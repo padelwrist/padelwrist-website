@@ -1,0 +1,19 @@
+name: Verify live Markdown negotiation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'wrangler.jsonc'
+      - 'src/content-negotiation.mjs'
+      - 'tests/live-negotiation-smoke.sh'
+      - '.github/workflows/live-negotiation-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify production HTTP negotiation
+        run: bash tests/live-negotiation-smoke.sh https://padelwrist.com

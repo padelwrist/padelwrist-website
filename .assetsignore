@@ -1,0 +1,14 @@
+# Source and maintenance files are not public site assets.
+.agents/
+.github/
+scripts/
+src/
+tests/
+node_modules/
+wrangler.jsonc
+README.md
+DESIGN.md
+DESIGN-AUDIT.md
+PRODUCT.md
+IMAGE-LICENSING.md
+image-licenses.json
