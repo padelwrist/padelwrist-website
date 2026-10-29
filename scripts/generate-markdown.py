@@ -25,7 +25,9 @@ class Converter(HTMLParser):
             if tag not in VOID:
                 self.hidden += 1
             return
-        if tag in SKIP or attrs.get("aria-hidden") == "true":
+        css_classes = (attrs.get("class") or "").split()
+        decorative = {"events-preview", "hero-product-card", "proof-bar-v2", "home-photo-credit"}
+        if tag in SKIP or attrs.get("aria-hidden") == "true" or any(c in decorative for c in css_classes):
             self.hidden = 1
         elif re.fullmatch(r"h[1-6]", tag):
             self.parts.append("\n\n" + "#" * int(tag[1]) + " ")
