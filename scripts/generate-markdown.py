@@ -33,8 +33,10 @@ class Converter(HTMLParser):
             self.parts.append("\n\n")
         elif tag == "li":
             self.parts.append("\n- ")
-        elif tag in {"br", "hr"}:
-            self.parts.append("\n")
+        elif tag == "br":
+            self.parts.append(" ")
+        elif tag == "hr":
+            self.parts.append("\n\n---\n\n")
         elif tag in {"strong", "b"}:
             self.parts.append("**")
         elif tag in {"em", "i"}:
@@ -61,7 +63,7 @@ class Converter(HTMLParser):
             elif tag == "a" and self.links:
                 href = self.links.pop()
                 if href:
-                    self.parts.append("](" + href + ")")
+                    self.parts.append("](" + href + ") ")
 
     def handle_data(self, data):
         if self.active and not self.hidden:
@@ -74,6 +76,9 @@ class Converter(HTMLParser):
         output = re.sub(r"[ \t]+", " ", output)
         output = re.sub(r" *\n *", "\n", output)
         output = re.sub(r"\n{3,}", "\n\n", output)
+        output = re.sub(r"\*\*\s+([^*]+?)\s+\*\*", r"**\1**", output)
+        output = re.sub(r"\[\s+", "[", output)
+        output = re.sub(r"\s+\]", "]", output)
         return output.strip()
 
 def main():
@@ -90,6 +95,9 @@ def main():
         parser = Converter(canonical)
         parser.feed(html)
         body = parser.result()
+        first_h1 = re.search(r"(?m)^# ", body)
+        if first_h1:
+            body = body[first_h1.start():]
         if not body:
             raise ValueError("Missing main content: " + str(page))
         target = ROOT / ("index.md" if not slug else slug + ".md")
