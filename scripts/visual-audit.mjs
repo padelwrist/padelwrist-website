@@ -1,16 +1,32 @@
 import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import {renderShop} from './build-shop.mjs';
+import {validateCatalogue} from '../src/shop-catalogue.mjs';
 
 const base = 'http://127.0.0.1:4173';
 const outDir = path.resolve('visual-audit');
 await fs.mkdir(outDir, { recursive: true });
+// Test-only examples, excluded from Cloudflare assets. Never publish draft listings.
+const fixture = validateCatalogue(JSON.parse(await fs.readFile(new URL('../tests/fixtures/shop-catalogue.json', import.meta.url), 'utf8')));
+for (const language of ['en', 'es']) {
+  const directory = path.join(outDir, 'fixtures', language === 'en' ? 'shop' : 'shop-es');
+  await fs.mkdir(directory, {recursive:true});
+  await fs.writeFile(path.join(directory,'index.html'),renderShop(fixture,language)
+    .replace('index,follow,max-image-preview:large','noindex,nofollow')
+    .replace('<main id="main"','<aside class="shell">Catalogue preview · unverified examples</aside><main id="main"'));
+}
+
 
 const pages = [
   ['home', '/'],
   ['players', '/players/'],
   ['clubs', '/clubs/'],
   ['guides', '/guides/'],
+  ['shop', '/shop/'],
+  ['shop-es', '/shop-es/'],
+  ['shop-family-preview', '/visual-audit/fixtures/shop/'],
+  ['shop-family-preview-es', '/visual-audit/fixtures/shop-es/'],
   ['typical-guide', '/how-padel-scoring-works/'],
   ['insights', '/padel-player-statistics/'],
   ['events', '/events/'],
@@ -55,7 +71,7 @@ for (const [viewportName, width, height] of viewports) {
         const el = document.querySelector(selector);
         return el ? getComputedStyle(el).getPropertyValue(prop).trim() : null;
       };
-      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot, .audience-choice-card, .events-benefit, .events-host-grid article, .events-format-card, .events-boundary-card, .players-feature')].map((el) => {
+      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot, .audience-choice-card, .events-benefit, .events-host-grid article, .events-format-card, .events-boundary-card, .players-feature, .shop-product, .shop-categories > div')].map((el) => {
         const r = el.getBoundingClientRect();
         return { tag: el.tagName, cls: el.className, x: r.x, y: r.y, width: r.width, height: r.height };
       });
@@ -102,9 +118,23 @@ for (const [viewportName, width, height] of viewports) {
       };
     });
 
-    const expectedNavLabels = ['Players', 'Clubs', 'Features', "What's New", 'Guides', 'Support', 'Privacy'];
-    diagnostics.navigationCorrect = expectedNavLabels.every((label, index) => diagnostics.navLabels[index] === label);
-    diagnostics.navigationRoutesCorrect = diagnostics.navTargets[0] === '/players/' && diagnostics.navTargets[1] === '/clubs/';
+    const isShop = pageName.startsWith('shop');
+    const spanish = pageName.endsWith('-es');
+    const expectedNavLabels = isShop
+      ? [spanish ? 'Inicio' : 'Home', 'Players', 'Clubs', spanish ? 'Tienda' : 'Shop', spanish ? 'English' : 'Español']
+      : ['Players', 'Clubs', 'Shop', 'Features', "What's New", 'Guides', 'Support', 'Privacy'];
+    const expectedNavTargets = isShop
+      ? ['/', '/players/', '/clubs/', spanish ? '/shop-es/' : '/shop/', spanish ? '/shop/' : '/shop-es/']
+      : ['/players/', '/clubs/', '/shop/', '/', '/whats-new/', '/guides/', '/support/', '/privacy/'];
+    diagnostics.navigationCorrect = expectedNavLabels.length === diagnostics.navLabels.length && expectedNavLabels.every((label, index) => diagnostics.navLabels[index] === label);
+    diagnostics.navigationRoutesCorrect = expectedNavTargets.length === diagnostics.navTargets.length && expectedNavTargets.every((target,index)=>diagnostics.navTargets[index]===target);
+    diagnostics.packSelectionWorks = true;
+    diagnostics.affiliateLinksDisabled = true;
+    if (pageName.startsWith('shop-family-preview')) {
+      await page.locator('[data-shop-pack]').first().selectOption('2');
+      diagnostics.packSelectionWorks = await page.locator('.shop-product').first().locator('[data-shop-variant="2"]').isVisible();
+      diagnostics.affiliateLinksDisabled = await page.locator('a[href*="amazon"]').count() === 0;
+    }
     if (width <= 959) {
       const toggle = page.locator('.mobile-nav-toggle');
       await toggle.click();
@@ -120,6 +150,6 @@ for (const [viewportName, width, height] of viewports) {
 await browser.close();
 await fs.writeFile(path.join(outDir, 'report.json'), JSON.stringify(report, null, 2));
 
-const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length || !entry.diagnostics.navigationCorrect || !entry.diagnostics.navigationRoutesCorrect || !entry.diagnostics.mobileMenuOpens);
+const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length || !entry.diagnostics.navigationCorrect || !entry.diagnostics.navigationRoutesCorrect || !entry.diagnostics.mobileMenuOpens || !entry.diagnostics.packSelectionWorks || !entry.diagnostics.affiliateLinksDisabled);
 console.log(JSON.stringify({ pages: report.length, failures: failures.length, failureDetails: failures }, null, 2));
 if (failures.length) process.exitCode = 1;

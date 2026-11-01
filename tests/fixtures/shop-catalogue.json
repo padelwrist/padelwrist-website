@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "updatedAt": "2026-11-01T15:00:00Z",
+  "expiresAt": "2099-01-01T00:00:00Z",
+  "categories": [
+    {
+      "id": "rackets",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Rackets",
+        "es": "Palas"
+      },
+      "description": {
+        "en": "Find the balance between control, comfort and power that suits your game.",
+        "es": "Encuentra el equilibrio entre control, comodidad y potencia que se adapta a tu juego."
+      }
+    },
+    {
+      "id": "balls",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Balls",
+        "es": "Pelotas"
+      },
+      "description": {
+        "en": "Keep a consistent bounce at the heart of every session.",
+        "es": "Un bote constante para cada sesión."
+      }
+    },
+    {
+      "id": "grips",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Grips",
+        "es": "Empuñaduras"
+      },
+      "description": {
+        "en": "A fresh contact point for confident, comfortable handling.",
+        "es": "Renueva el agarre para jugar con confianza y comodidad."
+      }
+    },
+    {
+      "id": "footwear",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Footwear",
+        "es": "Calzado"
+      },
+      "description": {
+        "en": "Look for lateral support and grip suited to your court surface.",
+        "es": "Busca sujeción lateral y agarre adecuados a la superficie de tu pista."
+      }
+    },
+    {
+      "id": "bags",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Bags",
+        "es": "Paleteros"
+      },
+      "description": {
+        "en": "Make room for rackets, kit and the essentials between matches.",
+        "es": "Espacio para palas, ropa y lo esencial entre partidos."
+      }
+    },
+    {
+      "id": "accessories",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Accessories",
+        "es": "Accesorios"
+      },
+      "description": {
+        "en": "Small additions that make a long day on court easier.",
+        "es": "Pequeños detalles para disfrutar de un día largo en la pista."
+      }
+    },
+    {
+      "id": "bulkBalls",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Bulk padel balls",
+        "es": "Pelotas de pádel por volumen"
+      },
+      "description": {
+        "en": "Plan ball supplies around court hours and coaching demand.",
+        "es": "Planifica las pelotas según las horas de pista y los entrenamientos."
+      }
+    },
+    {
+      "id": "coaching",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Coaching equipment",
+        "es": "Material de entrenamiento"
+      },
+      "description": {
+        "en": "Build purposeful sessions with tools for repeatable practice.",
+        "es": "Prepara sesiones con material para practicar de forma constante."
+      }
+    },
+    {
+      "id": "court",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Court accessories",
+        "es": "Accesorios de pista"
+      },
+      "description": {
+        "en": "Keep shared courts organised and ready for the next group.",
+        "es": "Mantén las pistas organizadas y listas para el siguiente grupo."
+      }
+    },
+    {
+      "id": "tournament",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Tournament supplies",
+        "es": "Material para torneos"
+      },
+      "description": {
+        "en": "Prepare the practical details for a smooth event day.",
+        "es": "Prepara los detalles prácticos para que el torneo vaya sobre ruedas."
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "raquex-elite-padel-balls",
+      "audiences": [
+        "players"
+      ],
+      "categories": [
+        "balls"
+      ],
+      "featuredOrder": 10,
+      "publicationStatus": "published",
+      "title": {
+        "en": "Raquex Elite Padel Balls",
+        "es": "Pelotas de pádel Raquex Elite"
+      },
+      "description": {
+        "en": "Choose a pack for your next sessions. Raquex makes the Elite range for padel; the supplied Amazon pack options still need listing verification.",
+        "es": "Elige un pack para tus próximas sesiones. Raquex fabrica la gama Elite para pádel; aún debemos verificar las variantes de Amazon facilitadas."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "pack-3",
+          "title": {
+            "en": "3 balls",
+            "es": "3 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0D123Q6RL?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=4e808ecc0b218b4e2b463fb590003688&gaOptInStatus=true&ref_=as_li_ss_tl",
+              "reviewedAt": null,
+              "enabled": false
+            },
+            "mobile": []
+          }
+        },
+        {
+          "id": "pack-6",
+          "title": {
+            "en": "6 balls",
+            "es": "6 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0D1VZ4VNJ?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=8aa9673011cf31d404d08775c0575080&gaOptInStatus=true&ref_=as_li_ss_tl",
+              "reviewedAt": null,
+              "enabled": false
+            },
+            "mobile": []
+          }
+        },
+        {
+          "id": "pack-9",
+          "title": {
+            "en": "9 balls",
+            "es": "9 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0D1VXLW6J?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=693776af5c540bc9fe88d5a9e32056eb&gaOptInStatus=true&ref_=as_li_ss_tl",
+              "reviewedAt": null,
+              "enabled": false
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "raquex-elite-padel-balls-club-pack",
+      "audiences": [
+        "clubs"
+      ],
+      "categories": [
+        "bulkBalls"
+      ],
+      "featuredOrder": 0,
+      "publicationStatus": "published",
+      "title": {
+        "en": "Raquex Elite Padel Balls · Club pack",
+        "es": "Pelotas de pádel Raquex Elite · Pack para clubes"
+      },
+      "description": {
+        "en": "A bulk-pack selection proposed for club sessions. Confirm the supplied 120-ball option and exact listing before planning your order.",
+        "es": "Una selección por volumen propuesta para sesiones de club. Confirma la opción facilitada de 120 pelotas y el anuncio exacto antes de planificar el pedido."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "pack-120",
+          "title": {
+            "en": "120 balls",
+            "es": "120 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=c08c803d6768ad8ad1e9e4a6d22af15b&gaOptInStatus=true&ref_=as_li_ss_tl",
+              "reviewedAt": null,
+              "enabled": false
+            },
+            "mobile": []
+          }
+        }
+      ]
+    }
+  ],
+  "webLinksEnabled": false
+}
