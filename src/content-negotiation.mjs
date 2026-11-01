@@ -1,3 +1,4 @@
+import { serveShopFeed } from './shop-feed.mjs';
 /**
  * PadelWrist content negotiation.
  *
@@ -124,6 +125,7 @@ async function servePage(request, env, url) {
 
 export default {
   async fetch(request, env) {
+    if (new URL(request.url).pathname === "/catalogue/v1.json") return serveShopFeed(request, env);
     if (request.method !== "GET" && request.method !== "HEAD") {
       return env.ASSETS.fetch(request);
     }

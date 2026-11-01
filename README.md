@@ -52,3 +52,7 @@ The HTML is the only editable source of truth. When `index.html` or any `*/index
 Cloudflare uses `src/content-negotiation.mjs` and `assets.run_worker_first` for page requests. The Worker selects a pre-generated representation by the HTTP `Accept` header, respecting explicit media types, q-values and wildcard preferences. Regular browser requests continue to receive HTML; clients asking for Markdown receive the same content in Markdown at the original canonical URL. Direct `.md` routes remain available. Both representations advertise the alternative with a `Link` header and send `Vary: Accept`. Markdown is `noindex, follow`; HTML remains canonical.
 
 Run regression tests using `node --test tests/content-negotiation.test.mjs`. For local content generation run `python3 scripts/generate-markdown.py` before publishing. The Worker never generates Markdown at request time, so it does not need a database, CMS or dynamic rendering service.
+
+## Shared Shop
+
+The website owns the versioned catalogue consumed by web and native iPhone/iPad Shop. Edit `data/shop/catalogue.json`, then generate its validated JSON/HTML and the existing Markdown alternatives. See [Shop contract and publishing workflow](SHOP-CATALOGUE.md). These PR changes prepare publication; do not deploy or activate affiliate destinations without separate approval.

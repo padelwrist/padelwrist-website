@@ -8,6 +8,7 @@
     "not_found_handling": "404-page",
     "binding": "ASSETS",
     "run_worker_first": [
+      "/catalogue/v1.json",
       "/",
       "/*/",
       "/*.md"

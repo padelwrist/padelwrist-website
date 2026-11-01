@@ -3,6 +3,9 @@ on:
   push:
     branches: [main, 'seo/llm-visibility-v2-20261029']
     paths:
+      - 'data/shop/**'
+      - 'src/shop-catalogue.mjs'
+      - 'scripts/build-shop.mjs'
       - 'index.html'
       - '*/index.html'
       - 'scripts/generate-markdown.py'
@@ -20,6 +23,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generate validated Shop HTML and public feed
+        run: node scripts/build-shop.mjs
       - name: Generate from canonical HTML
         run: python3 scripts/generate-markdown.py
       - name: Validate
@@ -33,7 +41,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add -A -- '*.md' '*.html'
+          git add -A -- '*.md' '*.html' catalogue/v1.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name 'PadelWrist SEO Bot'
           git config user.email 'actions@users.noreply.github.com'

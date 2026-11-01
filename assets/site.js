@@ -8,6 +8,8 @@ const isSupport = path === '/support/' || path === '/support';
 const isPrivacy = path === '/privacy/' || path === '/privacy';
 const isPlayers = path === '/players/' || path === '/players';
 const isClubs = ['/clubs/', '/clubs', '/events/', '/events'].includes(path);
+const isSpanishShop = document.body.classList.contains('shop-body') && document.documentElement.lang === 'es';
+const isShop = document.body.classList.contains('shop-body');
 const isWhatsNew = path === '/whats-new/' || path === '/whats-new';
 
 if (isGuidesHub) document.body.classList.add('guides-hub');
@@ -18,11 +20,12 @@ document.querySelectorAll('[data-year]').forEach((element) => {
 
 function standardiseChrome() {
   const nav = document.querySelector('.site-header .site-nav');
-  if (nav) {
+  if (nav && !isShop) {
     nav.setAttribute('aria-label', 'Primary navigation');
     nav.innerHTML = `
       <a href="/players/">Players</a>
       <a href="/clubs/">Clubs</a>
+      <a href="/shop/">Shop</a>
       <a href="/#features">Features</a>
       <a href="/whats-new/">What's New</a>
       <a href="/guides/">Guides</a>
@@ -41,7 +44,7 @@ function standardiseChrome() {
   }
 
   document.querySelectorAll('.brand').forEach((brand) => {
-    brand.setAttribute('aria-label', 'PadelWrist home');
+    brand.setAttribute('aria-label', isSpanishShop ? 'Inicio de PadelWrist' : 'PadelWrist home');
     const mark = brand.querySelector('.brand-mark');
     if (mark) {
       mark.textContent = '';
@@ -52,10 +55,11 @@ function standardiseChrome() {
   });
 
   const footerNav = document.querySelector('.site-footer nav');
-  if (footerNav) {
+  if (footerNav && !isShop) {
     footerNav.innerHTML = `
       <a href="/players/">Players</a>
       <a href="/clubs/">Clubs</a>
+      <a href="/shop/">Shop</a>
       <a href="/guides/">Guides</a>
       <a href="/apple-watch-padel-scoring/">Apple Watch scoring</a>
       <a href="/how-padel-scoring-works/">Scoring rules</a>
@@ -83,7 +87,7 @@ function addMobileNavigation() {
     button.className = 'mobile-nav-toggle';
     button.setAttribute('aria-controls', navId);
     button.setAttribute('aria-expanded', 'false');
-    button.setAttribute('aria-label', 'Open navigation');
+    button.setAttribute('aria-label', isSpanishShop ? 'Abrir navegación' : 'Open navigation');
     button.innerHTML = '<span aria-hidden="true"></span>';
     wrap.appendChild(button);
 
@@ -91,13 +95,13 @@ function addMobileNavigation() {
       header.classList.remove('nav-open');
       document.body.classList.remove('mobile-nav-open');
       button.setAttribute('aria-expanded', 'false');
-      button.setAttribute('aria-label', 'Open navigation');
+      button.setAttribute('aria-label', isSpanishShop ? 'Abrir navegación' : 'Open navigation');
     };
     const open = () => {
       header.classList.add('nav-open');
       document.body.classList.add('mobile-nav-open');
       button.setAttribute('aria-expanded', 'true');
-      button.setAttribute('aria-label', 'Close navigation');
+      button.setAttribute('aria-label', isSpanishShop ? 'Cerrar navegación' : 'Close navigation');
     };
 
     button.addEventListener('click', () => header.classList.contains('nav-open') ? close() : open());
