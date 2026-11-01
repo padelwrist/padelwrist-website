@@ -1,3 +1,4 @@
+import {categoryIllustrationURL,approvedEditorialImage} from '../src/shop-image-policy.mjs';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { resolve, dirname } from 'node:path';
@@ -14,7 +15,7 @@ export function renderShop(feed, language) {
  const products = feed.products.filter(p => p.publicationStatus === 'published');
  const hasLinks = feed.webLinksEnabled && products.some(p => p.variants.some(v=>v.destinations.web?.enabled));
  const card = (p,audience) => `<article class="shop-product" id="${audience}-${escape(p.id)}">
- ${p.image ? `<img src="${escape(p.image.url)}" alt="${escape(p.image.alt[language])}" width="640" height="480" loading="lazy" decoding="async">` : ''}
+ ${p.image ? `<img src="${escape(new URL(p.image.url).pathname)}" alt="${escape(p.image.alt[language])}" width="640" height="480" loading="lazy" decoding="async">` : `<figure class="shop-illustration"><img src="${new URL(categoryIllustrationURL(p.categories[0])).pathname}" alt="" width="640" height="400" loading="lazy"><figcaption>${language==='es'?'Ilustración de la categoría':'Category illustration'}</figcaption></figure>`}
  <h3>${escape(p.title[language])}</h3><p>${escape(p.description[language])}</p>
  <label for="${audience}-${escape(p.id)}-pack">${language==='es'?'Tamaño del pack':'Pack size'}</label>
  <select class="shop-pack" id="${audience}-${escape(p.id)}-pack" data-shop-pack>${p.variants.map((v,i)=>`<option value="${i}">${escape(v.title[language])}</option>`).join('')}</select>
@@ -24,7 +25,7 @@ export function renderShop(feed, language) {
    const items = products.filter(p => p.audiences.includes(a));
    return `<section class="shop-section" id="${a}" aria-labelledby="${a}-heading"><h2 id="${a}-heading">${t[a]}</h2>
    ${items.length ? `<div class="shop-products">${items.map(p=>card(p,a)).join('')}</div>` : `<p class="shop-empty">${t.empty}</p>`}
-   <div class="shop-categories">${categories.map(c=>`<div><h3>${escape(c.title[language])}</h3><p>${escape(c.description[language])}</p></div>`).join('')}</div></section>`;
+   <div class="shop-categories">${categories.map(c=>`<div><img class="shop-category-art" src="${new URL(categoryIllustrationURL(c.id)).pathname}" alt="" width="320" height="200" loading="lazy"><h3>${escape(c.title[language])}</h3><p>${escape(c.description[language])}</p></div>`).join('')}</div></section>`;
  }).join('');
  const structured = {'@context':'https://schema.org','@graph':[{'@type':'CollectionPage','@id':url+'#webpage',url,name:t.title,description:t.description,inLanguage:language,isPartOf:{'@id':'https://padelwrist.com/#website'}},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'PadelWrist',item:'https://padelwrist.com/'},{'@type':'ListItem',position:2,name:t.name,item:url}]},...(products.length ? [{'@type':'ItemList',itemListElement:products.map((p,i)=>({'@type':'ListItem',position:i+1,name:p.title[language],url:url+'#'+p.audiences[0]+'-'+p.id}))}] : [])]};
  return `<!doctype html>
@@ -57,6 +58,11 @@ export async function buildShop({check = false} = {}) {
  const candidates = deduplicateCandidates(source.candidates);
  if (candidates.length !== source.candidates.length) throw new Error('Deduplicate candidate links before committing');
  const feed = publishedCatalogue(source);
+ for(const category of feed.categories) {
+   const art=source.categoryIllustrations?.[category.id];
+   if(!art || art.url!==categoryIllustrationURL(category.id) || !approvedEditorialImage(source,art))throw new Error('Category illustration rights missing');
+   await readFile(resolve(root,new URL(art.url).pathname.slice(1)));
+ }
  for (const p of feed.products) if (p.image) await readFile(resolve(root,new URL(p.image.url).pathname.slice(1)));
  const outputs = {'catalogue/v1.json':JSON.stringify(feed,null,2)+'\n','shop/index.html':renderShop(feed,'en'),'shop-es/index.html':renderShop(feed,'es')};
  for (const [name,content] of Object.entries(outputs)) {

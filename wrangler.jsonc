@@ -2,6 +2,11 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "padelwrist-website",
   "compatibility_date": "2026-08-12",
+  "vars": {
+    "CREATORS_API_ENABLED": "false",
+    "CREATORS_WEB_CONTENT_APPROVED": "false",
+    "CREATORS_MOBILE_CONTENT_APPROVED": "false"
+  },
   "assets": {
     "directory": ".",
     "html_handling": "auto-trailing-slash",
@@ -9,6 +14,7 @@
     "binding": "ASSETS",
     "run_worker_first": [
       "/catalogue/v1.json",
+      "/catalogue/amazon/v1.json",
       "/robots.txt",
       "/*.html",
       "/",

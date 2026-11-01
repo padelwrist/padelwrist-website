@@ -153,7 +153,8 @@
       {
         "id": "raquex-elite-padel-balls",
         "audiences": [
-          "players"
+          "players",
+          "clubs"
         ],
         "categories": [
           "balls"
@@ -293,7 +294,148 @@
       "note": "Amazon listing was inaccessible through the research tool. Variant identity and selected quantity require manual verification before publication. Website tag is supplied; mobile attribution is not authorised."
     }
   ],
-  "imageApprovals": [],
+  "imageApprovals": [
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-rackets.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-balls.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-grips.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-footwear.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-bags.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-accessories.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-bulk-balls.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-coaching.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-court.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/category-tournament.svg",
+      "licenseId": "padelwrist-original-category-art-v1",
+      "source": "padelwristIllustration",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "evidence": [
+        "data/shop/rights/category-illustrations.md"
+      ],
+      "reviewedAt": "2026-11-01T00:00:00Z"
+    }
+  ],
   "verificationNotes": [
     {
       "source": "https://www.raquex.com/products/raquex-elite-padel-balls-tube-of-3",
@@ -306,5 +448,3908 @@
       "finding": "Four full affiliate URLs imported as two draft product families with 3/6/9 and 120 pack variants. The referenced other 17 candidate URLs were not supplied and are not fabricated."
     }
   ],
-  "productApprovals": []
+  "productApprovals": [],
+  "staging": {
+    "schemaVersion": 1,
+    "generatedOn": "2026-11-01",
+    "sourceWorkbook": "padelwrist-2-2-shop-catalogue-expanded.xlsx",
+    "provenance": {
+      "workbookSHA256": "fc77d0a08904dfe15aa4a1edf69fce6b9a50a777dd8e06173b23c013c354a0dd",
+      "jsonSHA256": "87ab42f67b736fd9bf3652432e1493dc5470fde9cfddb380541bc539b1a1ca97"
+    },
+    "records": [
+      {
+        "id": "amazon-gb-b0d123q6rl",
+        "asin": "B0D123Q6RL",
+        "title": "Raquex Elite Padel Balls, 3 Balls",
+        "brand": "Raquex",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "raquex-elite-padel-balls",
+        "familyName": "Raquex Elite Padel Balls",
+        "variantLabel": "3 balls",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D123Q6RL",
+        "productURL": "https://www.amazon.co.uk/dp/B0D123Q6RL",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D123Q6RL?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "Variants; FIP-related claim from user listing requires independent verification",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0gwjkbvwm",
+        "asin": "B0GWJKBVWM",
+        "title": "Raquex Execute Tour 4-Racket Padel Bag",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "raquex-execute-tour-4-racket-bag",
+        "familyName": "Raquex Execute Tour 4-Racket Bag",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0GWJKBVWM",
+        "productURL": "https://www.amazon.co.uk/dp/B0GWJKBVWM",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0GWJKBVWM?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-execute-tour-4-racket-bag",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0gnmvqck2",
+        "asin": "B0GNMVQCK2",
+        "title": "Raquex 2-Racket Padel Backpack",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "raquex-2-racket-backpack",
+        "familyName": "Raquex 2-Racket Backpack",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0GNMVQCK2",
+        "productURL": "https://www.amazon.co.uk/dp/B0GNMVQCK2",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0GNMVQCK2?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-2-racket-backpack",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0dhqx4ry2",
+        "asin": "B0DHQX4RY2",
+        "title": "Raquex Elite Quilted Racket Cover",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Racket Covers",
+        "familyKey": "raquex-elite-quilted-racket-cover",
+        "familyName": "Raquex Elite Quilted Racket Cover",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DHQX4RY2",
+        "productURL": "https://www.amazon.co.uk/dp/B0DHQX4RY2",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DHQX4RY2?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-quilted-racket-cover",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0dhxklszb",
+        "asin": "B0DHXKLSZB",
+        "title": "Raquex Enigma Single-Racket Cover",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Racket Covers",
+        "familyKey": "raquex-enigma-racket-cover",
+        "familyName": "Raquex Enigma Racket Cover",
+        "variantLabel": "Black",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DHXKLSZB",
+        "productURL": "https://www.amazon.co.uk/dp/B0DHXKLSZB",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DHXKLSZB?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-enigma-racket-cover",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0hbwlgg67",
+        "asin": "B0HBWLGG67",
+        "title": "Raquex Padel Racket Frame Protector Tape, 2-Pack",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Racket Protection",
+        "familyKey": "raquex-frame-protector",
+        "familyName": "Raquex Frame Protector",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0HBWLGG67",
+        "productURL": "https://www.amazon.co.uk/dp/B0HBWLGG67",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0HBWLGG67?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-frame-protector",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0755hrlqd",
+        "asin": "B0755HRLQD",
+        "title": "Raquex Enhance Replacement Racket Grip",
+        "brand": "Raquex",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Grips & Overgrips",
+        "familyKey": "raquex-enhance-replacement-grip",
+        "familyName": "Raquex Enhance Replacement Grip",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0755HRLQD",
+        "productURL": "https://www.amazon.co.uk/dp/B0755HRLQD",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0755HRLQD?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants; prior SiteStripe excluded-product warning: check programme eligibility; SiteStripe excluded product warning observed: do not activate even with a constructed ?tag URL",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "grips",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-enhance-replacement-grip",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0hp419l44",
+        "asin": "B0HP419L44",
+        "title": "Raquex Evade Pro Tacky Padel Overgrip",
+        "brand": "Raquex",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Grips & Overgrips",
+        "familyKey": "raquex-evade-pro-overgrip",
+        "familyName": "Raquex Evade Pro Overgrip",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0HP419L44",
+        "productURL": "https://www.amazon.co.uk/dp/B0HP419L44",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0HP419L44?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "grips",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-evade-pro-overgrip",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0g83phzk3",
+        "asin": "B0G83PHZK3",
+        "title": "Raquex Elite 18K Carbon Padel Racket",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "raquex-elite-18k-racket",
+        "familyName": "Raquex Elite 18K Racket",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0G83PHZK3",
+        "productURL": "https://www.amazon.co.uk/dp/B0G83PHZK3",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0G83PHZK3?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-18k-racket",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0fm68sh22",
+        "asin": "B0FM68SH22",
+        "title": "Raquex Eclipse Padel Racket",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "raquex-eclipse-racket",
+        "familyName": "Raquex Eclipse Racket",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FM68SH22",
+        "productURL": "https://www.amazon.co.uk/dp/B0FM68SH22",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FM68SH22?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-eclipse-racket",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0fm67m1mj",
+        "asin": "B0FM67M1MJ",
+        "title": "Raquex Excel 12K Carbon Padel Racket",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "raquex-excel-12k-racket",
+        "familyName": "Raquex Excel 12K Racket",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FM67M1MJ",
+        "productURL": "https://www.amazon.co.uk/dp/B0FM67M1MJ",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FM67M1MJ?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-excel-12k-racket",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0fx57q5t9",
+        "asin": "B0FX57Q5T9",
+        "title": "Raquex Elite Pink Padel Balls",
+        "brand": "Raquex",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "raquex-elite-pink-padel-balls",
+        "familyName": "Raquex Elite Pink Padel Balls",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FX57Q5T9",
+        "productURL": "https://www.amazon.co.uk/dp/B0FX57Q5T9",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FX57Q5T9?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants; FIP-related claim from user listing requires independent verification",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-pink-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0gws87dz4",
+        "asin": "B0GWS87DZ4",
+        "title": "Raquex Elite White Padel Balls",
+        "brand": "Raquex",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "raquex-elite-white-padel-balls",
+        "familyName": "Raquex Elite White Padel Balls",
+        "variantLabel": "Check listing",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0GWS87DZ4",
+        "productURL": "https://www.amazon.co.uk/dp/B0GWS87DZ4",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0GWS87DZ4?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Variants; FIP-related claim from user listing requires independent verification",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-white-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0cltxsbz1",
+        "asin": "B0CLTXSBZ1",
+        "title": "NOX AT10 Genius 18K Padel Racket",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-nox-at10-genius-18k-by-agustin-tapia-padel-racket-360-375-gr",
+        "familyName": "NOX Nox At10 Genius 18k By Agustin Tapia Padel Racket 360-375 gr",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0CLTXSBZ1",
+        "productURL": "https://www.amazon.co.uk/dp/B0CLTXSBZ1",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0CLTXSBZ1?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-nox-at10-genius-18k-by-agustin-tapia-padel-racket-360-375-gr",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0dxjn4zq1",
+        "asin": "B0DXJN4ZQ1",
+        "title": "NOX Future Hybrid 12K Alum Padel Racket",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-future-hybrid-12k-alum",
+        "familyName": "NOX Future Hybrid 12k Alum",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DXJN4ZQ1",
+        "productURL": "https://www.amazon.co.uk/dp/B0DXJN4ZQ1",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DXJN4ZQ1?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-future-hybrid-12k-alum",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b08125zp7x",
+        "asin": "B08125ZP7X",
+        "title": "NOX Perforated Overgrips, 3-Pack",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Grips & Overgrips",
+        "familyKey": "nox-blister-3-overgrips-perforated-white-overgrip",
+        "familyName": "NOX Blister 3 Overgrips Perforated White Overgrip",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B08125ZP7X",
+        "productURL": "https://www.amazon.co.uk/dp/B08125ZP7X",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B08125ZP7X?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "grips",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-blister-3-overgrips-perforated-white-overgrip",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0cbws13z9",
+        "asin": "B0CBWS13Z9",
+        "title": "NOX Pro Series Racket Bag, Navy Blue",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-pro-series-racket-bag",
+        "familyName": "NOX Pro Series Racket Bag",
+        "variantLabel": "Navy blue (verify)",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0CBWS13Z9",
+        "productURL": "https://www.amazon.co.uk/dp/B0CBWS13Z9",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0CBWS13Z9?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Proposed; verify listing",
+        "reviewNotes": "Variants",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-pro-series-racket-bag",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0blvs92rr",
+        "asin": "B0BLVS92RR",
+        "title": "NOX Custom Grip",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Grips & Overgrips",
+        "familyKey": "nox-custom-grip",
+        "familyName": "NOX Custom Grip",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0BLVS92RR",
+        "productURL": "https://www.amazon.co.uk/dp/B0BLVS92RR",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0BLVS92RR?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "grips",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-custom-grip",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0f1v5yb84",
+        "asin": "B0F1V5YB84",
+        "title": "NOX Quantum 12K Cobalt Padel Racket (2025)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-quantum-12k-cobalt-2025-padel-racket",
+        "familyName": "Nox Quantum 12k Cobalt 2025 Padel Racket",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0F1V5YB84",
+        "productURL": "https://www.amazon.co.uk/dp/B0F1V5YB84",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0F1V5YB84?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-quantum-12k-cobalt-2025-padel-racket",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0gwmcfwhx",
+        "asin": "B0GWMCFWHX",
+        "title": "NOX X-Auro Padel Racket (2026)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-x-auro-2026-padel-paddle",
+        "familyName": "NOX X-Auro 2026 Padel Paddle",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0GWMCFWHX",
+        "productURL": "https://www.amazon.co.uk/dp/B0GWMCFWHX",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0GWMCFWHX?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-x-auro-2026-padel-paddle",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0hg1y75n5",
+        "asin": "B0HG1Y75N5",
+        "title": "NOX Pro Grip Spray, 100 ml",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Grip Aids",
+        "familyKey": "spray-nox-pro-grip-100-ml",
+        "familyName": "Spray NOX Pro Grip 100 ml",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0HG1Y75N5",
+        "productURL": "https://www.amazon.co.uk/dp/B0HG1Y75N5",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0HG1Y75N5?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "grips",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "spray-nox-pro-grip-100-ml",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0d89dtr1w",
+        "asin": "B0D89DTR1W",
+        "title": "NOX Luxury Open Series Racket Bag, Black/Brown",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-luxury-open-series-racquet-bag-black-brown",
+        "familyName": "NOX Luxury Open Series Racquet Bag Black/Brown",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D89DTR1W",
+        "productURL": "https://www.amazon.co.uk/dp/B0D89DTR1W",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D89DTR1W?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-luxury-open-series-racquet-bag-black-brown",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0d894fn7p",
+        "asin": "B0D894FN7P",
+        "title": "NOX Luxury Open Series Backpack, Black/Brown",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-luxury-open-series-backpack-black-brown",
+        "familyName": "NOX LUXURY OPEN SERIES backpack black/brown",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D894FN7P",
+        "productURL": "https://www.amazon.co.uk/dp/B0D894FN7P",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D894FN7P?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-luxury-open-series-backpack-black-brown",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0cbw85pyv",
+        "asin": "B0CBW85PYV",
+        "title": "NOX Pro Series Backpack, Navy Blue (28 L)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-pro-series-backpack-28-l",
+        "familyName": "NOX Pro Series Backpack 28 L",
+        "variantLabel": "Navy blue",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0CBW85PYV",
+        "productURL": "https://www.amazon.co.uk/dp/B0CBW85PYV",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0CBW85PYV?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "Variants; colour variants from Amazon search: B0CBWBXSG7 brown, B0DCDL8BTY white",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-pro-series-backpack-28-l",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0fx4r4824",
+        "asin": "B0FX4R4824",
+        "title": "NOX X-Hero Padel Racket (2026), Red",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-padel-racket-x-hero-2026",
+        "familyName": "NOX Padel Racket X-Hero 2026",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FX4R4824",
+        "productURL": "https://www.amazon.co.uk/dp/B0FX4R4824",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FX4R4824?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-padel-racket-x-hero-2026",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b08hrc4s2h",
+        "asin": "B08HRC4S2H",
+        "title": "NOX X-ONE C.6 Padel Racket",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-x-one-c-6-padel-racket-for-all-skill-levels-carbon-fiber-and-high-density-goma-hr3-core-ideal-for-indoor-and-outdoor-use",
+        "familyName": "NOX X-ONE C.6 - Padel Racket for All Skill Levels, Carbon Fiber and High Density Goma HR3 Core - Ideal for Indoor and Outdoor Use",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B08HRC4S2H",
+        "productURL": "https://www.amazon.co.uk/dp/B08HRC4S2H",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B08HRC4S2H?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-x-one-c-6-padel-racket-for-all-skill-levels-carbon-fiber-and-high-density-goma-hr3-core-ideal-for-indoor-and-outdoor-use",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0f7j2pf2y",
+        "asin": "B0F7J2PF2Y",
+        "title": "NOX Cap, Black/White",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Caps & Wristbands",
+        "familyKey": "nox-black-white-cap-black-white-one-size",
+        "familyName": "NOX Black/White Cap, Black/White, One Size",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0F7J2PF2Y",
+        "productURL": "https://www.amazon.co.uk/dp/B0F7J2PF2Y",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0F7J2PF2Y?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-black-white-cap-black-white-one-size",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0dfjw9j7z",
+        "asin": "B0DFJW9J7Z",
+        "title": "NOX AT10 Team Racket Bag, Grey/Orange",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-racket-bag-at10-team-grey-orange-bpat10tegror",
+        "familyName": "NOX Racket Bag At10 Team Grey Orange Bpat10tegror",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DFJW9J7Z",
+        "productURL": "https://www.amazon.co.uk/dp/B0DFJW9J7Z",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DFJW9J7Z?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-racket-bag-at10-team-grey-orange-bpat10tegror",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b01enqvpu0",
+        "asin": "B01ENQVPU0",
+        "title": "NOX Wristbands, Blister Pack",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Caps & Wristbands",
+        "familyKey": "nox-blister-wristband-unisex-adult-unisex-adult-blister",
+        "familyName": "NOX Blister Wristband, Unisex Adult, Unisex adult, Blister",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B01ENQVPU0",
+        "productURL": "https://www.amazon.co.uk/dp/B01ENQVPU0",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B01ENQVPU0?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-blister-wristband-unisex-adult-unisex-adult-blister",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0fx4syqqn",
+        "asin": "B0FX4SYQQN",
+        "title": "NOX X-Zero Padel Racket, Red",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-x-zero-padel-racket-2026",
+        "familyName": "NOX X-Zero Padel Racket (2026)",
+        "variantLabel": "Red",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FX4SYQQN",
+        "productURL": "https://www.amazon.co.uk/dp/B0FX4SYQQN",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FX4SYQQN?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Proposed; verify listing",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-x-zero-padel-racket-2026",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0dxbcr474",
+        "asin": "B0DXBCR474",
+        "title": "NOX Nextgen Pro Hybrid 3K Racket (2025)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-nextgen-pro-hybrid-3k-2025",
+        "familyName": "Nox Nextgen Pro Hybrid 3k 2025",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DXBCR474",
+        "productURL": "https://www.amazon.co.uk/dp/B0DXBCR474",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DXBCR474?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-nextgen-pro-hybrid-3k-2025",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0cbwbxsg7",
+        "asin": "B0CBWBXSG7",
+        "title": "NOX Pro Series Backpack, Brown/Camel (28 L)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-pro-series-backpack-28-l",
+        "familyName": "NOX Pro Series Backpack 28 L",
+        "variantLabel": "Brown/camel",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0CBWBXSG7",
+        "productURL": "https://www.amazon.co.uk/dp/B0CBWBXSG7",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0CBWBXSG7?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-pro-series-backpack-28-l",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0d899mcg5",
+        "asin": "B0D899MCG5",
+        "title": "NOX ML10 Team Backpack, Black",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-ml10-team-backpack-black",
+        "familyName": "NOX ML10 TEAM backpack black",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D899MCG5",
+        "productURL": "https://www.amazon.co.uk/dp/B0D899MCG5",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D899MCG5?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "; ML10 backpack is a separate model from Pro Series",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-ml10-team-backpack-black",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0d8927qjc",
+        "asin": "B0D8927QJC",
+        "title": "NOX AT10 Team Padel Racket Bag",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-at10-team-padel-racket-bag-one-size",
+        "familyName": "Nox AT10 Team Padel Racket Bag One Size",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D8927QJC",
+        "productURL": "https://www.amazon.co.uk/dp/B0D8927QJC",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D8927QJC?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-at10-team-padel-racket-bag-one-size",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0fx4mkj79",
+        "asin": "B0FX4MKJ79",
+        "title": "NOX X-Zero Padel Racket (2026), Blue",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-x-zero-padel-racket-2026",
+        "familyName": "NOX X-Zero Padel Racket (2026)",
+        "variantLabel": "Blue",
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FX4MKJ79",
+        "productURL": "https://www.amazon.co.uk/dp/B0FX4MKJ79",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FX4MKJ79?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Proposed; verify listing",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-x-zero-padel-racket-2026",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0gwmb14z6",
+        "asin": "B0GWMB14Z6",
+        "title": "NOX Nerbo 12K Padel Racket (2026)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-nerbo-12k-2026-shovel",
+        "familyName": "NOX NERBO + 12K 2026 Shovel",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0GWMB14Z6",
+        "productURL": "https://www.amazon.co.uk/dp/B0GWMB14Z6",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0GWMB14Z6?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-nerbo-12k-2026-shovel",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b07rk3r1tn",
+        "asin": "B07RK3R1TN",
+        "title": "NOX Padel Grip Pad",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Grip Aids",
+        "familyKey": "nox-padel-grip-pad",
+        "familyName": "nox Padel Grip Pad",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B07RK3R1TN",
+        "productURL": "https://www.amazon.co.uk/dp/B07RK3R1TN",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B07RK3R1TN?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "grips",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-padel-grip-pad",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0h99nfnfv",
+        "asin": "B0H99NFNFV",
+        "title": "NOX AT10 Genius 18K Alum Buenos Aires Edition",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-at10-genius-18k-alum-buenos-aires-edition-by-agustin-tapia",
+        "familyName": "Nox At10 Genius 18k Alum Buenos Aires Edition by Agustín Tapia",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0H99NFNFV",
+        "productURL": "https://www.amazon.co.uk/dp/B0H99NFNFV",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0H99NFNFV?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-at10-genius-18k-alum-buenos-aires-edition-by-agustin-tapia",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0d89h3lzw",
+        "asin": "B0D89H3LZW",
+        "title": "NOX AT10 Team Racket Bag, Grey/Black",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-at10-team-grey-black-racket-bag",
+        "familyName": "NOX AT10 Team Grey/Black Racket Bag",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D89H3LZW",
+        "productURL": "https://www.amazon.co.uk/dp/B0D89H3LZW",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D89H3LZW?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-at10-team-grey-black-racket-bag",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0fx4m8t89",
+        "asin": "B0FX4M8T89",
+        "title": "NOX AT10 Genius 18K Alum Padel Racket (2026)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-at10-genius-18k-alum-by-agustin-tapia-2026",
+        "familyName": "Nox At10 Genius 18k Alum by Agustin Tapia 2026",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FX4M8T89",
+        "productURL": "https://www.amazon.co.uk/dp/B0FX4M8T89",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FX4M8T89?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-at10-genius-18k-alum-by-agustin-tapia-2026",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0dxj6ts72",
+        "asin": "B0DXJ6TS72",
+        "title": "NOX Future Attack 12K Alum Padel Racket",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-future-attack-12k-alum",
+        "familyName": "NOX Future Attack 12k Alum",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DXJ6TS72",
+        "productURL": "https://www.amazon.co.uk/dp/B0DXJ6TS72",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DXJ6TS72?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-future-attack-12k-alum",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0f1v6hqgr",
+        "asin": "B0F1V6HQGR",
+        "title": "NOX Quantum 12K Carbon Padel Racket (2025)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-quantum-12k-carbon-2025",
+        "familyName": "NOX Quantum 12k Carbon 2025",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0F1V6HQGR",
+        "productURL": "https://www.amazon.co.uk/dp/B0F1V6HQGR",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0F1V6HQGR?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-quantum-12k-carbon-2025",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0d892ztzf",
+        "asin": "B0D892ZTZF",
+        "title": "NOX Luxury Master Series Backpack, Black/White",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-unisex-s-mochila-luxury-master-series-backpack-black-white-grande",
+        "familyName": "NOX Unisex's Mochila Luxury Master Series Backpack, Black/White, Grande",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D892ZTZF",
+        "productURL": "https://www.amazon.co.uk/dp/B0D892ZTZF",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D892ZTZF?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-unisex-s-mochila-luxury-master-series-backpack-black-white-grande",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b07d9m6c6g",
+        "asin": "B07D9M6C6G",
+        "title": "NOX Pro White Overgrips, 3-Pack (brand verification needed)",
+        "brand": "NOX (unverified)",
+        "audiences": [
+          "players"
+        ],
+        "category": "Grips & Overgrips",
+        "familyKey": "babolat-nox-pro-white-blister-overgrip-3-units",
+        "familyName": "Babolat NOX PRO WHITE BLISTER OVERGRIP 3 UNITS",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B07D9M6C6G",
+        "productURL": "https://www.amazon.co.uk/dp/B07D9M6C6G",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B07D9M6C6G?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "; Amazon result title includes Babolat and NOX, verify actual brand; Amazon result contains conflicting 'Babolat'/'NOX' branding: confirm manufacturer",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "grips",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "babolat-nox-pro-white-blister-overgrip-3-units",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b07d3zsdbv",
+        "asin": "B07D3ZSDBV",
+        "title": "NOX Pro Titanium Padel Balls, 3-Pack",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "nox-3-pro-titanium-padel-balls",
+        "familyName": "NOX 3 Pro Titanium Padel Balls",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B07D3ZSDBV",
+        "productURL": "https://www.amazon.co.uk/dp/B07D3ZSDBV",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B07D3ZSDBV?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-3-pro-titanium-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0dxjc4bzw",
+        "asin": "B0DXJC4BZW",
+        "title": "NOX Future Control 12K Alum Padel Racket",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-future-control-12k-alum",
+        "familyName": "Nox Future Control 12k Alum",
+        "variantLabel": null,
+        "source": "Attached list",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DXJC4BZW",
+        "productURL": "https://www.amazon.co.uk/dp/B0DXJC4BZW",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DXJC4BZW?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-future-control-12k-alum",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0cbwr73rp",
+        "asin": "B0CBWR73RP",
+        "title": "NOX Pro Series Racket Bag, Brown/Camel",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-pro-series-racket-bag",
+        "familyName": "NOX Pro Series Racket Bag",
+        "variantLabel": "Brown/camel (verify)",
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0CBWR73RP",
+        "productURL": "https://www.amazon.co.uk/dp/B0CBWR73RP",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0CBWR73RP?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Proposed; verify listing",
+        "reviewNotes": "NOX results #23. Brown/camel option; confirm relation to existing Pro Series bag",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-pro-series-racket-bag",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0dht21p3m",
+        "asin": "B0DHT21P3M",
+        "title": "NOX AT10 Genius 12K Padel Racket",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-at10-genius-12k-by-agustin-tapia",
+        "familyName": "NOX AT10 Genius 12K by Agustín Tapia",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DHT21P3M",
+        "productURL": "https://www.amazon.co.uk/dp/B0DHT21P3M",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DHT21P3M?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "NOX results #30. Distinct 12K model, not automatically an 18K variant",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-at10-genius-12k-by-agustin-tapia",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0d89g9bmz",
+        "asin": "B0D89G9BMZ",
+        "title": "NOX Luxury Master Series Padel Bag (model check)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-luxury-master-series-padel-bag",
+        "familyName": "NOX Luxury Master Series Padel Bag",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D89G9BMZ",
+        "productURL": "https://www.amazon.co.uk/dp/B0D89G9BMZ",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D89G9BMZ?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "NOX results #33. Result title and product-page slug differ; check exact model",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-luxury-master-series-padel-bag",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0dx8tnnjr",
+        "asin": "B0DX8TNNJR",
+        "title": "NOX Nextgen Pro Attack 3K Padel Racket (2025)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-nextgen-pro-attack-3k-2025",
+        "familyName": "NOX Nextgen Pro Attack 3K 2025",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DX8TNNJR",
+        "productURL": "https://www.amazon.co.uk/dp/B0DX8TNNJR",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DX8TNNJR?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "NOX results #37. Separate model from Hybrid",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-nextgen-pro-attack-3k-2025",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0f7j1v76p",
+        "asin": "B0F7J1V76P",
+        "title": "NOX Cap, Grey",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Caps & Wristbands",
+        "familyKey": "nox-grey-cap",
+        "familyName": "NOX Grey Cap",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0F7J1V76P",
+        "productURL": "https://www.amazon.co.uk/dp/B0F7J1V76P",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0F7J1V76P?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "NOX results #38. Possible colour alternative to black/white cap; verify family",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-grey-cap",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0cwsjc581",
+        "asin": "B0CWSJC581",
+        "title": "NOX Racket Protector, Red",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Racket Protection",
+        "familyKey": "nox-racket-protector",
+        "familyName": "NOX Racket Protector",
+        "variantLabel": "Red",
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0CWSJC581",
+        "productURL": "https://www.amazon.co.uk/dp/B0CWSJC581",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0CWSJC581?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "NOX results #39. Pair with blue option as a possible colour family",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-racket-protector",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0ddl1fqwq",
+        "asin": "B0DDL1FQWQ",
+        "title": "NOX Street Series Racket Bag, Blue",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-street-series-racket-bag",
+        "familyName": "NOX Street Series Racket Bag",
+        "variantLabel": "Blue",
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DDL1FQWQ",
+        "productURL": "https://www.amazon.co.uk/dp/B0DDL1FQWQ",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DDL1FQWQ?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "NOX results #40. Potential family with grey/pink Street bag",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-street-series-racket-bag",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0ddl3tyz2",
+        "asin": "B0DDL3TYZ2",
+        "title": "NOX Street Series Racket Bag, Grey/Pink",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-street-series-racket-bag",
+        "familyName": "NOX Street Series Racket Bag",
+        "variantLabel": "Grey/pink",
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DDL3TYZ2",
+        "productURL": "https://www.amazon.co.uk/dp/B0DDL3TYZ2",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DDL3TYZ2?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "NOX results #41. Potential family with blue Street bag",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-street-series-racket-bag",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0dht1dvw1",
+        "asin": "B0DHT1DVW1",
+        "title": "NOX AT10 Genius 18K Alum Racket (2025)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-at10-genius-18k-alum-2025-by-agustin-tapia",
+        "familyName": "NOX AT10 Genius 18K Alum 2025 by Agustín Tapia",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DHT1DVW1",
+        "productURL": "https://www.amazon.co.uk/dp/B0DHT1DVW1",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DHT1DVW1?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "NOX results #42. Keep 2025 and 2026 editions distinct",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-at10-genius-18k-alum-2025-by-agustin-tapia",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0cwsjdzpp",
+        "asin": "B0CWSJDZPP",
+        "title": "NOX Racket Protector, Blue",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Racket Protection",
+        "familyKey": "nox-racket-protector",
+        "familyName": "NOX Racket Protector",
+        "variantLabel": "Blue",
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0CWSJDZPP",
+        "productURL": "https://www.amazon.co.uk/dp/B0CWSJDZPP",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0CWSJDZPP?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "NOX results #43. Pair with red option as a possible colour family",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-racket-protector",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0d89g9bmy",
+        "asin": "B0D89G9BMY",
+        "title": "NOX AT10 XXL Padel Bag, Black/Red",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-at10-xxl-padel-bag-black-red",
+        "familyName": "NOX AT10 XXL Padel Bag, Black/Red",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D89G9BMY",
+        "productURL": "https://www.amazon.co.uk/dp/B0D89G9BMY",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D89G9BMY?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "NOX results #44. Model identity and capacity require detail check",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-at10-xxl-padel-bag-black-red",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b00epgkl0y",
+        "asin": "B00EPGKL0Y",
+        "title": "NOX Wristbands, 2-Pack (colour check)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Caps & Wristbands",
+        "familyKey": "nox-wristbands-2-pack",
+        "familyName": "NOX Wristbands (2-Pack)",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B00EPGKL0Y",
+        "productURL": "https://www.amazon.co.uk/dp/B00EPGKL0Y",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B00EPGKL0Y?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Proposed; verify listing",
+        "reviewNotes": "NOX results #45. Colour/pack variant relationships not yet verified",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-wristbands-2-pack",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0fx4k1585",
+        "asin": "B0FX4K1585",
+        "title": "NOX Equation Advanced Padel Racket, Black/Orange",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-equation-advanced-2025-racket-black-orange",
+        "familyName": "NOX Equation Advanced 2025 Racket, Black/Orange",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FX4K1585",
+        "productURL": "https://www.amazon.co.uk/dp/B0FX4K1585",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FX4K1585?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "NOX results #46. Model year from visible search title; verify",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-equation-advanced-2025-racket-black-orange",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b00jfpn6se",
+        "asin": "B00JFPN6SE",
+        "title": "NOX Wristbands, 2-Pack (colour check)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Caps & Wristbands",
+        "familyKey": "nox-wristbands-2-pack",
+        "familyName": "NOX Wristbands (2-Pack)",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B00JFPN6SE",
+        "productURL": "https://www.amazon.co.uk/dp/B00JFPN6SE",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B00JFPN6SE?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Proposed; verify listing",
+        "reviewNotes": "NOX results #47. Possible variant of another NOX wristband; verify",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-wristbands-2-pack",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0h6brmmvy",
+        "asin": "B0H6BRMMVY",
+        "title": "NOX Nextgen Pro Attack 12K NFA Padel Racket",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Padel Rackets",
+        "familyKey": "nox-nextgen-pro-attack-12k-nfa-series-racket",
+        "familyName": "NOX Nextgen Pro Attack 12K NFA Series Racket",
+        "variantLabel": null,
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0H6BRMMVY",
+        "productURL": "https://www.amazon.co.uk/dp/B0H6BRMMVY",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0H6BRMMVY?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "NOX results #48. Not the same model as Nextgen Pro Attack 3K",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "rackets",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-nextgen-pro-attack-12k-nfa-series-racket",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "model-construction-year-must-remain-distinct"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0dcdl8bty",
+        "asin": "B0DCDL8BTY",
+        "title": "NOX Pro Series Backpack, White (28 L)",
+        "brand": "NOX",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "nox-pro-series-backpack-28-l",
+        "familyName": "NOX Pro Series Backpack 28 L",
+        "variantLabel": "White",
+        "source": "Amazon NOX results page",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DCDL8BTY",
+        "productURL": "https://www.amazon.co.uk/dp/B0DCDL8BTY",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DCDL8BTY?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "NOX results #11 swatch. Visible colour variant of existing Pro Series Backpack",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "nox-pro-series-backpack-28-l",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0d1vz4vnj",
+        "asin": "B0D1VZ4VNJ",
+        "title": "Raquex Elite Padel Balls, 6 Balls",
+        "brand": "Raquex",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "raquex-elite-padel-balls",
+        "familyName": "Raquex Elite Padel Balls",
+        "variantLabel": "6 balls",
+        "source": "Earlier user-supplied links",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D1VZ4VNJ",
+        "productURL": "https://www.amazon.co.uk/dp/B0D1VZ4VNJ",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D1VZ4VNJ?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "6 balls; same regular Elite Padel Balls family",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0d1vxlw6j",
+        "asin": "B0D1VXLW6J",
+        "title": "Raquex Elite Padel Balls, 9 Balls",
+        "brand": "Raquex",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "raquex-elite-padel-balls",
+        "familyName": "Raquex Elite Padel Balls",
+        "variantLabel": "9 balls",
+        "source": "Earlier user-supplied links",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0D1VXLW6J",
+        "productURL": "https://www.amazon.co.uk/dp/B0D1VXLW6J",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D1VXLW6J?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "9 balls; same regular Elite Padel Balls family",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0flqkz7y3",
+        "asin": "B0FLQKZ7Y3",
+        "title": "Raquex Elite Padel Balls, 120 Balls",
+        "brand": "Raquex",
+        "audiences": [
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "raquex-elite-padel-balls",
+        "familyName": "Raquex Elite Padel Balls",
+        "variantLabel": "120 balls",
+        "source": "Earlier user-supplied links",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3",
+        "productURL": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Explicit source option",
+        "reviewNotes": "120-ball bulk option; club audience",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "quantity-and-selected-child-require-verification"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0hg22b7l6",
+        "asin": "B0HG22B7L6",
+        "title": "Raquex Execute Tour 4-Racket Padel Bag (option 2)",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "raquex-execute-tour-4-racket-bag",
+        "familyName": "Raquex Execute Tour 4-Racket Bag",
+        "variantLabel": "Variant: verify colour",
+        "source": "Earlier user-supplied links",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0HG22B7L6",
+        "productURL": "https://www.amazon.co.uk/dp/B0HG22B7L6",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0HG22B7L6?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Alternate ASIN; colour not independently verified",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-execute-tour-4-racket-bag",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0gnmrc2g7",
+        "asin": "B0GNMRC2G7",
+        "title": "Raquex 2-Racket Padel Backpack (option 2)",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Bags & Backpacks",
+        "familyKey": "raquex-2-racket-backpack",
+        "familyName": "Raquex 2-Racket Backpack",
+        "variantLabel": "Variant: verify colour",
+        "source": "Earlier user-supplied links",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0GNMRC2G7",
+        "productURL": "https://www.amazon.co.uk/dp/B0GNMRC2G7",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0GNMRC2G7?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Alternate ASIN; colour not independently verified",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "bags",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-2-racket-backpack",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0dhqxk293",
+        "asin": "B0DHQXK293",
+        "title": "Raquex Elite Quilted Racket Cover (option 2)",
+        "brand": "Raquex",
+        "audiences": [
+          "players"
+        ],
+        "category": "Racket Covers",
+        "familyKey": "raquex-elite-quilted-racket-cover",
+        "familyName": "Raquex Elite Quilted Racket Cover",
+        "variantLabel": "Variant: verify colour",
+        "source": "Earlier user-supplied links",
+        "sourceURL": "https://www.amazon.co.uk/dp/B0DHQXK293",
+        "productURL": "https://www.amazon.co.uk/dp/B0DHQXK293",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DHQXK293?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Not yet mapped",
+        "reviewNotes": "Alternate ASIN; colour not independently verified",
+        "editorialDraft": {
+          "en": null,
+          "es": null
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "raquex-elite-quilted-racket-cover",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b0gv226skf",
+        "asin": "B0GV226SKF",
+        "title": "PUSUN PT-Max C Padel & Tennis Ball Machine",
+        "brand": "PUSUN",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Training Equipment",
+        "familyKey": "pusun-pt-max-c-ball-machine",
+        "familyName": "PUSUN PT-Max C Ball Machine",
+        "variantLabel": "Machine",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/PUSUN-Machine-Control-Landing-Backspin/dp/B0GV226SKF",
+        "productURL": "https://www.amazon.co.uk/dp/B0GV226SKF",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0GV226SKF?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Ball-launching machine, not a pack of 120 balls. App/remote, spin, capacity and power claims require listing verification.",
+        "editorialDraft": {
+          "en": "A ball machine for individual drills, coaching and organised training.",
+          "es": "Máquina lanzapelotas para ejercicios individuales, clases y entrenamientos organizados."
+        },
+        "canonicalCategoryId": "coaching",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "pusun-pt-max-c-ball-machine",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "equipment-not-ball-pack"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0dmtjvpks",
+        "asin": "B0DMTJVPKS",
+        "title": "Vermont Pressureless Padel Training Balls",
+        "brand": "Vermont",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Training Balls",
+        "familyKey": "vermont-pressureless-padel-training-balls",
+        "familyName": "Vermont Pressureless Padel Training Balls",
+        "variantLabel": "60-ball bucket (page-selected; verify)",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/Vermont-Padel-Pressureless-Training-Surfaces/dp/B0DMTJVPKS",
+        "productURL": "https://www.amazon.co.uk/dp/B0DMTJVPKS",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0DMTJVPKS?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Open product-tab title indicates 3-ball tube / 60-ball bucket choices; confirm child ASIN for each.",
+        "editorialDraft": {
+          "en": "Pressureless padel training balls with a bulk option for practice sessions.",
+          "es": "Pelotas de pádel sin presión con una opción de compra en cantidad para entrenamientos."
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "vermont-pressureless-padel-training-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "quantity-and-selected-child-require-verification"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0h5xfqwpq",
+        "asin": "B0H5XFQWPQ",
+        "title": "Bounce Tube FilterTech Padel Ball Pressuriser",
+        "brand": "Bounce Tube",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Ball Care & Pressurisers",
+        "familyKey": "bounce-tube-filtertech-pressuriser",
+        "familyName": "Bounce Tube FilterTech Pressuriser",
+        "variantLabel": "Blue (page-selected)",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/Bounce-Tube-FilterTech-Pressurizer-Reinforced/dp/B0H5XFQWPQ",
+        "productURL": "https://www.amazon.co.uk/dp/B0H5XFQWPQ",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0H5XFQWPQ?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Ball pressuriser, not a bulk-ball listing. Patent/retention-duration claims not repeated.",
+        "editorialDraft": {
+          "en": "A reusable padel-ball pressuriser for storing balls between sessions.",
+          "es": "Presurizador reutilizable para guardar pelotas de pádel entre sesiones."
+        },
+        "canonicalCategoryId": "accessories",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "bounce-tube-filtertech-pressuriser",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "equipment-not-ball-pack"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0gvhcb3yw",
+        "asin": "B0GVHCB3YW",
+        "title": "adidas Speed RX Padel Balls, 9 Balls",
+        "brand": "adidas",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "adidas-speed-rx-padel-balls",
+        "familyName": "adidas Speed RX Padel Balls",
+        "variantLabel": "3 tubes × 3 balls",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/adidas-Speed-Padel-Balls-Tubes/dp/B0GVHCB3YW",
+        "productURL": "https://www.amazon.co.uk/dp/B0GVHCB3YW",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0GVHCB3YW?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Browser title specifies 3 tubes of 3; check selected variant.",
+        "editorialDraft": {
+          "en": "A nine-ball selection for regular padel sessions.",
+          "es": "Selección de nueve pelotas para partidos habituales de pádel."
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "adidas-speed-rx-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "quantity-and-selected-child-require-verification"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0d6zcfrf2",
+        "asin": "B0D6ZCFRF2",
+        "title": "Wilson Premier Padel Speed Balls, 72 Balls",
+        "brand": "Wilson",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "wilson-premier-padel-speed-balls",
+        "familyName": "Wilson Premier Padel Speed Balls",
+        "variantLabel": "24 tubes × 3 balls (72 total)",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/Wilson-Premier-Padel-Speed-Balls/dp/B0D6ZCFRF2",
+        "productURL": "https://www.amazon.co.uk/dp/B0D6ZCFRF2",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D6ZCFRF2?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Browser title: box of 24 boxes/tubes of 3. Verify carton size before publishing.",
+        "editorialDraft": {
+          "en": "A proposed bulk-ball option for clubs and tournament organisers.",
+          "es": "Posible opción de pelotas a granel para clubes y organizadores de torneos."
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "wilson-premier-padel-speed-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "quantity-and-selected-child-require-verification"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0d3zfsh5t",
+        "asin": "B0D3ZFSH5T",
+        "title": "Palbea PRO Padel Balls",
+        "brand": "Palbea",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "palbea-pro-padel-balls",
+        "familyName": "Palbea PRO Padel Balls",
+        "variantLabel": "6 / 12 / 24-tube options (ASIN mapping unverified)",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/Palbea-PRO-Padel-Tournaments-Pressurized/dp/B0D3ZFSH5T",
+        "productURL": "https://www.amazon.co.uk/dp/B0D3ZFSH5T",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0D3ZFSH5T?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Product-tab title lists a carton with 6/12/24 tubes; selected ASIN not tied to pack count.",
+        "editorialDraft": {
+          "en": "Padel balls with multiple carton-size options to review.",
+          "es": "Pelotas de pádel con varios tamaños de caja pendientes de verificar."
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "palbea-pro-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "quantity-and-selected-child-require-verification"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0b5253p1f",
+        "asin": "B0B5253P1F",
+        "title": "adidas Speed RX Padel Balls, Carton",
+        "brand": "adidas",
+        "audiences": [
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "adidas-speed-rx-padel-balls",
+        "familyName": "adidas Speed RX Padel Balls",
+        "variantLabel": "Carton of 24 (unit needs confirmation)",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/Pelotas-ADIDAS-Adults-Unisex-Yellow/dp/B0B5253P1F",
+        "productURL": "https://www.amazon.co.uk/dp/B0B5253P1F",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B0B5253P1F?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Browser title says 'Cajon 24'. Do not assume 24 individual balls vs 24 tubes without verification.",
+        "editorialDraft": {
+          "en": "An adidas padel-ball carton for club purchasing, subject to pack verification.",
+          "es": "Caja de pelotas de pádel adidas para clubes, pendiente de confirmar el contenido."
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "adidas-speed-rx-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "quantity-and-selected-child-require-verification"
+        ]
+      },
+      {
+        "id": "amazon-gb-b01n9q7585",
+        "asin": "B01N9Q7585",
+        "title": "Tecnifibre Padel Team Balls, 3-Ball Tube",
+        "brand": "Tecnifibre",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "tecnifibre-padel-team-balls",
+        "familyName": "Tecnifibre Padel Team Balls",
+        "variantLabel": "3-ball tube",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/Tecnifibre-Padel-Team-Pot-Pack/dp/B01N9Q7585",
+        "productURL": "https://www.amazon.co.uk/dp/B01N9Q7585",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B01N9Q7585?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Browser title confirms 3-ball tube; check product variant.",
+        "editorialDraft": {
+          "en": "A three-ball tube for individual padel sessions.",
+          "es": "Bote de tres pelotas para partidos de pádel."
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "tecnifibre-padel-team-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": []
+      },
+      {
+        "id": "amazon-gb-b07f18mpqq",
+        "asin": "B07F18MPQQ",
+        "title": "Bullpadel Premium Pro Padel Balls, 9 Balls",
+        "brand": "Bullpadel",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "category": "Padel Balls",
+        "familyKey": "bullpadel-premium-pro-padel-balls",
+        "familyName": "Bullpadel Premium Pro Padel Balls",
+        "variantLabel": "3 tubes × 3 balls",
+        "source": "User-provided Amazon link",
+        "sourceURL": "https://www.amazon.co.uk/Bullpadel-Paddle-tennis-Premium-Balls/dp/B07F18MPQQ",
+        "productURL": "https://www.amazon.co.uk/dp/B07F18MPQQ",
+        "websiteAffiliateURLCandidate": "https://www.amazon.co.uk/dp/B07F18MPQQ?tag=thediaryroom-21",
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "Supplied listing and open tab indicate nine balls (3×3). Check whether this matches any other brand-store listing.",
+        "editorialDraft": {
+          "en": "A nine-ball multipack for regular court sessions.",
+          "es": "Paquete de nueve pelotas para partidos habituales."
+        },
+        "canonicalCategoryId": "balls",
+        "stagingStatus": "awaiting-verification",
+        "proposedFamilyKey": "bullpadel-premium-pro-padel-balls",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "quantity-and-selected-child-require-verification"
+        ]
+      },
+      {
+        "id": "amazon-gb-b0dqy6ckvj",
+        "asin": "B0DQY6CKVJ",
+        "title": "MaxPadel storefront-associated product (identity pending)",
+        "brand": "Unverified",
+        "audiences": [],
+        "category": "Needs Classification",
+        "familyKey": "maxpadel-storefront-associated-asin",
+        "familyName": "MaxPadel storefront-associated ASIN",
+        "variantLabel": "Unverified",
+        "source": "Storefront landing-page parameter",
+        "sourceURL": "https://www.amazon.co.uk/stores/MaxPadelLtd/page/E742D13C-FC54-4FFE-A821-7487FD61165A?lp_asin=B0DQY6CKVJ",
+        "productURL": null,
+        "websiteAffiliateURLCandidate": null,
+        "publicationStatus": "unpublished",
+        "affiliateEligibility": "unverified",
+        "imageRights": "unverified",
+        "variantConfidence": "Unverified child mapping",
+        "reviewNotes": "ASIN derived solely from lp_asin parameter in MaxPadel storefront URL; this does NOT prove brand/product identity. Do not publish.",
+        "editorialDraft": {
+          "en": "Storefront-associated product requiring identification.",
+          "es": "Producto asociado a una tienda pendiente de identificar."
+        },
+        "canonicalCategoryId": null,
+        "stagingStatus": "identity-quarantine",
+        "proposedFamilyKey": "maxpadel-storefront-associated-asin",
+        "variantRelationshipStatus": "unverified",
+        "verifiedParentASIN": null,
+        "imageReview": {
+          "source": null,
+          "verificationStatus": "unverified",
+          "evidence": [],
+          "permittedSurfaces": []
+        },
+        "reviewFlags": [
+          "storefront-reference-not-product-proof"
+        ]
+      }
+    ],
+    "researchLeads": [
+      {
+        "brand": "Bullpadel",
+        "name": "Vertex 05 Padel Racket (2026)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Bullpadel models mentioned on retailer comparison; Amazon ASIN missing",
+        "sourceURL": "https://padeltrue.com/guides/padel-rackets-on-amazon-uk",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Vertex 05 W Padel Racket (2026)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Distinct model; not a colour variant of Vertex 05",
+        "sourceURL": "https://padeltrue.com/guides/padel-rackets-on-amazon-uk",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Hack 04 Padel Racket (2026)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Different from Hack 04 Comfort/Hybrid; model/year require validation",
+        "sourceURL": "https://padeltrue.com/guides/padel-rackets-on-amazon-uk",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Hack 04 Comfort Padel Racket (2026)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Keep construction variant separate until formal relation verified",
+        "sourceURL": "https://padeltrue.com/guides/padel-rackets-on-amazon-uk",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Ionic Control Padel Racket (2026)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Exact Amazon listing to establish",
+        "sourceURL": "https://padeltrue.com/guides/padel-rackets-on-amazon-uk",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Indiga PWR Padel Racket (2026)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Model presented in independent retailer catalogues",
+        "sourceURL": "https://www.decathlon.co.uk/brands/bullpadel",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Neuron 02 Padel Racket (2026)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Amazon variant/ASIN missing",
+        "sourceURL": "https://padeltrue.com/guides/padel-rackets-on-amazon-uk",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Xplo Padel Racket (2026)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Amazon ASIN missing",
+        "sourceURL": "https://allthingspadel.co.uk/collections/bullpadel",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Premium Pro Padel Balls, 3-Ball Can / Bulk Tubes",
+        "audiences": "Players & Clubs",
+        "category": "Padel Balls",
+        "verification": "Already has one nine-ball ASIN B07F18MPQQ in catalogue; identify additional pack sizes only",
+        "sourceURL": "https://ninepadel.com/collections/bullpadel",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Next Pro Padel Balls, 3-Ball Can",
+        "audiences": "Players & Clubs",
+        "category": "Padel Balls",
+        "verification": "Retailer references Next Pro 3-ball can; do not assume bulk availability",
+        "sourceURL": "https://www.tennisnuts.com/shop/padel/bullpadel-padel-store/bullpadel-balls-and-accessories.html",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "GB-1200 Comfort Overgrips, 3-Pack",
+        "audiences": "Players & Clubs",
+        "category": "Grips & Overgrips",
+        "verification": "Potential white/pink/other colours; individual ASINs unresolved",
+        "sourceURL": "https://padelmarket.com/en-gb/collections/accessories-bullpadel",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "GB-1201 Perforated Overgrips, 3-Pack",
+        "audiences": "Players & Clubs",
+        "category": "Grips & Overgrips",
+        "verification": "Pack options, colour choices and ASINs to verify",
+        "sourceURL": "https://padelmarket.com/en-gb/collections/accessories-bullpadel",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "GB-1201 Overgrips, 50-Pack",
+        "audiences": "Clubs",
+        "category": "Grips & Overgrips",
+        "verification": "Bulk club option, Amazon listing unverified",
+        "sourceURL": "https://padelmarket.com/en-gb/collections/accessories-bullpadel",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Hesacore Grip",
+        "audiences": "Players & Clubs",
+        "category": "Grips & Overgrips",
+        "verification": "Standard / gel / carbon options are distinct; verify",
+        "sourceURL": "https://www.tennisnuts.com/shop/padel/bullpadel-padel-store/bullpadel-balls-and-accessories.html",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Advance Padel Bag (2026)",
+        "audiences": "Players",
+        "category": "Bags & Backpacks",
+        "verification": "Model and colour options to source on Amazon",
+        "sourceURL": "https://padeli.com/padel-equipment-guide-2026/",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Vertex Padel Backpack (2026)",
+        "audiences": "Players",
+        "category": "Bags & Backpacks",
+        "verification": "Separate from Hack bags",
+        "sourceURL": "https://www.decathlon.co.uk/brands/bullpadel",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Padel Ball Pick-Up Tube",
+        "audiences": "Clubs",
+        "category": "Training Equipment",
+        "verification": "Useful coaching/court equipment; Amazon product ID missing",
+        "sourceURL": "https://www.tennisnuts.com/shop/padel/bullpadel-padel-store/bullpadel-balls-and-accessories.html",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "Bullpadel",
+        "name": "Wheeled Ball Basket",
+        "audiences": "Clubs",
+        "category": "Training Equipment",
+        "verification": "Coaching equipment; Amazon product ID missing",
+        "sourceURL": "https://www.tennisnuts.com/shop/padel/bullpadel-padel-store/bullpadel-balls-and-accessories.html",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "MaxPadel",
+        "name": "MaxPadel Carbon Padel Rackets (model research)",
+        "audiences": "Players",
+        "category": "Padel Rackets",
+        "verification": "Brand-level research lead only; no named Amazon model verified",
+        "sourceURL": "https://www.worldpadelnetwork.com/padel-businesses/maxpadel/",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      },
+      {
+        "brand": "MaxPadel",
+        "name": "MaxPadel Accessories (model research)",
+        "audiences": "Players & Clubs",
+        "category": "Needs Classification",
+        "verification": "Brand-level research lead only; no Amazon ASIN verified",
+        "sourceURL": "https://www.worldpadelnetwork.com/padel-businesses/maxpadel/",
+        "status": "research-only",
+        "publicationStatus": "research-only"
+      }
+    ],
+    "proposedFamilies": [
+      {
+        "key": "raquex-elite-padel-balls",
+        "name": "Raquex Elite Padel Balls",
+        "asins": [
+          "B0D123Q6RL",
+          "B0D1VZ4VNJ",
+          "B0D1VXLW6J",
+          "B0FLQKZ7Y3"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-execute-tour-4-racket-bag",
+        "name": "Raquex Execute Tour 4-Racket Bag",
+        "asins": [
+          "B0GWJKBVWM",
+          "B0HG22B7L6"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-2-racket-backpack",
+        "name": "Raquex 2-Racket Backpack",
+        "asins": [
+          "B0GNMVQCK2",
+          "B0GNMRC2G7"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-elite-quilted-racket-cover",
+        "name": "Raquex Elite Quilted Racket Cover",
+        "asins": [
+          "B0DHQX4RY2",
+          "B0DHQXK293"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-enigma-racket-cover",
+        "name": "Raquex Enigma Racket Cover",
+        "asins": [
+          "B0DHXKLSZB"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-frame-protector",
+        "name": "Raquex Frame Protector",
+        "asins": [
+          "B0HBWLGG67"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-enhance-replacement-grip",
+        "name": "Raquex Enhance Replacement Grip",
+        "asins": [
+          "B0755HRLQD"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-evade-pro-overgrip",
+        "name": "Raquex Evade Pro Overgrip",
+        "asins": [
+          "B0HP419L44"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-elite-18k-racket",
+        "name": "Raquex Elite 18K Racket",
+        "asins": [
+          "B0G83PHZK3"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-eclipse-racket",
+        "name": "Raquex Eclipse Racket",
+        "asins": [
+          "B0FM68SH22"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-excel-12k-racket",
+        "name": "Raquex Excel 12K Racket",
+        "asins": [
+          "B0FM67M1MJ"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-elite-pink-padel-balls",
+        "name": "Raquex Elite Pink Padel Balls",
+        "asins": [
+          "B0FX57Q5T9"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "raquex-elite-white-padel-balls",
+        "name": "Raquex Elite White Padel Balls",
+        "asins": [
+          "B0GWS87DZ4"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-nox-at10-genius-18k-by-agustin-tapia-padel-racket-360-375-gr",
+        "name": "NOX Nox At10 Genius 18k By Agustin Tapia Padel Racket 360-375 gr",
+        "asins": [
+          "B0CLTXSBZ1"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-future-hybrid-12k-alum",
+        "name": "NOX Future Hybrid 12k Alum",
+        "asins": [
+          "B0DXJN4ZQ1"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-blister-3-overgrips-perforated-white-overgrip",
+        "name": "NOX Blister 3 Overgrips Perforated White Overgrip",
+        "asins": [
+          "B08125ZP7X"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-pro-series-racket-bag",
+        "name": "NOX Pro Series Racket Bag",
+        "asins": [
+          "B0CBWS13Z9",
+          "B0CBWR73RP"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-custom-grip",
+        "name": "NOX Custom Grip",
+        "asins": [
+          "B0BLVS92RR"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-quantum-12k-cobalt-2025-padel-racket",
+        "name": "Nox Quantum 12k Cobalt 2025 Padel Racket",
+        "asins": [
+          "B0F1V5YB84"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-x-auro-2026-padel-paddle",
+        "name": "NOX X-Auro 2026 Padel Paddle",
+        "asins": [
+          "B0GWMCFWHX"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "spray-nox-pro-grip-100-ml",
+        "name": "Spray NOX Pro Grip 100 ml",
+        "asins": [
+          "B0HG1Y75N5"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-luxury-open-series-racquet-bag-black-brown",
+        "name": "NOX Luxury Open Series Racquet Bag Black/Brown",
+        "asins": [
+          "B0D89DTR1W"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-luxury-open-series-backpack-black-brown",
+        "name": "NOX LUXURY OPEN SERIES backpack black/brown",
+        "asins": [
+          "B0D894FN7P"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-pro-series-backpack-28-l",
+        "name": "NOX Pro Series Backpack 28 L",
+        "asins": [
+          "B0CBW85PYV",
+          "B0CBWBXSG7",
+          "B0DCDL8BTY"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-padel-racket-x-hero-2026",
+        "name": "NOX Padel Racket X-Hero 2026",
+        "asins": [
+          "B0FX4R4824"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-x-one-c-6-padel-racket-for-all-skill-levels-carbon-fiber-and-high-density-goma-hr3-core-ideal-for-indoor-and-outdoor-use",
+        "name": "NOX X-ONE C.6 - Padel Racket for All Skill Levels, Carbon Fiber and High Density Goma HR3 Core - Ideal for Indoor and Outdoor Use",
+        "asins": [
+          "B08HRC4S2H"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-black-white-cap-black-white-one-size",
+        "name": "NOX Black/White Cap, Black/White, One Size",
+        "asins": [
+          "B0F7J2PF2Y"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-racket-bag-at10-team-grey-orange-bpat10tegror",
+        "name": "NOX Racket Bag At10 Team Grey Orange Bpat10tegror",
+        "asins": [
+          "B0DFJW9J7Z"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-blister-wristband-unisex-adult-unisex-adult-blister",
+        "name": "NOX Blister Wristband, Unisex Adult, Unisex adult, Blister",
+        "asins": [
+          "B01ENQVPU0"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-x-zero-padel-racket-2026",
+        "name": "NOX X-Zero Padel Racket (2026)",
+        "asins": [
+          "B0FX4SYQQN",
+          "B0FX4MKJ79"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-nextgen-pro-hybrid-3k-2025",
+        "name": "Nox Nextgen Pro Hybrid 3k 2025",
+        "asins": [
+          "B0DXBCR474"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-ml10-team-backpack-black",
+        "name": "NOX ML10 TEAM backpack black",
+        "asins": [
+          "B0D899MCG5"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-at10-team-padel-racket-bag-one-size",
+        "name": "Nox AT10 Team Padel Racket Bag One Size",
+        "asins": [
+          "B0D8927QJC"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-nerbo-12k-2026-shovel",
+        "name": "NOX NERBO + 12K 2026 Shovel",
+        "asins": [
+          "B0GWMB14Z6"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-padel-grip-pad",
+        "name": "nox Padel Grip Pad",
+        "asins": [
+          "B07RK3R1TN"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-at10-genius-18k-alum-buenos-aires-edition-by-agustin-tapia",
+        "name": "Nox At10 Genius 18k Alum Buenos Aires Edition by Agustín Tapia",
+        "asins": [
+          "B0H99NFNFV"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-at10-team-grey-black-racket-bag",
+        "name": "NOX AT10 Team Grey/Black Racket Bag",
+        "asins": [
+          "B0D89H3LZW"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-at10-genius-18k-alum-by-agustin-tapia-2026",
+        "name": "Nox At10 Genius 18k Alum by Agustin Tapia 2026",
+        "asins": [
+          "B0FX4M8T89"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-future-attack-12k-alum",
+        "name": "NOX Future Attack 12k Alum",
+        "asins": [
+          "B0DXJ6TS72"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-quantum-12k-carbon-2025",
+        "name": "NOX Quantum 12k Carbon 2025",
+        "asins": [
+          "B0F1V6HQGR"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-unisex-s-mochila-luxury-master-series-backpack-black-white-grande",
+        "name": "NOX Unisex's Mochila Luxury Master Series Backpack, Black/White, Grande",
+        "asins": [
+          "B0D892ZTZF"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "babolat-nox-pro-white-blister-overgrip-3-units",
+        "name": "Babolat NOX PRO WHITE BLISTER OVERGRIP 3 UNITS",
+        "asins": [
+          "B07D9M6C6G"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-3-pro-titanium-padel-balls",
+        "name": "NOX 3 Pro Titanium Padel Balls",
+        "asins": [
+          "B07D3ZSDBV"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-future-control-12k-alum",
+        "name": "Nox Future Control 12k Alum",
+        "asins": [
+          "B0DXJC4BZW"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-at10-genius-12k-by-agustin-tapia",
+        "name": "NOX AT10 Genius 12K by Agustín Tapia",
+        "asins": [
+          "B0DHT21P3M"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-luxury-master-series-padel-bag",
+        "name": "NOX Luxury Master Series Padel Bag",
+        "asins": [
+          "B0D89G9BMZ"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-nextgen-pro-attack-3k-2025",
+        "name": "NOX Nextgen Pro Attack 3K 2025",
+        "asins": [
+          "B0DX8TNNJR"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-grey-cap",
+        "name": "NOX Grey Cap",
+        "asins": [
+          "B0F7J1V76P"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-racket-protector",
+        "name": "NOX Racket Protector",
+        "asins": [
+          "B0CWSJC581",
+          "B0CWSJDZPP"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-street-series-racket-bag",
+        "name": "NOX Street Series Racket Bag",
+        "asins": [
+          "B0DDL1FQWQ",
+          "B0DDL3TYZ2"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-at10-genius-18k-alum-2025-by-agustin-tapia",
+        "name": "NOX AT10 Genius 18K Alum 2025 by Agustín Tapia",
+        "asins": [
+          "B0DHT1DVW1"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-at10-xxl-padel-bag-black-red",
+        "name": "NOX AT10 XXL Padel Bag, Black/Red",
+        "asins": [
+          "B0D89G9BMY"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-wristbands-2-pack",
+        "name": "NOX Wristbands (2-Pack)",
+        "asins": [
+          "B00EPGKL0Y",
+          "B00JFPN6SE"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-equation-advanced-2025-racket-black-orange",
+        "name": "NOX Equation Advanced 2025 Racket, Black/Orange",
+        "asins": [
+          "B0FX4K1585"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "nox-nextgen-pro-attack-12k-nfa-series-racket",
+        "name": "NOX Nextgen Pro Attack 12K NFA Series Racket",
+        "asins": [
+          "B0H6BRMMVY"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "pusun-pt-max-c-ball-machine",
+        "name": "PUSUN PT-Max C Ball Machine",
+        "asins": [
+          "B0GV226SKF"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "vermont-pressureless-padel-training-balls",
+        "name": "Vermont Pressureless Padel Training Balls",
+        "asins": [
+          "B0DMTJVPKS"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "bounce-tube-filtertech-pressuriser",
+        "name": "Bounce Tube FilterTech Pressuriser",
+        "asins": [
+          "B0H5XFQWPQ"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "adidas-speed-rx-padel-balls",
+        "name": "adidas Speed RX Padel Balls",
+        "asins": [
+          "B0GVHCB3YW",
+          "B0B5253P1F"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "wilson-premier-padel-speed-balls",
+        "name": "Wilson Premier Padel Speed Balls",
+        "asins": [
+          "B0D6ZCFRF2"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "palbea-pro-padel-balls",
+        "name": "Palbea PRO Padel Balls",
+        "asins": [
+          "B0D3ZFSH5T"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "tecnifibre-padel-team-balls",
+        "name": "Tecnifibre Padel Team Balls",
+        "asins": [
+          "B01N9Q7585"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "bullpadel-premium-pro-padel-balls",
+        "name": "Bullpadel Premium Pro Padel Balls",
+        "asins": [
+          "B07F18MPQQ"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      },
+      {
+        "key": "maxpadel-storefront-associated-asin",
+        "name": "MaxPadel storefront-associated ASIN",
+        "asins": [
+          "B0DQY6CKVJ"
+        ],
+        "relationshipStatus": "proposed-not-verified"
+      }
+    ],
+    "storefrontSources": [
+      {
+        "source": "Bullpadel Amazon brand-filtered search",
+        "url": "https://www.amazon.co.uk/s?srs=19038557031&rh=p_89%3ABullpadel",
+        "kind": "Amazon search results",
+        "verification": "Amazon search page not retrievable",
+        "note": "One directly supplied Bullpadel product ASIN B07F18MPQQ; other Bullpadel models recorded as research leads without inventing Amazon ASINs."
+      },
+      {
+        "source": "MaxPadel Ltd Amazon Store",
+        "url": "https://www.amazon.co.uk/stores/MaxPadelLtd/page/E742D13C-FC54-4FFE-A821-7487FD61165A?lp_asin=B0DQY6CKVJ",
+        "kind": "Amazon storefront",
+        "verification": "Store contents not retrievable",
+        "note": "B0DQY6CKVJ extracted from lp_asin; identity and brand not verified, held unpublished."
+      },
+      {
+        "source": "Bullpadel independent product range",
+        "url": "https://www.tennisnuts.com/shop/padel/bullpadel-padel-store/bullpadel-balls-and-accessories.html",
+        "kind": "Independent retailer research",
+        "verification": "Text available",
+        "note": "Accessory and training product leads; do not present as Amazon ASINs."
+      },
+      {
+        "source": "Bullpadel independent catalogue",
+        "url": "https://ninepadel.com/collections/bullpadel",
+        "kind": "Independent retailer research",
+        "verification": "Text available",
+        "note": "Model-name leads only; verify Amazon listings individually."
+      },
+      {
+        "source": "MaxPadel external profile",
+        "url": "https://www.worldpadelnetwork.com/padel-businesses/maxpadel/",
+        "kind": "Company profile",
+        "verification": "Text available",
+        "note": "Only broad product types identified, not specific Amazon listings."
+      }
+    ]
+  },
+  "categoryIllustrations": {
+    "rackets": {
+      "url": "https://padelwrist.com/catalogue/images/category-rackets.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Rackets",
+        "es": "Ilustración de PadelWrist: Palas"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "balls": {
+      "url": "https://padelwrist.com/catalogue/images/category-balls.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Balls",
+        "es": "Ilustración de PadelWrist: Pelotas"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "grips": {
+      "url": "https://padelwrist.com/catalogue/images/category-grips.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Grips",
+        "es": "Ilustración de PadelWrist: Empuñaduras"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "footwear": {
+      "url": "https://padelwrist.com/catalogue/images/category-footwear.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Footwear",
+        "es": "Ilustración de PadelWrist: Calzado"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "bags": {
+      "url": "https://padelwrist.com/catalogue/images/category-bags.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Bags",
+        "es": "Ilustración de PadelWrist: Paleteros"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "accessories": {
+      "url": "https://padelwrist.com/catalogue/images/category-accessories.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Accessories",
+        "es": "Ilustración de PadelWrist: Accesorios"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "bulkBalls": {
+      "url": "https://padelwrist.com/catalogue/images/category-bulk-balls.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Bulk padel balls",
+        "es": "Ilustración de PadelWrist: Pelotas de pádel por volumen"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "coaching": {
+      "url": "https://padelwrist.com/catalogue/images/category-coaching.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Coaching equipment",
+        "es": "Ilustración de PadelWrist: Material de entrenamiento"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "court": {
+      "url": "https://padelwrist.com/catalogue/images/category-court.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Court accessories",
+        "es": "Ilustración de PadelWrist: Accesorios de pista"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    },
+    "tournament": {
+      "url": "https://padelwrist.com/catalogue/images/category-tournament.svg",
+      "alt": {
+        "en": "PadelWrist category illustration: Tournament supplies",
+        "es": "Ilustración de PadelWrist: Material para torneos"
+      },
+      "licenseId": "padelwrist-original-category-art-v1"
+    }
+  }
 }

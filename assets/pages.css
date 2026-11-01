@@ -437,3 +437,7 @@ body.page-body {
 @media (max-width: 599px) { .shop-categories, .shop-products { grid-template-columns: minmax(0, 1fr); } }
 .shop-pack { display: block; width: 100%; min-height: 48px; margin-block: var(--space-3) var(--space-4); padding: var(--space-3); border: 1px solid var(--pw-outline); border-radius: var(--pw-radius-sm); background: var(--pw-surface-2); color: var(--pw-text); font: inherit; }
 .shop-variant-links [hidden] { display: none; }
+.shop-category-art { display: block; width: 100%; height: auto; aspect-ratio: 8/5; object-fit: contain; border-radius: var(--pw-radius-md); margin-bottom: var(--space-6); }
+.shop-illustration { margin: 0 0 var(--space-6); }
+.shop-illustration img { aspect-ratio: 8/5; }
+.shop-illustration figcaption { color: var(--pw-muted); font-size: var(--type-body-md); }

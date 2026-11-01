@@ -1,3 +1,7 @@
+import {approvedEditorialImage} from './shop-image-policy.mjs';
+import {safeURL} from './shop-urls.mjs';
+export {safeURL} from './shop-urls.mjs';
+import {validateStaging} from './shop-intake.mjs';
 /** Shared publication contract. Pure validation is reusable by a future authenticated editor. */
 export const SCHEMA_VERSION = 1;
 export const MAX_BYTES = 256000;
@@ -10,12 +14,6 @@ function text(value, max) { if (typeof value !== 'string' || !value.trim() || va
 function localized(value, max) { keys(value,['en','es']); for (const lang of ['en','es']) text(value[lang],max); }
 function list(value, allowed) { if (!Array.isArray(value) || !value.length || new Set(value).size !== value.length || value.some(x => !allowed.includes(x))) fail('invalid selection'); }
 function timestamp(value) { if (typeof value !== 'string' || !/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ$/.test(value) || !Number.isFinite(Date.parse(value))) fail('invalid timestamp'); }
-export function safeURL(value) {
-  text(value,2048);
-  let url; try { url = new URL(value); } catch { fail('invalid URL'); }
-  if (url.protocol !== 'https:' || url.username || url.password || url.port || url.hash) fail('unsafe URL');
-  return url;
-}
 export function destination(value, mobile = false) {
   keys(value,mobile ? ['url','reviewedAt','marketplace','enabled'] : ['url','reviewedAt','enabled']);
   if (typeof value.enabled !== 'boolean') fail('invalid link gate');
@@ -80,7 +78,8 @@ export function validateCatalogue(value, {now = new Date(), allowExpired = false
   return value;
 }
 export function publishedCatalogue(source, options) {
-  keys(source,['catalogue','candidates','imageApprovals','verificationNotes','productApprovals']);
+  keys(source,['catalogue','candidates','imageApprovals','verificationNotes','productApprovals','staging','variantApprovals','categoryIllustrations']);
+  if(source.staging) validateStaging(source.staging);
   validateCatalogue(source.catalogue,options);
   const feed = {...source.catalogue, products: source.catalogue.products.filter(p => p.publicationStatus === 'published').map(p=>({...p, variants:p.variants.filter(v=>v.publicationStatus==='published')})).sort((a,b) => a.featuredOrder-b.featuredOrder || a.id.localeCompare(b.id))};
   for (const p of feed.products) for (const v of p.variants) {
@@ -88,8 +87,12 @@ export function publishedCatalogue(source, options) {
     if(!approval || !approval.notes) fail('listing/variant verification missing');
     timestamp(approval.checkedAt);
   }
+  for(const p of feed.products) if(p.variants.length>1) {
+    const approval=source.variantApprovals?.find(a=>a.productId===p.id && a.status==='verified' && a.evidence && p.variants.every(v=>a.variantIds?.includes(v.id)));
+    if(!approval) fail('family variants require independent relationship verification');
+  }
   for (const p of feed.products) if (!p.variants.length) fail('published product needs published variants');
-  for (const p of feed.products) if (p.image && !source.imageApprovals?.some(a => a.licenseId === p.image.licenseId && a.url === p.image.url && a.status === 'approved' && a.evidence)) fail('image rights not approved');
+  for (const p of feed.products) if (p.image && !approvedEditorialImage(source,p.image)) fail('image rights not approved');
   return feed;
 }
 export function deduplicateCandidates(candidates) {

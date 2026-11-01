@@ -21,12 +21,15 @@ test('draft families stay private; four selections are grouped and source URLs p
 test('players/clubs/both, featured ordering, variants and localisation survive publication',()=>{
  const s=clone(source);s.catalogue=fixture();s.catalogue.products[0].audiences=['players','clubs'];
  s.productApprovals=s.catalogue.products.flatMap(p=>p.variants.map(v=>({productId:p.id,variantId:v.id,status:'verified',listingURL:v.destinations.web.url,checkedAt:'2026-11-01T15:00:00Z',notes:'Test-only listing approval'})));
+ s.variantApprovals=s.catalogue.products.filter(p=>p.variants.length>1).map(p=>({productId:p.id,status:'verified',variantIds:p.variants.map(v=>v.id),evidence:'Test-only independent variant verification'}));
  const feed=publishedCatalogue(s,options);
  assert.equal(feed.products[0].id,'raquex-elite-padel-balls-club-pack');
  assert.deepEqual(feed.products[1].audiences,['players','clubs']);
  assert.equal(feed.products[1].variants.length,3);
  assert.match(renderShop(feed,'es'),/Tamaño del pack/);
  assert.match(renderShop(feed,'en'),/Pack size/);
+ assert.match(renderShop(feed,'en'),/src="\/catalogue\/images\/category-balls.svg"/);
+ assert.doesNotMatch(renderShop(feed,'en'),/src="https:\/\/padelwrist.com\/catalogue\/images/);
  assert.doesNotMatch(renderShop(feed,'en'),/href="https:\/\/www.amazon/);
 });
 test('approved website links retain OneLink-compatible full URL byte-for-byte after HTML escaping',()=>{
