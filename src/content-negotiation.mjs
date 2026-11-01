@@ -123,9 +123,10 @@ async function servePage(request, env, url) {
   });
 }
 
-export default {
-  async fetch(request, env) {
-    if (new URL(request.url).pathname === "/catalogue/v1.json") return serveShopFeed(request, env);
+async function route(request, env) {
+    const routeURL = new URL(request.url);
+    if (!["padelwrist.com", "www.padelwrist.com"].includes(routeURL.hostname) && routeURL.pathname === "/robots.txt") return new Response("User-agent: *\nDisallow: /\n", {headers:{"Content-Type":"text/plain; charset=utf-8"}});
+    if (routeURL.pathname === "/catalogue/v1.json") return serveShopFeed(request, env);
     if (request.method !== "GET" && request.method !== "HEAD") {
       return env.ASSETS.fetch(request);
     }
@@ -139,5 +140,14 @@ export default {
       return response;
     }
     return env.ASSETS.fetch(request);
+}
+
+export default {
+  async fetch(request, env) {
+    const response = await route(request, env);
+    if (["padelwrist.com", "www.padelwrist.com"].includes(new URL(request.url).hostname)) return response;
+    const headers = new Headers(response.headers);
+    headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
+    return new Response(response.body, {status:response.status,statusText:response.statusText,headers});
   }
 };

@@ -57,3 +57,7 @@ Sources checked 1 November 2026:
 ## Future management UI
 
 A future authenticated editor can use the same pure validator and source model, with optimistic revision checks, separate editorial/commercial permissions, preview and an audited publishing action that generates one immutable public snapshot. It must not write arbitrary JSON directly to the public route or let catalogue content grant mobile programme approval. No authentication, CMS, database, account, secret or admin endpoint is required or introduced for this release.
+
+## Preview-only authorisation
+
+The user authorised automatic Cloudflare development-branch previews on 1 November 2026, after the existing Workers Builds check was identified. Production deployment remains prohibited. Push only `codex/2-2-shared-shop-catalogue`; never merge/push main or issue a production deploy. No production route/domain configuration is changed. Non-production host page/feed responses carry `X-Robots-Tag: noindex, nofollow, noarchive`; preview robots.txt disallows crawling. HTML canonicals/sitemap use production URLs. Source data, approvals, maintenance files and tests remain excluded by `.assetsignore`. All commercial gates remain closed. This PR adds no credentials or external administration service.

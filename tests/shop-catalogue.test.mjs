@@ -63,3 +63,13 @@ test('Worker feed GET/HEAD/ETag, JSON regardless of Accept, and failure/expired/
  const expired=fixture();expired.expiresAt='2020-01-01T00:00:00Z';const bad=await worker.fetch(new Request(url),envFor(expired));assert.equal(bad.status,503);assert.equal(bad.headers.get('Cache-Control'),'no-store');
  const privateFeed=fixture();privateFeed.products[0].publicationStatus='draft';assert.equal((await worker.fetch(new Request(url),envFor(privateFeed))).status,503);
 });
+
+test('preview hosts are noindex and disallow robots without changing production responses',async()=>{
+ const env=envFor(fixture());
+ const preview=await worker.fetch(new Request('https://preview-padelwrist-website.example.workers.dev/catalogue/v1.json'),env);
+ assert.equal(preview.headers.get('X-Robots-Tag'),'noindex, nofollow, noarchive');
+ const robots=await worker.fetch(new Request('https://preview-padelwrist-website.example.workers.dev/robots.txt'),env);
+ assert.equal(await robots.text(),'User-agent: *\nDisallow: /\n');
+ const prod=await worker.fetch(new Request('https://padelwrist.com/catalogue/v1.json'),env);
+ assert.equal(prod.headers.get('X-Robots-Tag'),null);
+});
