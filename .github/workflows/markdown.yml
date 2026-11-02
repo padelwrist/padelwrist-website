@@ -1,7 +1,7 @@
 name: Generate AI-readable Markdown
 on:
   push:
-    branches: [main, 'seo/llm-visibility-v2-20261029', 'codex/2-2-shared-shop-catalogue']
+    branches: [main, 'seo/llm-visibility-v2-20261029']
     paths:
       - 'data/shop/**'
       - 'src/shop-catalogue.mjs'
