@@ -24,6 +24,6 @@ test('both languages render local responsive category photos and explicit illust
   assert.match(html,language==='en'?/Image for illustration purposes only/:/Imagen solo con fines ilustrativos/);
   assert.doesNotMatch(html,/src="https:\/\/(?:images\.unsplash|.*amazon)/);
  }
- assert.equal(source.catalogue.products.length,12);
+ assert.equal(source.catalogue.products.length,74);
  assert.ok(source.catalogue.products.every(p=>p.publicationStatus==='draft'));
 });
