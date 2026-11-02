@@ -8,15 +8,15 @@ const source=JSON.parse(await readFile(new URL('../data/shop/catalogue.json',imp
 const clone=v=>structuredClone(v);
 const now=new Date('2026-11-03T00:00:00Z');
 const options={now};
-function fixture(){const feed=clone(source.catalogue);feed.expiresAt='2099-01-01T00:00:00Z';for(const p of feed.products){p.publicationStatus='published';for(const v of p.variants)v.publicationStatus='published';}return feed;}
+function fixture(){const feed=clone(source.catalogue);feed.expiresAt='2099-01-01T00:00:00Z';feed.webLinksEnabled=false;for(const p of feed.products){p.publicationStatus='published';for(const v of p.variants){v.publicationStatus='published';v.destinations.web.enabled=false;v.destinations.web.reviewedAt=null;}}return feed;}
 
-test('draft families stay private; four selections are grouped and source URLs preserved',()=>{
- assert.equal(publishedCatalogue(source,options).products.length,0);
+test('reviewed UK website families publish while all other families stay private',()=>{
+ const live=publishedCatalogue(source,options);assert.equal(live.products.length,10);assert.equal(live.products.flatMap(p=>p.variants).length,12);assert.equal(live.webLinksEnabled,true);
  assert.equal(source.catalogue.products.length,74);
  assert.equal(source.catalogue.products[0].variants.length,3);
  assert.equal(source.catalogue.products[1].variants.length,1);
  assert.equal(source.candidates.filter(c=>c.verificationStatus==='superseded').length,1);
- for(const p of source.catalogue.products)for(const v of p.variants){assert.equal(new URL(v.destinations.web.url).searchParams.get('tag'),'thediaryroom-21');assert.equal(v.destinations.web.enabled,false);assert.deepEqual(v.destinations.mobile,[]);}
+ for(const p of source.catalogue.products)for(const v of p.variants){assert.equal(new URL(v.destinations.web.url).searchParams.get('tag'),'thediaryroom-21');assert.equal(v.destinations.web.enabled,p.publicationStatus==='published');assert.deepEqual(v.destinations.mobile,[]);}
 });
 test('players/clubs/both, featured ordering, variants and localisation survive publication',()=>{
  const s=clone(source);s.catalogue=fixture();s.catalogue.products[0].audiences=['players','clubs'];
@@ -33,7 +33,8 @@ test('players/clubs/both, featured ordering, variants and localisation survive p
  assert.doesNotMatch(renderShop(feed,'en'),/href="https:\/\/www.amazon/);
 });
 test('publication and retailer links require independent explicit approval and cannot be enabled from draft',()=>{
- const s=clone(source),p=s.catalogue.products[0];
+ const s=clone(source);s.catalogue.webLinksEnabled=false;for(const product of s.catalogue.products){product.publicationStatus='draft';for(const v of product.variants){v.publicationStatus='draft';v.destinations.web.enabled=false;v.destinations.web.reviewedAt=null;}}const p=s.catalogue.products[0];
+ for(const a of s.productApprovals.filter(a=>a.productId===p.id)){a.status='pending';a.review.publicationApproved=false;a.review.commercialApproved=false;}
  p.publicationStatus='published';
  for(const v of p.variants){
   v.publicationStatus='published';
@@ -76,7 +77,7 @@ test('candidate deduplication is deterministic and conflicting records fail revi
  assert.throws(()=>deduplicateCandidates([candidate,{...candidate,note:'different review'}]));
 });
 test('generated JSON/HTML is current and no draft or candidate links leak',async()=>{
- await buildShop({check:true});const json=await readFile(new URL('../catalogue/v1.json',import.meta.url),'utf8');assert.doesNotMatch(json,/thediaryroom|B0FLQKZ7Y3|suppliedLabel/);
+ await buildShop({check:true});const json=await readFile(new URL('../catalogue/v1.json',import.meta.url),'utf8');const published=JSON.parse(json);assert.equal(published.products.length,10);assert.match(json,/thediaryroom-21/);assert.doesNotMatch(json,/candidate-b0|B0755HRLQD|B0GV226SKF|suppliedLabel/);
  for(const slug of ['shop','shop-es']){const html=await readFile(new URL(`../${slug}/index.html`,import.meta.url),'utf8');assert.match(html,/CollectionPage/);assert.match(html,/hreflang="es"/);const md=await readFile(new URL(`../${slug}.md`,import.meta.url),'utf8');assert.match(md,/Canonical HTML:/);}
 });
 function envFor(feed){return {ASSETS:{fetch:async()=>new Response(JSON.stringify(feed),{headers:{'Content-Type':'application/json'}})}};}
