@@ -1,5 +1,19 @@
 # PadelWrist Shop: web-first release checklist
 
+## Updated 2 November: full supplied-range launch target
+
+The owner has confirmed that `padelwrist.com` **and PadelWrist's App Store URL are registered** under the Amazon Associates account and requested that the entire user-supplied range be considered for launch, not only the initial 10-family curated set. Do not mistake registration for confirmation of Amazon's separate **Approved Mobile Application** acceptance. Account and app-specific approval status must be checked in the relevant programme before native affiliate links are enabled.
+
+**Inventory now staged:** 78 ASIN intake references, of which **76 distinct ASINs are represented in 74 draft catalogue cards**. The other two remain identity-quarantined: `B07D9M6C6G` (conflicting NOX/Babolat branding) and `B0DQY6CKVJ` (MaxPadel storefront parameter only, no verified product identity). Twenty research-only leads have no verified ASIN and remain outside the launch count.
+
+- The original 11 editorial-ready families (13 ASINs), plus held PUSUN (one ASIN), remain in their original controlled catalogue records. The additional 62 ASINs have **draft-only** identifiers, source names, EN/ES placeholder copy and UK Amazon links with `tag=thediaryroom-21`; **none are confirmed saleable or published**.
+- The previously proposed 10-family website pilot remains a contingency for a phased release, **not the agreed scope of the full-catalogue launch**. Do not silently ship a small selection as the promised full launch.
+- To launch the full eligible range, independently validate the remaining specific listings, selected child ASIN/quantity and variant relationships, brand identity, site linking eligibility, compliant original descriptions and translated copy, and country-specific destinations. Disallow every unverified combination and excluded product. The UK candidate link for a given ASIN is `https://www.amazon.co.uk/dp/<ASIN>?tag=thediaryroom-21`, with special selection parameters retained when required to choose the correct child. This format does not itself establish tracked attribution.
+- Preserve the **SiteStripe excluded-product hold** on Raquex Enhance `B0755HRLQD` unless Amazon explicitly clears its eligibility. Preserve PUSUN's UK charger/manual/support hold. Neither can enter an enabled link set on an assumption.
+- Every public product and selected variant must pass separate editorial, identity, publication and commercial approval. The publisher now checks explicit `review.publicationApproved` and `review.commercialApproved` rather than treating an ASIN record or `status=verified` alone as sufficient.
+- Until the full verified set is ready, protected preview only. Don't expose an empty Shop to ordinary users or enable unsanctioned links. A smaller release remains an explicit scope decision to be made later if needed.
+
+
 Reviewed 2 November 2026. User has approved the visual direction and requested progression towards website and app release. **This file is not evidence of Amazon authorisation or permission to bypass release checks.**
 
 ## Current release state
