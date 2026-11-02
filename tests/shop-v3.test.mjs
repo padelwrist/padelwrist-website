@@ -22,6 +22,30 @@ test('v3 isolates bounded optional merchandising, preserves strict v2 and cannot
  const mismatch={ASSETS:{fetch:async()=>new Response(JSON.stringify(publishedCatalogueV2(source)))}};
  assert.equal((await worker.fetch(new Request(url),mismatch)).status,503);
 });
+test('full approved-range simulation stays within v3 feed and EN/ES rendering limits without changing actual approvals',()=>{
+ const staged=structuredClone(source);
+ for(const p of staged.catalogue.products){
+  p.publicationStatus='published';
+  for(const v of p.variants)v.publicationStatus='published';
+ }
+ for(const a of staged.productApprovals){a.status='verified';a.review.publicationApproved=true;}
+ for(const a of staged.variantApprovals)a.status='verified';
+ // Simulate editorial approvals only in isolated test memory; production source and links remain unchanged.
+ for(const e of Object.values(staged.productMerchandising)){e.review.en='approved';e.review.es='approved';}
+ const feed=publishedCatalogueV3(staged);
+ assert.equal(feed.products.length,74);
+ assert.equal(feed.products.reduce((n,p)=>n+p.variants.length,0),76);
+ assert.equal(feed.webLinksEnabled,false);
+ assert.ok(feed.products.every(p=>p.variants.every(v=>!v.destinations.web.enabled&&v.destinations.mobile.length===0)));
+ for(const lang of ['en','es']){
+  const html=renderShop(feed,lang);
+  assert.match(html,/data-shop-product/);
+  assert.doesNotMatch(html,/href="https:\\/\\/www\\.amazon/);
+ }
+ // This fixture is deliberately not written to disk and never updates live source approval flags.
+ assert.equal(publishedCatalogueV3(source).products.length,0);
+});
+
 test('EN/ES merchandising needs evidence and independent approval; suitability needs approved assessment',()=>{
  validateEditorialMerchandising(source);
  for(const mutate of [e=>e.review.es='unchecked',e=>delete e.review.en,e=>e.evidence=[],e=>e.content.suitability='training',e=>e.content.badge='bestSeller']){
