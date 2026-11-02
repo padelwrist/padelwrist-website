@@ -776,8 +776,8 @@
           "es": "Raquex Padel Racket Frame Protector Tape, 2-Pack"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Clear padel racket frame-protector tape to help guard against scuffs during court play.",
+          "es": "Cinta protectora transparente para el marco de la pala que ayuda a evitar rozaduras en la pista."
         },
         "image": null,
         "variants": [
@@ -853,8 +853,8 @@
           "es": "Raquex Elite 18K Carbon Padel Racket"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Explore Raquex's power-focused Elite racket with exposed 18K carbon construction and textured SpinTec surface.",
+          "es": "Descubre la pala Elite de Raquex, orientada a la potencia, con carbono 18K expuesto y superficie rugosa SpinTec."
         },
         "image": null,
         "variants": [
@@ -929,8 +929,8 @@
           "es": "Raquex Excel 12K Carbon Padel Racket"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Explore a balanced 12K carbon padel racket with a textured surface for added spin.",
+          "es": "Descubre una pala equilibrada de carbono 12K con superficie rugosa para generar efecto."
         },
         "image": null,
         "variants": [
@@ -968,8 +968,8 @@
           "es": "Raquex Elite Pink Padel Balls"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Pink standard-pressure Raquex Elite padel balls designed for visible, everyday court play.",
+          "es": "Pelotas de pádel Raquex Elite rosas de presión estándar para jugar con buena visibilidad."
         },
         "image": null,
         "variants": [
@@ -1007,8 +1007,8 @@
           "es": "Raquex Elite White Padel Balls"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "White standard-pressure Raquex Elite padel balls for regular games and training.",
+          "es": "Pelotas de pádel Raquex Elite blancas de presión estándar para partidos y entrenamientos."
         },
         "image": null,
         "variants": [
@@ -4782,6 +4782,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0HBWLGG67",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/padel-racquet-protector-clear-2-pack",
+            "finding": "Manufacturer model details corroborated, not Amazon ASIN child identity, variant quantity or eligibility."
           }
         ],
         "affiliateDestination": {
@@ -4866,6 +4870,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0G83PHZK3",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/raquex-elite-padel-racquet",
+            "finding": "Manufacturer model details corroborated, not Amazon ASIN child identity, variant quantity or eligibility."
           }
         ],
         "affiliateDestination": {
@@ -4950,6 +4958,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0FM67M1MJ",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/raquex-excel-padel-racquet",
+            "finding": "Manufacturer model details corroborated, not Amazon ASIN child identity, variant quantity or eligibility."
           }
         ],
         "affiliateDestination": {
@@ -4990,6 +5002,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0FX57Q5T9",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/raquex-elite-pink-padel-balls-tube-of-3",
+            "finding": "Manufacturer model details corroborated, not Amazon ASIN child identity, variant quantity or eligibility."
           }
         ],
         "affiliateDestination": {
@@ -5030,6 +5046,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0GWS87DZ4",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/raquex-elite-white-padel-balls-tube-of-3",
+            "finding": "Manufacturer model details corroborated, not Amazon ASIN child identity, variant quantity or eligibility."
           }
         ],
         "affiliateDestination": {
@@ -11800,6 +11820,136 @@
       "evidence": [
         "https://www.amazon.co.uk/dp/B0HP419L44",
         "https://www.raquex.com/products/raquex-evade-pro-padel-overgrips"
+      ]
+    },
+    "candidate-b0hbwlgg67": {
+      "content": {
+        "shortDescription": {
+          "en": "Clear padel racket frame-protector tape to help guard against scuffs during court play.",
+          "es": "Cinta protectora transparente para el marco de la pala que ayuda a evitar rozaduras en la pista."
+        },
+        "highlights": [
+          {
+            "en": "Two transparent TPU protectors",
+            "es": "Dos protectores transparentes de TPU"
+          },
+          {
+            "en": "400 mm long by 32 mm wide",
+            "es": "400 mm de largo por 32 mm de ancho"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0HBWLGG67",
+        "https://www.raquex.com/products/padel-racquet-protector-clear-2-pack"
+      ]
+    },
+    "candidate-b0g83phzk3": {
+      "content": {
+        "shortDescription": {
+          "en": "Explore Raquex's power-focused Elite racket with exposed 18K carbon construction and textured SpinTec surface.",
+          "es": "Descubre la pala Elite de Raquex, orientada a la potencia, con carbono 18K expuesto y superficie rugosa SpinTec."
+        },
+        "highlights": [
+          {
+            "en": "Diamond head and exposed 18K carbon",
+            "es": "Forma de diamante y carbono 18K expuesto"
+          },
+          {
+            "en": "SpinTec surface and medium EVA core",
+            "es": "Superficie SpinTec y núcleo EVA medio"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0G83PHZK3",
+        "https://www.raquex.com/products/raquex-elite-padel-racquet"
+      ]
+    },
+    "candidate-b0fm67m1mj": {
+      "content": {
+        "shortDescription": {
+          "en": "Explore a balanced 12K carbon padel racket with a textured surface for added spin.",
+          "es": "Descubre una pala equilibrada de carbono 12K con superficie rugosa para generar efecto."
+        },
+        "highlights": [
+          {
+            "en": "12K carbon twin-tube frame",
+            "es": "Marco de doble tubo de carbono 12K"
+          },
+          {
+            "en": "SpinTec surface and ImpactCore EVA 15 foam",
+            "es": "Superficie SpinTec y espuma ImpactCore EVA 15"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0FM67M1MJ",
+        "https://www.raquex.com/products/raquex-excel-padel-racquet"
+      ]
+    },
+    "candidate-b0fx57q5t9": {
+      "content": {
+        "shortDescription": {
+          "en": "Pink standard-pressure Raquex Elite padel balls designed for visible, everyday court play.",
+          "es": "Pelotas de pádel Raquex Elite rosas de presión estándar para jugar con buena visibilidad."
+        },
+        "highlights": [
+          {
+            "en": "Standard Elite pressure, not Elite Pace",
+            "es": "Presión estándar Elite, no Elite Pace"
+          },
+          {
+            "en": "Pink ResistaFelt covering",
+            "es": "Recubrimiento rosa ResistaFelt"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0FX57Q5T9",
+        "https://www.raquex.com/products/raquex-elite-pink-padel-balls-tube-of-3"
+      ]
+    },
+    "candidate-b0gws87dz4": {
+      "content": {
+        "shortDescription": {
+          "en": "White standard-pressure Raquex Elite padel balls for regular games and training.",
+          "es": "Pelotas de pádel Raquex Elite blancas de presión estándar para partidos y entrenamientos."
+        },
+        "highlights": [
+          {
+            "en": "Standard Elite pressure, not Elite Pace",
+            "es": "Presión estándar Elite, no Elite Pace"
+          },
+          {
+            "en": "White ResistaFelt covering",
+            "es": "Recubrimiento blanco ResistaFelt"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0GWS87DZ4",
+        "https://www.raquex.com/products/raquex-elite-white-padel-balls-tube-of-3"
       ]
     }
   },
