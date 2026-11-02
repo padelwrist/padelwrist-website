@@ -1,0 +1,111 @@
+import {publishedCatalogueV3} from '../src/shop-catalogue-v3.mjs';
+import {publishedCatalogueV2} from '../src/shop-catalogue-v2.mjs';
+import {categoryIllustrationURL,approvedEditorialImage,categoryPhotography} from '../src/shop-image-policy.mjs';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import { resolve, dirname } from 'node:path';
+import { publishedCatalogue, deduplicateCandidates } from '../src/shop-catalogue.mjs';
+
+const root = fileURLToPath(new URL('../', import.meta.url));
+const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const copy = {
+ en: {slug:'shop',other:'shop-es',name:'Shop',otherLanguage:'Español',title:'Padel equipment for players and clubs',description:'Thoughtful equipment choices for your next match, coaching session or club event.',players:'For Players',clubs:'For Clubs',categories:'Explore equipment',pending:'Our equipment collection is taking shape. Reviewed selections will appear here.',empty:'No selections yet.',retailer:'View on Amazon',disclosure:'As an Amazon Associate I earn from qualifying purchases.',context:'PadelWrist may earn a commission when you buy through these links. The retailer confirms price, delivery and availability. International Amazon links may take you to a local store or matching product.',guide:'New to padel equipment?',guideCopy:'Start with the essentials and choose equipment around how you play.',guideLink:'Read the equipment guide',home:'Home',privacy:'Privacy',support:'Support'},
+ es: {slug:'shop-es',other:'shop',name:'Tienda',otherLanguage:'English',title:'Equipamiento de pádel para jugadores y clubes',description:'Equipamiento bien elegido para tu próximo partido, entrenamiento o torneo de club.',players:'Para jugadores',clubs:'Para clubes',categories:'Explora el equipamiento',pending:'Estamos preparando nuestra colección. Las selecciones revisadas aparecerán aquí.',empty:'Todavía no hay selecciones.',retailer:'Ver en Amazon',disclosure:'Como afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.',context:'PadelWrist puede recibir una comisión cuando compras a través de estos enlaces. La tienda confirma el precio, el envío y la disponibilidad. Los enlaces internacionales de Amazon pueden llevarte a una tienda local o a un producto equivalente.',guide:'¿Empiezas a jugar al pádel?',guideCopy:'Empieza por lo esencial y elige el equipamiento según tu forma de jugar.',guideLink:'Guía de equipamiento (en inglés)',home:'Inicio',privacy:'Privacidad',support:'Ayuda'}
+};
+const editorialSource = JSON.parse(await readFile(resolve(root,'data/shop/catalogue.json'),'utf8'));
+export function renderShop(feed, language, photos = categoryPhotography(editorialSource), productPhotos = categoryPhotography(editorialSource,'productFallbackPhotography')) {
+ const t = copy[language], url = `https://padelwrist.com/${t.slug}/`;
+ const products = feed.products.filter(p => p.publicationStatus === 'published').sort((a,b)=>a.featuredOrder-b.featuredOrder || a.id.localeCompare(b.id));
+ const hasLinks = feed.webLinksEnabled && products.some(p => p.variants.some(v=>v.destinations.web?.enabled));
+ const categoryImage = (category, productFallback=false) => {
+  const photo=(productFallback?productPhotos:photos)[category]; const technical=new URL(categoryIllustrationURL(category)).pathname;
+  if(!photo)return `<img src="${technical}" alt="" width="640" height="400" loading="lazy">`;
+  const path=new URL(photo.url).pathname, stem=path.replace(/\.jpg$/,'');
+  return `<picture><source type="image/webp" srcset="${stem}-320.webp 320w, ${stem}-640.webp 640w, ${stem}-960.webp 960w" sizes="${productFallback?'(max-width:599px) 90vw, (max-width:839px) 45vw, 30vw':'(max-width:599px) 42vw, 220px'}"><img data-shop-category-photo data-technical-fallback="${technical}" src="${path}" alt="" width="960" height="600" loading="lazy" decoding="async"></picture>`;
+ };
+ const card = (p,audience) => {
+  const base=`${audience}-${p.id}`, label=p.categories.some(c=>['balls','bulkBalls'].includes(c))?(language==='es'?'Tamaño del pack':'Pack size'):(language==='es'?'Opción':'Option');
+  const m=p.merchandising, applies=l=>l&&(!l.audiences||l.audiences.includes(audience)), suitability=applies(m?.suitability)?m.suitability:null, badge=applies(m?.badge)?m.badge:null;
+  const context=[feed.brands?.find(b=>b.id===p.brandID)?.name,feed.categories.find(c=>c.id===p.categories[0])?.title[language]].filter(Boolean).join(' · ');
+  const defaultIndex=Math.max(0,p.variants.findIndex(v=>v.id===p.defaultVariantID));
+  const variantControl=p.variants.length<=1?'':p.variants.length<=3?
+   `<fieldset id="${base}-pack" class="shop-variant-control" data-shop-variant-control hidden><legend>${label}</legend><div class="shop-options">${p.variants.map((v,i)=>`<label><input type="radio" data-shop-option name="${base}-pack" value="${i}"${i===defaultIndex?' checked':''}><span>${escape(v.title[language])}</span></label>`).join('')}</div></fieldset>`:
+   `<div class="shop-variant-control" data-shop-variant-control hidden><label for="${base}-pack">${label}</label><select class="shop-pack" id="${base}-pack" data-shop-pack>${p.variants.map((v,i)=>`<option value="${i}"${i===defaultIndex?' selected':''}>${escape(v.title[language])}</option>`).join('')}</select></div>`;
+  return `<article class="shop-product" data-shop-product data-categories="${p.categories.join(" ")}" data-brand="${escape(p.brandID??"")}" id="${base}">
+ <div class="shop-product-summary"><div class="shop-product-visual">${suitability?`<span class="shop-suitability-overlay" aria-label="${language==='es'?'Adecuación':'Suitability'}: ${escape(suitability.text[language])}">${escape(suitability.text[language])}</span>`:''}
+ ${p.image?`<img data-shop-photo src="${escape(new URL(p.image.url).pathname)}" alt="${escape(p.image.alt[language])}" width="640" height="480" loading="lazy" decoding="async">`:''}
+ <figure class="shop-illustration" data-shop-fallback${p.image?' hidden':''}>${categoryImage(p.categories[0],true)}<figcaption>${language==='es'?'Imagen solo con fines ilustrativos':'Image for illustration purposes only'}</figcaption></figure></div>
+ <div class="shop-product-identification"><p class="shop-product-context">${escape(context)}</p>${badge?`<span class="shop-badge">${escape(badge.text[language])}</span>`:''}<h3>${escape(p.title[language])}</h3><p class="shop-description">${escape((m?.shortDescription??p.description)[language])}</p></div></div>
+ ${m?.highlights?`<ul class="shop-highlights">${m.highlights.map(h=>`<li>${escape(h[language])}</li>`).join('')}</ul>`:''}
+ <footer class="shop-product-footer">${variantControl}<div class="shop-variant-links">${p.variants.map((v,i)=>`<div data-shop-variant="${i}"><p class="shop-variant-name">${escape(v.title[language])}</p>${feed.webLinksEnabled&&v.destinations.web?.enabled?`<a class="shop-retailer" href="${escape(v.destinations.web.url)}" rel="sponsored noopener">${t.retailer} <span aria-hidden="true">↗</span></a>`:`<button class="shop-retailer" type="button" disabled aria-describedby="${base}-pending-${i}">${t.retailer} <span aria-hidden="true">↗</span></button><p class="shop-retailer-note" id="${base}-pending-${i}">${language==='es'?'Enlace de tienda en revisión.':'Retailer link under review.'}</p>`}</div>`).join('')}</div></footer></article>`;
+ };
+ const sections = ['players','clubs'].map(a => {
+   const categories = feed.categories.filter(c => c.audiences.includes(a));
+   const items = products.filter(p => p.audiences.includes(a)).sort((left,right)=>(left.audienceOrder?.[a]??left.featuredOrder)-(right.audienceOrder?.[a]??right.featuredOrder)||left.id.localeCompare(right.id));
+   const en=language==='en';
+   const usedBrands=(feed.brands??[]).filter(b=>items.some(p=>p.brandID===b.id));
+   return `<section class="shop-section" data-shop-section id="${a}" aria-labelledby="${a}-heading"><h2 id="${a}-heading">${t[a]}</h2>
+   <form class="shop-filters" hidden data-shop-filters aria-label="${en?'Equipment filters':'Filtros de equipamiento'}">
+    <label for="${a}-brand">${en?'Brand':'Marca'}</label><select id="${a}-brand" data-shop-brand><option value="">${en?'All brands':'Todas las marcas'}</option>${usedBrands.map(b=>`<option value="${escape(b.id)}">${escape(b.name)}</option>`).join('')}</select>
+    <label for="${a}-category">${en?'Category':'Categoría'}</label><select id="${a}-category" data-shop-category><option value="">${en?'All categories':'Todas las categorías'}</option>${categories.map(c=>`<option value="${c.id}">${escape(c.title[language])}</option>`).join('')}</select>
+    <button class="shop-reset" type="reset">${en?'Reset filters':'Restablecer filtros'}</button>
+   </form>
+   <div class="shop-category-choices" hidden aria-label="${en?'Browse categories':'Explora las categorías'}" data-shop-categories>
+   ${categories.map(c=>`<a class="shop-category-choice" href="#${a}-results" data-shop-category-choice="${c.id}" role="button" aria-pressed="false"><span class="shop-category-art">${categoryImage(c.id)}</span><span>${escape(c.title[language])}</span></a>`).join('')}</div>
+   <div id="${a}-results" class="shop-results" tabindex="-1"><p data-shop-count data-prefix="${en?'Selections':'Selecciones'}" role="status" aria-live="polite" aria-atomic="true">${en?'Selections':'Selecciones'}: ${items.length}</p>
+   <div data-shop-no-results hidden><h3>${en?'No matching equipment':'No hay equipamiento coincidente'}</h3><p>${en?'Try another category or brand.':'Prueba otra categoría o marca.'}</p><button class="shop-reset" data-shop-clear type="button">${en?'Reset filters':'Restablecer filtros'}</button></div>
+   ${items.length ? `<div class="shop-products">${items.map(p=>card(p,a)).join('')}</div>` : `<p class="shop-empty">${t.empty}</p>`}</div></section>`;
+
+ }).join('');
+ const structured = {'@context':'https://schema.org','@graph':[{'@type':'CollectionPage','@id':url+'#webpage',url,name:t.title,description:t.description,inLanguage:language,isPartOf:{'@id':'https://padelwrist.com/#website'}},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'PadelWrist',item:'https://padelwrist.com/'},{'@type':'ListItem',position:2,name:t.name,item:url}]},...(products.length ? [{'@type':'ItemList',itemListElement:products.map((p,i)=>({'@type':'ListItem',position:i+1,name:p.title[language],url:url+'#'+p.audiences[0]+'-'+p.id}))}] : [])]};
+ return `<!doctype html>
+<!-- Generated from data/shop/catalogue.json by scripts/build-shop.mjs. Do not hand-edit. -->
+<html lang="${language}"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${escape(t.title)} | PadelWrist</title><meta name="description" content="${escape(t.description)}">
+<meta name="robots" content="index,follow,max-image-preview:large"><meta name="theme-color" content="#020711">
+<link rel="canonical" href="${url}"><link rel="alternate" type="text/markdown" href="/${t.slug}.md">
+<link rel="alternate" hreflang="en" href="https://padelwrist.com/shop/"><link rel="alternate" hreflang="es" href="https://padelwrist.com/shop-es/">
+<link rel="alternate" hreflang="x-default" href="https://padelwrist.com/shop/">
+<link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:site_name" content="PadelWrist"><meta property="og:type" content="website"><meta property="og:url" content="${url}">
+<meta property="og:title" content="${escape(t.title)} | PadelWrist"><meta property="og:description" content="${escape(t.description)}"><meta property="og:image" content="https://padelwrist.com/assets/padelwrist-social-card.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escape(t.title)}"><meta name="twitter:description" content="${escape(t.description)}"><meta name="twitter:image" content="https://padelwrist.com/assets/padelwrist-social-card.png">
+<script type="application/ld+json">${JSON.stringify(structured).replace(/</g,'\\u003c')}</script>
+<link rel="stylesheet" href="/assets/tokens.css"><link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/pages.css"><script src="/assets/site.js" defer></script><script src="/assets/shop.js" defer></script>
+</head><body class="page-body shop-body"><a class="skip-link" href="#main">${language==='es'?'Ir al contenido':'Skip to content'}</a>
+<header class="site-header solid"><div class="shell nav-wrap"><a class="brand" href="/" aria-label="PadelWrist"><span class="brand-mark" aria-hidden="true">PW</span><span>PADELWRIST</span></a>
+<nav class="site-nav" aria-label="${language==='es'?'Navegación principal':'Primary navigation'}"><a href="/">${t.home}</a><a href="/players/">Players</a><a href="/clubs/">Clubs</a><a href="/${t.slug}/" aria-current="page">${t.name}</a><a href="/${t.other}/" lang="${language==='en'?'es':'en'}">${t.otherLanguage}</a></nav></div></header>
+<main id="main" class="content-page shell shop-page"><nav class="breadcrumbs" aria-label="${language==='es'?'Ruta de navegación':'Breadcrumb'}"><a href="/">${t.home}</a><span aria-hidden="true"> / </span><span aria-current="page">${t.name}</span></nav><div class="page-heading"><p class="eyebrow">PadelWrist / ${t.name}</p><h1>${t.name}</h1><p>${language==='en'?'Equipment for your next match or club session.':'Equipamiento para tu próximo partido o las sesiones del club.'}</p></div>
+<nav class="shop-audiences" aria-label="${t.categories}"><a href="#players">${t.players}</a><a href="#clubs">${t.clubs}</a></nav>
+${hasLinks ? `<aside class="shop-disclosure"><p><strong>${t.disclosure}</strong></p><p>${t.context}</p></aside>` : `<p class="shop-empty">${products.length ? '' : t.pending}</p>`}
+${sections}
+<aside class="guide-cta"><h2>${t.guide}</h2><p>${t.guideCopy}</p><a class="feedback-link" href="/padel-equipment-for-beginners/">${t.guideLink}</a></aside>
+</main><footer class="site-footer"><div class="shell footer-grid"><div><a class="brand" href="/"><span>PADELWRIST</span></a></div><nav><a href="/privacy/">${t.privacy}</a><a href="/support/">${t.support}</a></nav><p class="copyright">© <span data-year>2026</span> PadelWrist</p></div></footer></body></html>\n`;
+}
+export async function buildShop({check = false} = {}) {
+ const source = JSON.parse(await readFile(resolve(root,'data/shop/catalogue.json'),'utf8'));
+ const candidates = deduplicateCandidates(source.candidates);
+ if (candidates.length !== source.candidates.length) throw new Error('Deduplicate candidate links before committing');
+ const legacy = publishedCatalogue(source);
+ const branded = publishedCatalogueV2(source);
+ const feed = publishedCatalogueV3(source);
+ categoryPhotography(source); categoryPhotography(source,'productFallbackPhotography');
+ for(const category of feed.categories) {
+   const art=source.categoryIllustrations?.[category.id];
+   if(!art || art.url!==categoryIllustrationURL(category.id) || !approvedEditorialImage(source,art))throw new Error('Category illustration rights missing');
+   await readFile(resolve(root,new URL(art.url).pathname.slice(1)));
+ }
+ for (const p of feed.products) if (p.image) await readFile(resolve(root,new URL(p.image.url).pathname.slice(1)));
+ const outputs = {'catalogue/v1.json':JSON.stringify(legacy,null,2)+'\n','catalogue/v2.json':JSON.stringify(branded,null,2)+'\n','catalogue/v3.json':JSON.stringify(feed,null,2)+'\n','shop/index.html':renderShop(feed,'en',source.categoryPhotography),'shop-es/index.html':renderShop(feed,'es',source.categoryPhotography)};
+ for (const [name,content] of Object.entries(outputs)) {
+   const path=resolve(root,name);
+   if (check) { if (await readFile(path,'utf8') !== content) throw new Error(`Stale generated Shop output: ${name}`); }
+   else { await mkdir(dirname(path),{recursive:true}); await writeFile(path,content); }
+ }
+ return feed;
+}
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+ const feed = await buildShop({check:process.argv.includes('--check')});
+ console.log(`Validated Shop revision ${feed.revision}: ${feed.products.length} published products`);
+}

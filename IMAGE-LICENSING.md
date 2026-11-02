@@ -50,3 +50,16 @@ PadelWrist may voluntarily credit a photographer, but no current stock image use
 Last reviewed: 18 August 2026.
 
 This register is an operational licensing record, not legal advice. Provider terms can change, so licences should be rechecked when imagery is materially changed or replaced.
+
+
+## Shop imagery (1 November 2026)
+
+Shop imagery has stricter surface-specific records in `data/shop/catalogue.json`. Accepted sources are `padelwristOwned`, `manufacturerLicensed` and `padelwristIllustration`. Every published asset requires an exact URL/license match, `status: approved` in the publication image register (`imageReview.verificationStatus` during intake), dated review, documentary evidence and `permittedSurfaces` covering **web and mobile**. A manufacturer's public product page alone is not permission. Record the rights holder, exact assets and authorised uses in the referenced evidence; do not commit private correspondence or sensitive personal information. Permission revocation requires removing the asset from editorial publication and reviewing cached-content exposure.
+
+Ten original geometric category illustrations are in `catalogue/images/`; their creation and first-party permission are recorded in `data/shop/rights/category-illustrations.md`. Native bundles derived PNGs. These depict categories, never an asserted product likeness, and product fallbacks say “Category illustration” / “Ilustración de categoría”. Missing/failed photos use these fallbacks. Alt text describes licensed product photography; category decoration is hidden from assistive technology beside its category title.
+
+Do not download, scrape, hotlink or rehost Amazon product photography without authorisation. Future Creators API image URLs are a separate transient content channel: never copy them into this static editorial image register, generated HTML/Markdown, the public curated feed, local fallback, durable native cache or asset library. Do not fetch/rehost image bytes on Cloudflare. Optional authorised display must obey then-current licensing and refresh limits; expired or unavailable content returns to original artwork. See `CREATORS-API.md`. No Amazon images are currently displayed.
+
+## Shop category photography — 2 November 2026
+
+This revision supersedes geometric artwork as the primary Shop category visual. Individually checked free Unsplash photographs are locally hosted with original artwork retained as a technical fallback. Branded context is permitted by the user's review direction; it must not imply endorsement or exact product identity. `unsplashCategory` is a category-only source and **cannot** pass the product-image approval function. See `data/shop/rights/unsplash-category-photography.md` for each original photo, exclusions, licence terms, crop and rights evidence; `image-licenses.json.shopCategoryAssets` and native mirrored records retain exact hashes and web/app coverage. Public v1/v2 feeds and product approvals are unchanged. The image audit now checks these local assets as well as external references.

@@ -1,3 +1,4 @@
+import {auditShopPhotography} from './audit-shop-photography.mjs';
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
@@ -66,3 +67,5 @@ if (failures) {
 } else {
   console.log('Image licence audit passed.');
 }
+
+await auditShopPhotography(root);

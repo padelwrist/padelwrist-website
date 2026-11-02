@@ -1,0 +1,573 @@
+{
+  "schemaVersion": 1,
+  "revision": 3,
+  "updatedAt": "2026-11-02T14:30:00Z",
+  "expiresAt": "2027-02-01T00:00:00Z",
+  "categories": [
+    {
+      "id": "rackets",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Rackets",
+        "es": "Palas"
+      },
+      "description": {
+        "en": "Find the balance between control, comfort and power that suits your game.",
+        "es": "Encuentra el equilibrio entre control, comodidad y potencia que se adapta a tu juego."
+      }
+    },
+    {
+      "id": "balls",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Balls",
+        "es": "Pelotas"
+      },
+      "description": {
+        "en": "Keep a consistent bounce at the heart of every session.",
+        "es": "Un bote constante para cada sesión."
+      }
+    },
+    {
+      "id": "grips",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Grips",
+        "es": "Empuñaduras"
+      },
+      "description": {
+        "en": "A fresh contact point for confident, comfortable handling.",
+        "es": "Renueva el agarre para jugar con confianza y comodidad."
+      }
+    },
+    {
+      "id": "footwear",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Footwear",
+        "es": "Calzado"
+      },
+      "description": {
+        "en": "Look for lateral support and grip suited to your court surface.",
+        "es": "Busca sujeción lateral y agarre adecuados a la superficie de tu pista."
+      }
+    },
+    {
+      "id": "bags",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Bags",
+        "es": "Paleteros"
+      },
+      "description": {
+        "en": "Make room for rackets, kit and the essentials between matches.",
+        "es": "Espacio para palas, ropa y lo esencial entre partidos."
+      }
+    },
+    {
+      "id": "accessories",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Accessories",
+        "es": "Accesorios"
+      },
+      "description": {
+        "en": "Small additions that make a long day on court easier.",
+        "es": "Pequeños detalles para disfrutar de un día largo en la pista."
+      }
+    },
+    {
+      "id": "bulkBalls",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Bulk padel balls",
+        "es": "Pelotas de pádel por volumen"
+      },
+      "description": {
+        "en": "Plan ball supplies around court hours and coaching demand.",
+        "es": "Planifica las pelotas según las horas de pista y los entrenamientos."
+      }
+    },
+    {
+      "id": "coaching",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Coaching equipment",
+        "es": "Material de entrenamiento"
+      },
+      "description": {
+        "en": "Build purposeful sessions with tools for repeatable practice.",
+        "es": "Prepara sesiones con material para practicar de forma constante."
+      }
+    },
+    {
+      "id": "court",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Court accessories",
+        "es": "Accesorios de pista"
+      },
+      "description": {
+        "en": "Keep shared courts organised and ready for the next group.",
+        "es": "Mantén las pistas organizadas y listas para el siguiente grupo."
+      }
+    },
+    {
+      "id": "tournament",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Tournament supplies",
+        "es": "Material para torneos"
+      },
+      "description": {
+        "en": "Prepare the practical details for a smooth event day.",
+        "es": "Prepara los detalles prácticos para que el torneo vaya sobre ruedas."
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "raquex-elite-padel-balls-club-pack",
+      "audiences": [
+        "clubs"
+      ],
+      "categories": [
+        "bulkBalls"
+      ],
+      "featuredOrder": 5,
+      "publicationStatus": "published",
+      "title": {
+        "en": "Raquex Elite Pace · 120 Balls",
+        "es": "Raquex Elite Pace · 120 pelotas"
+      },
+      "description": {
+        "en": "Forty tubes of three Elite Pace balls, with 120 in total. A larger supply for clubs planning regular court sessions.",
+        "es": "Cuarenta botes de tres pelotas Elite Pace, con 120 en total. Un formato para clubes que organizan sesiones habituales."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "pack-120",
+          "title": {
+            "en": "120 balls",
+            "es": "120 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=c08c803d6768ad8ad1e9e4a6d22af15b&gaOptInStatus=true&ref_=as_li_ss_tl",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "raquex-elite-padel-balls",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "categories": [
+        "balls"
+      ],
+      "featuredOrder": 10,
+      "publicationStatus": "published",
+      "title": {
+        "en": "Raquex Elite Pace Padel Balls",
+        "es": "Pelotas de pádel Raquex Elite Pace"
+      },
+      "description": {
+        "en": "Yellow Elite Pace balls for your next sessions. Choose a three-, six- or nine-ball pack to suit how often you play.",
+        "es": "Pelotas amarillas Elite Pace para tus próximas sesiones. Elige un pack de tres, seis o nueve pelotas según la frecuencia con la que juegues."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "pack-3",
+          "title": {
+            "en": "3 balls",
+            "es": "3 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0D123Q6RL?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=4e808ecc0b218b4e2b463fb590003688&gaOptInStatus=true&ref_=as_li_ss_tl",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        },
+        {
+          "id": "pack-6",
+          "title": {
+            "en": "6 balls",
+            "es": "6 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0D1VZ4VNJ?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=8aa9673011cf31d404d08775c0575080&gaOptInStatus=true&ref_=as_li_ss_tl",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        },
+        {
+          "id": "pack-9",
+          "title": {
+            "en": "9 balls",
+            "es": "9 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0D1VXLW6J?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=693776af5c540bc9fe88d5a9e32056eb&gaOptInStatus=true&ref_=as_li_ss_tl",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "raquex-elite-quilted-cover-black",
+      "audiences": [
+        "players"
+      ],
+      "categories": [
+        "bags",
+        "accessories"
+      ],
+      "featuredOrder": 30,
+      "publicationStatus": "published",
+      "title": {
+        "en": "Raquex Elite Quilted Cover · Black",
+        "es": "Funda acolchada Raquex Elite · Negra"
+      },
+      "description": {
+        "en": "A black quilted faux-leather cover for a padel racket. Keep your racket covered between sessions without carrying a full kit bag.",
+        "es": "Funda negra acolchada de piel sintética para una pala de pádel. Protege la pala entre sesiones sin llevar un paletero completo."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "black",
+          "title": {
+            "en": "Black / Padel Cover",
+            "es": "Negra"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0DHQX4RY2?tag=thediaryroom-21",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "nox-at10-genius-18k-alum-2026",
+      "audiences": [
+        "players"
+      ],
+      "categories": [
+        "rackets"
+      ],
+      "featuredOrder": 50,
+      "publicationStatus": "published",
+      "title": {
+        "en": "NOX AT10 Genius 18K Alum · 2026",
+        "es": "NOX AT10 Genius 18K Alum · 2026"
+      },
+      "description": {
+        "en": "The 2026 AT10 Genius 18K Alum racket from the Agustín Tapia range. Compare this specific model with your usual racket before choosing.",
+        "es": "Pala AT10 Genius 18K Alum de 2026 de la gama Agustín Tapia. Compara este modelo concreto con tu pala habitual antes de elegir."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "2026",
+          "title": {
+            "en": "2026 model",
+            "es": "Modelo 2026"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0FX4M8T89?tag=thediaryroom-21",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "nox-future-hybrid-12k-alum",
+      "audiences": [
+        "players"
+      ],
+      "categories": [
+        "rackets"
+      ],
+      "featuredOrder": 60,
+      "publicationStatus": "published",
+      "title": {
+        "en": "NOX Future Hybrid 12K Alum",
+        "es": "NOX Future Hybrid 12K Alum"
+      },
+      "description": {
+        "en": "The Hybrid model in the NOX Future 12K Alum range. A distinct racket choice alongside the other models in the Future collection.",
+        "es": "Modelo Hybrid de la gama NOX Future 12K Alum. Una pala con identidad propia dentro de la colección Future."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "hybrid",
+          "title": {
+            "en": "Hybrid model",
+            "es": "Modelo Hybrid"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0DXJN4ZQ1?tag=thediaryroom-21",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "nox-perforated-overgrips-white",
+      "audiences": [
+        "players"
+      ],
+      "categories": [
+        "grips"
+      ],
+      "featuredOrder": 70,
+      "publicationStatus": "published",
+      "title": {
+        "en": "NOX Perforated Overgrips · 3 White",
+        "es": "Overgrips perforados NOX · 3 blancos"
+      },
+      "description": {
+        "en": "Three white perforated overgrips in one blister pack. Keep a spare wrap in your bag for renewing the contact surface of your handle.",
+        "es": "Tres overgrips blancos perforados en un blíster. Lleva un recambio en el paletero para renovar la superficie de agarre del mango."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "white-3",
+          "title": {
+            "en": "White / Perforated",
+            "es": "3 overgrips blancos"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B08125ZP7X?tag=thediaryroom-21",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "nox-pro-series-backpack-blue",
+      "audiences": [
+        "players"
+      ],
+      "categories": [
+        "bags"
+      ],
+      "featuredOrder": 80,
+      "publicationStatus": "published",
+      "title": {
+        "en": "NOX Pro Series Backpack · Blue",
+        "es": "Mochila NOX Pro Series · Azul"
+      },
+      "description": {
+        "en": "A blue 28-litre Pro Series backpack for carrying your padel kit. A backpack format for travelling to and from the court.",
+        "es": "Mochila Pro Series azul de 28 litros para llevar tu equipamiento de pádel. Un formato de mochila para tus desplazamientos a la pista."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "blue",
+          "title": {
+            "en": "Blue",
+            "es": "Azul"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0CBW85PYV?tag=thediaryroom-21",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "bullpadel-premium-pro-balls-9",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "categories": [
+        "balls"
+      ],
+      "featuredOrder": 90,
+      "publicationStatus": "published",
+      "title": {
+        "en": "Bullpadel Premium Pro · 9 Balls",
+        "es": "Bullpadel Premium Pro · 9 pelotas"
+      },
+      "description": {
+        "en": "Three tubes of three yellow Premium Pro balls. Keep unopened tubes ready for your next matches or shared club sessions.",
+        "es": "Tres botes de tres pelotas amarillas Premium Pro. Guarda los botes sin abrir para próximos partidos o sesiones de club."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "pack-9",
+          "title": {
+            "en": "9 balls",
+            "es": "9 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B07F18MPQQ?tag=thediaryroom-21",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "vermont-pressureless-training-balls-60",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "categories": [
+        "coaching",
+        "balls"
+      ],
+      "featuredOrder": 110,
+      "publicationStatus": "published",
+      "title": {
+        "en": "Vermont Pressureless Training Balls · 60",
+        "es": "Pelotas de entrenamiento sin presión Vermont · 60"
+      },
+      "description": {
+        "en": "A bucket containing sixty pressureless padel training balls. A practical format for coaches organising repeated drills and collecting balls between sessions.",
+        "es": "Cubo con sesenta pelotas de pádel sin presión para entrenamiento. Un formato práctico para organizar ejercicios repetidos y recoger las pelotas entre sesiones."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "bucket-60",
+          "title": {
+            "en": "Yellow / Pressureless",
+            "es": "Cubo de 60 pelotas"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0DMTJVPKS?th=1&psc=1&tag=thediaryroom-21",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "bounce-filtertech-padel-pressuriser-blue",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "categories": [
+        "accessories"
+      ],
+      "featuredOrder": 120,
+      "publicationStatus": "published",
+      "title": {
+        "en": "Bounce Tube FilterTech · Blue",
+        "es": "Bounce Tube FilterTech · Azul"
+      },
+      "description": {
+        "en": "A blue padel-ball pressuriser with an integrated pump. An accessory for storing balls between sessions; follow the manufacturer operating instructions.",
+        "es": "Presurizador azul para pelotas de pádel con bomba integrada. Un accesorio para guardar las pelotas entre sesiones; sigue las instrucciones de uso del fabricante."
+      },
+      "image": null,
+      "variants": [
+        {
+          "id": "blue",
+          "title": {
+            "en": "Night blue",
+            "es": "Azul"
+          },
+          "publicationStatus": "published",
+          "destinations": {
+            "web": {
+              "url": "https://www.amazon.co.uk/dp/B0H5XFQWPQ?tag=thediaryroom-21",
+              "reviewedAt": "2026-11-02T08:50:00Z",
+              "enabled": true
+            },
+            "mobile": []
+          }
+        }
+      ]
+    }
+  ],
+  "webLinksEnabled": true
+}

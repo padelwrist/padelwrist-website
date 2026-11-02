@@ -1,0 +1,28 @@
+name: Validate shared Shop catalogue
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/build-shop.mjs --check
+      - name: Check public revision against PR base
+        if: github.event_name == 'pull_request'
+        env:
+          SHOP_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node scripts/check-shop-revision.mjs "$SHOP_BASE_SHA"
+      - run: node --test tests/shop-catalogue.test.mjs tests/content-negotiation.test.mjs tests/shop-intake.test.mjs tests/amazon-creators.test.mjs tests/shop-v2.test.mjs tests/shop-photography.test.mjs tests/shop-v3.test.mjs
+      - name: Check generated Markdown stays equivalent
+        run: |
+          python3 scripts/generate-markdown.py
+          git diff --exit-code -- shop.md shop-es.md

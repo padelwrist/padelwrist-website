@@ -1,16 +1,32 @@
+import {buildReviewCatalogueV3} from '../src/shop-review.mjs';
 import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import {renderShop} from './build-shop.mjs';
 
 const base = 'http://127.0.0.1:4173';
 const outDir = path.resolve('visual-audit');
 await fs.mkdir(outDir, { recursive: true });
+// Test-only examples, excluded from Cloudflare assets. Never publish draft listings.
+const fixture = buildReviewCatalogueV3(JSON.parse(await fs.readFile(new URL('../data/shop/catalogue.json', import.meta.url), 'utf8')));
+for (const language of ['en', 'es']) {
+  const directory = path.join(outDir, 'fixtures', language === 'en' ? 'shop' : 'shop-es');
+  await fs.mkdir(directory, {recursive:true});
+  await fs.writeFile(path.join(directory,'index.html'),renderShop(fixture,language)
+    .replace('index,follow,max-image-preview:large','noindex,nofollow')
+    .replace('<main id="main"',`<aside class="shell">${language==='en'?'Editorial review preview · approvals pending':'Vista previa editorial · aprobaciones pendientes'}</aside><main id="main"`));
+}
+
 
 const pages = [
   ['home', '/'],
   ['players', '/players/'],
   ['clubs', '/clubs/'],
   ['guides', '/guides/'],
+  ['shop', '/shop/'],
+  ['shop-es', '/shop-es/'],
+  ['shop-family-preview', '/visual-audit/fixtures/shop/'],
+  ['shop-family-preview-es', '/visual-audit/fixtures/shop-es/'],
   ['typical-guide', '/how-padel-scoring-works/'],
   ['insights', '/padel-player-statistics/'],
   ['events', '/events/'],
@@ -40,10 +56,35 @@ for (const [viewportName, width, height] of viewports) {
       if (/images\.unsplash\.com|images\.pexels\.com/.test(url)) return route.abort();
       return route.continue();
     });
+    await page.addInitScript(()=>localStorage.setItem('padelwrist-analytics-consent','accepted'));
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto(`${base}${pathname}`, { waitUntil: 'domcontentloaded', timeout: 15000 });
     await page.waitForTimeout(250);
 
+    if(pageName.startsWith('shop-family-preview')) {
+      // Test-only loading control ensures complete full-page evidence, including below-fold photos.
+      await page.locator('[data-shop-category-photo]').evaluateAll(images=>images.forEach(image=>image.loading='eager'));
+      await page.waitForFunction(()=>[...document.querySelectorAll('[data-shop-category-photo]')].every(image=>image.complete&&image.naturalWidth>0));
+      if(await page.locator('[data-shop-category-photo][src$=".svg"]').count())throw new Error('Missing licensed category photo');
+
+      const players=page.locator('#players');
+      await players.locator('[data-shop-brand]').selectOption('nox');
+      await players.locator('[data-shop-category]').selectOption('balls');
+      if(!await players.locator('[data-shop-no-results]').isVisible())throw new Error('Missing no-results state');
+      await players.screenshot({path:path.join(outDir,`${viewportName}-${pageName}-no-results.png`)});
+      if(await players.locator('[data-shop-product]:visible').count()!==0)throw new Error('Combined brand/category filter failed');
+      await players.locator('[data-shop-filters] [type="reset"]').click();
+      await players.locator('[data-shop-category-choice="rackets"]').click();
+      if(await players.locator('[data-shop-product]:visible').count()!==2)throw new Error('Category card did not filter');
+      await players.locator('[data-shop-brand]').selectOption('nox');
+      await players.screenshot({path:path.join(outDir,`${viewportName}-${pageName}-filtered.png`)});
+      if(await players.locator('[data-shop-category-choice="rackets"]').getAttribute('aria-pressed')!=='true')throw new Error('Missing active category state');
+      await players.locator('[data-shop-filters] [type="reset"]').click();
+      if(await players.locator('[data-shop-product]:visible').count()!==10)throw new Error('Reset failed');
+      await page.goto(`${base}${pathname}`,{waitUntil:'domcontentloaded'});
+    }
+
+    if(await page.locator('script[src*="googletagmanager"]').count())throw new Error('Production analytics loaded in preview');
     const diagnostics = await page.evaluate(() => {
       const rect = (selector) => {
         const el = document.querySelector(selector);
@@ -55,7 +96,7 @@ for (const [viewportName, width, height] of viewports) {
         const el = document.querySelector(selector);
         return el ? getComputedStyle(el).getPropertyValue(prop).trim() : null;
       };
-      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot, .audience-choice-card, .events-benefit, .events-host-grid article, .events-format-card, .events-boundary-card, .players-feature')].map((el) => {
+      const candidates = [...document.querySelectorAll('.story-card, .role-v2, .editorial-card, .product-shot, .audience-choice-card, .events-benefit, .events-host-grid article, .events-format-card, .events-boundary-card, .players-feature, .shop-product, .shop-categories > div')].map((el) => {
         const r = el.getBoundingClientRect();
         return { tag: el.tagName, cls: el.className, x: r.x, y: r.y, width: r.width, height: r.height };
       });
@@ -102,9 +143,34 @@ for (const [viewportName, width, height] of viewports) {
       };
     });
 
-    const expectedNavLabels = ['Players', 'Clubs', 'Features', "What's New", 'Guides', 'Support', 'Privacy'];
-    diagnostics.navigationCorrect = expectedNavLabels.every((label, index) => diagnostics.navLabels[index] === label);
-    diagnostics.navigationRoutesCorrect = diagnostics.navTargets[0] === '/players/' && diagnostics.navTargets[1] === '/clubs/';
+    const isShop = pageName.startsWith('shop');
+    const spanish = pageName.endsWith('-es');
+    const expectedNavLabels = isShop
+      ? [spanish ? 'Inicio' : 'Home', 'Players', 'Clubs', spanish ? 'Tienda' : 'Shop', spanish ? 'English' : 'Español']
+      : ['Players', 'Clubs', 'Shop', 'Features', "What's New", 'Guides', 'Support', 'Privacy'];
+    const expectedNavTargets = isShop
+      ? ['/', '/players/', '/clubs/', spanish ? '/shop-es/' : '/shop/', spanish ? '/shop/' : '/shop-es/']
+      : ['/players/', '/clubs/', '/shop/', '/', '/whats-new/', '/guides/', '/support/', '/privacy/'];
+    diagnostics.navigationCorrect = expectedNavLabels.length === diagnostics.navLabels.length && expectedNavLabels.every((label, index) => diagnostics.navLabels[index] === label);
+    diagnostics.navigationRoutesCorrect = expectedNavTargets.length === diagnostics.navTargets.length && expectedNavTargets.every((target,index)=>diagnostics.navTargets[index]===target);
+    diagnostics.packSelectionWorks = true;
+    diagnostics.affiliateLinksDisabled = true;
+    diagnostics.cardFootersAligned = true;
+    if(pageName.startsWith('shop-family-preview') && width>=600){
+      diagnostics.cardFootersAligned=await page.locator('#players .shop-product').evaluateAll(cards=>{
+        const rows=new Map();
+        for(const card of cards){const r=card.getBoundingClientRect(), action=card.querySelector('[data-shop-variant]:not([hidden]) .shop-retailer');if(!action)continue;
+          const key=Math.round(r.top),bottom=action.getBoundingClientRect().bottom;const previous=rows.get(key);if(previous!==undefined&&Math.abs(previous-bottom)>2)return false;rows.set(key,bottom);}
+        return true;
+      });
+    }
+
+    if (pageName.startsWith('shop-family-preview')) {
+      const ballCard=page.locator('#players-raquex-elite-padel-balls');
+      await ballCard.locator('[data-shop-option][value="2"]').check();
+      diagnostics.packSelectionWorks = await ballCard.locator('[data-shop-variant="2"]').isVisible();
+      diagnostics.affiliateLinksDisabled = await page.locator('a[href*="amazon"]').count() === 0;
+    }
     if (width <= 959) {
       const toggle = page.locator('.mobile-nav-toggle');
       await toggle.click();
@@ -113,6 +179,23 @@ for (const [viewportName, width, height] of viewports) {
     } else diagnostics.mobileMenuOpens = true;
     report.push({ viewport: viewportName, width, page: pageName, pathname, diagnostics });
     await page.screenshot({ path: path.join(outDir, `${viewportName}-${pageName}.png`), fullPage: true });
+    if(pageName.startsWith('shop-family-preview') && width<600){
+      await page.addStyleTag({content:':root { font-size:200%; }'});
+      if(await page.evaluate(()=>document.body.scrollWidth>innerWidth+1))throw new Error('Shop overflow at 200% text');
+      if(await page.locator('.shop-options span').evaluateAll(nodes=>nodes.some(n=>n.scrollWidth>n.clientWidth+1)))throw new Error('Variant text overflows at 200% text');
+      await page.locator('[data-shop-product]').first().screenshot({path:path.join(outDir,`${viewportName}-${pageName}-large-text.png`)});
+    }
+
+    if(pageName.startsWith('shop-family-preview')) {
+      await page.route('**/catalogue/images/photo-context-balls*',route=>route.abort());
+      await page.reload({waitUntil:'domcontentloaded'});
+      // A merchandising reorder must not change which category image this regression exercises.
+      const first=page.locator('#players-raquex-elite-padel-balls');
+      await first.scrollIntoViewIfNeeded();
+      await page.waitForFunction(()=>document.querySelector('#players-raquex-elite-padel-balls [data-shop-category-photo]')?.src.endsWith('/category-balls.svg'));
+      if(!await first.getByText(pageName.endsWith('-es')?'Imagen solo con fines ilustrativos':'Image for illustration purposes only',{exact:true}).isVisible())throw new Error('Lost illustrative caption on image failure');
+      await first.screenshot({path:path.join(outDir,`${viewportName}-${pageName}-image-fallback.png`)});
+    }
     await page.close();
   }
 }
@@ -120,6 +203,6 @@ for (const [viewportName, width, height] of viewports) {
 await browser.close();
 await fs.writeFile(path.join(outDir, 'report.json'), JSON.stringify(report, null, 2));
 
-const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length || !entry.diagnostics.navigationCorrect || !entry.diagnostics.navigationRoutesCorrect || !entry.diagnostics.mobileMenuOpens);
+const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length || !entry.diagnostics.navigationCorrect || !entry.diagnostics.navigationRoutesCorrect || !entry.diagnostics.mobileMenuOpens || !entry.diagnostics.packSelectionWorks || !entry.diagnostics.affiliateLinksDisabled || !entry.diagnostics.cardFootersAligned);
 console.log(JSON.stringify({ pages: report.length, failures: failures.length, failureDetails: failures }, null, 2));
 if (failures.length) process.exitCode = 1;
