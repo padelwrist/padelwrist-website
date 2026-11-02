@@ -90,6 +90,23 @@ export function publishedCatalogue(source, options) {
     const approval=source.productApprovals?.find(a=>a.productId===p.id && a.variantId===v.id && a.status==='verified' && a.listingURL===v.destinations.web?.url);
     if(!approval || !approval.notes) fail('listing/variant verification missing');
     timestamp(approval.checkedAt);
+    if(approval.review?.publicationApproved !== true) fail('explicit publication approval required');
+    const web=v.destinations.web;
+    if(web?.enabled){
+      const affiliate=approval.review?.affiliateDestination;
+      if(!source.catalogue.webLinksEnabled || approval.review.commercialApproved !== true ||
+         affiliate?.candidateURL !== web.url || affiliate?.landingIdentityChecked !== true ||
+         affiliate?.websiteTag !== new URL(web.url).searchParams.get('tag')) fail('website commercial approval required');
+    }
+    if(v.destinations.mobile.some(d=>d.enabled) &&
+       (approval.review?.commercialApproved !== true || approval.review?.affiliateDestination?.mobileApproved !== true))
+       fail('mobile commercial approval required');
+  }
+  for(const p of source.catalogue.products) {
+    if(p.publicationStatus!=='published' && p.variants.some(v=>v.destinations.web?.enabled || v.destinations.mobile.some(d=>d.enabled)))
+      fail('draft product cannot enable retailer links');
+    if(p.variants.some(v=>v.publicationStatus!=='published' && (v.destinations.web?.enabled || v.destinations.mobile.some(d=>d.enabled))))
+      fail('draft variant cannot enable retailer links');
   }
   for(const p of feed.products) if(p.variants.length>1) {
     const approval=source.variantApprovals?.find(a=>a.productId===p.id && a.status==='verified' && a.evidence && p.variants.every(v=>a.variantIds?.includes(v.id)));
