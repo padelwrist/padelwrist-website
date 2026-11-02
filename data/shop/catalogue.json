@@ -1349,8 +1349,8 @@
           "es": "NOX X-Hero Padel Racket (2026), Red"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "The NOX X-Hero Red pairs a manageable round shape with a soft core for developing players.",
+          "es": "La NOX X-Hero roja combina forma redonda manejable y núcleo suave para jugadores en progresión."
         },
         "image": null,
         "variants": [
@@ -1539,8 +1539,8 @@
           "es": "NOX X-Zero Padel Racket, Red"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "A round, forgiving NOX X-Zero racket suited to developing control and technique.",
+          "es": "Pala NOX X-Zero redonda y tolerante para desarrollar el control y la técnica."
         },
         "image": null,
         "variants": [
@@ -1729,8 +1729,8 @@
           "es": "NOX X-Zero Padel Racket (2026), Blue"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "A blue NOX X-Zero racket designed for accessible control and an enlarged sweet spot.",
+          "es": "Pala NOX X-Zero azul diseñada para facilitar el control y ofrecer un punto dulce amplio."
         },
         "image": null,
         "variants": [
@@ -1919,8 +1919,8 @@
           "es": "NOX Future Attack 12K Alum Padel Racket"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "The NOX Future Attack 12K Alum combines a diamond profile with a textured face for attacking play.",
+          "es": "La NOX Future Attack 12K Alum combina forma de diamante y superficie rugosa para un juego ofensivo."
         },
         "image": null,
         "variants": [
@@ -2033,8 +2033,8 @@
           "es": "NOX Pro Titanium Padel Balls, 3-Pack"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Explore NOX Pro Titanium pressurised padel balls designed for training and match sessions.",
+          "es": "Descubre las pelotas de pádel presurizadas NOX Pro Titanium para entrenamientos y partidos."
         },
         "image": null,
         "variants": [
@@ -2071,8 +2071,8 @@
           "es": "NOX Future Control 12K Alum Padel Racket"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "The NOX Future Control 12K Alum prioritises controlled play with a round head and firm EV50 core.",
+          "es": "La NOX Future Control 12K Alum prioriza el control gracias a su forma redonda y núcleo firme EV50."
         },
         "image": null,
         "variants": [
@@ -5410,6 +5410,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0FX4R4824",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/collections/serie-essential/products/pala-x-hero-red",
+            "finding": "Official NOX model-level specification corroboration; exact Amazon ASIN child, options and linking eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -5610,6 +5614,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0FX4SYQQN",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/products/pala-x-zero-red",
+            "finding": "Official NOX model-level specification corroboration; exact Amazon ASIN child, options and linking eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -5810,6 +5818,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0FX4MKJ79",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/products/pala-x-zero-blue",
+            "finding": "Official NOX model-level specification corroboration; exact Amazon ASIN child, options and linking eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -6010,6 +6022,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0DXJ6TS72",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/collections/serie-nfa-padel",
+            "finding": "Official NOX model-level specification corroboration; exact Amazon ASIN child, options and linking eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -6130,6 +6146,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B07D3ZSDBV",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/collections/accesorios/products/bote-de-3-pelotas-de-padel-pro-titanium",
+            "finding": "Official NOX model-level specification corroboration; exact Amazon ASIN child, options and linking eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -6170,6 +6190,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0DXJC4BZW",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/collections/serie-nfa-padel",
+            "finding": "Official NOX model-level specification corroboration; exact Amazon ASIN child, options and linking eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -11950,6 +11974,162 @@
       "evidence": [
         "https://www.amazon.co.uk/dp/B0GWS87DZ4",
         "https://www.raquex.com/products/raquex-elite-white-padel-balls-tube-of-3"
+      ]
+    },
+    "candidate-b0dxj6ts72": {
+      "content": {
+        "shortDescription": {
+          "en": "The NOX Future Attack 12K Alum combines a diamond profile with a textured face for attacking play.",
+          "es": "La NOX Future Attack 12K Alum combina forma de diamante y superficie rugosa para un juego ofensivo."
+        },
+        "highlights": [
+          {
+            "en": "Diamond-shaped attacking racket",
+            "es": "Pala ofensiva con forma de diamante"
+          },
+          {
+            "en": "12K Alum carbon and SPIN 3D surface",
+            "es": "Carbono 12K Alum y superficie SPIN 3D"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0DXJ6TS72",
+        "https://noxsport.com/en/collections/serie-nfa-padel"
+      ]
+    },
+    "candidate-b0dxjc4bzw": {
+      "content": {
+        "shortDescription": {
+          "en": "The NOX Future Control 12K Alum prioritises controlled play with a round head and firm EV50 core.",
+          "es": "La NOX Future Control 12K Alum prioriza el control gracias a su forma redonda y núcleo firme EV50."
+        },
+        "highlights": [
+          {
+            "en": "Round shape for control",
+            "es": "Forma redonda orientada al control"
+          },
+          {
+            "en": "EV50 core and textured SPIN 3D face",
+            "es": "Núcleo EV50 y cara rugosa SPIN 3D"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0DXJC4BZW",
+        "https://noxsport.com/en/collections/serie-nfa-padel"
+      ]
+    },
+    "candidate-b0fx4syqqn": {
+      "content": {
+        "shortDescription": {
+          "en": "A round, forgiving NOX X-Zero racket suited to developing control and technique.",
+          "es": "Pala NOX X-Zero redonda y tolerante para desarrollar el control y la técnica."
+        },
+        "highlights": [
+          {
+            "en": "Round head with optimised hole pattern",
+            "es": "Forma redonda con perforación optimizada"
+          },
+          {
+            "en": "Carbon frame and 3K fibreglass faces",
+            "es": "Marco de carbono y caras de fibra de vidrio 3K"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0FX4SYQQN",
+        "https://noxsport.com/en/products/pala-x-zero-red"
+      ]
+    },
+    "candidate-b0fx4mkj79": {
+      "content": {
+        "shortDescription": {
+          "en": "A blue NOX X-Zero racket designed for accessible control and an enlarged sweet spot.",
+          "es": "Pala NOX X-Zero azul diseñada para facilitar el control y ofrecer un punto dulce amplio."
+        },
+        "highlights": [
+          {
+            "en": "Round shape and 350–360 g specification",
+            "es": "Forma redonda y peso de 350–360 g"
+          },
+          {
+            "en": "HR3 White EVA core and 3K fibreglass faces",
+            "es": "Núcleo HR3 White EVA y caras de fibra de vidrio 3K"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0FX4MKJ79",
+        "https://noxsport.com/en/products/pala-x-zero-blue"
+      ]
+    },
+    "candidate-b0fx4r4824": {
+      "content": {
+        "shortDescription": {
+          "en": "The NOX X-Hero Red pairs a manageable round shape with a soft core for developing players.",
+          "es": "La NOX X-Hero roja combina forma redonda manejable y núcleo suave para jugadores en progresión."
+        },
+        "highlights": [
+          {
+            "en": "Round shape and 350–360 g specification",
+            "es": "Forma redonda y peso de 350–360 g"
+          },
+          {
+            "en": "HR3 White EVA core and carbon frame",
+            "es": "Núcleo HR3 White EVA y marco de carbono"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0FX4R4824",
+        "https://noxsport.com/en/collections/serie-essential/products/pala-x-hero-red"
+      ]
+    },
+    "candidate-b07d3zsdbv": {
+      "content": {
+        "shortDescription": {
+          "en": "Explore NOX Pro Titanium pressurised padel balls designed for training and match sessions.",
+          "es": "Descubre las pelotas de pádel presurizadas NOX Pro Titanium para entrenamientos y partidos."
+        },
+        "highlights": [
+          {
+            "en": "Pressurised rubber core",
+            "es": "Núcleo de goma presurizada"
+          },
+          {
+            "en": "Felt cover designed for consistent bounce",
+            "es": "Recubrimiento de fieltro para un bote uniforme"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B07D3ZSDBV",
+        "https://noxsport.com/en/collections/accesorios/products/bote-de-3-pelotas-de-padel-pro-titanium"
       ]
     }
   },
