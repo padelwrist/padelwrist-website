@@ -166,8 +166,9 @@ for (const [viewportName, width, height] of viewports) {
     }
 
     if (pageName.startsWith('shop-family-preview')) {
-      await page.locator('[data-shop-option][value="2"]').first().check();
-      diagnostics.packSelectionWorks = await page.locator('.shop-product').first().locator('[data-shop-variant="2"]').isVisible();
+      const ballCard=page.locator('#players-raquex-elite-padel-balls');
+      await ballCard.locator('[data-shop-option][value="2"]').check();
+      diagnostics.packSelectionWorks = await ballCard.locator('[data-shop-variant="2"]').isVisible();
       diagnostics.affiliateLinksDisabled = await page.locator('a[href*="amazon"]').count() === 0;
     }
     if (width <= 959) {
