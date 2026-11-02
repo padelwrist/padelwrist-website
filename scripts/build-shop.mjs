@@ -1,3 +1,4 @@
+import {publishedCatalogueV2} from '../src/shop-catalogue-v2.mjs';
 import {categoryIllustrationURL,approvedEditorialImage} from '../src/shop-image-policy.mjs';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -14,7 +15,7 @@ export function renderShop(feed, language) {
  const t = copy[language], url = `https://padelwrist.com/${t.slug}/`;
  const products = feed.products.filter(p => p.publicationStatus === 'published').sort((a,b)=>a.featuredOrder-b.featuredOrder || a.id.localeCompare(b.id));
  const hasLinks = feed.webLinksEnabled && products.some(p => p.variants.some(v=>v.destinations.web?.enabled));
- const card = (p,audience) => `<article class="shop-product" id="${audience}-${escape(p.id)}">
+ const card = (p,audience) => `<article class="shop-product" data-shop-product data-categories="${p.categories.join(" ")}" data-brand="${escape(p.brandID??"")}" id="${audience}-${escape(p.id)}">
  ${p.image ? `<img data-shop-photo src="${escape(new URL(p.image.url).pathname)}" alt="${escape(p.image.alt[language])}" width="640" height="480" loading="lazy" decoding="async">` : ''}
  <figure class="shop-illustration" data-shop-fallback${p.image ? ' hidden' : ''}><img src="${new URL(categoryIllustrationURL(p.categories[0])).pathname}" alt="" width="640" height="400" loading="lazy"><figcaption>${language==='es'?'Ilustración de la categoría':'Category illustration'}</figcaption></figure>
  <h3>${escape(p.title[language])}</h3><p>${escape(p.description[language])}</p>
@@ -24,9 +25,20 @@ export function renderShop(feed, language) {
  const sections = ['players','clubs'].map(a => {
    const categories = feed.categories.filter(c => c.audiences.includes(a));
    const items = products.filter(p => p.audiences.includes(a));
-   return `<section class="shop-section" id="${a}" aria-labelledby="${a}-heading"><h2 id="${a}-heading">${t[a]}</h2>
-   ${items.length ? `<div class="shop-products">${items.map(p=>card(p,a)).join('')}</div>` : `<p class="shop-empty">${t.empty}</p>`}
-   <div class="shop-categories">${categories.map(c=>`<div><img class="shop-category-art" src="${new URL(categoryIllustrationURL(c.id)).pathname}" alt="" width="320" height="200" loading="lazy"><h3>${escape(c.title[language])}</h3><p>${escape(c.description[language])}</p></div>`).join('')}</div></section>`;
+   const en=language==='en';
+   const usedBrands=(feed.brands??[]).filter(b=>items.some(p=>p.brandID===b.id));
+   return `<section class="shop-section" data-shop-section id="${a}" aria-labelledby="${a}-heading"><h2 id="${a}-heading">${t[a]}</h2>
+   <form class="shop-filters" hidden data-shop-filters aria-label="${en?'Equipment filters':'Filtros de equipamiento'}">
+    <label for="${a}-brand">${en?'Brand':'Marca'}</label><select id="${a}-brand" data-shop-brand><option value="">${en?'All brands':'Todas las marcas'}</option>${usedBrands.map(b=>`<option value="${escape(b.id)}">${escape(b.name)}</option>`).join('')}</select>
+    <label for="${a}-category">${en?'Category':'Categoría'}</label><select id="${a}-category" data-shop-category><option value="">${en?'All categories':'Todas las categorías'}</option>${categories.map(c=>`<option value="${c.id}">${escape(c.title[language])}</option>`).join('')}</select>
+    <button class="shop-reset" type="reset">${en?'Reset filters':'Restablecer filtros'}</button>
+   </form>
+   <div class="shop-category-choices" hidden aria-label="${en?'Browse categories':'Explora las categorías'}" data-shop-categories>
+   ${categories.map(c=>`<a class="shop-category-choice" href="#${a}-results" data-shop-category-choice="${c.id}" role="button" aria-pressed="false"><img class="shop-category-art" src="${new URL(categoryIllustrationURL(c.id)).pathname}" alt="" width="160" height="100" loading="lazy"><span>${escape(c.title[language])}</span></a>`).join('')}</div>
+   <div id="${a}-results" class="shop-results" tabindex="-1"><p data-shop-count data-prefix="${en?'Selections':'Selecciones'}" role="status" aria-live="polite" aria-atomic="true">${en?'Selections':'Selecciones'}: ${items.length}</p>
+   <div data-shop-no-results hidden><h3>${en?'No matching equipment':'No hay equipamiento coincidente'}</h3><p>${en?'Try another category or brand.':'Prueba otra categoría o marca.'}</p><button class="shop-reset" data-shop-clear type="button">${en?'Reset filters':'Restablecer filtros'}</button></div>
+   ${items.length ? `<div class="shop-products">${items.map(p=>card(p,a)).join('')}</div>` : `<p class="shop-empty">${t.empty}</p>`}</div></section>`;
+
  }).join('');
  const structured = {'@context':'https://schema.org','@graph':[{'@type':'CollectionPage','@id':url+'#webpage',url,name:t.title,description:t.description,inLanguage:language,isPartOf:{'@id':'https://padelwrist.com/#website'}},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'PadelWrist',item:'https://padelwrist.com/'},{'@type':'ListItem',position:2,name:t.name,item:url}]},...(products.length ? [{'@type':'ItemList',itemListElement:products.map((p,i)=>({'@type':'ListItem',position:i+1,name:p.title[language],url:url+'#'+p.audiences[0]+'-'+p.id}))}] : [])]};
  return `<!doctype html>
@@ -49,7 +61,7 @@ export function renderShop(feed, language) {
 <nav class="site-nav" aria-label="${language==='es'?'Navegación principal':'Primary navigation'}"><a href="/">${t.home}</a><a href="/players/">Players</a><a href="/clubs/">Clubs</a><a href="/${t.slug}/" aria-current="page">${t.name}</a><a href="/${t.other}/" lang="${language==='en'?'es':'en'}">${t.otherLanguage}</a></nav></div></header>
 <main id="main" class="content-page shell shop-page"><nav class="breadcrumbs" aria-label="${language==='es'?'Ruta de navegación':'Breadcrumb'}"><a href="/">${t.home}</a><span aria-hidden="true"> / </span><span aria-current="page">${t.name}</span></nav><div class="page-heading"><p class="eyebrow">PadelWrist / ${t.name}</p><h1>${escape(t.title)}</h1><p>${escape(t.description)}</p></div>
 <nav class="shop-audiences" aria-label="${t.categories}"><a href="#players">${t.players}</a><a href="#clubs">${t.clubs}</a></nav>
-${hasLinks ? `<aside class="shop-disclosure"><p><strong>${t.disclosure}</strong></p><p>${t.context}</p></aside>` : `<p class="shop-empty">${t.pending}</p>`}
+${hasLinks ? `<aside class="shop-disclosure"><p><strong>${t.disclosure}</strong></p><p>${t.context}</p></aside>` : `<p class="shop-empty">${products.length ? (language==='en'?'Retailer links are not available.':'Los enlaces a tiendas no están disponibles.') : t.pending}</p>`}
 ${sections}
 <aside class="guide-cta"><h2>${t.guide}</h2><p>${t.guideCopy}</p><a class="feedback-link" href="/padel-equipment-for-beginners/">${t.guideLink}</a></aside>
 </main><footer class="site-footer"><div class="shell footer-grid"><div><a class="brand" href="/"><span>PADELWRIST</span></a></div><nav><a href="/privacy/">${t.privacy}</a><a href="/support/">${t.support}</a></nav><p class="copyright">© <span data-year>2026</span> PadelWrist</p></div></footer></body></html>\n`;
@@ -58,14 +70,15 @@ export async function buildShop({check = false} = {}) {
  const source = JSON.parse(await readFile(resolve(root,'data/shop/catalogue.json'),'utf8'));
  const candidates = deduplicateCandidates(source.candidates);
  if (candidates.length !== source.candidates.length) throw new Error('Deduplicate candidate links before committing');
- const feed = publishedCatalogue(source);
+ const legacy = publishedCatalogue(source);
+ const feed = publishedCatalogueV2(source);
  for(const category of feed.categories) {
    const art=source.categoryIllustrations?.[category.id];
    if(!art || art.url!==categoryIllustrationURL(category.id) || !approvedEditorialImage(source,art))throw new Error('Category illustration rights missing');
    await readFile(resolve(root,new URL(art.url).pathname.slice(1)));
  }
  for (const p of feed.products) if (p.image) await readFile(resolve(root,new URL(p.image.url).pathname.slice(1)));
- const outputs = {'catalogue/v1.json':JSON.stringify(feed,null,2)+'\n','shop/index.html':renderShop(feed,'en'),'shop-es/index.html':renderShop(feed,'es')};
+ const outputs = {'catalogue/v1.json':JSON.stringify(legacy,null,2)+'\n','catalogue/v2.json':JSON.stringify(feed,null,2)+'\n','shop/index.html':renderShop(feed,'en'),'shop-es/index.html':renderShop(feed,'es')};
  for (const [name,content] of Object.entries(outputs)) {
    const path=resolve(root,name);
    if (check) { if (await readFile(path,'utf8') !== content) throw new Error(`Stale generated Shop output: ${name}`); }

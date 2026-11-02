@@ -14,6 +14,7 @@
     "binding": "ASSETS",
     "run_worker_first": [
       "/catalogue/v1.json",
+      "/catalogue/v2.json",
       "/catalogue/amazon/v1.json",
       "/robots.txt",
       "/*.html",

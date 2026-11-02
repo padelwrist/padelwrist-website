@@ -218,6 +218,7 @@ function upgradeAppStoreCtas() {
 /* Privacy-first analytics. GA4 is not loaded until consent is accepted. */
 const GA_MEASUREMENT_ID = 'G-815ZHZPERH';
 const CONSENT_STORAGE_KEY = 'padelwrist-analytics-consent';
+const IS_PRODUCTION_SITE = ['padelwrist.com','www.padelwrist.com'].includes(window.location.hostname);
 let analyticsLoaded = false;
 
 function getConsentChoice() {
@@ -241,6 +242,7 @@ function disableAnalytics() {
   deleteAnalyticsCookies();
 }
 function loadAnalytics() {
+  if (!IS_PRODUCTION_SITE) return;
   if (analyticsLoaded) {
     window[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
     window.gtag?.('consent', 'update', { analytics_storage: 'granted' });
@@ -265,6 +267,7 @@ function applyConsent(choice) {
   removeConsentBanner();
 }
 function showConsentBanner() {
+  if (!IS_PRODUCTION_SITE) return;
   removeConsentBanner();
   const banner = document.createElement('section');
   banner.className = 'cookie-banner';
@@ -286,6 +289,7 @@ function showConsentBanner() {
   document.body.appendChild(banner);
 }
 function addCookieSettingsLink() {
+  if (!IS_PRODUCTION_SITE) return;
   const footerNav = document.querySelector('.site-footer nav');
   if (!footerNav || footerNav.querySelector('[data-cookie-settings]')) return;
   const button = document.createElement('button');
@@ -346,7 +350,8 @@ upgradeAppStoreCtas();
 addCookieSettingsLink();
 
 const consentChoice = getConsentChoice();
-if (consentChoice === 'accepted') loadAnalytics();
+if (!IS_PRODUCTION_SITE) disableAnalytics();
+else if (consentChoice === 'accepted') loadAnalytics();
 else if (consentChoice === 'rejected') disableAnalytics();
 else {
   disableAnalytics();

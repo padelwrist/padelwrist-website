@@ -1064,7 +1064,7 @@
       "status": "pending",
       "listingURL": "https://www.amazon.co.uk/dp/B0755HRLQD?th=1&psc=1&tag=thediaryroom-21",
       "checkedAt": "2026-11-02T08:50:00Z",
-      "notes": "Details identify one black Enhance replacement grip and finishing tape. Bare/tag-only landing left size unselected; explicit th=1&psc=1 resolves the single-grip child on fresh navigation.",
+      "notes": "Details identify one black Enhance replacement grip and finishing tape. Bare/tag-only landing left size unselected; explicit th=1&psc=1 resolves the single-grip child on fresh navigation. Affiliate hold: earlier SiteStripe exclusion warning requires renewed eligibility verification; do not activate.",
       "review": {
         "asin": "B0755HRLQD",
         "method": "manual-browser-listing-and-product-details",
@@ -1092,7 +1092,9 @@
           "websiteTag": "thediaryroom-21",
           "landingIdentityChecked": true,
           "attributionVerified": false,
-          "mobileApproved": false
+          "mobileApproved": false,
+          "eligibilityStatus": "hold-sitestripe-exclusion-recheck",
+          "eligibilityEvidence": "Earlier intake records a SiteStripe excluded-product warning. Renewed programme eligibility confirmation is required; a constructed tag URL or valid landing cannot clear this hold."
         },
         "copyReview": {
           "en": "original-draft-ready-for-editorial-review",
@@ -5361,5 +5363,75 @@
       ],
       "evidence": "Manual browser review on 2 November 2026 selected Elite Pace with three/six/nine balls. All three supplied ASINs appear in one size-and-speed family. Parent ASIN not independently established; publication and editorial sign-off remain pending."
     }
-  ]
+  ],
+  "editorialBrands": [
+    {
+      "id": "raquex",
+      "name": "Raquex",
+      "status": "verified",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0DHQX4RY2"
+      ]
+    },
+    {
+      "id": "nox",
+      "name": "NOX",
+      "status": "verified",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B08125ZP7X"
+      ]
+    },
+    {
+      "id": "bullpadel",
+      "name": "Bullpadel",
+      "status": "verified",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B07F18MPQQ"
+      ]
+    },
+    {
+      "id": "vermont",
+      "name": "Vermont",
+      "status": "verified",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0DMTJVPKS"
+      ]
+    },
+    {
+      "id": "bounce",
+      "name": "Bounce Sports International",
+      "status": "verified",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0H5XFQWPQ"
+      ]
+    },
+    {
+      "id": "pusun",
+      "name": "PUSUN",
+      "status": "verified",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0GV226SKF"
+      ]
+    }
+  ],
+  "productBrands": {
+    "raquex-elite-padel-balls": "raquex",
+    "raquex-elite-padel-balls-club-pack": "raquex",
+    "raquex-elite-quilted-cover-black": "raquex",
+    "raquex-enhance-replacement-grip-black": "raquex",
+    "nox-at10-genius-18k-alum-2026": "nox",
+    "nox-future-hybrid-12k-alum": "nox",
+    "nox-perforated-overgrips-white": "nox",
+    "nox-pro-series-backpack-blue": "nox",
+    "bullpadel-premium-pro-balls-9": "bullpadel",
+    "pusun-pt-max-c-machine": "pusun",
+    "vermont-pressureless-training-balls-60": "vermont",
+    "bounce-filtertech-padel-pressuriser-blue": "bounce"
+  }
 }

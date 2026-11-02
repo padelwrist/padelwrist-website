@@ -82,3 +82,7 @@ Creators API access is **not a release prerequisite**. The account owner confirm
 4. Optionally enable authorised official content later, after current terms, marketplace eligibility, credentials, surface-specific permissions and destination checks are completed. See `CREATORS-API.md`. Failure, revoked credentials, lost eligibility or expiry leaves the curated card and original illustration available.
 
 The source of truth remains editorial. Amazon metadata may assist verification; it never silently overwrites descriptions, audiences, categories, order, publication or family relationships. Future authenticated management can reuse these validators and explicit approval records. No management interface, authentication service or database is required now.
+
+## Branded v2 browsing (2 November 2026)
+
+See `SHOP-UX-REVIEW.md` for compatibility, temporary eleven-card review generation and the editorial checklist. V1 remains strict and byte-identical. Private verified `editorialBrands` plus explicit `productBrands` mappings generate `/catalogue/v2.json` with `brands` and product `brandID`. Website browsing uses v2; existing v1 clients continue receiving v1. Both public outputs remain empty of products. No publication, image or commercial approval follows from brand verification. The Enhance grip's earlier SiteStripe exclusion is an explicit activation hold, independent of the card's editorial review status.

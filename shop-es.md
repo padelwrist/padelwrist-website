@@ -6,67 +6,27 @@ Estamos preparando nuestra colección. Las selecciones revisadas aparecerán aqu
 
 ## Para jugadores
 
+[Palas](https://padelwrist.com/shop-es/#players-results) [Pelotas](https://padelwrist.com/shop-es/#players-results) [Empuñaduras](https://padelwrist.com/shop-es/#players-results) [Calzado](https://padelwrist.com/shop-es/#players-results) [Paleteros](https://padelwrist.com/shop-es/#players-results) [Accesorios](https://padelwrist.com/shop-es/#players-results) [Material de entrenamiento](https://padelwrist.com/shop-es/#players-results)
+
+Selecciones: 0
+
+### No hay equipamiento coincidente
+
+Prueba otra categoría o marca.
+
 Todavía no hay selecciones.
-
-### Palas
-
-Encuentra el equilibrio entre control, comodidad y potencia que se adapta a tu juego.
-
-### Pelotas
-
-Un bote constante para cada sesión.
-
-### Empuñaduras
-
-Renueva el agarre para jugar con confianza y comodidad.
-
-### Calzado
-
-Busca sujeción lateral y agarre adecuados a la superficie de tu pista.
-
-### Paleteros
-
-Espacio para palas, ropa y lo esencial entre partidos.
-
-### Accesorios
-
-Pequeños detalles para disfrutar de un día largo en la pista.
-
-### Material de entrenamiento
-
-Prepara sesiones con material para practicar de forma constante.
 
 ## Para clubes
 
+[Pelotas](https://padelwrist.com/shop-es/#clubs-results) [Empuñaduras](https://padelwrist.com/shop-es/#clubs-results) [Accesorios](https://padelwrist.com/shop-es/#clubs-results) [Pelotas de pádel por volumen](https://padelwrist.com/shop-es/#clubs-results) [Material de entrenamiento](https://padelwrist.com/shop-es/#clubs-results) [Accesorios de pista](https://padelwrist.com/shop-es/#clubs-results) [Material para torneos](https://padelwrist.com/shop-es/#clubs-results)
+
+Selecciones: 0
+
+### No hay equipamiento coincidente
+
+Prueba otra categoría o marca.
+
 Todavía no hay selecciones.
-
-### Pelotas
-
-Un bote constante para cada sesión.
-
-### Empuñaduras
-
-Renueva el agarre para jugar con confianza y comodidad.
-
-### Accesorios
-
-Pequeños detalles para disfrutar de un día largo en la pista.
-
-### Pelotas de pádel por volumen
-
-Planifica las pelotas según las horas de pista y los entrenamientos.
-
-### Material de entrenamiento
-
-Prepara sesiones con material para practicar de forma constante.
-
-### Accesorios de pista
-
-Mantén las pistas organizadas y listas para el siguiente grupo.
-
-### Material para torneos
-
-Prepara los detalles prácticos para que el torneo vaya sobre ruedas.
 
 ## ¿Empiezas a jugar al pádel?
 

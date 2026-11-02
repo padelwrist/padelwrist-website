@@ -78,9 +78,13 @@ export function validateCatalogue(value, {now = new Date(), allowExpired = false
   return value;
 }
 export function publishedCatalogue(source, options) {
-  keys(source,['catalogue','candidates','imageApprovals','verificationNotes','productApprovals','staging','variantApprovals','categoryIllustrations']);
+  keys(source,['catalogue','candidates','imageApprovals','verificationNotes','productApprovals','staging','variantApprovals','categoryIllustrations','editorialBrands','productBrands']);
   if(source.staging) validateStaging(source.staging);
   validateCatalogue(source.catalogue,options);
+  for(const p of source.catalogue.products)for(const v of p.variants){
+    const review=source.productApprovals?.find(a=>a.productId===p.id&&a.variantId===v.id)?.review;
+    if(review?.affiliateDestination?.eligibilityStatus==='hold-sitestripe-exclusion-recheck' && (v.destinations.web?.enabled||v.destinations.mobile.some(d=>d.enabled)))fail('affiliate eligibility hold');
+  }
   const feed = {...source.catalogue, products: source.catalogue.products.filter(p => p.publicationStatus === 'published').map(p=>({...p, variants:p.variants.filter(v=>v.publicationStatus==='published')})).sort((a,b) => a.featuredOrder-b.featuredOrder || a.id.localeCompare(b.id))};
   for (const p of feed.products) for (const v of p.variants) {
     const approval=source.productApprovals?.find(a=>a.productId===p.id && a.variantId===v.id && a.status==='verified' && a.listingURL===v.destinations.web?.url);

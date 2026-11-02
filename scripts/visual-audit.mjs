@@ -1,20 +1,20 @@
+import {buildReviewCatalogue} from '../src/shop-review.mjs';
 import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {renderShop} from './build-shop.mjs';
-import {validateCatalogue} from '../src/shop-catalogue.mjs';
 
 const base = 'http://127.0.0.1:4173';
 const outDir = path.resolve('visual-audit');
 await fs.mkdir(outDir, { recursive: true });
 // Test-only examples, excluded from Cloudflare assets. Never publish draft listings.
-const fixture = validateCatalogue(JSON.parse(await fs.readFile(new URL('../tests/fixtures/shop-catalogue.json', import.meta.url), 'utf8')));
+const fixture = buildReviewCatalogue(JSON.parse(await fs.readFile(new URL('../data/shop/catalogue.json', import.meta.url), 'utf8')));
 for (const language of ['en', 'es']) {
   const directory = path.join(outDir, 'fixtures', language === 'en' ? 'shop' : 'shop-es');
   await fs.mkdir(directory, {recursive:true});
   await fs.writeFile(path.join(directory,'index.html'),renderShop(fixture,language)
     .replace('index,follow,max-image-preview:large','noindex,nofollow')
-    .replace('<main id="main"','<aside class="shell">Catalogue preview · unverified examples</aside><main id="main"'));
+    .replace('<main id="main"',`<aside class="shell">${language==='en'?'Editorial review preview · approvals pending':'Vista previa editorial · aprobaciones pendientes'}</aside><main id="main"`));
 }
 
 
@@ -56,10 +56,30 @@ for (const [viewportName, width, height] of viewports) {
       if (/images\.unsplash\.com|images\.pexels\.com/.test(url)) return route.abort();
       return route.continue();
     });
+    await page.addInitScript(()=>localStorage.setItem('padelwrist-analytics-consent','accepted'));
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto(`${base}${pathname}`, { waitUntil: 'domcontentloaded', timeout: 15000 });
     await page.waitForTimeout(250);
 
+    if(pageName.startsWith('shop-family-preview')) {
+      const players=page.locator('#players');
+      await players.locator('[data-shop-brand]').selectOption('nox');
+      await players.locator('[data-shop-category]').selectOption('balls');
+      if(!await players.locator('[data-shop-no-results]').isVisible())throw new Error('Missing no-results state');
+      await players.screenshot({path:path.join(outDir,`${viewportName}-${pageName}-no-results.png`)});
+      if(await players.locator('[data-shop-product]:visible').count()!==0)throw new Error('Combined brand/category filter failed');
+      await players.locator('[data-shop-filters] [type="reset"]').click();
+      await players.locator('[data-shop-category-choice="rackets"]').click();
+      if(await players.locator('[data-shop-product]:visible').count()!==2)throw new Error('Category card did not filter');
+      await players.locator('[data-shop-brand]').selectOption('nox');
+      await players.screenshot({path:path.join(outDir,`${viewportName}-${pageName}-filtered.png`)});
+      if(await players.locator('[data-shop-category-choice="rackets"]').getAttribute('aria-pressed')!=='true')throw new Error('Missing active category state');
+      await players.locator('[data-shop-filters] [type="reset"]').click();
+      if(await players.locator('[data-shop-product]:visible').count()!==10)throw new Error('Reset failed');
+      await page.goto(`${base}${pathname}`,{waitUntil:'domcontentloaded'});
+    }
+
+    if(await page.locator('script[src*="googletagmanager"]').count())throw new Error('Production analytics loaded in preview');
     const diagnostics = await page.evaluate(() => {
       const rect = (selector) => {
         const el = document.querySelector(selector);

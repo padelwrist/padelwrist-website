@@ -6,67 +6,27 @@ Our equipment collection is taking shape. Reviewed selections will appear here.
 
 ## For Players
 
+[Rackets](https://padelwrist.com/shop/#players-results) [Balls](https://padelwrist.com/shop/#players-results) [Grips](https://padelwrist.com/shop/#players-results) [Footwear](https://padelwrist.com/shop/#players-results) [Bags](https://padelwrist.com/shop/#players-results) [Accessories](https://padelwrist.com/shop/#players-results) [Coaching equipment](https://padelwrist.com/shop/#players-results)
+
+Selections: 0
+
+### No matching equipment
+
+Try another category or brand.
+
 No selections yet.
-
-### Rackets
-
-Find the balance between control, comfort and power that suits your game.
-
-### Balls
-
-Keep a consistent bounce at the heart of every session.
-
-### Grips
-
-A fresh contact point for confident, comfortable handling.
-
-### Footwear
-
-Look for lateral support and grip suited to your court surface.
-
-### Bags
-
-Make room for rackets, kit and the essentials between matches.
-
-### Accessories
-
-Small additions that make a long day on court easier.
-
-### Coaching equipment
-
-Build purposeful sessions with tools for repeatable practice.
 
 ## For Clubs
 
+[Balls](https://padelwrist.com/shop/#clubs-results) [Grips](https://padelwrist.com/shop/#clubs-results) [Accessories](https://padelwrist.com/shop/#clubs-results) [Bulk padel balls](https://padelwrist.com/shop/#clubs-results) [Coaching equipment](https://padelwrist.com/shop/#clubs-results) [Court accessories](https://padelwrist.com/shop/#clubs-results) [Tournament supplies](https://padelwrist.com/shop/#clubs-results)
+
+Selections: 0
+
+### No matching equipment
+
+Try another category or brand.
+
 No selections yet.
-
-### Balls
-
-Keep a consistent bounce at the heart of every session.
-
-### Grips
-
-A fresh contact point for confident, comfortable handling.
-
-### Accessories
-
-Small additions that make a long day on court easier.
-
-### Bulk padel balls
-
-Plan ball supplies around court hours and coaching demand.
-
-### Coaching equipment
-
-Build purposeful sessions with tools for repeatable practice.
-
-### Court accessories
-
-Keep shared courts organised and ready for the next group.
-
-### Tournament supplies
-
-Prepare the practical details for a smooth event day.
 
 ## New to padel equipment?
 
