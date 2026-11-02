@@ -12,7 +12,7 @@ function fixture(){const feed=clone(source.catalogue);feed.expiresAt='2099-01-01
 
 test('draft families stay private; four selections are grouped and source URLs preserved',()=>{
  assert.equal(publishedCatalogue(source,options).products.length,0);
- assert.equal(source.catalogue.products.length,12);
+ assert.equal(source.catalogue.products.length,74);
  assert.equal(source.catalogue.products[0].variants.length,3);
  assert.equal(source.catalogue.products[1].variants.length,1);
  assert.equal(source.candidates.filter(c=>c.verificationStatus==='superseded').length,1);
