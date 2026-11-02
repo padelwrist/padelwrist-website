@@ -529,3 +529,4 @@ body.page-body {
 @media (min-width:600px) { .shop-description { min-height:4.5em; } }
 .shop-product-context { min-height:28px; display:flex; align-items:center; }
 .shop-badge { min-height:28px; line-height:18px; }
+.shop-description,.shop-highlights li,.shop-product-context,.shop-options span { overflow-wrap:anywhere; min-width:0; max-width:100%; }

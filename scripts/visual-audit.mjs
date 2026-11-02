@@ -178,6 +178,12 @@ for (const [viewportName, width, height] of viewports) {
     } else diagnostics.mobileMenuOpens = true;
     report.push({ viewport: viewportName, width, page: pageName, pathname, diagnostics });
     await page.screenshot({ path: path.join(outDir, `${viewportName}-${pageName}.png`), fullPage: true });
+    if(pageName.startsWith('shop-family-preview') && width<600){
+      await page.addStyleTag({content:':root { font-size:200%; }'});
+      if(await page.evaluate(()=>document.body.scrollWidth>innerWidth+1))throw new Error('Shop overflow at 200% text');
+      await page.locator('[data-shop-product]').first().screenshot({path:path.join(outDir,`${viewportName}-${pageName}-large-text.png`)});
+    }
+
     if(pageName.startsWith('shop-family-preview')) {
       await page.route('**/catalogue/images/photo-context-balls*',route=>route.abort());
       await page.reload({waitUntil:'domcontentloaded'});
