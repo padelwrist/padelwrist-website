@@ -7,7 +7,7 @@ import worker from '../src/content-negotiation.mjs';
 const source=JSON.parse(await fs.readFile(new URL('../data/shop/catalogue.json',import.meta.url),'utf8'));
 test('v1 stays strict and identical while the v2 endpoint has an independent validated representation',async()=>{
  const v1=publishedCatalogue(source),v2=publishedCatalogueV2(source);
- assert.equal(v1.schemaVersion,1);assert.equal(v2.schemaVersion,2);assert.equal(v2.products.length,0);assert.deepEqual(v2.brands,[]);
+ assert.equal(v1.schemaVersion,1);assert.equal(v2.schemaVersion,2);assert.equal(v2.products.length,10);assert.ok(v2.brands.length>=4);
  assert.deepEqual(v1,JSON.parse(await fs.readFile(new URL('../catalogue/v1.json',import.meta.url),'utf8')));
  assert.throws(()=>validateCatalogue({...v1,brands:[]}));assert.throws(()=>validateCatalogueV2(v1));assert.throws(()=>validateCatalogue(v2));
  for(const version of [1,2]){const data=JSON.stringify(version===1?v1:v2),env={ASSETS:{fetch:async()=>new Response(data,{headers:{'Content-Type':'application/json'}})}};
