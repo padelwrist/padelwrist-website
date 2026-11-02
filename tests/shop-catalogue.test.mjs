@@ -28,7 +28,7 @@ test('players/clubs/both, featured ordering, variants and localisation survive p
  assert.equal(feed.products[1].variants.length,3);
  assert.match(renderShop(feed,'es'),/Tamaño del pack/);
  assert.match(renderShop(feed,'en'),/Pack size/);
- assert.match(renderShop(feed,'en'),/src="\/catalogue\/images\/category-balls.svg"/);
+ assert.match(renderShop(feed,'en'),/data-technical-fallback="\/catalogue\/images\/category-balls.svg"/);
  assert.doesNotMatch(renderShop(feed,'en'),/src="https:\/\/padelwrist.com\/catalogue\/images/);
  assert.doesNotMatch(renderShop(feed,'en'),/href="https:\/\/www.amazon/);
 });
@@ -83,5 +83,5 @@ test('cards omit single-option selectors and keep an original fallback for faile
  assert.doesNotMatch(html,new RegExp(`id="players-${single.id}-pack"`));
  assert.match(html,/id="players-raquex-elite-padel-balls-pack"/);
  single.image={url:'https://padelwrist.com/catalogue/images/review-missing.jpg',alt:{en:'Synthetic failed photo',es:'Foto de prueba no disponible'},licenseId:'test-only'};
- html=renderShop(feed,'es');assert.match(html,/data-shop-photo/);assert.match(html,/data-shop-fallback hidden/);assert.match(html,/Ilustración de la categoría/);
+ html=renderShop(feed,'es');assert.match(html,/data-shop-photo/);assert.match(html,/data-shop-fallback hidden/);assert.match(html,/Imagen solo con fines ilustrativos/);
 });

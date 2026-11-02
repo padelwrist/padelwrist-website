@@ -62,6 +62,11 @@ for (const [viewportName, width, height] of viewports) {
     await page.waitForTimeout(250);
 
     if(pageName.startsWith('shop-family-preview')) {
+      // Test-only loading control ensures complete full-page evidence, including below-fold photos.
+      await page.locator('[data-shop-category-photo]').evaluateAll(images=>images.forEach(image=>image.loading='eager'));
+      await page.waitForFunction(()=>[...document.querySelectorAll('[data-shop-category-photo]')].every(image=>image.complete&&image.naturalWidth>0));
+      if(await page.locator('[data-shop-category-photo][src$=".svg"]').count())throw new Error('Missing licensed category photo');
+
       const players=page.locator('#players');
       await players.locator('[data-shop-brand]').selectOption('nox');
       await players.locator('[data-shop-category]').selectOption('balls');
@@ -163,6 +168,15 @@ for (const [viewportName, width, height] of viewports) {
     } else diagnostics.mobileMenuOpens = true;
     report.push({ viewport: viewportName, width, page: pageName, pathname, diagnostics });
     await page.screenshot({ path: path.join(outDir, `${viewportName}-${pageName}.png`), fullPage: true });
+    if(pageName.startsWith('shop-family-preview')) {
+      await page.route('**/catalogue/images/photo-context-balls*',route=>route.abort());
+      await page.reload({waitUntil:'domcontentloaded'});
+      const first=page.locator('[data-shop-product]').first();
+      await first.scrollIntoViewIfNeeded();
+      await page.waitForFunction(()=>document.querySelector('[data-shop-product] [data-shop-category-photo]')?.src.endsWith('/category-balls.svg'));
+      if(!await first.getByText(pageName.endsWith('-es')?'Imagen solo con fines ilustrativos':'Image for illustration purposes only',{exact:true}).isVisible())throw new Error('Lost illustrative caption on image failure');
+      await first.screenshot({path:path.join(outDir,`${viewportName}-${pageName}-image-fallback.png`)});
+    }
     await page.close();
   }
 }

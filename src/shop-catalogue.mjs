@@ -78,7 +78,7 @@ export function validateCatalogue(value, {now = new Date(), allowExpired = false
   return value;
 }
 export function publishedCatalogue(source, options) {
-  keys(source,['catalogue','candidates','imageApprovals','verificationNotes','productApprovals','staging','variantApprovals','categoryIllustrations','editorialBrands','productBrands']);
+  keys(source,['catalogue','candidates','imageApprovals','verificationNotes','productApprovals','staging','variantApprovals','categoryIllustrations','editorialBrands','productBrands','categoryPhotography','productFallbackPhotography']);
   if(source.staging) validateStaging(source.staging);
   validateCatalogue(source.catalogue,options);
   for(const p of source.catalogue.products)for(const v of p.variants){

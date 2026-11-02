@@ -52,5 +52,827 @@
       "provider": "Pexels",
       "status": "verified-free"
     }
+  ],
+  "shopCategoryAssets": [
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-rackets.jpg",
+      "licenseId": "unsplash-category-rackets-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/padel-racket-on-court-zTwzxr4BbTA",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/padel-racket-on-court-zTwzxr4BbTA",
+      "photographer": "Manuel Pappacena",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "zTwzxr4BbTA",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        200,
+        100,
+        2400,
+        1475
+      ],
+      "originalDimensions": [
+        2400,
+        1600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1612534847738-b3af9bc31f0c?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "1e59b05525beebe7219edab4922aebc9c0dbcb40c2c97fd06aa0706ab7d80cdd",
+      "files": {
+        "catalogue/images/photo-rackets-320.webp": "d201fa0ea4de1f94a394969db8a98728e9f86cd58aff5ce05db82ebd337ab9c0",
+        "catalogue/images/photo-rackets-640.webp": "8cf81ca8cbb9937eab002b74904f33791a3a8a52efd114c10a48fbd69a0a3869",
+        "catalogue/images/photo-rackets-960.webp": "facdd89edc0f2e158df1a256bb1fe0ff26d35507023299f83cfb41996d12e6cb",
+        "catalogue/images/photo-rackets.jpg": "62730e8ec7ff37d8d2e46db07d2a56d64ef1bea9fcd3feb21002d208243f7822"
+      },
+      "nativeAsset": "shop-photo-rackets"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-balls.jpg",
+      "licenseId": "unsplash-category-balls-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-tennis-ball-with-a-yellow-and-black-logo-on-it-e69rGF9Cx7U",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-tennis-ball-with-a-yellow-and-black-logo-on-it-e69rGF9Cx7U",
+      "photographer": "Oskar Hagberg",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "e69rGF9Cx7U",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        0,
+        1000,
+        2400,
+        2500
+      ],
+      "originalDimensions": [
+        2400,
+        3198
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1657704227277-04e8accd079e?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "58230b2af0a07013754fbe4ef593701e5458077a0cb58cb6f10832b49c31aa2c",
+      "files": {
+        "catalogue/images/photo-balls-320.webp": "c8c884216fe2e74bcd5b119f736bf5b50bb4ca29974f00bda643b1ad353dcbb3",
+        "catalogue/images/photo-balls-640.webp": "fd1d942939cbfa21c4554902bcdb8071de5c4b39de55a8c5e79f05157fe904bf",
+        "catalogue/images/photo-balls-960.webp": "e4b55c19c337f9eaa573a8624565e86d9fdb95bba832a15ab66eef99d15db6a0",
+        "catalogue/images/photo-balls.jpg": "a1cbb6823bf08ddbab02605370801d407ed1c9fb6e6c479e6525d5960423884a"
+      },
+      "nativeAsset": "shop-photo-balls"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-bags.jpg",
+      "licenseId": "unsplash-category-bags-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-duffle-bag-sitting-on-top-of-a-tennis-court-FWuRa-0X6G8",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-duffle-bag-sitting-on-top-of-a-tennis-court-FWuRa-0X6G8",
+      "photographer": "SideSpin Padel",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "FWuRa-0X6G8",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        0,
+        50,
+        2400,
+        1550
+      ],
+      "originalDimensions": [
+        2400,
+        1600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1672223303533-05fddcbf6e6c?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "6f5baa869c0cbd673d429650a8cb8c1454ac8670dd7307a3c1e31e8b6872d8a1",
+      "files": {
+        "catalogue/images/photo-bags-320.webp": "30b5e9dacc197d5814fad23fd4577c1afa5eda76ad6ffd99f79df460542c8fc1",
+        "catalogue/images/photo-bags-640.webp": "1e4c3b66247a1f2a6486caa45fa3071061a099036c31b19974083f0fe9519991",
+        "catalogue/images/photo-bags-960.webp": "fabe6532607b0a417167e984b14137533f8141a8a2ae21c6cd48e8525d2451a3",
+        "catalogue/images/photo-bags.jpg": "6aead47755537be3fc2685ca12168bfe70f7b3c85a8c09873986712883a680af"
+      },
+      "nativeAsset": "shop-photo-bags"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-grips.jpg",
+      "licenseId": "unsplash-category-grips-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+      "photographer": "Antonio Araujo",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "LkDwaZPFYfI",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        1200,
+        2600,
+        2400,
+        3350
+      ],
+      "originalDimensions": [
+        2400,
+        3600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1728034261607-53685e33166a?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "938c1da6160269c9c814c93284cb9a9639e56c30de954475520416e8e818df9c",
+      "files": {
+        "catalogue/images/photo-grips-320.webp": "0d8bbc3d7010e472faf4d372e1c9fced21628039d920016f8e6e81103efa3b26",
+        "catalogue/images/photo-grips-640.webp": "02ba02f4cbd2c84ee74818902e5a0a29d809abe12e3d17597e8169ce76ba2203",
+        "catalogue/images/photo-grips-960.webp": "87e793eef21e547a3f2d2db40e5660161789022487fe4066ebe1b5777d84e209",
+        "catalogue/images/photo-grips.jpg": "ce870849bd3afd3cca6fa0abee4eafde3d16eab171b6d17fab438bffa3ed1503"
+      },
+      "nativeAsset": "shop-photo-grips"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-accessories.jpg",
+      "licenseId": "unsplash-category-accessories-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+      "photographer": "Antonio Araujo",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "LkDwaZPFYfI",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        100,
+        700,
+        1900,
+        1825
+      ],
+      "originalDimensions": [
+        2400,
+        3600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1728034261607-53685e33166a?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "938c1da6160269c9c814c93284cb9a9639e56c30de954475520416e8e818df9c",
+      "files": {
+        "catalogue/images/photo-accessories-320.webp": "a1f95cd83a6721d39b916c952361cf02a3edcc1fe87c7856f1210308052f99b7",
+        "catalogue/images/photo-accessories-640.webp": "6df9279b97e2f07ecfad98076e3d769e2aef395d4dbb5e540c32cebe810c3523",
+        "catalogue/images/photo-accessories-960.webp": "e256b8c877fd9c07a494b90af9ff1e90a234182e25259e8215f32893f4b0cb59",
+        "catalogue/images/photo-accessories.jpg": "03bdda6c4797829d8f8521ab46eac6079da85cb0e1ebdd04e59af72f58bad8f2"
+      },
+      "nativeAsset": "shop-photo-accessories"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-bulk-balls.jpg",
+      "licenseId": "unsplash-category-bulk-balls-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/many-tennis-balls-scattered-on-a-court-near-net-LwxVG0VQ3RY",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/many-tennis-balls-scattered-on-a-court-near-net-LwxVG0VQ3RY",
+      "photographer": "Tahamie Farooqui",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "LwxVG0VQ3RY",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Photographer describes tennis training balls, not independently verified padel balls. User selected for illustrative bulk-ball context; no pack count or specification implied.",
+      "crop": [
+        0,
+        1400,
+        2400,
+        2900
+      ],
+      "originalDimensions": [
+        2400,
+        3200
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1759819599208-0b79a7f3f347?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "bd252b603f33400a7e62204dc77655ecdd391adb4bf1fadfd9e1f99c96e9c28f",
+      "files": {
+        "catalogue/images/photo-bulk-balls-320.webp": "54e8a4390ae93616ad5a4d3a2f0ff0e0f1fd9f0e3d57224287c8b8b691c3b644",
+        "catalogue/images/photo-bulk-balls-640.webp": "06d7e2b362222e7143d5e00a1e0580d254333820147cc501cbc8cbe31484568b",
+        "catalogue/images/photo-bulk-balls-960.webp": "bb2b295e4c13086b8d1a6d292e42ea0b97654665326adb64730f44f56f20f68c",
+        "catalogue/images/photo-bulk-balls.jpg": "690dc357e244f56234cb23503bb55e5108872539a1873ea46c26166a93524b9a"
+      },
+      "nativeAsset": "shop-photo-bulk-balls"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-coaching.jpg",
+      "licenseId": "unsplash-category-coaching-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-blue-tiled-floor-with-a-white-line-in-the-middle-3sSbRisCnmE",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-blue-tiled-floor-with-a-white-line-in-the-middle-3sSbRisCnmE",
+      "photographer": "Oskar Hagberg",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "3sSbRisCnmE",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        0,
+        0,
+        2400,
+        1500
+      ],
+      "originalDimensions": [
+        2400,
+        1802
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1658491830143-72808ca237e3?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "ebfb6a14658aae56f509824c68a3411b59f9de3e80f525b65c345b8f6ff615a7",
+      "files": {
+        "catalogue/images/photo-coaching-320.webp": "e00abd5d4e87c28aecdd9012ec7b51dc37a763c179eaba0173358fbb9d9c1d54",
+        "catalogue/images/photo-coaching-640.webp": "029dfc5af1a68eb1e70bb2457e7ec4ce9e9a80e2bca8810be2f422b9e6ae4923",
+        "catalogue/images/photo-coaching-960.webp": "bdf0f520fb4cfa6ab72aaedf3a28dc7c0381fa06e291f1cedb58ca3304a770e5",
+        "catalogue/images/photo-coaching.jpg": "a11119eb4cfb181392e42c647be1704f118ffcaaf9d58e9af794999b0c7bae98"
+      },
+      "nativeAsset": "shop-photo-coaching"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-court.jpg",
+      "licenseId": "unsplash-category-court-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-blue-tiled-floor-with-a-white-line-in-the-middle-3sSbRisCnmE",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-blue-tiled-floor-with-a-white-line-in-the-middle-3sSbRisCnmE",
+      "photographer": "Oskar Hagberg",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "3sSbRisCnmE",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        0,
+        220,
+        2400,
+        1720
+      ],
+      "originalDimensions": [
+        2400,
+        1802
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1658491830143-72808ca237e3?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "ebfb6a14658aae56f509824c68a3411b59f9de3e80f525b65c345b8f6ff615a7",
+      "files": {
+        "catalogue/images/photo-court-320.webp": "bee6327afb44c782b01824d6ef7a316ecde7a2d77d23ce09356f4a4c3c5fda15",
+        "catalogue/images/photo-court-640.webp": "e07973ba52d1cb2d05ad2ae472e619274a9973247d52bc4152dd1a89dd886197",
+        "catalogue/images/photo-court-960.webp": "e61e33db41a6cb717a00e653c8b61137ea71ab9dbbc4a3701cec344f4f68cf1f",
+        "catalogue/images/photo-court.jpg": "790f1eaee5c450a222cc4c9389c46a06eedc3da103bf8948254caaf8ed4c4783"
+      },
+      "nativeAsset": "shop-photo-court"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-tournament.jpg",
+      "licenseId": "unsplash-category-tournament-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-tennis-court-with-a-net-and-chairs-aVNyXCpeS-0",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-tennis-court-with-a-net-and-chairs-aVNyXCpeS-0",
+      "photographer": "Bruno Vaccaro Vercellino",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "aVNyXCpeS-0",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        0,
+        650,
+        2400,
+        1350
+      ],
+      "originalDimensions": [
+        2400,
+        1350
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1709587824693-6323edae995e?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "0c1877e20d0fcbe290bbc56514dc306048622ee0c8e800bee634e23ca0e8153a",
+      "files": {
+        "catalogue/images/photo-tournament-320.webp": "5568d35b74d36789624fc0ead85419633ff88e6846e18619a8939b509f57cc55",
+        "catalogue/images/photo-tournament-640.webp": "a87529c9c6403a6923765554cac84fd48d170a1c4b791a9610f7c72d781c9973",
+        "catalogue/images/photo-tournament-960.webp": "8dae3ee0fb3257ad2b18ce1a65e14db3f31ba0559741acf3b987e633b166b541",
+        "catalogue/images/photo-tournament.jpg": "46df353682f4e59a341597be41fe9995d01dc6cf64af30d8038eb4b0d5e26bdf"
+      },
+      "nativeAsset": "shop-photo-tournament"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-footwear.jpg",
+      "licenseId": "unsplash-category-footwear-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/woman-in-tennis-attire-on-blue-court-with-racket-qBXveRormj0",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/woman-in-tennis-attire-on-blue-court-with-racket-qBXveRormj0",
+      "photographer": "erjola qerimi",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "qBXveRormj0",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Licensed branded category context; user permits brand marks. No identifiable faces or distinctive tattoos in selected crop. No model/property release asserted; never imply endorsement or exact product identity.",
+      "crop": [
+        950,
+        940,
+        2030,
+        1615
+      ],
+      "originalDimensions": [
+        2400,
+        1600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1767128890954-20ce481be8f0?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "bea2037db6fd855d426f7bd9942fe7051fd49a0b33ee6d76349de0e0dbdbb6ea",
+      "files": {
+        "catalogue/images/photo-footwear-320.webp": "07d554c1b99ad556677affe302f8b3a93d29fc859c1b2fdfc7d81ba418c4e53c",
+        "catalogue/images/photo-footwear-640.webp": "56eb03e80d36c09c436a1cd20093a7364b1da02c68a18456c699456bf97e1f12",
+        "catalogue/images/photo-footwear-960.webp": "758f6dd5387135316ccf004706f389db049204ca21b0abe76240193e196913cf",
+        "catalogue/images/photo-footwear.jpg": "280daf4e1609e22afe80b13bfe92085e6f34898adab24e2db04f62817a80138d"
+      },
+      "nativeAsset": "shop-photo-footwear"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-rackets.jpg",
+      "licenseId": "unsplash-context-rackets-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+      "photographer": "Antonio Araujo",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "LkDwaZPFYfI",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted.",
+      "crop": [
+        620,
+        850,
+        1170,
+        1194
+      ],
+      "originalDimensions": [
+        2400,
+        3600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1728034261607-53685e33166a?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "938c1da6160269c9c814c93284cb9a9639e56c30de954475520416e8e818df9c",
+      "files": {
+        "catalogue/images/photo-context-rackets-320.webp": "f017c7f71d84af89c398ab92abb5b1f6631f0eb072e24780e24bf321897e3133",
+        "catalogue/images/photo-context-rackets-640.webp": "45fe15864789de991c7886b8b52f3ea03b51dd0ba5441357befed2d31cbb6c25",
+        "catalogue/images/photo-context-rackets-960.webp": "3219aa85b2ad925767c94ab77c278310b1c1fcfc640147ad422f6f2c8fee98b3",
+        "catalogue/images/photo-context-rackets.jpg": "6a28afe687e6cd54ed66043062f344f8e6059b45a84eb6a6609577bc67e95bc2"
+      },
+      "nativeAsset": "shop-context-rackets"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-balls.jpg",
+      "licenseId": "unsplash-context-balls-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/many-tennis-balls-scattered-on-a-court-near-net-LwxVG0VQ3RY",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/many-tennis-balls-scattered-on-a-court-near-net-LwxVG0VQ3RY",
+      "photographer": "Tahamie Farooqui",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "LwxVG0VQ3RY",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted. Photographer describes tennis training balls; user permits this generic illustration.",
+      "crop": [
+        0,
+        1400,
+        2400,
+        2900
+      ],
+      "originalDimensions": [
+        2400,
+        3200
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1759819599208-0b79a7f3f347?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "bd252b603f33400a7e62204dc77655ecdd391adb4bf1fadfd9e1f99c96e9c28f",
+      "files": {
+        "catalogue/images/photo-context-balls-320.webp": "54e8a4390ae93616ad5a4d3a2f0ff0e0f1fd9f0e3d57224287c8b8b691c3b644",
+        "catalogue/images/photo-context-balls-640.webp": "06d7e2b362222e7143d5e00a1e0580d254333820147cc501cbc8cbe31484568b",
+        "catalogue/images/photo-context-balls-960.webp": "bb2b295e4c13086b8d1a6d292e42ea0b97654665326adb64730f44f56f20f68c",
+        "catalogue/images/photo-context-balls.jpg": "690dc357e244f56234cb23503bb55e5108872539a1873ea46c26166a93524b9a"
+      },
+      "nativeAsset": "shop-context-balls"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-bags.jpg",
+      "licenseId": "unsplash-context-bags-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-duffle-bag-sitting-on-top-of-a-tennis-court-FWuRa-0X6G8",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-duffle-bag-sitting-on-top-of-a-tennis-court-FWuRa-0X6G8",
+      "photographer": "SideSpin Padel",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "FWuRa-0X6G8",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted.",
+      "crop": [
+        600,
+        850,
+        1560,
+        1450
+      ],
+      "originalDimensions": [
+        2400,
+        1600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1672223303533-05fddcbf6e6c?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "6f5baa869c0cbd673d429650a8cb8c1454ac8670dd7307a3c1e31e8b6872d8a1",
+      "files": {
+        "catalogue/images/photo-context-bags-320.webp": "ee597b4bf1070a89ee911d8f30e34780311a64e726e0f73226c9bbdead5a1245",
+        "catalogue/images/photo-context-bags-640.webp": "2c015eb5ae9ced55e78112ead57fd342f065e09354ef03ec6eb14ef9721eb4b0",
+        "catalogue/images/photo-context-bags-960.webp": "9b8c76f5f92f38af7b52e79c4556896d100446e659d92fb1572ac5dde2f09a18",
+        "catalogue/images/photo-context-bags.jpg": "251d6b8bdffa29f957b6f5af2312ca2eac089fb74f07568b58c4254ca9449cf4"
+      },
+      "nativeAsset": "shop-context-bags"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-grips.jpg",
+      "licenseId": "unsplash-context-grips-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+      "photographer": "Antonio Araujo",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "LkDwaZPFYfI",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted.",
+      "crop": [
+        1200,
+        2600,
+        2400,
+        3350
+      ],
+      "originalDimensions": [
+        2400,
+        3600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1728034261607-53685e33166a?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "938c1da6160269c9c814c93284cb9a9639e56c30de954475520416e8e818df9c",
+      "files": {
+        "catalogue/images/photo-context-grips-320.webp": "0d8bbc3d7010e472faf4d372e1c9fced21628039d920016f8e6e81103efa3b26",
+        "catalogue/images/photo-context-grips-640.webp": "02ba02f4cbd2c84ee74818902e5a0a29d809abe12e3d17597e8169ce76ba2203",
+        "catalogue/images/photo-context-grips-960.webp": "87e793eef21e547a3f2d2db40e5660161789022487fe4066ebe1b5777d84e209",
+        "catalogue/images/photo-context-grips.jpg": "ce870849bd3afd3cca6fa0abee4eafde3d16eab171b6d17fab438bffa3ed1503"
+      },
+      "nativeAsset": "shop-context-grips"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-accessories.jpg",
+      "licenseId": "unsplash-context-accessories-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-person-holding-a-tennis-racket-in-their-hand-LkDwaZPFYfI",
+      "photographer": "Antonio Araujo",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "LkDwaZPFYfI",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted.",
+      "crop": [
+        620,
+        850,
+        1170,
+        1194
+      ],
+      "originalDimensions": [
+        2400,
+        3600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1728034261607-53685e33166a?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "938c1da6160269c9c814c93284cb9a9639e56c30de954475520416e8e818df9c",
+      "files": {
+        "catalogue/images/photo-context-accessories-320.webp": "f017c7f71d84af89c398ab92abb5b1f6631f0eb072e24780e24bf321897e3133",
+        "catalogue/images/photo-context-accessories-640.webp": "45fe15864789de991c7886b8b52f3ea03b51dd0ba5441357befed2d31cbb6c25",
+        "catalogue/images/photo-context-accessories-960.webp": "3219aa85b2ad925767c94ab77c278310b1c1fcfc640147ad422f6f2c8fee98b3",
+        "catalogue/images/photo-context-accessories.jpg": "6a28afe687e6cd54ed66043062f344f8e6059b45a84eb6a6609577bc67e95bc2"
+      },
+      "nativeAsset": "shop-context-accessories"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-bulk-balls.jpg",
+      "licenseId": "unsplash-context-bulk-balls-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/many-tennis-balls-scattered-on-a-court-near-net-LwxVG0VQ3RY",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/many-tennis-balls-scattered-on-a-court-near-net-LwxVG0VQ3RY",
+      "photographer": "Tahamie Farooqui",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "LwxVG0VQ3RY",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted. Photographer describes tennis training balls; user permits this generic illustration.",
+      "crop": [
+        0,
+        1400,
+        2400,
+        2900
+      ],
+      "originalDimensions": [
+        2400,
+        3200
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1759819599208-0b79a7f3f347?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "bd252b603f33400a7e62204dc77655ecdd391adb4bf1fadfd9e1f99c96e9c28f",
+      "files": {
+        "catalogue/images/photo-context-bulk-balls-320.webp": "54e8a4390ae93616ad5a4d3a2f0ff0e0f1fd9f0e3d57224287c8b8b691c3b644",
+        "catalogue/images/photo-context-bulk-balls-640.webp": "06d7e2b362222e7143d5e00a1e0580d254333820147cc501cbc8cbe31484568b",
+        "catalogue/images/photo-context-bulk-balls-960.webp": "bb2b295e4c13086b8d1a6d292e42ea0b97654665326adb64730f44f56f20f68c",
+        "catalogue/images/photo-context-bulk-balls.jpg": "690dc357e244f56234cb23503bb55e5108872539a1873ea46c26166a93524b9a"
+      },
+      "nativeAsset": "shop-context-bulk-balls"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-coaching.jpg",
+      "licenseId": "unsplash-context-coaching-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-blue-tiled-floor-with-a-white-line-in-the-middle-3sSbRisCnmE",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-blue-tiled-floor-with-a-white-line-in-the-middle-3sSbRisCnmE",
+      "photographer": "Oskar Hagberg",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "3sSbRisCnmE",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted.",
+      "crop": [
+        0,
+        0,
+        2400,
+        1500
+      ],
+      "originalDimensions": [
+        2400,
+        1802
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1658491830143-72808ca237e3?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "ebfb6a14658aae56f509824c68a3411b59f9de3e80f525b65c345b8f6ff615a7",
+      "files": {
+        "catalogue/images/photo-context-coaching-320.webp": "e00abd5d4e87c28aecdd9012ec7b51dc37a763c179eaba0173358fbb9d9c1d54",
+        "catalogue/images/photo-context-coaching-640.webp": "029dfc5af1a68eb1e70bb2457e7ec4ce9e9a80e2bca8810be2f422b9e6ae4923",
+        "catalogue/images/photo-context-coaching-960.webp": "bdf0f520fb4cfa6ab72aaedf3a28dc7c0381fa06e291f1cedb58ca3304a770e5",
+        "catalogue/images/photo-context-coaching.jpg": "a11119eb4cfb181392e42c647be1704f118ffcaaf9d58e9af794999b0c7bae98"
+      },
+      "nativeAsset": "shop-context-coaching"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-court.jpg",
+      "licenseId": "unsplash-context-court-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-blue-tiled-floor-with-a-white-line-in-the-middle-3sSbRisCnmE",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-blue-tiled-floor-with-a-white-line-in-the-middle-3sSbRisCnmE",
+      "photographer": "Oskar Hagberg",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "3sSbRisCnmE",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted.",
+      "crop": [
+        0,
+        220,
+        2400,
+        1720
+      ],
+      "originalDimensions": [
+        2400,
+        1802
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1658491830143-72808ca237e3?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "ebfb6a14658aae56f509824c68a3411b59f9de3e80f525b65c345b8f6ff615a7",
+      "files": {
+        "catalogue/images/photo-context-court-320.webp": "bee6327afb44c782b01824d6ef7a316ecde7a2d77d23ce09356f4a4c3c5fda15",
+        "catalogue/images/photo-context-court-640.webp": "e07973ba52d1cb2d05ad2ae472e619274a9973247d52bc4152dd1a89dd886197",
+        "catalogue/images/photo-context-court-960.webp": "e61e33db41a6cb717a00e653c8b61137ea71ab9dbbc4a3701cec344f4f68cf1f",
+        "catalogue/images/photo-context-court.jpg": "790f1eaee5c450a222cc4c9389c46a06eedc3da103bf8948254caaf8ed4c4783"
+      },
+      "nativeAsset": "shop-context-court"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-tournament.jpg",
+      "licenseId": "unsplash-context-tournament-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/a-tennis-court-with-a-net-and-chairs-aVNyXCpeS-0",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/a-tennis-court-with-a-net-and-chairs-aVNyXCpeS-0",
+      "photographer": "Bruno Vaccaro Vercellino",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "aVNyXCpeS-0",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted.",
+      "crop": [
+        0,
+        650,
+        2400,
+        1350
+      ],
+      "originalDimensions": [
+        2400,
+        1350
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1709587824693-6323edae995e?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "0c1877e20d0fcbe290bbc56514dc306048622ee0c8e800bee634e23ca0e8153a",
+      "files": {
+        "catalogue/images/photo-context-tournament-320.webp": "5568d35b74d36789624fc0ead85419633ff88e6846e18619a8939b509f57cc55",
+        "catalogue/images/photo-context-tournament-640.webp": "a87529c9c6403a6923765554cac84fd48d170a1c4b791a9610f7c72d781c9973",
+        "catalogue/images/photo-context-tournament-960.webp": "8dae3ee0fb3257ad2b18ce1a65e14db3f31ba0559741acf3b987e633b166b541",
+        "catalogue/images/photo-context-tournament.jpg": "46df353682f4e59a341597be41fe9995d01dc6cf64af30d8038eb4b0d5e26bdf"
+      },
+      "nativeAsset": "shop-context-tournament"
+    },
+    {
+      "url": "https://padelwrist.com/catalogue/images/photo-context-footwear.jpg",
+      "licenseId": "unsplash-context-footwear-20261102",
+      "source": "unsplashCategory",
+      "status": "approved",
+      "permittedSurfaces": [
+        "web",
+        "mobile"
+      ],
+      "reviewedAt": "2026-11-02",
+      "evidence": [
+        "https://unsplash.com/photos/woman-in-tennis-attire-on-blue-court-with-racket-qBXveRormj0",
+        "https://unsplash.com/license",
+        "data/shop/rights/unsplash-category-photography.md"
+      ],
+      "sourceURL": "https://unsplash.com/photos/woman-in-tennis-attire-on-blue-court-with-racket-qBXveRormj0",
+      "photographer": "erjola qerimi",
+      "licenseURL": "https://unsplash.com/license",
+      "photoID": "qBXveRormj0",
+      "freeLibraryVerified": true,
+      "rightsConsiderations": "Unbranded illustrative detail/context crop reviewed for individual product cards. No identifiable faces, distinctive tattoos or prominent branding. Not the product, not endorsement; no exact pack, model or specification asserted.",
+      "crop": [
+        1130,
+        1070,
+        1930,
+        1570
+      ],
+      "originalDimensions": [
+        2400,
+        1600
+      ],
+      "downloadURL": "https://images.unsplash.com/photo-1767128890954-20ce481be8f0?fm=jpg&q=90&w=2400",
+      "downloadSHA256": "bea2037db6fd855d426f7bd9942fe7051fd49a0b33ee6d76349de0e0dbdbb6ea",
+      "files": {
+        "catalogue/images/photo-context-footwear-320.webp": "3a9aa8190a5683a86a5bf643a3985d6cec4a10e923f11afde5dc6dac7aeaa71b",
+        "catalogue/images/photo-context-footwear-640.webp": "119c933e1d09d3d26e1449e2dd7cadee003a45be17b2a1005c435b58ff991da2",
+        "catalogue/images/photo-context-footwear-960.webp": "7b0fa645b24425c9d24b7e3ab335eb5c01f396b175a7b794d808ad3872190396",
+        "catalogue/images/photo-context-footwear.jpg": "a5453fef099f42e0bacab6298174eb2f3ca32cdb1b86da5b9c4185789e2a644a"
+      },
+      "nativeAsset": "shop-context-footwear"
+    }
   ]
 }

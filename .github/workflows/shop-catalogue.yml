@@ -21,7 +21,7 @@ jobs:
         env:
           SHOP_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: node scripts/check-shop-revision.mjs "$SHOP_BASE_SHA"
-      - run: node --test tests/shop-catalogue.test.mjs tests/content-negotiation.test.mjs tests/shop-intake.test.mjs tests/amazon-creators.test.mjs tests/shop-v2.test.mjs
+      - run: node --test tests/shop-catalogue.test.mjs tests/content-negotiation.test.mjs tests/shop-intake.test.mjs tests/amazon-creators.test.mjs tests/shop-v2.test.mjs tests/shop-photography.test.mjs
       - name: Check generated Markdown stays equivalent
         run: |
           python3 scripts/generate-markdown.py

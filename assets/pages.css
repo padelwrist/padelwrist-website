@@ -457,3 +457,10 @@ body.page-body {
 @media(max-width:599px) { .shop-filters { display:grid; grid-template-columns:auto minmax(0,1fr); } .shop-reset { grid-column:1/-1; } }
 
 .shop-audiences a[aria-current="location"] { border-color:var(--pw-lilac); color:var(--pw-lilac); }
+
+/* Reviewed category photographs share one reserved 8:5 crop; labels never overlay detail. */
+.shop-category-art picture,.shop-illustration picture { display:block; aspect-ratio:8/5; overflow:hidden; border-radius:var(--pw-radius-sm); background:var(--pw-surface); }
+.shop-category-art img,.shop-illustration picture img { display:block; width:100%; height:100%; aspect-ratio:8/5; object-fit:cover; margin:0; }
+.shop-category-art { margin-bottom:var(--space-3); }
+.shop-illustration figcaption { margin-top:var(--space-3); font-size:0.875rem; line-height:1.5; }
+.shop-product > [data-shop-photo][hidden],.shop-illustration[hidden] { display:none; }

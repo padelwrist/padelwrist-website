@@ -48,3 +48,15 @@ function showAudienceLocation(){
  for(const link of audienceLinks){if(link.hash===location.hash)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');}
 }
 addEventListener('hashchange',showAudienceLocation);showAudienceLocation();
+
+// Locally licensed category photography has a bundled original-art technical fallback.
+for(const photo of document.querySelectorAll('[data-shop-category-photo]')) {
+ const fallback=()=>{
+  photo.closest('picture')?.querySelectorAll('source').forEach(source=>source.remove());
+  photo.src=photo.dataset.technicalFallback;
+  const caption=photo.closest('figure')?.querySelector('figcaption');
+  if(caption)caption.textContent=document.documentElement.lang==='es'?'Imagen solo con fines ilustrativos':'Image for illustration purposes only';
+ };
+ photo.addEventListener('error',fallback,{once:true});
+ if(photo.complete&&photo.naturalWidth===0)fallback();
+}

@@ -1,5 +1,5 @@
 import {publishedCatalogueV2} from '../src/shop-catalogue-v2.mjs';
-import {categoryIllustrationURL,approvedEditorialImage} from '../src/shop-image-policy.mjs';
+import {categoryIllustrationURL,approvedEditorialImage,categoryPhotography} from '../src/shop-image-policy.mjs';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { resolve, dirname } from 'node:path';
@@ -11,13 +11,20 @@ const copy = {
  en: {slug:'shop',other:'shop-es',name:'Shop',otherLanguage:'Español',title:'Padel equipment for players and clubs',description:'Thoughtful equipment choices for your next match, coaching session or club event.',players:'For Players',clubs:'For Clubs',categories:'Explore equipment',pending:'Our equipment collection is taking shape. Reviewed selections will appear here.',empty:'No selections yet.',retailer:'View on Amazon',disclosure:'As an Amazon Associate I earn from qualifying purchases.',context:'PadelWrist may earn a commission when you buy through these links. The retailer confirms price, delivery and availability. International Amazon links may take you to a local store or matching product.',guide:'New to padel equipment?',guideCopy:'Start with the essentials and choose equipment around how you play.',guideLink:'Read the equipment guide',home:'Home',privacy:'Privacy',support:'Support'},
  es: {slug:'shop-es',other:'shop',name:'Tienda',otherLanguage:'English',title:'Equipamiento de pádel para jugadores y clubes',description:'Equipamiento bien elegido para tu próximo partido, entrenamiento o torneo de club.',players:'Para jugadores',clubs:'Para clubes',categories:'Explora el equipamiento',pending:'Estamos preparando nuestra colección. Las selecciones revisadas aparecerán aquí.',empty:'Todavía no hay selecciones.',retailer:'Ver en Amazon',disclosure:'Como afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.',context:'PadelWrist puede recibir una comisión cuando compras a través de estos enlaces. La tienda confirma el precio, el envío y la disponibilidad. Los enlaces internacionales de Amazon pueden llevarte a una tienda local o a un producto equivalente.',guide:'¿Empiezas a jugar al pádel?',guideCopy:'Empieza por lo esencial y elige el equipamiento según tu forma de jugar.',guideLink:'Guía de equipamiento (en inglés)',home:'Inicio',privacy:'Privacidad',support:'Ayuda'}
 };
-export function renderShop(feed, language) {
+const editorialSource = JSON.parse(await readFile(resolve(root,'data/shop/catalogue.json'),'utf8'));
+export function renderShop(feed, language, photos = categoryPhotography(editorialSource), productPhotos = categoryPhotography(editorialSource,'productFallbackPhotography')) {
  const t = copy[language], url = `https://padelwrist.com/${t.slug}/`;
  const products = feed.products.filter(p => p.publicationStatus === 'published').sort((a,b)=>a.featuredOrder-b.featuredOrder || a.id.localeCompare(b.id));
  const hasLinks = feed.webLinksEnabled && products.some(p => p.variants.some(v=>v.destinations.web?.enabled));
+ const categoryImage = (category, productFallback=false) => {
+  const photo=(productFallback?productPhotos:photos)[category]; const technical=new URL(categoryIllustrationURL(category)).pathname;
+  if(!photo)return `<img src="${technical}" alt="" width="640" height="400" loading="lazy">`;
+  const path=new URL(photo.url).pathname, stem=path.replace(/\.jpg$/,'');
+  return `<picture><source type="image/webp" srcset="${stem}-320.webp 320w, ${stem}-640.webp 640w, ${stem}-960.webp 960w" sizes="${productFallback?'(max-width:599px) 90vw, (max-width:839px) 45vw, 30vw':'(max-width:599px) 42vw, 220px'}"><img data-shop-category-photo data-technical-fallback="${technical}" src="${path}" alt="" width="960" height="600" loading="lazy" decoding="async"></picture>`;
+ };
  const card = (p,audience) => `<article class="shop-product" data-shop-product data-categories="${p.categories.join(" ")}" data-brand="${escape(p.brandID??"")}" id="${audience}-${escape(p.id)}">
  ${p.image ? `<img data-shop-photo src="${escape(new URL(p.image.url).pathname)}" alt="${escape(p.image.alt[language])}" width="640" height="480" loading="lazy" decoding="async">` : ''}
- <figure class="shop-illustration" data-shop-fallback${p.image ? ' hidden' : ''}><img src="${new URL(categoryIllustrationURL(p.categories[0])).pathname}" alt="" width="640" height="400" loading="lazy"><figcaption>${language==='es'?'Ilustración de la categoría':'Category illustration'}</figcaption></figure>
+ <figure class="shop-illustration" data-shop-fallback${p.image ? ' hidden' : ''}>${categoryImage(p.categories[0],true)}<figcaption>${language==='es'?'Imagen solo con fines ilustrativos':'Image for illustration purposes only'}</figcaption></figure>
  <h3>${escape(p.title[language])}</h3><p>${escape(p.description[language])}</p>
  ${p.variants.length>1 ? `<label for="${audience}-${escape(p.id)}-pack">${p.categories.some(c=>['balls','bulkBalls'].includes(c)) ? (language==='es'?'Tamaño del pack':'Pack size') : (language==='es'?'Opción':'Option')}</label>
  <select class="shop-pack" id="${audience}-${escape(p.id)}-pack" data-shop-pack>${p.variants.map((v,i)=>`<option value="${i}">${escape(v.title[language])}</option>`).join('')}</select>` : ''}
@@ -34,7 +41,7 @@ export function renderShop(feed, language) {
     <button class="shop-reset" type="reset">${en?'Reset filters':'Restablecer filtros'}</button>
    </form>
    <div class="shop-category-choices" hidden aria-label="${en?'Browse categories':'Explora las categorías'}" data-shop-categories>
-   ${categories.map(c=>`<a class="shop-category-choice" href="#${a}-results" data-shop-category-choice="${c.id}" role="button" aria-pressed="false"><img class="shop-category-art" src="${new URL(categoryIllustrationURL(c.id)).pathname}" alt="" width="160" height="100" loading="lazy"><span>${escape(c.title[language])}</span></a>`).join('')}</div>
+   ${categories.map(c=>`<a class="shop-category-choice" href="#${a}-results" data-shop-category-choice="${c.id}" role="button" aria-pressed="false"><span class="shop-category-art">${categoryImage(c.id)}</span><span>${escape(c.title[language])}</span></a>`).join('')}</div>
    <div id="${a}-results" class="shop-results" tabindex="-1"><p data-shop-count data-prefix="${en?'Selections':'Selecciones'}" role="status" aria-live="polite" aria-atomic="true">${en?'Selections':'Selecciones'}: ${items.length}</p>
    <div data-shop-no-results hidden><h3>${en?'No matching equipment':'No hay equipamiento coincidente'}</h3><p>${en?'Try another category or brand.':'Prueba otra categoría o marca.'}</p><button class="shop-reset" data-shop-clear type="button">${en?'Reset filters':'Restablecer filtros'}</button></div>
    ${items.length ? `<div class="shop-products">${items.map(p=>card(p,a)).join('')}</div>` : `<p class="shop-empty">${t.empty}</p>`}</div></section>`;
@@ -72,13 +79,14 @@ export async function buildShop({check = false} = {}) {
  if (candidates.length !== source.candidates.length) throw new Error('Deduplicate candidate links before committing');
  const legacy = publishedCatalogue(source);
  const feed = publishedCatalogueV2(source);
+ categoryPhotography(source); categoryPhotography(source,'productFallbackPhotography');
  for(const category of feed.categories) {
    const art=source.categoryIllustrations?.[category.id];
    if(!art || art.url!==categoryIllustrationURL(category.id) || !approvedEditorialImage(source,art))throw new Error('Category illustration rights missing');
    await readFile(resolve(root,new URL(art.url).pathname.slice(1)));
  }
  for (const p of feed.products) if (p.image) await readFile(resolve(root,new URL(p.image.url).pathname.slice(1)));
- const outputs = {'catalogue/v1.json':JSON.stringify(legacy,null,2)+'\n','catalogue/v2.json':JSON.stringify(feed,null,2)+'\n','shop/index.html':renderShop(feed,'en'),'shop-es/index.html':renderShop(feed,'es')};
+ const outputs = {'catalogue/v1.json':JSON.stringify(legacy,null,2)+'\n','catalogue/v2.json':JSON.stringify(feed,null,2)+'\n','shop/index.html':renderShop(feed,'en',source.categoryPhotography),'shop-es/index.html':renderShop(feed,'es',source.categoryPhotography)};
  for (const [name,content] of Object.entries(outputs)) {
    const path=resolve(root,name);
    if (check) { if (await readFile(path,'utf8') !== content) throw new Error(`Stale generated Shop output: ${name}`); }
