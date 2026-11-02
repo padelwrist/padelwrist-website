@@ -484,10 +484,10 @@ body.page-body {
 .shop-variant-control { margin:0; padding:0; border:0; min-width:0; }
 .shop-variant-control[hidden] { display:none; }
 .shop-variant-control legend,.shop-variant-control > label { display:block; margin-bottom:8px; font-weight:600; font-size:0.875rem; }
-.shop-options { display:flex; gap:6px; }
-.shop-options label { flex:1; position:relative; min-width:0; cursor:pointer; }
+.shop-options { display:flex; flex-wrap:wrap; gap:6px; }
+.shop-options label { flex:1 1 6em; position:relative; min-width:min-content; max-width:100%; font-size:0.875rem; cursor:pointer; }
 .shop-options input { position:absolute; opacity:0; width:100%; height:100%; margin:0; }
-.shop-options span { display:flex; align-items:center; justify-content:center; text-align:center; min-height:44px; padding:8px 4px; border:1px solid var(--pw-outline); border-radius:var(--pw-radius-sm); font-size:0.875rem; }
+.shop-options span { display:flex; align-items:center; justify-content:center; text-align:center; overflow-wrap:normal; min-height:44px; padding:8px 4px; border:1px solid var(--pw-outline); border-radius:var(--pw-radius-sm); font-size:0.875rem; }
 .shop-options input:checked + span { border-color:var(--pw-lilac); box-shadow:inset 0 0 0 1px var(--pw-lilac); background:var(--pw-surface); color:var(--pw-text); font-weight:700; }
 .shop-options input:focus-visible + span { outline:3px solid var(--pw-lilac); outline-offset:3px; }
 .shop-retailer { display:flex; width:100%; align-items:center; justify-content:center; gap:8px; min-height:48px; border:0; border-radius:var(--pw-radius-sm); background:var(--pw-lilac); color:var(--pw-bg); font:inherit; font-weight:600; padding:10px; text-decoration:none; }

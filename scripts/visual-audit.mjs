@@ -181,6 +181,7 @@ for (const [viewportName, width, height] of viewports) {
     if(pageName.startsWith('shop-family-preview') && width<600){
       await page.addStyleTag({content:':root { font-size:200%; }'});
       if(await page.evaluate(()=>document.body.scrollWidth>innerWidth+1))throw new Error('Shop overflow at 200% text');
+      if(await page.locator('.shop-options span').evaluateAll(nodes=>nodes.some(n=>n.scrollWidth>n.clientWidth+1)))throw new Error('Variant text overflows at 200% text');
       await page.locator('[data-shop-product]').first().screenshot({path:path.join(outDir,`${viewportName}-${pageName}-large-text.png`)});
     }
 
