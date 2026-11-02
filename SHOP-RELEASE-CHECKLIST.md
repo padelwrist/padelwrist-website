@@ -16,6 +16,18 @@ The owner has confirmed that `padelwrist.com` **and PadelWrist's App Store URL a
 
 Reviewed 2 November 2026. User has approved the visual direction and requested progression towards website and app release. **This file is not evidence of Amazon authorisation or permission to bypass release checks.**
 
+## Amazon application clarification: launch permission versus programme acceptance
+
+**Owner authorisation received 2 November 2026:** proceed with the full submitted range for website and native release preparation. UK Store ID `thediaryroom-21` appears in the signed-in Associates dashboard and the owner confirms the website and app have been submitted. The Associates application has **not yet completed three qualifying sales** and final site review is pending.
+
+**Website:** Amazon permits Special Links on a registered site after the Associates application is submitted, before the three-sale review. A properly formatted UK website referral can therefore be used once the individual product/child ASIN, claims, listing eligibility and legally required disclosure are verified. Three qualifying sales are a *review trigger*, not a blanket pre-publication prohibition on website links. Source: https://affiliate-program.amazon.co.uk/help/node/topic/G8TW5AE9XL2VX9VM and https://affiliate-program.amazon.co.uk/help/operating/policies .
+
+**Native app:** merely submitting an app/URL or awaiting the three-sale Associates review is **not** equivalent to an **Approved Mobile Application**. Amazon's policy excludes purchases via unapproved mobile applications, and Amazon says it will issue an acceptance/rejection decision. Keep the app-owned native commerce gate shut until the approval is documented and mobile-specific tracking IDs are confirmed. Source: https://affiliate-program.amazon.co.uk/help/node/topic/GHBY6W8UPTEFD3ZX and https://affiliate-program.amazon.co.uk/help/node/topic/GFP8AD2UDZDQTJPP .
+
+**Account administration:** the signed-in Associates dashboard showed an incomplete primary account tax-information notice on 2 November. Complete this in Associates Central so any earned commissions can be paid; don't record tax particulars or credentials in this repository.
+
+**Current catalogue preparation:** 76 proposed exact UK ASIN URL candidates in 74 draft cards; 30 product families have sourced bilingual merchandising copy, with independent reviews pending. All 76 listing approvals and all web/mobile link activations remain pending. An isolated full-catalogue test simulates approved 74-card v3 output without changing any live approvals.
+
 ## Current release state
 
 - Website PR [#21](https://github.com/padelwrist/padelwrist-website/pull/21) is draft, based on `main`. It includes v1/v2/v3 shared feeds, EN/ES pages, Markdown, licensing audits and Cloudflare preview support.
