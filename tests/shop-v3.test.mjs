@@ -28,7 +28,7 @@ test('EN/ES merchandising needs evidence and independent approval; suitability n
   const invalid=structuredClone(source);mutate(Object.values(invalid.productMerchandising)[0]);assert.throws(()=>validateEditorialMerchandising(invalid));
  }
  const approvedProduct=structuredClone(source);const p=approvedProduct.catalogue.products[0];p.publicationStatus='published';p.variants.forEach(v=>v.publicationStatus='published');
- approvedProduct.productApprovals.filter(a=>a.productId===p.id).forEach(a=>a.status='verified');approvedProduct.variantApprovals.filter(a=>a.productId===p.id).forEach(a=>a.status='verified');
+ approvedProduct.productApprovals.filter(a=>a.productId===p.id).forEach(a=>{a.status='verified';a.review.publicationApproved=true;});approvedProduct.variantApprovals.filter(a=>a.productId===p.id).forEach(a=>a.status='verified');
  assert.equal(publishedCatalogueV3(approvedProduct).products[0].merchandising,undefined);
  approvedProduct.productMerchandising[p.id].review.en='approved';assert.equal(publishedCatalogueV3(approvedProduct).products[0].merchandising,undefined);
  approvedProduct.productMerchandising[p.id].review.es='approved';assert.equal(publishedCatalogueV3(approvedProduct).products[0].merchandising.highlights.length,2);
