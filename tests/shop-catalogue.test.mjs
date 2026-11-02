@@ -20,7 +20,7 @@ test('draft families stay private; four selections are grouped and source URLs p
 });
 test('players/clubs/both, featured ordering, variants and localisation survive publication',()=>{
  const s=clone(source);s.catalogue=fixture();s.catalogue.products[0].audiences=['players','clubs'];
- s.productApprovals=s.catalogue.products.flatMap(p=>p.variants.map(v=>({productId:p.id,variantId:v.id,status:'verified',listingURL:v.destinations.web.url,checkedAt:'2026-11-01T15:00:00Z',notes:'Test-only listing approval'})));
+ s.productApprovals=s.catalogue.products.flatMap(p=>p.variants.map(v=>({productId:p.id,variantId:v.id,status:'verified',listingURL:v.destinations.web.url,checkedAt:'2026-11-01T15:00:00Z',notes:'Test-only listing approval',review:{publicationApproved:true,commercialApproved:false}})));
  s.variantApprovals=s.catalogue.products.filter(p=>p.variants.length>1).map(p=>({productId:p.id,status:'verified',variantIds:p.variants.map(v=>v.id),evidence:'Test-only independent variant verification'}));
  const feed=publishedCatalogue(s,options);
  assert.equal(feed.products[0].id,'raquex-elite-padel-balls-club-pack');
@@ -32,6 +32,30 @@ test('players/clubs/both, featured ordering, variants and localisation survive p
  assert.doesNotMatch(renderShop(feed,'en'),/src="https:\/\/padelwrist.com\/catalogue\/images/);
  assert.doesNotMatch(renderShop(feed,'en'),/href="https:\/\/www.amazon/);
 });
+test('publication and retailer links require independent explicit approval and cannot be enabled from draft',()=>{
+ const s=clone(source),p=s.catalogue.products[0];
+ p.publicationStatus='published';
+ for(const v of p.variants){
+  v.publicationStatus='published';
+  const a=s.productApprovals.find(a=>a.productId===p.id&&a.variantId===v.id);
+  a.status='verified';
+ }
+ s.variantApprovals.find(a=>a.productId===p.id).status='verified';
+ assert.throws(()=>publishedCatalogue(s,options),/publication approval/);
+ for(const a of s.productApprovals.filter(a=>a.productId===p.id))a.review.publicationApproved=true;
+ assert.equal(publishedCatalogue(s,options).products.length,1);
+ s.catalogue.webLinksEnabled=true;
+ const v=p.variants[0],a=s.productApprovals.find(a=>a.productId===p.id&&a.variantId===v.id);
+ v.destinations.web.enabled=true;v.destinations.web.reviewedAt='2026-11-02T08:50:00Z';
+ assert.throws(()=>publishedCatalogue(s,options),/commercial approval/);
+ a.review.commercialApproved=true;
+ assert.equal(publishedCatalogue(s,options).products.length,1);
+ a.review.affiliateDestination.candidateURL='https://www.amazon.co.uk/dp/INVALID?tag=thediaryroom-21';
+ assert.throws(()=>publishedCatalogue(s,options),/commercial approval/);
+ a.review.affiliateDestination.candidateURL=v.destinations.web.url;
+ p.publicationStatus='draft';assert.throws(()=>publishedCatalogue(s,options),/draft product/);
+});
+
 test('approved website links retain OneLink-compatible full URL byte-for-byte after HTML escaping',()=>{
  const feed=fixture();feed.webLinksEnabled=true;const d=feed.products[0].variants[0].destinations.web;d.enabled=true;d.reviewedAt='2026-11-01T15:00:00Z';
  validateCatalogue(feed,options);
