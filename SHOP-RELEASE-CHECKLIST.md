@@ -1,5 +1,14 @@
 # PadelWrist Shop: web-first release checklist
 
+## Release status update (2 November 2026)
+
+**Website PR #21 was merged to `main`**, squash commit `7fd8b985c89548bff78caee96db9ce1c3c45132f`, after catalogue validation, SEO and visual checks all passed. The generated UK website release includes **10 published product families, 12 enabled exact UK affiliate variants, both EN/ES Shop pages, v1/v2/v3 feeds at revision 3 and affiliate disclosures**. It uses website tracking ID `thediaryroom-21`. The merge is verified; **Cloudflare production deployment and live smoke testing have not been independently verified** and must be checked before claiming that the website is live.
+
+The remaining **64** draft variants are **not exposed in the public feeds**. The Raquex Enhance replacement grip is held for SiteStripe eligibility; PUSUN remains held for UK power/manual/support; two additional intake references have unverified identity. This is a staged website-first launch, not a claim that all 76 ASINs are commercially published.
+
+**The app is not deployed.** App PRs #75 and #76 remain draft with native mobile links disabled, pending Approved Mobile Application acceptance, dedicated mobile tracking IDs and hardware/accessibility validation. Earlier sections below document the staged planning state and may refer to the pre-release 12-draft-product fixture rather than this post-merge status.
+
+
 ## Updated 2 November: full supplied-range launch target
 
 The owner has confirmed that `padelwrist.com` **and PadelWrist's App Store URL are registered** under the Amazon Associates account and requested that the entire user-supplied range be considered for launch, not only the initial 10-family curated set. Do not mistake registration for confirmation of Amazon's separate **Approved Mobile Application** acceptance. Account and app-specific approval status must be checked in the relevant programme before native affiliate links are enabled.
