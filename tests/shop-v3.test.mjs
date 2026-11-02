@@ -40,7 +40,7 @@ test('full approved-range simulation stays within v3 feed and EN/ES rendering li
  for(const lang of ['en','es']){
   const html=renderShop(feed,lang);
   assert.match(html,/data-shop-product/);
-  assert.doesNotMatch(html,/href="https:\\/\\/www\\.amazon/);
+  assert.equal(html.includes('href="https://www.amazon'),false);
  }
  // This fixture is deliberately not written to disk and never updates live source approval flags.
  assert.equal(publishedCatalogueV3(source).products.length,0);
