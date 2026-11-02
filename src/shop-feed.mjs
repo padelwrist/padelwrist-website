@@ -1,3 +1,4 @@
+import {validateCatalogueV3} from './shop-catalogue-v3.mjs';
 import {validateCatalogueV2} from './shop-catalogue-v2.mjs';
 import { validateCatalogue, MAX_BYTES } from './shop-catalogue.mjs';
 
@@ -17,7 +18,7 @@ export async function serveShopFeed(request, env) {
    try { while (true) { const {done,value}=await reader.read(); if(done) break; size+=value.length; if(size>MAX_BYTES) throw new Error('oversized'); chunks.push(value); } }
    finally { await reader.cancel(); }
    const bytes=new Uint8Array(size); let offset=0; for(const chunk of chunks) {bytes.set(chunk,offset);offset+=chunk.length;}
-   const feed=JSON.parse(new TextDecoder().decode(bytes)); if(assetURL.pathname==='/catalogue/v2.json')validateCatalogueV2(feed);else validateCatalogue(feed);
+   const feed=JSON.parse(new TextDecoder().decode(bytes)); if(assetURL.pathname==='/catalogue/v3.json')validateCatalogueV3(feed);else if(assetURL.pathname==='/catalogue/v2.json')validateCatalogueV2(feed);else validateCatalogue(feed);
    if(feed.products.some(p=>p.publicationStatus!=='published' || p.variants.some(v=>v.publicationStatus!=='published'))) throw new Error('private product');
    const digest=await crypto.subtle.digest('SHA-256',bytes);
    const etag='"'+[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('')+'"';

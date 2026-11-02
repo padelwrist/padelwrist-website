@@ -1,8 +1,13 @@
 // Progressive enhancement only. All pack options remain readable without JavaScript.
-for (const select of document.querySelectorAll('[data-shop-pack]')) {
- const variants=select.closest('article').querySelectorAll('[data-shop-variant]');
- const update=()=>{for(const variant of variants)variant.hidden=variant.dataset.shopVariant!==select.value;};
- select.addEventListener('change',update); update();
+for (const control of document.querySelectorAll('[data-shop-variant-control]')) {
+ const card=control.closest('article'),variants=card.querySelectorAll('[data-shop-variant]');
+ const update=()=>{
+  const value=control.querySelector('select')?.value??control.querySelector('input:checked')?.value??'0';
+  for(const variant of variants)variant.hidden=variant.dataset.shopVariant!==value;
+ };
+ control.hidden=false;
+ card.querySelectorAll('.shop-variant-name').forEach(name=>name.hidden=true);
+ control.addEventListener('change',update);update();
 }
 
 // Keep the original category artwork available if a licensed first-party photo fails.
@@ -45,7 +50,7 @@ for(const section of document.querySelectorAll('[data-shop-section]')) {
 
 const audienceLinks=[...document.querySelectorAll('.shop-audiences a')];
 function showAudienceLocation(){
- for(const link of audienceLinks){if(link.hash===location.hash)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');}
+ for(const link of audienceLinks){if(link.hash===(location.hash||'#players'))link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');}
 }
 addEventListener('hashchange',showAudienceLocation);showAudienceLocation();
 

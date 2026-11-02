@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 3,
+  "revision": 2,
+  "updatedAt": "2026-11-02T08:50:00Z",
+  "expiresAt": "2027-02-01T00:00:00Z",
+  "categories": [
+    {
+      "id": "rackets",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Rackets",
+        "es": "Palas"
+      },
+      "description": {
+        "en": "Find the balance between control, comfort and power that suits your game.",
+        "es": "Encuentra el equilibrio entre control, comodidad y potencia que se adapta a tu juego."
+      }
+    },
+    {
+      "id": "balls",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Balls",
+        "es": "Pelotas"
+      },
+      "description": {
+        "en": "Keep a consistent bounce at the heart of every session.",
+        "es": "Un bote constante para cada sesión."
+      }
+    },
+    {
+      "id": "grips",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Grips",
+        "es": "Empuñaduras"
+      },
+      "description": {
+        "en": "A fresh contact point for confident, comfortable handling.",
+        "es": "Renueva el agarre para jugar con confianza y comodidad."
+      }
+    },
+    {
+      "id": "footwear",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Footwear",
+        "es": "Calzado"
+      },
+      "description": {
+        "en": "Look for lateral support and grip suited to your court surface.",
+        "es": "Busca sujeción lateral y agarre adecuados a la superficie de tu pista."
+      }
+    },
+    {
+      "id": "bags",
+      "audiences": [
+        "players"
+      ],
+      "title": {
+        "en": "Bags",
+        "es": "Paleteros"
+      },
+      "description": {
+        "en": "Make room for rackets, kit and the essentials between matches.",
+        "es": "Espacio para palas, ropa y lo esencial entre partidos."
+      }
+    },
+    {
+      "id": "accessories",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Accessories",
+        "es": "Accesorios"
+      },
+      "description": {
+        "en": "Small additions that make a long day on court easier.",
+        "es": "Pequeños detalles para disfrutar de un día largo en la pista."
+      }
+    },
+    {
+      "id": "bulkBalls",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Bulk padel balls",
+        "es": "Pelotas de pádel por volumen"
+      },
+      "description": {
+        "en": "Plan ball supplies around court hours and coaching demand.",
+        "es": "Planifica las pelotas según las horas de pista y los entrenamientos."
+      }
+    },
+    {
+      "id": "coaching",
+      "audiences": [
+        "players",
+        "clubs"
+      ],
+      "title": {
+        "en": "Coaching equipment",
+        "es": "Material de entrenamiento"
+      },
+      "description": {
+        "en": "Build purposeful sessions with tools for repeatable practice.",
+        "es": "Prepara sesiones con material para practicar de forma constante."
+      }
+    },
+    {
+      "id": "court",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Court accessories",
+        "es": "Accesorios de pista"
+      },
+      "description": {
+        "en": "Keep shared courts organised and ready for the next group.",
+        "es": "Mantén las pistas organizadas y listas para el siguiente grupo."
+      }
+    },
+    {
+      "id": "tournament",
+      "audiences": [
+        "clubs"
+      ],
+      "title": {
+        "en": "Tournament supplies",
+        "es": "Material para torneos"
+      },
+      "description": {
+        "en": "Prepare the practical details for a smooth event day.",
+        "es": "Prepara los detalles prácticos para que el torneo vaya sobre ruedas."
+      }
+    }
+  ],
+  "products": [],
+  "webLinksEnabled": false,
+  "brands": []
+}

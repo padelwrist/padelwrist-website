@@ -6417,5 +6417,74 @@
         "es": "Imagen solo con fines ilustrativos"
       }
     }
+  },
+  "productMerchandising": {
+    "raquex-elite-padel-balls": {
+      "content": {
+        "highlights": [
+          {
+            "en": "Choose 3, 6 or 9 balls",
+            "es": "Elige 3, 6 o 9 pelotas"
+          },
+          {
+            "en": "Yellow Elite Pace balls",
+            "es": "Pelotas amarillas Elite Pace"
+          }
+        ],
+        "badge": "featured"
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0D123Q6RL",
+        "https://www.amazon.co.uk/dp/B0D1VZ4VNJ",
+        "https://www.amazon.co.uk/dp/B0D1VXLW6J"
+      ]
+    },
+    "raquex-elite-padel-balls-club-pack": {
+      "content": {
+        "highlights": [
+          {
+            "en": "120 balls in total",
+            "es": "120 pelotas en total"
+          },
+          {
+            "en": "40 tubes of 3 balls",
+            "es": "40 botes de 3 pelotas"
+          }
+        ],
+        "badge": "featured"
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0FLQKZ7Y3"
+      ]
+    },
+    "nox-pro-series-backpack-blue": {
+      "content": {
+        "highlights": [
+          {
+            "en": "28-litre capacity",
+            "es": "Capacidad de 28 litros"
+          },
+          {
+            "en": "Blue backpack format",
+            "es": "Mochila de color azul"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0CBW85PYV"
+      ]
+    }
   }
 }

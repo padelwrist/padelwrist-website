@@ -1,4 +1,4 @@
-import {buildReviewCatalogue} from '../src/shop-review.mjs';
+import {buildReviewCatalogueV3} from '../src/shop-review.mjs';
 import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -8,7 +8,7 @@ const base = 'http://127.0.0.1:4173';
 const outDir = path.resolve('visual-audit');
 await fs.mkdir(outDir, { recursive: true });
 // Test-only examples, excluded from Cloudflare assets. Never publish draft listings.
-const fixture = buildReviewCatalogue(JSON.parse(await fs.readFile(new URL('../data/shop/catalogue.json', import.meta.url), 'utf8')));
+const fixture = buildReviewCatalogueV3(JSON.parse(await fs.readFile(new URL('../data/shop/catalogue.json', import.meta.url), 'utf8')));
 for (const language of ['en', 'es']) {
   const directory = path.join(outDir, 'fixtures', language === 'en' ? 'shop' : 'shop-es');
   await fs.mkdir(directory, {recursive:true});
@@ -155,8 +155,18 @@ for (const [viewportName, width, height] of viewports) {
     diagnostics.navigationRoutesCorrect = expectedNavTargets.length === diagnostics.navTargets.length && expectedNavTargets.every((target,index)=>diagnostics.navTargets[index]===target);
     diagnostics.packSelectionWorks = true;
     diagnostics.affiliateLinksDisabled = true;
+    diagnostics.cardFootersAligned = true;
+    if(pageName.startsWith('shop-family-preview') && width>=600){
+      diagnostics.cardFootersAligned=await page.locator('#players .shop-product').evaluateAll(cards=>{
+        const rows=new Map();
+        for(const card of cards){const r=card.getBoundingClientRect(), action=card.querySelector('[data-shop-variant]:not([hidden]) .shop-retailer');if(!action)continue;
+          const key=Math.round(r.top),bottom=action.getBoundingClientRect().bottom;const previous=rows.get(key);if(previous!==undefined&&Math.abs(previous-bottom)>2)return false;rows.set(key,bottom);}
+        return true;
+      });
+    }
+
     if (pageName.startsWith('shop-family-preview')) {
-      await page.locator('[data-shop-pack]').first().selectOption('2');
+      await page.locator('[data-shop-option][value="2"]').first().check();
       diagnostics.packSelectionWorks = await page.locator('.shop-product').first().locator('[data-shop-variant="2"]').isVisible();
       diagnostics.affiliateLinksDisabled = await page.locator('a[href*="amazon"]').count() === 0;
     }
@@ -184,6 +194,6 @@ for (const [viewportName, width, height] of viewports) {
 await browser.close();
 await fs.writeFile(path.join(outDir, 'report.json'), JSON.stringify(report, null, 2));
 
-const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length || !entry.diagnostics.navigationCorrect || !entry.diagnostics.navigationRoutesCorrect || !entry.diagnostics.mobileMenuOpens || !entry.diagnostics.packSelectionWorks || !entry.diagnostics.affiliateLinksDisabled);
+const failures = report.filter((entry) => entry.diagnostics.horizontalOverflow || entry.diagnostics.overlaps.length || !entry.diagnostics.navigationCorrect || !entry.diagnostics.navigationRoutesCorrect || !entry.diagnostics.mobileMenuOpens || !entry.diagnostics.packSelectionWorks || !entry.diagnostics.affiliateLinksDisabled || !entry.diagnostics.cardFootersAligned);
 console.log(JSON.stringify({ pages: report.length, failures: failures.length, failureDetails: failures }, null, 2));
 if (failures.length) process.exitCode = 1;

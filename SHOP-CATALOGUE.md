@@ -86,3 +86,7 @@ The source of truth remains editorial. Amazon metadata may assist verification; 
 ## Branded v2 browsing (2 November 2026)
 
 See `SHOP-UX-REVIEW.md` for compatibility, temporary eleven-card review generation and the editorial checklist. V1 remains strict and byte-identical. Private verified `editorialBrands` plus explicit `productBrands` mappings generate `/catalogue/v2.json` with `brands` and product `brandID`. Website browsing uses v2; existing v1 clients continue receiving v1. Both public outputs remain empty of products. No publication, image or commercial approval follows from brand verification. The Enhance grip's earlier SiteStripe exclusion is an explicit activation hold, independent of the card's editorial review status.
+
+### Current card presentation and optional v3 merchandising (2 November)
+
+The current frontend/native target is `/catalogue/v3.json`; v1/v2 remain byte-identical legacy feeds. V3 adds strictly bounded optional merchandising under a separate source-only EN/ES approval register. All new reviews remain pending and public feeds remain empty. See `SHOP-CARD-REFINEMENT.md` for the final stacked card layout, variant controls, publication safeguards and cache compatibility.

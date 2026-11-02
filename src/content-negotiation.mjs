@@ -128,7 +128,7 @@ async function route(request, env) {
     const routeURL = new URL(request.url);
     if (!["padelwrist.com", "www.padelwrist.com"].includes(routeURL.hostname) && routeURL.pathname === "/robots.txt") return new Response("User-agent: *\nDisallow: /\n", {headers:{"Content-Type":"text/plain; charset=utf-8"}});
     if (routeURL.pathname === "/catalogue/amazon/v1.json") return serveOptionalCreatorsContent(request,env);
-    if (["/catalogue/v1.json","/catalogue/v2.json"].includes(routeURL.pathname)) return serveShopFeed(request, env);
+    if (["/catalogue/v1.json","/catalogue/v2.json","/catalogue/v3.json"].includes(routeURL.pathname)) return serveShopFeed(request, env);
     if (request.method !== "GET" && request.method !== "HEAD") {
       return env.ASSETS.fetch(request);
     }

@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const base=process.argv[2] || 'HEAD';
 if(!/^[a-zA-Z0-9_./-]+$/.test(base))throw new Error('Invalid revision reference');
-for(const version of [1,2]) {
+for(const version of [1,2,3]) {
  const file=`catalogue/v${version}.json`;let previous;
  try{previous=JSON.parse(execFileSync('git',['show',`${base}:${file}`],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','ignore']}));}
  catch{console.log(`Initial v${version} publication.`);continue;}
