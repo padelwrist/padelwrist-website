@@ -188,9 +188,10 @@ for (const [viewportName, width, height] of viewports) {
     if(pageName.startsWith('shop-family-preview')) {
       await page.route('**/catalogue/images/photo-context-balls*',route=>route.abort());
       await page.reload({waitUntil:'domcontentloaded'});
-      const first=page.locator('[data-shop-product]').first();
+      // A merchandising reorder must not change which category image this regression exercises.
+      const first=page.locator('#players-raquex-elite-padel-balls');
       await first.scrollIntoViewIfNeeded();
-      await page.waitForFunction(()=>document.querySelector('[data-shop-product] [data-shop-category-photo]')?.src.endsWith('/category-balls.svg'));
+      await page.waitForFunction(()=>document.querySelector('#players-raquex-elite-padel-balls [data-shop-category-photo]')?.src.endsWith('/category-balls.svg'));
       if(!await first.getByText(pageName.endsWith('-es')?'Imagen solo con fines ilustrativos':'Image for illustration purposes only',{exact:true}).isVisible())throw new Error('Lost illustrative caption on image failure');
       await first.screenshot({path:path.join(outDir,`${viewportName}-${pageName}-image-fallback.png`)});
     }
