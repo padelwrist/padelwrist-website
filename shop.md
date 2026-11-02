@@ -32,6 +32,10 @@ Make room for rackets, kit and the essentials between matches.
 
 Small additions that make a long day on court easier.
 
+### Coaching equipment
+
+Build purposeful sessions with tools for repeatable practice.
+
 ## For Clubs
 
 No selections yet.

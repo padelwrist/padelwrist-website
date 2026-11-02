@@ -33,3 +33,17 @@ test('owned/manufacturer imagery requires evidence and explicit website/app perm
  approval.evidence=[];assert.equal(approvedEditorialImage({imageApprovals:[approval]},image),false);
  assert.equal(Object.keys(source.categoryIllustrations).length,10);assert.ok(Object.values(source.categoryIllustrations).every(art=>approvedEditorialImage(source,art)));
 });
+
+test('shortlist evidence is pending and cannot authorise publication or commerce',()=>{
+ assert.equal(source.catalogue.products.length,12);assert.equal(source.productApprovals.length,14);
+ assert.equal(new Set(source.productApprovals.map(a=>a.review.asin)).size,14);
+ assert.equal(source.productApprovals.filter(a=>a.review.editorialReadiness==='ready-for-editorial-review').length,13);
+ assert.equal(source.productApprovals.filter(a=>a.review.editorialReadiness==='needs-evidence').length,1);
+ assert.ok(source.productApprovals.every(a=>a.status==='pending'&&!a.review.publicationApproved&&!a.review.commercialApproved&&!a.review.affiliateDestination.attributionVerified));
+ assert.ok(source.catalogue.products.every(p=>p.publicationStatus==='draft'&&p.image===null&&p.variants.every(v=>v.publicationStatus==='draft'&&!v.destinations.web.enabled&&v.destinations.mobile.length===0)));
+ assert.equal(publishedCatalogue(source).products.length,0);
+ const toggled=structuredClone(source);for(const p of toggled.catalogue.products){p.publicationStatus='published';for(const v of p.variants)v.publicationStatus='published';}
+ assert.throws(()=>publishedCatalogue(toggled),/verification/);
+ const bucket=source.productApprovals.find(a=>a.review.asin==='B0DMTJVPKS');assert.equal(bucket.review.quantity.count,60);assert.equal(new URL(bucket.listingURL).searchParams.get('psc'),'1');
+ const grips=source.productApprovals.find(a=>a.review.asin==='B0755HRLQD');assert.equal(grips.review.quantity.unit,'replacement grip');assert.equal(grips.review.quantity.count,1);
+});

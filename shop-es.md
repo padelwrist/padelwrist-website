@@ -32,6 +32,10 @@ Espacio para palas, ropa y lo esencial entre partidos.
 
 Pequeños detalles para disfrutar de un día largo en la pista.
 
+### Material de entrenamiento
+
+Prepara sesiones con material para practicar de forma constante.
+
 ## Para clubes
 
 Todavía no hay selecciones.

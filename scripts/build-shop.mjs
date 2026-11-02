@@ -12,13 +12,14 @@ const copy = {
 };
 export function renderShop(feed, language) {
  const t = copy[language], url = `https://padelwrist.com/${t.slug}/`;
- const products = feed.products.filter(p => p.publicationStatus === 'published');
+ const products = feed.products.filter(p => p.publicationStatus === 'published').sort((a,b)=>a.featuredOrder-b.featuredOrder || a.id.localeCompare(b.id));
  const hasLinks = feed.webLinksEnabled && products.some(p => p.variants.some(v=>v.destinations.web?.enabled));
  const card = (p,audience) => `<article class="shop-product" id="${audience}-${escape(p.id)}">
- ${p.image ? `<img src="${escape(new URL(p.image.url).pathname)}" alt="${escape(p.image.alt[language])}" width="640" height="480" loading="lazy" decoding="async">` : `<figure class="shop-illustration"><img src="${new URL(categoryIllustrationURL(p.categories[0])).pathname}" alt="" width="640" height="400" loading="lazy"><figcaption>${language==='es'?'Ilustración de la categoría':'Category illustration'}</figcaption></figure>`}
+ ${p.image ? `<img data-shop-photo src="${escape(new URL(p.image.url).pathname)}" alt="${escape(p.image.alt[language])}" width="640" height="480" loading="lazy" decoding="async">` : ''}
+ <figure class="shop-illustration" data-shop-fallback${p.image ? ' hidden' : ''}><img src="${new URL(categoryIllustrationURL(p.categories[0])).pathname}" alt="" width="640" height="400" loading="lazy"><figcaption>${language==='es'?'Ilustración de la categoría':'Category illustration'}</figcaption></figure>
  <h3>${escape(p.title[language])}</h3><p>${escape(p.description[language])}</p>
- <label for="${audience}-${escape(p.id)}-pack">${language==='es'?'Tamaño del pack':'Pack size'}</label>
- <select class="shop-pack" id="${audience}-${escape(p.id)}-pack" data-shop-pack>${p.variants.map((v,i)=>`<option value="${i}">${escape(v.title[language])}</option>`).join('')}</select>
+ ${p.variants.length>1 ? `<label for="${audience}-${escape(p.id)}-pack">${p.categories.some(c=>['balls','bulkBalls'].includes(c)) ? (language==='es'?'Tamaño del pack':'Pack size') : (language==='es'?'Opción':'Option')}</label>
+ <select class="shop-pack" id="${audience}-${escape(p.id)}-pack" data-shop-pack>${p.variants.map((v,i)=>`<option value="${i}">${escape(v.title[language])}</option>`).join('')}</select>` : ''}
  <div class="shop-variant-links">${p.variants.map((v,i)=>`<div data-shop-variant="${i}"><p>${escape(v.title[language])}</p>${feed.webLinksEnabled && v.destinations.web?.enabled ? `<a class="feedback-link" href="${escape(v.destinations.web.url)}" rel="sponsored noopener">${t.retailer} <span aria-hidden="true">↗</span></a>` : `<p>${language==='es'?'Enlace de tienda en revisión.':'Retailer link under review.'}</p>`}</div>`).join('')}</div></article>`;
  const sections = ['players','clubs'].map(a => {
    const categories = feed.categories.filter(c => c.audiences.includes(a));

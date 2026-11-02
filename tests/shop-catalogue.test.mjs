@@ -6,13 +6,13 @@ import {renderShop,buildShop} from '../scripts/build-shop.mjs';
 import worker from '../src/content-negotiation.mjs';
 const source=JSON.parse(await readFile(new URL('../data/shop/catalogue.json',import.meta.url),'utf8'));
 const clone=v=>structuredClone(v);
-const now=new Date('2026-11-02T00:00:00Z');
+const now=new Date('2026-11-03T00:00:00Z');
 const options={now};
 function fixture(){const feed=clone(source.catalogue);feed.expiresAt='2099-01-01T00:00:00Z';for(const p of feed.products){p.publicationStatus='published';for(const v of p.variants)v.publicationStatus='published';}return feed;}
 
 test('draft families stay private; four selections are grouped and source URLs preserved',()=>{
  assert.equal(publishedCatalogue(source,options).products.length,0);
- assert.equal(source.catalogue.products.length,2);
+ assert.equal(source.catalogue.products.length,12);
  assert.equal(source.catalogue.products[0].variants.length,3);
  assert.equal(source.catalogue.products[1].variants.length,1);
  assert.equal(source.candidates.filter(c=>c.verificationStatus==='superseded').length,1);
@@ -75,4 +75,13 @@ test('preview hosts are noindex and disallow robots without changing production 
  assert.equal(await robots.text(),'User-agent: *\nDisallow: /\n');
  const prod=await worker.fetch(new Request('https://padelwrist.com/catalogue/v1.json'),env);
  assert.equal(prod.headers.get('X-Robots-Tag'),null);
+});
+
+test('cards omit single-option selectors and keep an original fallback for failed licensed photos',()=>{
+ const feed=fixture(), single=feed.products.find(p=>p.id==='nox-pro-series-backpack-blue');
+ let html=renderShop(feed,'en');
+ assert.doesNotMatch(html,new RegExp(`id="players-${single.id}-pack"`));
+ assert.match(html,/id="players-raquex-elite-padel-balls-pack"/);
+ single.image={url:'https://padelwrist.com/catalogue/images/review-missing.jpg',alt:{en:'Synthetic failed photo',es:'Foto de prueba no disponible'},licenseId:'test-only'};
+ html=renderShop(feed,'es');assert.match(html,/data-shop-photo/);assert.match(html,/data-shop-fallback hidden/);assert.match(html,/Ilustración de la categoría/);
 });

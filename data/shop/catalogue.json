@@ -1,8 +1,8 @@
 {
   "catalogue": {
     "schemaVersion": 1,
-    "revision": 1,
-    "updatedAt": "2026-11-01T15:00:00Z",
+    "revision": 2,
+    "updatedAt": "2026-11-02T08:50:00Z",
     "expiresAt": "2027-02-01T00:00:00Z",
     "categories": [
       {
@@ -109,6 +109,7 @@
       {
         "id": "coaching",
         "audiences": [
+          "players",
           "clubs"
         ],
         "title": {
@@ -162,12 +163,12 @@
         "featuredOrder": 10,
         "publicationStatus": "draft",
         "title": {
-          "en": "Raquex Elite Padel Balls",
-          "es": "Pelotas de pádel Raquex Elite"
+          "en": "Raquex Elite Pace Padel Balls",
+          "es": "Pelotas de pádel Raquex Elite Pace"
         },
         "description": {
-          "en": "Choose a pack for your next sessions. Raquex makes the Elite range for padel; the supplied Amazon pack options still need listing verification.",
-          "es": "Elige un pack para tus próximas sesiones. Raquex fabrica la gama Elite para pádel; aún debemos verificar las variantes de Amazon facilitadas."
+          "en": "Yellow Elite Pace balls for your next sessions. Choose a three-, six- or nine-ball pack to suit how often you play.",
+          "es": "Pelotas amarillas Elite Pace para tus próximas sesiones. Elige un pack de tres, seis o nueve pelotas según la frecuencia con la que juegues."
         },
         "image": null,
         "variants": [
@@ -229,15 +230,15 @@
         "categories": [
           "bulkBalls"
         ],
-        "featuredOrder": 0,
+        "featuredOrder": 5,
         "publicationStatus": "draft",
         "title": {
-          "en": "Raquex Elite Padel Balls · Club pack",
-          "es": "Pelotas de pádel Raquex Elite · Pack para clubes"
+          "en": "Raquex Elite Pace · 120 Balls",
+          "es": "Raquex Elite Pace · 120 pelotas"
         },
         "description": {
-          "en": "A bulk-pack selection proposed for club sessions. Confirm the supplied 120-ball option and exact listing before planning your order.",
-          "es": "Una selección por volumen propuesta para sesiones de club. Confirma la opción facilitada de 120 pelotas y el anuncio exacto antes de planificar el pedido."
+          "en": "Forty tubes of three Elite Pace balls, with 120 in total. A larger supply for clubs planning regular court sessions.",
+          "es": "Cuarenta botes de tres pelotas Elite Pace, con 120 en total. Un formato para clubes que organizan sesiones habituales."
         },
         "image": null,
         "variants": [
@@ -251,6 +252,393 @@
             "destinations": {
               "web": {
                 "url": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=c08c803d6768ad8ad1e9e4a6d22af15b&gaOptInStatus=true&ref_=as_li_ss_tl",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "raquex-elite-quilted-cover-black",
+        "audiences": [
+          "players"
+        ],
+        "categories": [
+          "bags",
+          "accessories"
+        ],
+        "featuredOrder": 30,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "Raquex Elite Quilted Cover · Black",
+          "es": "Funda acolchada Raquex Elite · Negra"
+        },
+        "description": {
+          "en": "A black quilted faux-leather cover for a padel racket. Keep your racket covered between sessions without carrying a full kit bag.",
+          "es": "Funda negra acolchada de piel sintética para una pala de pádel. Protege la pala entre sesiones sin llevar un paletero completo."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "black",
+            "title": {
+              "en": "Black / Padel Cover",
+              "es": "Negra"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B0DHQX4RY2?tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "raquex-enhance-replacement-grip-black",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "categories": [
+          "grips"
+        ],
+        "featuredOrder": 40,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "Raquex Enhance Replacement Grip · Black",
+          "es": "Grip de recambio Raquex Enhance · Negro"
+        },
+        "description": {
+          "en": "One black replacement grip with finishing tape for renewing your racket handle. Choose this when replacing the base grip.",
+          "es": "Un grip negro de recambio con cinta de acabado para renovar el mango de la pala. Una opción para sustituir el grip base."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "single-black",
+            "title": {
+              "en": "Black",
+              "es": "1 grip negro"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B0755HRLQD?th=1&psc=1&tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "nox-at10-genius-18k-alum-2026",
+        "audiences": [
+          "players"
+        ],
+        "categories": [
+          "rackets"
+        ],
+        "featuredOrder": 50,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "NOX AT10 Genius 18K Alum · 2026",
+          "es": "NOX AT10 Genius 18K Alum · 2026"
+        },
+        "description": {
+          "en": "The 2026 AT10 Genius 18K Alum racket from the Agustín Tapia range. Compare this specific model with your usual racket before choosing.",
+          "es": "Pala AT10 Genius 18K Alum de 2026 de la gama Agustín Tapia. Compara este modelo concreto con tu pala habitual antes de elegir."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "2026",
+            "title": {
+              "en": "2026 model",
+              "es": "Modelo 2026"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B0FX4M8T89?tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "nox-future-hybrid-12k-alum",
+        "audiences": [
+          "players"
+        ],
+        "categories": [
+          "rackets"
+        ],
+        "featuredOrder": 60,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "NOX Future Hybrid 12K Alum",
+          "es": "NOX Future Hybrid 12K Alum"
+        },
+        "description": {
+          "en": "The Hybrid model in the NOX Future 12K Alum range. A distinct racket choice alongside the other models in the Future collection.",
+          "es": "Modelo Hybrid de la gama NOX Future 12K Alum. Una pala con identidad propia dentro de la colección Future."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "hybrid",
+            "title": {
+              "en": "Hybrid model",
+              "es": "Modelo Hybrid"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B0DXJN4ZQ1?tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "nox-perforated-overgrips-white",
+        "audiences": [
+          "players"
+        ],
+        "categories": [
+          "grips"
+        ],
+        "featuredOrder": 70,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "NOX Perforated Overgrips · 3 White",
+          "es": "Overgrips perforados NOX · 3 blancos"
+        },
+        "description": {
+          "en": "Three white perforated overgrips in one blister pack. Keep a spare wrap in your bag for renewing the contact surface of your handle.",
+          "es": "Tres overgrips blancos perforados en un blíster. Lleva un recambio en el paletero para renovar la superficie de agarre del mango."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "white-3",
+            "title": {
+              "en": "White / Perforated",
+              "es": "3 overgrips blancos"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B08125ZP7X?tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "nox-pro-series-backpack-blue",
+        "audiences": [
+          "players"
+        ],
+        "categories": [
+          "bags"
+        ],
+        "featuredOrder": 80,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "NOX Pro Series Backpack · Blue",
+          "es": "Mochila NOX Pro Series · Azul"
+        },
+        "description": {
+          "en": "A blue 28-litre Pro Series backpack for carrying your padel kit. A backpack format for travelling to and from the court.",
+          "es": "Mochila Pro Series azul de 28 litros para llevar tu equipamiento de pádel. Un formato de mochila para tus desplazamientos a la pista."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "blue",
+            "title": {
+              "en": "Blue",
+              "es": "Azul"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B0CBW85PYV?tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "bullpadel-premium-pro-balls-9",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "categories": [
+          "balls"
+        ],
+        "featuredOrder": 90,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "Bullpadel Premium Pro · 9 Balls",
+          "es": "Bullpadel Premium Pro · 9 pelotas"
+        },
+        "description": {
+          "en": "Three tubes of three yellow Premium Pro balls. Keep unopened tubes ready for your next matches or shared club sessions.",
+          "es": "Tres botes de tres pelotas amarillas Premium Pro. Guarda los botes sin abrir para próximos partidos o sesiones de club."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "pack-9",
+            "title": {
+              "en": "9 balls",
+              "es": "9 pelotas"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B07F18MPQQ?tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "pusun-pt-max-c-machine",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "categories": [
+          "coaching"
+        ],
+        "featuredOrder": 100,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "PUSUN PT-Max C Ball Machine",
+          "es": "Máquina lanzapelotas PUSUN PT-Max C"
+        },
+        "description": {
+          "en": "A black tennis and padel ball machine with app and remote control. Review the manufacturer instructions and court setup before planning drills.",
+          "es": "Máquina lanzapelotas negra para tenis y pádel con control mediante aplicación y mando. Revisa las instrucciones del fabricante y la preparación de la pista antes de organizar ejercicios."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "black",
+            "title": {
+              "en": "Black",
+              "es": "Negra"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B0GV226SKF?tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "vermont-pressureless-training-balls-60",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "categories": [
+          "coaching",
+          "balls"
+        ],
+        "featuredOrder": 110,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "Vermont Pressureless Training Balls · 60",
+          "es": "Pelotas de entrenamiento sin presión Vermont · 60"
+        },
+        "description": {
+          "en": "A bucket containing sixty pressureless padel training balls. A practical format for coaches organising repeated drills and collecting balls between sessions.",
+          "es": "Cubo con sesenta pelotas de pádel sin presión para entrenamiento. Un formato práctico para organizar ejercicios repetidos y recoger las pelotas entre sesiones."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "bucket-60",
+            "title": {
+              "en": "Yellow / Pressureless",
+              "es": "Cubo de 60 pelotas"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B0DMTJVPKS?th=1&psc=1&tag=thediaryroom-21",
+                "reviewedAt": null,
+                "enabled": false
+              },
+              "mobile": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "bounce-filtertech-padel-pressuriser-blue",
+        "audiences": [
+          "players",
+          "clubs"
+        ],
+        "categories": [
+          "accessories"
+        ],
+        "featuredOrder": 120,
+        "publicationStatus": "draft",
+        "title": {
+          "en": "Bounce Tube FilterTech · Blue",
+          "es": "Bounce Tube FilterTech · Azul"
+        },
+        "description": {
+          "en": "A blue padel-ball pressuriser with an integrated pump. An accessory for storing balls between sessions; follow the manufacturer operating instructions.",
+          "es": "Presurizador azul para pelotas de pádel con bomba integrada. Un accesorio para guardar las pelotas entre sesiones; sigue las instrucciones de uso del fabricante."
+        },
+        "image": null,
+        "variants": [
+          {
+            "id": "blue",
+            "title": {
+              "en": "Night blue",
+              "es": "Azul"
+            },
+            "publicationStatus": "draft",
+            "destinations": {
+              "web": {
+                "url": "https://www.amazon.co.uk/dp/B0H5XFQWPQ?tag=thediaryroom-21",
                 "reviewedAt": null,
                 "enabled": false
               },
@@ -446,9 +834,619 @@
       "source": "user submission",
       "checkedAt": "2026-11-01",
       "finding": "Four full affiliate URLs imported as two draft product families with 3/6/9 and 120 pack variants. The referenced other 17 candidate URLs were not supplied and are not fabricated."
+    },
+    {
+      "source": "manual browser review",
+      "checkedAt": "2026-11-02",
+      "finding": "This review supersedes the initial listing-access limitation for the 14 shortlisted ASINs only. Twelve draft cards contain original EN/ES proposals. Thirteen selections are ready for editorial review; the machine needs regional/manual evidence. Nothing is published or commercially approved. The original staging intake is preserved unchanged."
     }
   ],
-  "productApprovals": [],
+  "productApprovals": [
+    {
+      "productId": "raquex-elite-padel-balls",
+      "variantId": "pack-3",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0D123Q6RL?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=4e808ecc0b218b4e2b463fb590003688&gaOptInStatus=true&ref_=as_li_ss_tl",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Selected three balls and Elite Pace; product details identify the same ASIN. The supplied full URL selects the child; a bare /dp visit initially left size unselected.",
+      "review": {
+        "asin": "B0D123Q6RL",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 3,
+          "unit": "balls"
+        },
+        "selectedOption": "Yellow / Elite Pace",
+        "parentASIN": null,
+        "categoryIds": [
+          "balls"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0D123Q6RL",
+            "finding": "Selected three balls and Elite Pace; product details identify the same ASIN. The supplied full URL selects the child; a bare /dp visit initially left size unselected."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0D123Q6RL?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=4e808ecc0b218b4e2b463fb590003688&gaOptInStatus=true&ref_=as_li_ss_tl",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "raquex-elite-padel-balls",
+      "variantId": "pack-6",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0D1VZ4VNJ?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=8aa9673011cf31d404d08775c0575080&gaOptInStatus=true&ref_=as_li_ss_tl",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Selected six balls and Elite Pace; product details identify the ASIN and six-count quantity. Two tubes.",
+      "review": {
+        "asin": "B0D1VZ4VNJ",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 6,
+          "unit": "balls"
+        },
+        "selectedOption": "Yellow / Elite Pace",
+        "parentASIN": null,
+        "categoryIds": [
+          "balls"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0D1VZ4VNJ",
+            "finding": "Selected six balls and Elite Pace; product details identify the ASIN and six-count quantity. Two tubes."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0D1VZ4VNJ?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=8aa9673011cf31d404d08775c0575080&gaOptInStatus=true&ref_=as_li_ss_tl",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "raquex-elite-padel-balls",
+      "variantId": "pack-9",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0D1VXLW6J?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=693776af5c540bc9fe88d5a9e32056eb&gaOptInStatus=true&ref_=as_li_ss_tl",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Selected nine balls and Elite Pace; product details identify the ASIN and nine-count quantity. Three tubes.",
+      "review": {
+        "asin": "B0D1VXLW6J",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 9,
+          "unit": "balls"
+        },
+        "selectedOption": "Yellow / Elite Pace",
+        "parentASIN": null,
+        "categoryIds": [
+          "balls"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0D1VXLW6J",
+            "finding": "Selected nine balls and Elite Pace; product details identify the ASIN and nine-count quantity. Three tubes."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0D1VXLW6J?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=693776af5c540bc9fe88d5a9e32056eb&gaOptInStatus=true&ref_=as_li_ss_tl",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "raquex-elite-padel-balls-club-pack",
+      "variantId": "pack-120",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=c08c803d6768ad8ad1e9e4a6d22af15b&gaOptInStatus=true&ref_=as_li_ss_tl",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Selected 120 balls and Elite Pace; details confirm the ASIN and 120-count quantity. Listing identifies forty tubes.",
+      "review": {
+        "asin": "B0FLQKZ7Y3",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 120,
+          "unit": "balls"
+        },
+        "selectedOption": "Yellow / Elite Pace",
+        "parentASIN": null,
+        "categoryIds": [
+          "bulkBalls"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3",
+            "finding": "Selected 120 balls and Elite Pace; details confirm the ASIN and 120-count quantity. Listing identifies forty tubes."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0FLQKZ7Y3?th=1&psc=1&linkCode=ll2&tag=thediaryroom-21&linkId=c08c803d6768ad8ad1e9e4a6d22af15b&gaOptInStatus=true&ref_=as_li_ss_tl",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "raquex-elite-quilted-cover-black",
+      "variantId": "black",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0DHQX4RY2?tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "The listing selects Black and Padel Cover. Expanded details confirm this ASIN. No approval of the blue cover or other bag styles is implied.",
+      "review": {
+        "asin": "B0DHQX4RY2",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 1,
+          "unit": "cover"
+        },
+        "selectedOption": "Black / Padel Cover",
+        "parentASIN": null,
+        "categoryIds": [
+          "bags",
+          "accessories"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0DHQX4RY2",
+            "finding": "The listing selects Black and Padel Cover. Expanded details confirm this ASIN. No approval of the blue cover or other bag styles is implied."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0DHQX4RY2?tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "raquex-enhance-replacement-grip-black",
+      "variantId": "single-black",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0755HRLQD?th=1&psc=1&tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Details identify one black Enhance replacement grip and finishing tape. Bare/tag-only landing left size unselected; explicit th=1&psc=1 resolves the single-grip child on fresh navigation.",
+      "review": {
+        "asin": "B0755HRLQD",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 1,
+          "unit": "replacement grip"
+        },
+        "selectedOption": "Black",
+        "parentASIN": null,
+        "categoryIds": [
+          "grips"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0755HRLQD",
+            "finding": "Details identify one black Enhance replacement grip and finishing tape. Bare/tag-only landing left size unselected; explicit th=1&psc=1 resolves the single-grip child on fresh navigation."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0755HRLQD?th=1&psc=1&tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "nox-at10-genius-18k-alum-2026",
+      "variantId": "2026",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0FX4M8T89?tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Listing and expanded ASIN details identify the 2026 AT10 Genius 18K Alum model. Do not combine with 2025, 12K, Attack or Buenos Aires editions; no weight specification retained.",
+      "review": {
+        "asin": "B0FX4M8T89",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 1,
+          "unit": "racket"
+        },
+        "selectedOption": null,
+        "parentASIN": null,
+        "categoryIds": [
+          "rackets"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0FX4M8T89",
+            "finding": "Listing and expanded ASIN details identify the 2026 AT10 Genius 18K Alum model. Do not combine with 2025, 12K, Attack or Buenos Aires editions; no weight specification retained."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0FX4M8T89?tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "nox-future-hybrid-12k-alum",
+      "variantId": "hybrid",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0DXJN4ZQ1?tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Listing identifies Future Hybrid 12K Alum; expanded ASIN and one-count details agree. No model year inferred. Attack and Control remain separate.",
+      "review": {
+        "asin": "B0DXJN4ZQ1",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 1,
+          "unit": "racket"
+        },
+        "selectedOption": null,
+        "parentASIN": null,
+        "categoryIds": [
+          "rackets"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0DXJN4ZQ1",
+            "finding": "Listing identifies Future Hybrid 12K Alum; expanded ASIN and one-count details agree. No model year inferred. Attack and Control remain separate."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0DXJN4ZQ1?tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "nox-perforated-overgrips-white",
+      "variantId": "white-3",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B08125ZP7X?tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Title identifies the white perforated three-overgrip blister; expanded details confirm three items and this ASIN. Not the smooth PRO grip or an eighteen-grip carton.",
+      "review": {
+        "asin": "B08125ZP7X",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 3,
+          "unit": "overgrips"
+        },
+        "selectedOption": "White / Perforated",
+        "parentASIN": null,
+        "categoryIds": [
+          "grips"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B08125ZP7X",
+            "finding": "Title identifies the white perforated three-overgrip blister; expanded details confirm three items and this ASIN. Not the smooth PRO grip or an eighteen-grip carton."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B08125ZP7X?tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "nox-pro-series-backpack-blue",
+      "variantId": "blue",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0CBW85PYV?tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Selected Blue; title identifies the 28-litre Pro Series backpack. Expanded details confirm one item and this ASIN. Brown and white child mappings were not verified.",
+      "review": {
+        "asin": "B0CBW85PYV",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 1,
+          "unit": "backpack"
+        },
+        "selectedOption": "Blue",
+        "parentASIN": null,
+        "categoryIds": [
+          "bags"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0CBW85PYV",
+            "finding": "Selected Blue; title identifies the 28-litre Pro Series backpack. Expanded details confirm one item and this ASIN. Brown and white child mappings were not verified."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0CBW85PYV?tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "bullpadel-premium-pro-balls-9",
+      "variantId": "pack-9",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B07F18MPQQ?tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Listing explicitly identifies three tubes with three balls per tube; expanded details confirm nine-count quantity and this ASIN.",
+      "review": {
+        "asin": "B07F18MPQQ",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 9,
+          "unit": "balls"
+        },
+        "selectedOption": "Yellow",
+        "parentASIN": null,
+        "categoryIds": [
+          "balls"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B07F18MPQQ",
+            "finding": "Listing explicitly identifies three tubes with three balls per tube; expanded details confirm nine-count quantity and this ASIN."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B07F18MPQQ?tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "pusun-pt-max-c-machine",
+      "variantId": "black",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0GV226SKF?tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Selected Black PT-Max C; expanded details identify this ASIN and one machine with charger, external battery, remote and manual. The manual language is not guaranteed. UK charger specification, current manufacturer manual and padel setup/servicing support need confirmation; avoid numerical performance/capacity claims.",
+      "review": {
+        "asin": "B0GV226SKF",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "needs-evidence",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 1,
+          "unit": "ball machine"
+        },
+        "selectedOption": "Black",
+        "parentASIN": null,
+        "categoryIds": [
+          "coaching"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0GV226SKF",
+            "finding": "Selected Black PT-Max C; expanded details identify this ASIN and one machine with charger, external battery, remote and manual. The manual language is not guaranteed. UK charger specification, current manufacturer manual and padel setup/servicing support need confirmation; avoid numerical performance/capacity claims."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0GV226SKF?tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "vermont-pressureless-training-balls-60",
+      "variantId": "bucket-60",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0DMTJVPKS?th=1&psc=1&tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Selected the 60-ball pressureless bucket; details show this ASIN and sixty items, while unit count says one bucket. Fresh th=1&psc=1 URL preserves that selection. Do not group with the differently constructed pressurised three-ball tube.",
+      "review": {
+        "asin": "B0DMTJVPKS",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 60,
+          "unit": "training balls"
+        },
+        "selectedOption": "Yellow / Pressureless",
+        "parentASIN": null,
+        "categoryIds": [
+          "coaching",
+          "balls"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0DMTJVPKS",
+            "finding": "Selected the 60-ball pressureless bucket; details show this ASIN and sixty items, while unit count says one bucket. Fresh th=1&psc=1 URL preserves that selection. Do not group with the differently constructed pressurised three-ball tube."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0DMTJVPKS?th=1&psc=1&tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    },
+    {
+      "productId": "bounce-filtertech-padel-pressuriser-blue",
+      "variantId": "blue",
+      "status": "pending",
+      "listingURL": "https://www.amazon.co.uk/dp/B0H5XFQWPQ?tag=thediaryroom-21",
+      "checkedAt": "2026-11-02T08:50:00Z",
+      "notes": "Listing identifies the blue padel FilterTech pressuriser; expanded details confirm this ASIN, one item and integrated pump. Brand field is Bounce Sports International. No lifespan multiplier or duration promise retained; green variant unverified.",
+      "review": {
+        "asin": "B0H5XFQWPQ",
+        "method": "manual-browser-listing-and-product-details",
+        "editorialReadiness": "ready-for-editorial-review",
+        "publicationApproved": false,
+        "commercialApproved": false,
+        "quantity": {
+          "count": 1,
+          "unit": "pressuriser"
+        },
+        "selectedOption": "Night blue",
+        "parentASIN": null,
+        "categoryIds": [
+          "accessories"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.amazon.co.uk/dp/B0H5XFQWPQ",
+            "finding": "Listing identifies the blue padel FilterTech pressuriser; expanded details confirm this ASIN, one item and integrated pump. Brand field is Bounce Sports International. No lifespan multiplier or duration promise retained; green variant unverified."
+          }
+        ],
+        "affiliateDestination": {
+          "candidateURL": "https://www.amazon.co.uk/dp/B0H5XFQWPQ?tag=thediaryroom-21",
+          "host": "www.amazon.co.uk",
+          "websiteTag": "thediaryroom-21",
+          "landingIdentityChecked": true,
+          "attributionVerified": false,
+          "mobileApproved": false
+        },
+        "copyReview": {
+          "en": "original-draft-ready-for-editorial-review",
+          "es": "original-draft-ready-for-editorial-review"
+        },
+        "photography": "none-original-category-illustration-only"
+      }
+    }
+  ],
   "staging": {
     "schemaVersion": 1,
     "generatedOn": "2026-11-01",
@@ -4351,5 +5349,17 @@
       },
       "licenseId": "padelwrist-original-category-art-v1"
     }
-  }
+  },
+  "variantApprovals": [
+    {
+      "productId": "raquex-elite-padel-balls",
+      "status": "pending",
+      "variantIds": [
+        "pack-3",
+        "pack-6",
+        "pack-9"
+      ],
+      "evidence": "Manual browser review on 2 November 2026 selected Elite Pace with three/six/nine balls. All three supplied ASINs appear in one size-and-speed family. Parent ASIN not independently established; publication and editorial sign-off remain pending."
+    }
+  ]
 }
