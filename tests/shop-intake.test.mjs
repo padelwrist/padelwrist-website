@@ -21,7 +21,7 @@ test('all 76 staged Amazon UK link candidates map to unique supplied ASINs and s
    const destination=new URL(variant.destinations.web.url),asin=destination.pathname.split('/')[2],record=records.get(asin);
    assert.ok(record,'unknown ASIN from published draft');
    assert.equal(destination.origin,'https://www.amazon.co.uk');
-   assert.match(destination.pathname,/^\\/dp\\/[A-Z0-9]{10}$/);
+   assert.equal(destination.pathname, '/dp/' + asin);
    assert.equal(destination.searchParams.get('tag'),'thediaryroom-21');
    assert.equal(approval.review.asin,asin);
    assert.equal(approval.listingURL,variant.destinations.web.url);
