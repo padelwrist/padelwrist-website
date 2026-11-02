@@ -2,7 +2,7 @@
 
 > PadelWrist 2.0 is a padel scorekeeper for Apple Watch, iPhone and iPad and an Americano/Mexicano tournament organiser for iPhone and iPad, built for individual players, clubs, coaches and social hosts.
 
-Last updated: 2026-10-29.
+Last updated: 2026-11-02.
 
 ## Product status
 
