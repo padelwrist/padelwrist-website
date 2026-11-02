@@ -1121,8 +1121,8 @@
           "es": "NOX Custom Grip"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Adjust the feel of your padel racket handle with NOX Custom Grip's configurable silicone rings.",
+          "es": "Adapta la empuñadura de tu pala con las anillas de silicona ajustables de NOX Custom Grip."
         },
         "image": null,
         "variants": [
@@ -1273,8 +1273,8 @@
           "es": "NOX Luxury Open Series Racket Bag, Black/Brown"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Carry your match kit in a black and brown NOX Luxury Open racket bag with thermal racket protection.",
+          "es": "Transporta tu equipación en el paletero NOX Luxury Open negro y marrón con protección térmica para palas."
         },
         "image": null,
         "variants": [
@@ -1311,8 +1311,8 @@
           "es": "NOX Luxury Open Series Backpack, Black/Brown"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "A black and brown NOX Luxury Open backpack for carrying everyday essentials and padel equipment.",
+          "es": "Mochila NOX Luxury Open negra y marrón para llevar equipación de pádel y objetos personales."
         },
         "image": null,
         "variants": [
@@ -1615,8 +1615,8 @@
           "es": "NOX Pro Series Backpack, Brown/Camel (28 L)"
         },
         "description": {
-          "en": "NOX padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel NOX propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "The camel-brown NOX Pro Series backpack organises rackets, kit and footwear for match days.",
+          "es": "La mochila NOX Pro Series marrón camel organiza palas, equipación y calzado para los días de partido."
         },
         "image": null,
         "variants": [
@@ -5170,6 +5170,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0BLVS92RR",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/products/nox-custom-grip",
+            "finding": "NOX manufacturer confirms model specifications; Amazon ASIN child identity, selected option and Special Link eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -5330,6 +5334,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0D89DTR1W",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/collections/all/products/paletero-luxury-open-series-black-brown",
+            "finding": "NOX manufacturer confirms model specifications; Amazon ASIN child identity, selected option and Special Link eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -5370,6 +5378,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0D894FN7P",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/collections/paleteros-y-mochilas-nox/products/backpack-luxury-open-series-black-brown",
+            "finding": "NOX manufacturer confirms model specifications; Amazon ASIN child identity, selected option and Special Link eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -5698,6 +5710,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0CBWBXSG7",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://noxsport.com/en/collections/father-day/products/mochila-pro-series-marron-camel-2023",
+            "finding": "NOX manufacturer confirms model specifications; Amazon ASIN child identity, selected option and Special Link eligibility remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -12130,6 +12146,110 @@
       "evidence": [
         "https://www.amazon.co.uk/dp/B07D3ZSDBV",
         "https://noxsport.com/en/collections/accesorios/products/bote-de-3-pelotas-de-padel-pro-titanium"
+      ]
+    },
+    "candidate-b0blvs92rr": {
+      "content": {
+        "shortDescription": {
+          "en": "Adjust the feel of your padel racket handle with NOX Custom Grip's configurable silicone rings.",
+          "es": "Adapta la empuñadura de tu pala con las anillas de silicona ajustables de NOX Custom Grip."
+        },
+        "highlights": [
+          {
+            "en": "Adjustable silicone ring grip system",
+            "es": "Sistema de agarre con anillas de silicona ajustables"
+          },
+          {
+            "en": "Fits over an existing base grip or bare handle",
+            "es": "Se instala sobre el grip base o el mango sin grip"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0BLVS92RR",
+        "https://noxsport.com/en/products/nox-custom-grip"
+      ]
+    },
+    "candidate-b0d894fn7p": {
+      "content": {
+        "shortDescription": {
+          "en": "A black and brown NOX Luxury Open backpack for carrying everyday essentials and padel equipment.",
+          "es": "Mochila NOX Luxury Open negra y marrón para llevar equipación de pádel y objetos personales."
+        },
+        "highlights": [
+          {
+            "en": "30-litre capacity and two main compartments",
+            "es": "Capacidad de 30 litros y dos compartimentos principales"
+          },
+          {
+            "en": "Ventilated footwear compartment",
+            "es": "Compartimento ventilado para calzado"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0D894FN7P",
+        "https://noxsport.com/en/collections/paleteros-y-mochilas-nox/products/backpack-luxury-open-series-black-brown"
+      ]
+    },
+    "candidate-b0d89dtr1w": {
+      "content": {
+        "shortDescription": {
+          "en": "Carry your match kit in a black and brown NOX Luxury Open racket bag with thermal racket protection.",
+          "es": "Transporta tu equipación en el paletero NOX Luxury Open negro y marrón con protección térmica para palas."
+        },
+        "highlights": [
+          {
+            "en": "60-litre capacity and ThermoTech racket compartment",
+            "es": "60 litros y compartimento térmico ThermoTech"
+          },
+          {
+            "en": "Ventilated shoe space and backpack carrying option",
+            "es": "Espacio ventilado para calzado y opción de mochila"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0D89DTR1W",
+        "https://noxsport.com/en/collections/all/products/paletero-luxury-open-series-black-brown"
+      ]
+    },
+    "candidate-b0cbwbxsg7": {
+      "content": {
+        "shortDescription": {
+          "en": "The camel-brown NOX Pro Series backpack organises rackets, kit and footwear for match days.",
+          "es": "La mochila NOX Pro Series marrón camel organiza palas, equipación y calzado para los días de partido."
+        },
+        "highlights": [
+          {
+            "en": "Separate ventilated shoe compartment",
+            "es": "Compartimento independiente y ventilado para calzado"
+          },
+          {
+            "en": "Padded racket/laptop compartment and front pocket",
+            "es": "Compartimento acolchado para pala u ordenador y bolsillo frontal"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0CBWBXSG7",
+        "https://noxsport.com/en/collections/father-day/products/mochila-pro-series-marron-camel-2023"
       ]
     }
   },
