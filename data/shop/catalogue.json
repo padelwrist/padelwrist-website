@@ -662,8 +662,8 @@
           "es": "Raquex Execute Tour 4-Racket Padel Bag"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "A roomy padel tour bag for up to four rackets, with insulated racket compartments and separate space for footwear.",
+          "es": "Paletero amplio para hasta cuatro palas, con compartimentos térmicos para las palas y espacio separado para el calzado."
         },
         "image": null,
         "variants": [
@@ -738,8 +738,8 @@
           "es": "Raquex Enigma Single-Racket Cover"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "A compact cover for carrying one padel racket, with an adjustable shoulder strap and accessory pocket.",
+          "es": "Funda compacta para llevar una pala de pádel, con correa ajustable y bolsillo para accesorios."
         },
         "image": null,
         "variants": [
@@ -815,8 +815,8 @@
           "es": "Raquex Evade Pro Tacky Padel Overgrip"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Tacky, slimline padel overgrips designed to wrap over your existing base grip.",
+          "es": "Overgrips finos y adherentes para colocar sobre el grip base de tu pala."
         },
         "image": null,
         "variants": [
@@ -891,8 +891,8 @@
           "es": "Raquex Eclipse Padel Racket"
         },
         "description": {
-          "en": "Raquex padel equipment proposed for the Shop. Exact listing specifications and options are awaiting review.",
-          "es": "Artículo de pádel Raquex propuesto para la tienda. Las características y opciones están pendientes de revisión."
+          "en": "Explore a round-head carbon racket with a generous sweet spot and a textured SpinTec hitting surface.",
+          "es": "Descubre una pala de carbono con forma redonda, punto dulce amplio y superficie rugosa SpinTec."
         },
         "image": null,
         "variants": [
@@ -4654,6 +4654,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0GWJKBVWM",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/raquex-execute-tour-padel-racket-bag-blue",
+            "finding": "Manufacturer identifies model-level specifications; exact Amazon child option, site eligibility and quantities remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -4734,6 +4738,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0DHXKLSZB",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/raquex-enigma-padel-racket-cover",
+            "finding": "Manufacturer identifies model-level specifications; exact Amazon child option, site eligibility and quantities remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -4814,6 +4822,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0HP419L44",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/raquex-evade-pro-padel-overgrips",
+            "finding": "Manufacturer identifies model-level specifications; exact Amazon child option, site eligibility and quantities remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -4894,6 +4906,10 @@
           {
             "url": "https://www.amazon.co.uk/dp/B0FM68SH22",
             "finding": "Candidate ASIN URL supplied, product details and variant mapping not independently checked."
+          },
+          {
+            "url": "https://www.raquex.com/products/raquex-eclipse-padel-racquet",
+            "finding": "Manufacturer identifies model-level specifications; exact Amazon child option, site eligibility and quantities remain unverified."
           }
         ],
         "affiliateDestination": {
@@ -11680,6 +11696,110 @@
       },
       "evidence": [
         "https://www.amazon.co.uk/dp/B0H5XFQWPQ"
+      ]
+    },
+    "candidate-b0gwjkbvwm": {
+      "content": {
+        "shortDescription": {
+          "en": "A roomy padel tour bag for up to four rackets, with insulated racket compartments and separate space for footwear.",
+          "es": "Paletero amplio para hasta cuatro palas, con compartimentos térmicos para las palas y espacio separado para el calzado."
+        },
+        "highlights": [
+          {
+            "en": "Two thermally lined racket compartments",
+            "es": "Dos compartimentos térmicos para palas"
+          },
+          {
+            "en": "Ventilated shoe compartment and backpack straps",
+            "es": "Compartimento ventilado para zapatillas y correas de mochila"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0GWJKBVWM",
+        "https://www.raquex.com/products/raquex-execute-tour-padel-racket-bag-blue"
+      ]
+    },
+    "candidate-b0dhxklszb": {
+      "content": {
+        "shortDescription": {
+          "en": "A compact cover for carrying one padel racket, with an adjustable shoulder strap and accessory pocket.",
+          "es": "Funda compacta para llevar una pala de pádel, con correa ajustable y bolsillo para accesorios."
+        },
+        "highlights": [
+          {
+            "en": "Space for one padel racket",
+            "es": "Espacio para una pala de pádel"
+          },
+          {
+            "en": "Adjustable strap and zipped accessory pocket",
+            "es": "Correa ajustable y bolsillo con cremallera"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0DHXKLSZB",
+        "https://www.raquex.com/products/raquex-enigma-padel-racket-cover"
+      ]
+    },
+    "candidate-b0fm68sh22": {
+      "content": {
+        "shortDescription": {
+          "en": "Explore a round-head carbon racket with a generous sweet spot and a textured SpinTec hitting surface.",
+          "es": "Descubre una pala de carbono con forma redonda, punto dulce amplio y superficie rugosa SpinTec."
+        },
+        "highlights": [
+          {
+            "en": "Round head and large sweet spot",
+            "es": "Forma redonda y punto dulce amplio"
+          },
+          {
+            "en": "Full-carbon twin-tube frame and SpinTec surface",
+            "es": "Marco de doble tubo de carbono y superficie SpinTec"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0FM68SH22",
+        "https://www.raquex.com/products/raquex-eclipse-padel-racquet"
+      ]
+    },
+    "candidate-b0hp419l44": {
+      "content": {
+        "shortDescription": {
+          "en": "Tacky, slimline padel overgrips designed to wrap over your existing base grip.",
+          "es": "Overgrips finos y adherentes para colocar sobre el grip base de tu pala."
+        },
+        "highlights": [
+          {
+            "en": "Triple-layer polyurethane for grip and absorbency",
+            "es": "Poliuretano de tres capas para agarre y absorción"
+          },
+          {
+            "en": "0.65 mm thickness and pre-cut ends",
+            "es": "Grosor de 0,65 mm y extremos precortados"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0HP419L44",
+        "https://www.raquex.com/products/raquex-evade-pro-padel-overgrips"
       ]
     }
   },
