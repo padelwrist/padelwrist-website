@@ -7,7 +7,7 @@ import {approvedEditorialImage} from '../src/shop-image-policy.mjs';
 const source=JSON.parse(await readFile(new URL('../data/shop/catalogue.json',import.meta.url),'utf8'));
 test('78 distinct ASINs and 20 research leads reconcile without publication',()=>{
  const s=validateStaging(source.staging);assert.equal(s.records.length,78);assert.equal(new Set(s.records.map(r=>r.asin)).size,78);assert.equal(s.researchLeads.length,20);assert.equal(s.proposedFamilies.length,64);
- assert.equal(publishedCatalogue(source).products.length,0);
+ assert.equal(publishedCatalogue(source).products.length,10);
  assert.ok(s.records.every(r=>r.publicationStatus==='unpublished'&&r.variantRelationshipStatus==='unverified'&&r.verifiedParentASIN===null));
  assert.ok(s.researchLeads.every(r=>r.publicationStatus==='research-only'&&!r.asin&&!r.productURL));
  assert.match(s.provenance.workbookSHA256,/^[a-f0-9]{64}$/);assert.match(s.provenance.jsonSHA256,/^[a-f0-9]{64}$/);
@@ -25,16 +25,16 @@ test('all 76 staged Amazon UK link candidates map to unique supplied ASINs and s
    assert.equal(destination.searchParams.get('tag'),'thediaryroom-21');
    assert.equal(approval.review.asin,asin);
    assert.equal(approval.listingURL,variant.destinations.web.url);
-   assert.equal(approval.status,'pending');
-   assert.equal(approval.review.publicationApproved,false);
-   assert.equal(approval.review.commercialApproved,false);
+   assert.equal(approval.status,product.publicationStatus==='published'?'verified':'pending');
+   assert.equal(approval.review.publicationApproved,product.publicationStatus==='published');
+   assert.equal(approval.review.commercialApproved,product.publicationStatus==='published');
    assert.equal(approval.review.affiliateDestination.attributionVerified,false);
-   assert.equal(product.publicationStatus,'draft');
-   assert.equal(variant.publicationStatus,'draft');
-   assert.equal(variant.destinations.web.enabled,false);
+   assert.ok(['draft','published'].includes(product.publicationStatus));
+   assert.equal(variant.publicationStatus,product.publicationStatus);
+   assert.equal(variant.destinations.web.enabled,product.publicationStatus==='published');
    assert.deepEqual(variant.destinations.mobile,[]);
  }
- assert.equal(source.catalogue.webLinksEnabled,false);
+ assert.equal(source.catalogue.webLinksEnabled,true);
  assert.deepEqual(source.staging.records.filter(r=>!staged.some(({approval})=>approval.review.asin===r.asin)).map(r=>r.asin).sort(),['B07D9M6C6G','B0DQY6CKVJ'].sort());
 });
 
@@ -60,14 +60,14 @@ test('owned/manufacturer imagery requires evidence and explicit website/app perm
  assert.equal(Object.keys(source.categoryIllustrations).length,10);assert.ok(Object.values(source.categoryIllustrations).every(art=>approvedEditorialImage(source,art)));
 });
 
-test('shortlist evidence is pending and cannot authorise publication or commerce',()=>{
+test('reviewed UK website selections are isolated from unapproved draft intake and mobile commerce',()=>{
  assert.equal(source.catalogue.products.length,74);assert.equal(source.productApprovals.length,76);
  assert.equal(new Set(source.productApprovals.map(a=>a.review.asin)).size,76);
  assert.equal(source.productApprovals.filter(a=>a.review.editorialReadiness==='ready-for-editorial-review').length,13);
  assert.equal(source.productApprovals.filter(a=>a.review.editorialReadiness==='needs-evidence').length,1);
- assert.ok(source.productApprovals.every(a=>a.status==='pending'&&!a.review.publicationApproved&&!a.review.commercialApproved&&!a.review.affiliateDestination.attributionVerified));
- assert.ok(source.catalogue.products.every(p=>p.publicationStatus==='draft'&&p.image===null&&p.variants.every(v=>v.publicationStatus==='draft'&&!v.destinations.web.enabled&&v.destinations.mobile.length===0)));
- assert.equal(publishedCatalogue(source).products.length,0);
+ assert.equal(source.productApprovals.filter(a=>a.status==='verified'&&a.review.publicationApproved&&a.review.commercialApproved).length,12);assert.equal(source.productApprovals.filter(a=>a.status==='pending'&&!a.review.publicationApproved&&!a.review.commercialApproved).length,64);assert.ok(source.productApprovals.every(a=>!a.review.affiliateDestination.attributionVerified&&!a.review.affiliateDestination.mobileApproved));
+ assert.equal(source.catalogue.products.filter(p=>p.publicationStatus==='published').length,10);assert.equal(source.catalogue.products.filter(p=>p.publicationStatus==='draft').length,64);assert.ok(source.catalogue.products.every(p=>p.image===null&&p.variants.every(v=>v.publicationStatus===p.publicationStatus&&v.destinations.web.enabled===(p.publicationStatus==='published')&&v.destinations.mobile.length===0)));
+ assert.equal(publishedCatalogue(source).products.length,10);
  const toggled=structuredClone(source);for(const p of toggled.catalogue.products){p.publicationStatus='published';for(const v of p.variants)v.publicationStatus='published';}
  assert.throws(()=>publishedCatalogue(toggled),/verification/);
  const bucket=source.productApprovals.find(a=>a.review.asin==='B0DMTJVPKS');assert.equal(bucket.review.quantity.count,60);assert.equal(new URL(bucket.listingURL).searchParams.get('psc'),'1');
