@@ -53,9 +53,9 @@ test('EN/ES merchandising needs evidence and independent approval; suitability n
  }
  const approvedProduct=structuredClone(source);const p=approvedProduct.catalogue.products[0];approvedProduct.catalogue.webLinksEnabled=false;approvedProduct.catalogue.products.forEach(product=>product.variants.forEach(variant=>{variant.destinations.web.enabled=false;variant.destinations.web.reviewedAt=null;}));approvedProduct.productMerchandising[p.id].review={en:'pending',es:'pending'};p.publicationStatus='published';p.variants.forEach(v=>v.publicationStatus='published');
  approvedProduct.productApprovals.filter(a=>a.productId===p.id).forEach(a=>{a.status='verified';a.review.publicationApproved=true;});p.variants.forEach(v=>{v.destinations.web.enabled=false;v.destinations.web.reviewedAt=null;});approvedProduct.variantApprovals.filter(a=>a.productId===p.id).forEach(a=>a.status='verified');
- assert.equal(publishedCatalogueV3(approvedProduct).products[0].merchandising,undefined);
- approvedProduct.productMerchandising[p.id].review.en='approved';assert.equal(publishedCatalogueV3(approvedProduct).products[0].merchandising,undefined);
- approvedProduct.productMerchandising[p.id].review.es='approved';assert.equal(publishedCatalogueV3(approvedProduct).products[0].merchandising.highlights.length,2);
+ assert.equal(publishedCatalogueV3(approvedProduct).products.find(x=>x.id===p.id).merchandising,undefined);
+ approvedProduct.productMerchandising[p.id].review.en='approved';assert.equal(publishedCatalogueV3(approvedProduct).products.find(x=>x.id===p.id).merchandising,undefined);
+ approvedProduct.productMerchandising[p.id].review.es='approved';assert.equal(publishedCatalogueV3(approvedProduct).products.find(x=>x.id===p.id).merchandising.highlights.length,2);
  assert.equal(publishedCatalogueV3(approvedProduct).webLinksEnabled,false);
 });
 test('radio options preserve exact child URL mapping and disabled CTAs; single variants stay simple',()=>{
