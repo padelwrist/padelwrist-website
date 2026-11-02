@@ -12,6 +12,32 @@ test('78 distinct ASINs and 20 research leads reconcile without publication',()=
  assert.ok(s.researchLeads.every(r=>r.publicationStatus==='research-only'&&!r.asin&&!r.productURL));
  assert.match(s.provenance.workbookSHA256,/^[a-f0-9]{64}$/);assert.match(s.provenance.jsonSHA256,/^[a-f0-9]{64}$/);
 });
+test('all 76 staged Amazon UK link candidates map to unique supplied ASINs and stay unapproved',()=>{
+ const records=new Map(source.staging.records.map(r=>[r.asin,r]));
+ const staged=source.catalogue.products.flatMap(p=>p.variants.map(v=>({product:p,variant:v,approval:source.productApprovals.find(a=>a.productId===p.id&&a.variantId===v.id)})));
+ assert.equal(staged.length,76);
+ assert.equal(new Set(staged.map(({variant})=>new URL(variant.destinations.web.url).pathname)).size,76);
+ for(const {product,variant,approval} of staged){
+   const destination=new URL(variant.destinations.web.url),asin=destination.pathname.split('/')[2],record=records.get(asin);
+   assert.ok(record,'unknown ASIN from published draft');
+   assert.equal(destination.origin,'https://www.amazon.co.uk');
+   assert.match(destination.pathname,/^\\/dp\\/[A-Z0-9]{10}$/);
+   assert.equal(destination.searchParams.get('tag'),'thediaryroom-21');
+   assert.equal(approval.review.asin,asin);
+   assert.equal(approval.listingURL,variant.destinations.web.url);
+   assert.equal(approval.status,'pending');
+   assert.equal(approval.review.publicationApproved,false);
+   assert.equal(approval.review.commercialApproved,false);
+   assert.equal(approval.review.affiliateDestination.attributionVerified,false);
+   assert.equal(product.publicationStatus,'draft');
+   assert.equal(variant.publicationStatus,'draft');
+   assert.equal(variant.destinations.web.enabled,false);
+   assert.deepEqual(variant.destinations.mobile,[]);
+ }
+ assert.equal(source.catalogue.webLinksEnabled,false);
+ assert.deepEqual(source.staging.records.filter(r=>!staged.some(({approval})=>approval.review.asin===r.asin)).map(r=>r.asin).sort(),['B07D9M6C6G','B0DQY6CKVJ'].sort());
+});
+
 test('MaxPadel is quarantined and machines/pressurisers are not bulk balls',()=>{
  const get=asin=>source.staging.records.find(r=>r.asin===asin);
  assert.equal(get('B0DQY6CKVJ').productURL,null);assert.equal(get('B0DQY6CKVJ').websiteAffiliateURLCandidate,null);assert.deepEqual(get('B0DQY6CKVJ').audiences,[]);
