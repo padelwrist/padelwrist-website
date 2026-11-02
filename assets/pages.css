@@ -530,3 +530,21 @@ body.page-body {
 .shop-product-context { min-height:28px; display:flex; align-items:center; }
 .shop-badge { min-height:28px; line-height:18px; }
 .shop-description,.shop-highlights li,.shop-product-context,.shop-options span { overflow-wrap:anywhere; min-width:0; max-width:100%; }
+
+/* Final product-discovery wireframe: one primary image label, two compact verified facts. */
+.shop-product-visual { position:relative; }
+.shop-suitability-overlay { position:absolute; z-index:1; top:10px; left:10px; max-width:calc(100% - 20px); padding:6px 10px; border-radius:100px; background:var(--pw-navy); color:white; border:1px solid rgba(255,255,255,.25); font-size:0.8125rem; font-weight:700; line-height:1.4; overflow-wrap:anywhere; }
+.shop-highlights { display:flex; flex-direction:column; gap:4px; }
+.shop-highlights li { background:none; padding:0; font-size:0.875rem; display:flex; align-items:baseline; gap:8px; }
+.shop-highlights li::before { content:'✓'; color:var(--pw-lilac); flex:none; }
+.shop-product-footer { border-top:1px solid var(--pw-outline-variant); padding-top:12px; }
+.shop-page .page-heading .eyebrow { display:none; }
+.shop-page .page-heading { margin:16px 0; }
+.shop-page .page-heading h1 { font-size:2rem; margin-bottom:8px; }
+.shop-audiences { margin:16px 0; }
+.shop-section h2 { margin-bottom:16px; }
+@media (max-width:599px) {
+ .shop-product-visual .shop-illustration picture { height:140px; aspect-ratio:auto; }
+ .shop-product-visual .shop-illustration picture img { height:140px; aspect-ratio:auto; object-fit:cover; }
+ .shop-section { margin-top:20px; }
+}

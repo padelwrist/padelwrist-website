@@ -1,6 +1,6 @@
-# Equipamiento de pádel para jugadores y clubes
+# Tienda
 
-Equipamiento bien elegido para tu próximo partido, entrenamiento o torneo de club.
+Equipamiento para tu próximo partido o las sesiones del club.
 
 Estamos preparando nuestra colección. Las selecciones revisadas aparecerán aquí.
 

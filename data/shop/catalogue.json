@@ -6421,17 +6421,27 @@
   "productMerchandising": {
     "raquex-elite-padel-balls": {
       "content": {
+        "shortDescription": {
+          "en": "Choose an Elite Pace pack for your next padel session.",
+          "es": "Elige un pack Elite Pace para tu próxima sesión de pádel."
+        },
         "highlights": [
           {
-            "en": "Choose 3, 6 or 9 balls",
-            "es": "Elige 3, 6 o 9 pelotas"
+            "en": "Elite Pace range",
+            "es": "Gama Elite Pace"
           },
           {
-            "en": "Yellow Elite Pace balls",
-            "es": "Pelotas amarillas Elite Pace"
+            "en": "Available in packs of 3, 6 or 9",
+            "es": "Disponible en packs de 3, 6 o 9"
           }
         ],
-        "badge": "featured"
+        "badge": {
+          "id": "featured",
+          "text": {
+            "en": "Featured",
+            "es": "Destacado"
+          }
+        }
       },
       "review": {
         "en": "pending",
@@ -6445,6 +6455,10 @@
     },
     "raquex-elite-padel-balls-club-pack": {
       "content": {
+        "shortDescription": {
+          "en": "Plan your club sessions with a larger supply of Elite Pace balls.",
+          "es": "Prepara las sesiones del club con un suministro mayor de pelotas Elite Pace."
+        },
         "highlights": [
           {
             "en": "120 balls in total",
@@ -6455,7 +6469,23 @@
             "es": "40 botes de 3 pelotas"
           }
         ],
-        "badge": "featured"
+        "badge": {
+          "id": "featured",
+          "text": {
+            "en": "Featured",
+            "es": "Destacado"
+          }
+        },
+        "suitability": {
+          "id": "for-clubs",
+          "text": {
+            "en": "For clubs",
+            "es": "Para clubes"
+          },
+          "audiences": [
+            "clubs"
+          ]
+        }
       },
       "review": {
         "en": "pending",
@@ -6463,18 +6493,151 @@
       },
       "evidence": [
         "https://www.amazon.co.uk/dp/B0FLQKZ7Y3"
+      ],
+      "assessment": {
+        "status": "evidenceRecorded",
+        "basis": "Verified forty-tube bulk format and the user-supplied Clubs categorisation."
+      }
+    },
+    "raquex-elite-quilted-cover-black": {
+      "content": {
+        "shortDescription": {
+          "en": "Keep your racket covered between sessions without carrying a full kit bag.",
+          "es": "Lleva la pala protegida entre sesiones sin cargar con un paletero completo."
+        },
+        "highlights": [
+          {
+            "en": "Quilted faux-leather cover",
+            "es": "Funda acolchada de piel sintética"
+          },
+          {
+            "en": "Black finish",
+            "es": "Acabado negro"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0DHQX4RY2"
+      ]
+    },
+    "raquex-enhance-replacement-grip-black": {
+      "content": {
+        "shortDescription": {
+          "en": "Renew your racket handle with a replacement base grip and finishing tape.",
+          "es": "Renueva la empuñadura de la pala con un grip de recambio y cinta de acabado."
+        },
+        "highlights": [
+          {
+            "en": "One replacement grip",
+            "es": "Un grip de recambio"
+          },
+          {
+            "en": "Finishing tape included",
+            "es": "Incluye cinta de acabado"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0755HRLQD"
+      ]
+    },
+    "nox-at10-genius-18k-alum-2026": {
+      "content": {
+        "shortDescription": {
+          "en": "Explore this specific 2026 AT10 model from the Agustín Tapia range.",
+          "es": "Conoce este modelo AT10 de 2026 de la gama Agustín Tapia."
+        },
+        "highlights": [
+          {
+            "en": "AT10 Genius range",
+            "es": "Gama AT10 Genius"
+          },
+          {
+            "en": "18K Alum model",
+            "es": "Modelo 18K Alum"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0FX4M8T89"
+      ]
+    },
+    "nox-future-hybrid-12k-alum": {
+      "content": {
+        "shortDescription": {
+          "en": "Compare the Hybrid option in the NOX Future 12K Alum collection.",
+          "es": "Compara la opción Hybrid de la colección NOX Future 12K Alum."
+        },
+        "highlights": [
+          {
+            "en": "Hybrid model",
+            "es": "Modelo Hybrid"
+          },
+          {
+            "en": "Future 12K Alum range",
+            "es": "Gama Future 12K Alum"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0DXJN4ZQ1"
+      ]
+    },
+    "nox-perforated-overgrips-white": {
+      "content": {
+        "shortDescription": {
+          "en": "Keep spare wraps ready to renew the contact surface of your racket handle.",
+          "es": "Lleva recambios para renovar la superficie de contacto de la empuñadura."
+        },
+        "highlights": [
+          {
+            "en": "Three white overgrips",
+            "es": "Tres overgrips blancos"
+          },
+          {
+            "en": "Perforated finish",
+            "es": "Acabado perforado"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B08125ZP7X"
       ]
     },
     "nox-pro-series-backpack-blue": {
       "content": {
+        "shortDescription": {
+          "en": "Carry your padel kit in a blue 28-litre backpack.",
+          "es": "Lleva tu equipamiento de pádel en una mochila azul de 28 litros."
+        },
         "highlights": [
           {
             "en": "28-litre capacity",
             "es": "Capacidad de 28 litros"
           },
           {
-            "en": "Blue backpack format",
-            "es": "Mochila de color azul"
+            "en": "Pro Series range",
+            "es": "Gama Pro Series"
           }
         ]
       },
@@ -6485,6 +6648,210 @@
       "evidence": [
         "https://www.amazon.co.uk/dp/B0CBW85PYV"
       ]
+    },
+    "bullpadel-premium-pro-balls-9": {
+      "content": {
+        "shortDescription": {
+          "en": "Keep unopened tubes ready for your next matches or shared club sessions.",
+          "es": "Ten botes sin abrir para tus próximos partidos o las sesiones del club."
+        },
+        "highlights": [
+          {
+            "en": "Nine yellow balls",
+            "es": "Nueve pelotas amarillas"
+          },
+          {
+            "en": "Three tubes of three",
+            "es": "Tres botes de tres pelotas"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B07F18MPQQ"
+      ]
+    },
+    "vermont-pressureless-training-balls-60": {
+      "content": {
+        "shortDescription": {
+          "en": "Organise repeated coaching drills with a bucket of pressureless training balls.",
+          "es": "Organiza ejercicios de entrenamiento con un cubo de pelotas sin presión."
+        },
+        "highlights": [
+          {
+            "en": "60 pressureless balls",
+            "es": "60 pelotas sin presión"
+          },
+          {
+            "en": "Supplied in a bucket",
+            "es": "Presentadas en un cubo"
+          }
+        ],
+        "suitability": {
+          "id": "training",
+          "text": {
+            "en": "Training",
+            "es": "Entrenamiento"
+          }
+        }
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0DMTJVPKS"
+      ],
+      "assessment": {
+        "status": "evidenceRecorded",
+        "basis": "Verified listing identifies a sixty-ball pressureless training bucket for coaching."
+      }
+    },
+    "bounce-filtertech-padel-pressuriser-blue": {
+      "content": {
+        "shortDescription": {
+          "en": "Store padel balls between sessions with a pressuriser and integrated pump.",
+          "es": "Guarda las pelotas entre sesiones con un presurizador con bomba integrada."
+        },
+        "highlights": [
+          {
+            "en": "Integrated pump",
+            "es": "Bomba integrada"
+          },
+          {
+            "en": "Night blue finish",
+            "es": "Acabado azul noche"
+          }
+        ]
+      },
+      "review": {
+        "en": "pending",
+        "es": "pending"
+      },
+      "evidence": [
+        "https://www.amazon.co.uk/dp/B0H5XFQWPQ"
+      ]
+    }
+  },
+  "productPresentation": {
+    "raquex-elite-padel-balls": {
+      "audienceOrder": {
+        "players": 10,
+        "clubs": 10
+      },
+      "variantOrder": [
+        "pack-3",
+        "pack-6",
+        "pack-9"
+      ],
+      "defaultVariantID": "pack-3"
+    },
+    "raquex-elite-padel-balls-club-pack": {
+      "audienceOrder": {
+        "clubs": 5
+      },
+      "variantOrder": [
+        "pack-120"
+      ],
+      "defaultVariantID": "pack-120"
+    },
+    "raquex-elite-quilted-cover-black": {
+      "audienceOrder": {
+        "players": 30
+      },
+      "variantOrder": [
+        "black"
+      ],
+      "defaultVariantID": "black"
+    },
+    "raquex-enhance-replacement-grip-black": {
+      "audienceOrder": {
+        "players": 40,
+        "clubs": 40
+      },
+      "variantOrder": [
+        "single-black"
+      ],
+      "defaultVariantID": "single-black"
+    },
+    "nox-at10-genius-18k-alum-2026": {
+      "audienceOrder": {
+        "players": 50
+      },
+      "variantOrder": [
+        "2026"
+      ],
+      "defaultVariantID": "2026"
+    },
+    "nox-future-hybrid-12k-alum": {
+      "audienceOrder": {
+        "players": 60
+      },
+      "variantOrder": [
+        "hybrid"
+      ],
+      "defaultVariantID": "hybrid"
+    },
+    "nox-perforated-overgrips-white": {
+      "audienceOrder": {
+        "players": 70
+      },
+      "variantOrder": [
+        "white-3"
+      ],
+      "defaultVariantID": "white-3"
+    },
+    "nox-pro-series-backpack-blue": {
+      "audienceOrder": {
+        "players": 80
+      },
+      "variantOrder": [
+        "blue"
+      ],
+      "defaultVariantID": "blue"
+    },
+    "bullpadel-premium-pro-balls-9": {
+      "audienceOrder": {
+        "players": 90,
+        "clubs": 90
+      },
+      "variantOrder": [
+        "pack-9"
+      ],
+      "defaultVariantID": "pack-9"
+    },
+    "pusun-pt-max-c-machine": {
+      "audienceOrder": {
+        "players": 100,
+        "clubs": 100
+      },
+      "variantOrder": [
+        "black"
+      ],
+      "defaultVariantID": "black"
+    },
+    "vermont-pressureless-training-balls-60": {
+      "audienceOrder": {
+        "players": 110,
+        "clubs": 110
+      },
+      "variantOrder": [
+        "bucket-60"
+      ],
+      "defaultVariantID": "bucket-60"
+    },
+    "bounce-filtertech-padel-pressuriser-blue": {
+      "audienceOrder": {
+        "players": 120,
+        "clubs": 120
+      },
+      "variantOrder": [
+        "blue"
+      ],
+      "defaultVariantID": "blue"
     }
   }
 }

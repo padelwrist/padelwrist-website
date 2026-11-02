@@ -1,6 +1,6 @@
-# Padel equipment for players and clubs
+# Shop
 
-Thoughtful equipment choices for your next match, coaching session or club event.
+Equipment for your next match or club session.
 
 Our equipment collection is taking shape. Reviewed selections will appear here.
 

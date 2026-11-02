@@ -1,4 +1,4 @@
-import {validateEditorialMerchandising,validateCatalogueV3} from './shop-catalogue-v3.mjs';
+import {validateEditorialMerchandising,validateCatalogueV3,applyPresentation} from './shop-catalogue-v3.mjs';
 import {enrichCatalogueV2} from './shop-catalogue-v2.mjs';
 /** Isolated renderer fixture only. Never called by the publication/Worker paths. */
 export function buildReviewCatalogue(source){
@@ -12,6 +12,6 @@ export function buildReviewCatalogue(source){
 export function buildReviewCatalogueV3(source){
  validateEditorialMerchandising(source);const feed=buildReviewCatalogue(source);
  return validateCatalogueV3({...feed,schemaVersion:3,products:feed.products.map(p=>{
-  const entry=source.productMerchandising?.[p.id];return entry?{...p,merchandising:entry.content}:p;
+  const entry=source.productMerchandising?.[p.id],product=applyPresentation(source,p);return entry?{...product,merchandising:entry.content}:product;
  })});
 }

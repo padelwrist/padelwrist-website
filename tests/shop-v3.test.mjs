@@ -8,8 +8,8 @@ test('v3 isolates bounded optional merchandising, preserves strict v2 and cannot
  const publicFeed=publishedCatalogueV3(source),qa=buildReviewCatalogueV3(source);
  assert.equal(publicFeed.schemaVersion,3);assert.equal(publicFeed.products.length,0);assert.equal(qa.products.length,11);assert.equal(qa.products.flatMap(p=>p.variants).length,13);
  assert.equal(qa.products.find(p=>p.id==='raquex-elite-padel-balls').merchandising.highlights.length,2);
- assert.equal(qa.products.find(p=>p.id==='raquex-elite-padel-balls').merchandising.badge,'featured');
- assert.ok(qa.products.some(p=>!p.merchandising));assert.ok(qa.products.every(p=>!p.merchandising?.suitability));
+ assert.equal(qa.products.find(p=>p.id==='raquex-elite-padel-balls').merchandising.badge.id,'featured');
+ assert.ok(qa.products.every(p=>p.merchandising?.shortDescription));assert.equal(qa.products.filter(p=>p.merchandising?.suitability).length,2);
  const downgraded={...qa,schemaVersion:2};assert.throws(()=>validateCatalogueV2(downgraded));
  assert.deepEqual(publishedCatalogueV2(source),JSON.parse(await fs.readFile(new URL('../catalogue/v2.json',import.meta.url),'utf8')));
  for(const mutate of [m=>m.highlights=[],m=>m.highlights=[m.highlights[0]],m=>m.highlights[0].es='',m=>m.highlights[0].en='Best seller',m=>m.price=10,m=>m.badge='bestSeller',m=>m.suitability='professional',m=>m.highlights[0].url='https://example.com']){
@@ -39,4 +39,18 @@ test('radio options preserve exact child URL mapping and disabled CTAs; single v
  assert.deepEqual(p.variants.map(v=>new URL(v.destinations.web.url).pathname),['/dp/B0D123Q6RL','/dp/B0D1VZ4VNJ','/dp/B0D1VXLW6J']);
  for(const language of ['en','es']){const html=renderShop(qa,language);assert.match(html,/type="radio"/);assert.match(html,/value="2"/);assert.match(html,/class="shop-retailer" type="button" disabled/);assert.doesNotMatch(html,/href="https:\/\/www.amazon/);assert.match(html,/shop-highlights/);}
  assert.equal(publishedCatalogueV3(source).products.length,0);
+});
+
+test('remote presentation controls audience order, variant order/default and editable labels without product approval',()=>{
+ const s=structuredClone(source), id='raquex-elite-padel-balls',entry=s.productPresentation[id];
+ entry.variantOrder=['pack-9','pack-3','pack-6'];entry.defaultVariantID='pack-9';entry.audienceOrder={players:999,clubs:1};
+ const qa=buildReviewCatalogueV3(s),p=qa.products.find(p=>p.id===id);
+ assert.deepEqual(p.variants.map(v=>v.id),entry.variantOrder);assert.equal(p.defaultVariantID,'pack-9');
+ assert.deepEqual(p.audienceOrder,{players:999,clubs:1});
+ const html=renderShop(qa,'en');assert.match(html,/value="0" checked/);
+ assert.ok(html.indexOf('id="clubs-raquex-elite-padel-balls"')<html.indexOf('id="clubs-raquex-elite-padel-balls-club-pack"'));
+ const training=s.productMerchandising['vermont-pressureless-training-balls-60'];training.content.suitability.text={en:'Coaching sessions',es:'Sesiones de entrenamiento'};
+ const updated=buildReviewCatalogueV3(s);assert.equal(updated.products.find(p=>p.id==='vermont-pressureless-training-balls-60').merchandising.suitability.text.en,'Coaching sessions');
+ for(const mutate of [s=>s.productPresentation[id].defaultVariantID='unverified',s=>s.productPresentation[id].variantOrder=['pack-3'],s=>s.productPresentation[id].audienceOrder={unknown:1},s=>s.productMerchandising[id].content.shortDescription.es='',s=>s.productMerchandising[id].content.suitability={id:'beginner',text:{en:'Beginner',es:'Principiante'}}]){const bad=structuredClone(source);mutate(bad);assert.throws(()=>publishedCatalogueV3(bad));}
+ assert.equal(publishedCatalogueV3(s).products.length,0);
 });
