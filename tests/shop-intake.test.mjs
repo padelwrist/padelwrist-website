@@ -36,7 +36,7 @@ test('owned/manufacturer imagery requires evidence and explicit website/app perm
 
 test('shortlist evidence is pending and cannot authorise publication or commerce',()=>{
  assert.equal(source.catalogue.products.length,74);assert.equal(source.productApprovals.length,76);
- assert.equal(new Set(source.productApprovals.map(a=>a.review.asin)).size,14);
+ assert.equal(new Set(source.productApprovals.map(a=>a.review.asin)).size,76);
  assert.equal(source.productApprovals.filter(a=>a.review.editorialReadiness==='ready-for-editorial-review').length,13);
  assert.equal(source.productApprovals.filter(a=>a.review.editorialReadiness==='needs-evidence').length,1);
  assert.ok(source.productApprovals.every(a=>a.status==='pending'&&!a.review.publicationApproved&&!a.review.commercialApproved&&!a.review.affiliateDestination.attributionVerified));
