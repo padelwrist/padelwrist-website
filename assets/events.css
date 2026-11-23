@@ -74,8 +74,10 @@
 .events-integrity-copy p + p { margin-top: 15px; }
 .events-integrity-copy strong { color: #fff; }
 .events-boundary-future { background: linear-gradient(145deg,rgba(51,95,255,.12),#0a1524 74%); border-color: rgba(100,128,255,.28); }
-.events-boundary-card ul { padding-left: 19px; color: var(--pw-muted); line-height: 1.9; font-size: 14px; }
-.events-boundary-card li + li { margin-top: 4px; }
+.events-boundary-card ul { margin: var(--space-4) 0; padding: 0; list-style: none; color: var(--pw-muted); font-size: var(--type-body-md); line-height: var(--type-body-md-line); }
+.events-boundary-card ul li { position: relative; padding-left: var(--space-6); }
+.events-boundary-card ul li::before { content: ""; position: absolute; top: 8px; left: var(--space-1); width: 5px; height: 5px; border-radius: 50%; background: var(--pw-neon); }
+.events-boundary-card li + li { margin-top: var(--space-2); }
 .events-boundary-card > p:last-child { margin-top: 17px; }
 .events-faq-list { max-width: 880px; }
 .events-faq details { border-top: 1px solid var(--pw-outline-variant); }
