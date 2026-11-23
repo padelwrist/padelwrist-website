@@ -2,7 +2,7 @@
 
 Organise your next padel Americano or Mexicano from iPhone or iPad. Manage players, courts and pairings, publish each round, record official scores and finish with individual standings.
 
-**PadelWrist 2.0 Events.** Build an Americano or Mexicano, publish rounds, track official results and share standings with players.
+**PadelWrist 2.3 Events.** Build an Americano or Mexicano, publish rounds, track official results and share standings. Choose an optional club or individual/social organiser context.
 
 [Explore event features](https://padelwrist.com/events/#club-benefits) Share organiser feedback
 
@@ -10,7 +10,7 @@ Made for people who bring players together
 
 ## A better experience for hosts and players.
 
-Club nights work best when the organiser isn't tied to a spreadsheet and every player understands the plan. PadelWrist 2.0 brings them into a single native organiser workflow.
+Club nights work best when the organiser isn't tied to a spreadsheet and every player understands the plan. PadelWrist 2.3 brings them into a single native organiser workflow.
 
 01 · Save organiser time
 
@@ -36,13 +36,13 @@ Use Americano for planned rotations or Mexicano for standings-informed pairings.
 
 Individual standings and organiser-confirmed scores give everyone the results without chasing paper scorecards.
 
-Events and personal match scoring are both part of PadelWrist 2.0.
+Events and personal match scoring are both part of PadelWrist 2.3.
 
 From setup to final standings
 
 ## One app for the whole club session.
 
-A four-step flow in PadelWrist 2.0 on iPhone and iPad. The organiser stays in charge of each round, while the players stay focused on padel.
+A four-step flow in PadelWrist 2.3 on iPhone and iPad. The organiser stays in charge of each round, while the players stay focused on padel.
 
 - 01
 
@@ -116,7 +116,7 @@ Make a recurring Mexicano or Americano feel organised even when you're running i
 
 Organisers can also correct entered scores and review changes to historic results. [Read our guide to fair score corrections](https://padelwrist.com/padel-tournament-score-corrections/) .
 
-Part of PadelWrist 2.0
+Part of PadelWrist 2.3
 
 ## Individual scoring and event organisation together.
 
@@ -134,7 +134,7 @@ For players · Available now
 
 [Explore player features](https://padelwrist.com/players/)
 
-New in PadelWrist 2.0
+Introduced in 2.0 · Improved in 2.3
 
 ### Organise a whole event
 
@@ -154,7 +154,7 @@ Events questions
 
 Is PadelWrist Events available?
 
-Yes. PadelWrist 2.0 includes Americano and Mexicano Events for organisers on iPhone and iPad. Participants follow published fixtures and standings in read-only mode.
+Yes. PadelWrist 2.3 includes Americano and Mexicano Events for organisers on iPhone and iPad. Participants can follow published fixtures and standings in read-only mode.
 
 Which devices can organise a tournament?
 
@@ -166,7 +166,7 @@ Americano proposes planned rotations. Mexicano uses confirmed individual standin
 
 Can participants follow their next court?
 
-Yes. Version 2.0 includes a read-only following view accessed by event code or link for published matches, court assignments, results and standings.
+Yes. Participants can follow published matches, courts, results and standings by event code or link in read-only mode.
 
 Does Events take bookings or entry payments?
 

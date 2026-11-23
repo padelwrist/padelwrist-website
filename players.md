@@ -10,13 +10,13 @@ One match, less distraction
 
 ## Everything you need around the rally.
 
-From the first serve to your next rematch, PadelWrist combines fast scoring with useful results. Individual scoring stays fast and familiar, while version 2.0 adds a separate Events area for organisers.
+From the first serve to your next rematch, PadelWrist combines fast scoring with useful results. PadelWrist 2.3 also refines Apple Watch controls, match recovery and accessibility, while Events remains available for organisers on iPhone and iPad.
 
 01 · DURING PLAY
 
 ### Score from your wrist
 
-Tap points on Apple Watch, track the server and use spoken scoring and Match Assistant prompts while the Watch app is active. Standard Match and Fixed Points are supported.
+Tap points on Apple Watch, track the server and use spoken scoring and Match Assistant prompts while the Watch app is active. Standard Match and Fixed Points are supported, with optional Apple Health recording.
 
 [Explore Watch scoring →](https://padelwrist.com/apple-watch-padel-scoring/) 02 · STAY CONNECTED
 
@@ -34,7 +34,7 @@ Find saved matches, understand recent form, track streaks and compare results wi
 
 ### Just Play Again
 
-Play Again lets you open a previous result on iPhone or iPad, review its available players and rules, then start a fresh match. On iPhone you can prepare it for Watch.
+Open a previous result on iPhone or iPad to reuse its players and rules. On Apple Watch, Play Again starts a fresh Standard or Fixed Points match after completion.
 
 [How Play Again works →](https://padelwrist.com/play-again-padel-match/) 05 · YOUR RULES
 
@@ -88,10 +88,10 @@ Yes. Saved matches feed searchable History and Insights, including recent form, 
 
 Can I repeat a match with the same players and settings?
 
-Yes. PadelWrist 1.9 adds Play Again from Match History on iPhone and iPad. Review the previous setup and start a separate new match, or prepare for Watch from iPhone.
+Yes. Use Play Again from Match History on iPhone and iPad, or directly on Apple Watch after completing a supported match. Each rematch starts fresh and preserves the original result.
 
 Can clubs use PadelWrist for tournaments?
 
-PadelWrist 2.0 introduces Americano and Mexicano Events for clubs and tournament hosts on iPhone and iPad. Events is part of PadelWrist 2.0. [Explore Clubs](https://padelwrist.com/clubs/) .
+PadelWrist 2.3 includes Americano and Mexicano Events for clubs and tournament hosts on iPhone and iPad. Events were introduced in 2.0 and improved in later releases. [Explore Clubs](https://padelwrist.com/clubs/) .
 
 Canonical HTML: https://padelwrist.com/players/

@@ -1,12 +1,68 @@
-# Changelog
+# What's New
 
-PadelWrist keeps evolving around one idea: make scoring effortless during the match, then make the result more useful afterwards. Explore PadelWrist 2.0 Events for Americano and Mexicano, alongside the earlier releases that introduced Apple Watch scoring, sharing, Insights and Play Again.
+Explore every PadelWrist release, from our first Apple Watch padel scorekeeper to the latest improvements for players, clubs and tournament hosts. Browse the updates in reverse chronological order.
 
-Latest release · Version 2.0
+Latest release · 22 November 2026
 
-## Version 2.0: Events for Americano and Mexicano
+## Version 2.3
 
-PadelWrist now extends beyond individual padel scoring. Version 2.0 introduces native Events for clubs, coaches and tournament hosts on iPhone and iPad. Run Americano and Mexicano sessions with players, courts, round-by-round fixtures, official results and individual standings in one place.
+PadelWrist 2.3 makes every match smoother, from first serve to final point. It refines the Apple Watch experience, improves match reliability and makes Events and accessibility better for players and organisers.
+
+- **More reliable matches:** Scoring, synchronisation and recovery improvements between Apple Watch and iPhone.
+
+- **Better Watch controls:** Clearer match navigation, improved optional Apple Health workout handling and a smoother Play Again experience.
+
+- **Events for every organiser:** An optional club or individual/social organiser selection for Americano and Mexicano Events.
+
+- **Visual refinement:** Improved layout consistency, navigation and accessibility across Apple Watch, iPhone and iPad.
+
+- **Language and stability:** Additional Spanish translations and accessibility improvements.
+
+Event organisation is available on iPhone and iPad. Apple Health workouts are optional; the organiser choice does not request location access.
+
+[Explore Players →](https://padelwrist.com/players/) · [Explore Clubs →](https://padelwrist.com/clubs/)
+
+10 November 2026 · Apple Watch and Apple Health
+
+## Version 2.2
+
+A more streamlined Apple Watch experience with improvements to workout recording, rematches and match controls.
+
+- Improved optional Apple Health workout recording, saved as Tennis workouts in Apple Health and Fitness.
+
+- Play Again returns directly on Apple Watch for Standard and Fixed Points matches.
+
+- Quicker access to Apple Health, Audio and match settings on Watch.
+
+- Clearer match setup, improved controls and layouts across different Watch sizes.
+
+- More dependable recovery, device synchronisation, accessibility and reliability.
+
+[Apple Watch scoring →](https://padelwrist.com/apple-watch-padel-scoring/) · [Play Again guide →](https://padelwrist.com/play-again-padel-match/)
+
+1 November 2026 · Events improvements
+
+## Version 2.1
+
+A more polished experience for players, clubs and event organisers, with simpler event management and clearer results.
+
+- Dedicated In Progress and Completed views for Events.
+
+- Clearer scoring and round management, with more reliable recovery after interruption.
+
+- Updated podiums and leaderboards, simpler score corrections and results publishing.
+
+- More consistent layouts, controls and navigation on iPhone, iPad and Apple Watch.
+
+- Performance, stability and accessibility improvements.
+
+[Explore Events →](https://padelwrist.com/events/)
+
+29 October 2026 · Americano and Mexicano Events
+
+## Version 2.0
+
+Version 2.0 introduced native Events for clubs, coaches and tournament hosts on iPhone and iPad. Run Americano and Mexicano sessions with players, courts, round-by-round fixtures, official results and individual standings in one place.
 
 - **Organise an event:** Choose Americano or Mexicano, enter players, courts and your point target.
 
@@ -24,7 +80,7 @@ Apple Watch match scoring, Match Assistant, live match sharing, History, Insight
 
 [Explore PadelWrist Events →](https://padelwrist.com/events/) · [How the tournament organiser works →](https://padelwrist.com/padel-tournament-app/) · [For clubs and coaches →](https://padelwrist.com/clubs/)
 
-Latest release · Play Again
+19 October 2026 · Play Again
 
 ## Version 1.9
 
@@ -44,11 +100,11 @@ Ready for another game? Open a previous match in History on iPhone or iPad and c
 
 - Handle older matches and unavailable players with clear review prompts instead of guessing
 
-Play Again is available from History on iPhone and iPad. Direct Play Again on Apple Watch is separate development work. It is not needed to prepare a new Watch match from your iPhone.
+Version 1.9 introduced Play Again in iPhone and iPad History; direct Apple Watch Play Again followed in 2.2.
 
 [How to use Play Again →](https://padelwrist.com/play-again-padel-match/)
 
-Match Assistant
+18 October 2026 · Match Assistant
 
 ## Version 1.8
 
@@ -74,7 +130,7 @@ Match Assistant is a foreground, best-effort Watch feature. It does not send bac
 
 [Explore how Match Assistant works →](https://padelwrist.com/apple-watch-padel-scoring/#match-assistant)
 
-Apple Watch shortcuts
+15 October 2026 · Apple Watch shortcuts
 
 ## Version 1.7
 
@@ -92,7 +148,7 @@ PadelWrist is now just a tap away on Apple Watch. Open the app from your Watch f
 
 [Explore Apple Watch scoring →](https://padelwrist.com/apple-watch-padel-scoring/)
 
-Player feedback
+14 October 2026 · Player feedback
 
 ## Version 1.6
 
@@ -106,7 +162,7 @@ Version 1.6 makes it easier to support PadelWrist, without interrupting your gam
 
 - Further reliability and experience refinements
 
-Spanish language support
+2 October 2026 · Spanish support
 
 ## Version 1.5
 
@@ -126,7 +182,7 @@ PadelWrist now speaks your language. English and Spanish are supported across th
 
 - Further localisation, reliability, performance and accessibility improvements
 
-Match intelligence
+1 September 2026 · Match intelligence
 
 ## Version 1.4
 
@@ -152,7 +208,7 @@ Version 1.4 made completed matches much more useful and brought the live score t
 
 [Explore PadelWrist Insights →](https://padelwrist.com/padel-player-statistics/)
 
-Connected matches
+28 August 2026 · Connected matches
 
 ## Version 1.3
 
@@ -182,7 +238,7 @@ Version 1.3 expanded PadelWrist beyond scoring with sharing, cloud continuity, w
 
 [Explore match sharing →](https://padelwrist.com/padel-match-sharing/)
 
-Cross-device polish
+27 August 2026 · Cross-device polish
 
 ## Version 1.2
 
@@ -206,7 +262,7 @@ A major refinement release focused on making the core scoring experience smoothe
 
 - Further accessibility and interface polish
 
-Reliability update
+20 August 2026 · Reliability update
 
 ## Version 1.1
 
@@ -224,7 +280,7 @@ The first update concentrated on the reliability issues and interface details di
 
 - General stability and release polish
 
-Initial release
+Initial release · Core scoring
 
 ## Version 1.0
 
@@ -254,7 +310,7 @@ The first public release established PadelWrist as a native Apple Watch-first pa
 
 ## Get the latest PadelWrist
 
-Discover PadelWrist 1.9 on iPhone and iPad, including Play Again in Match History. Scoring still works with Apple Watch.
+Download PadelWrist 2.3 for Apple Watch, iPhone and iPad. Score a match, use Play Again or organise Americano and Mexicano Events on iPhone and iPad.
 
 [View on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 

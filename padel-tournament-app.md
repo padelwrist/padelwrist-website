@@ -2,11 +2,11 @@
 
 From the player list to the last result, your club social should not depend on a spreadsheet, a group chat and somebody remembering which court is next.
 
-## PadelWrist 2.0 for padel organisers
+## PadelWrist 2.3 for padel organisers
 
-PadelWrist 2.0 combines individual match scoring with Americano and Mexicano Events for clubs, coaches and tournament hosts.
+PadelWrist 2.3 combines individual match scoring with Americano and Mexicano Events for clubs, coaches and tournament hosts, including an optional club or social organiser choice.
 
-[Explore what is new in 2.0 →](https://padelwrist.com/whats-new/#v2-0)
+[Explore what is new in 2.3 →](https://padelwrist.com/whats-new/#v2-3)
 
 ## What does a padel tournament organiser actually need?
 
@@ -34,13 +34,13 @@ Neither format has one universal social-club rulebook. Before you begin, agree h
 
 ## What happens if someone is resting or leaves early?
 
-Real club evenings rarely run exactly to plan. PadelWrist 2.0 includes organiser controls for resting players, withdrawals and ending an event early. Resting-point settings should be chosen deliberately: an organiser can use a personal-average rest credit or award no points, depending on the event's agreed rules. Describe your policy to players before publishing the first round.
+Real club evenings rarely run exactly to plan. PadelWrist Events includes organiser controls for resting players, withdrawals and ending an event early. Resting-point settings should be chosen deliberately: an organiser can use a personal-average rest credit or award no points, depending on the event's agreed rules. Describe your policy to players before publishing the first round.
 
 Corrections to completed matches can affect standings. Official scoring and ranking remain under organiser control rather than letting every participant edit a result.
 
 ## Can players see their next match?
 
-Yes, in version 2.0's read-only event following experience. A shared event code or link lets participants check their partner, opponents and court when the organiser publishes a round, then follow results and individual standings. The organising device remains the source of truth, with local-first event management designed to cope with intermittent connectivity.
+Yes, through the read-only event following experience. A shared event code or link lets participants check their partner, opponents and court when the organiser publishes a round, then follow results and individual standings. The organising device remains the source of truth, with local-first event management designed to cope with intermittent connectivity.
 
 Event sharing is not the same thing as [live sharing of an individual padel match](https://padelwrist.com/padel-match-sharing/) . PadelWrist supports both experiences for different needs.
 
@@ -50,7 +50,7 @@ Nothing about a club tournament should complicate your own game. PadelWrist cont
 
 ## Keep the score. Run the social.
 
-PadelWrist combines wrist-first individual padel scoring with Americano and Mexicano tournament organisation in version 2.0 for iPhone and iPad.
+PadelWrist combines wrist-first individual padel scoring with Americano and Mexicano tournament organisation on iPhone and iPad in PadelWrist 2.3.
 
 [Explore PadelWrist on the App Store →](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 

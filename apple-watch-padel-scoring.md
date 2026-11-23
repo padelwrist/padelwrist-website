@@ -1,6 +1,6 @@
 # Keep score from your wrist.
 
-Score each point quickly on Apple Watch. PadelWrist 1.8 adds Match Assistant to help with serving order and changes of ends, while iPhone keeps the match visible and Insights help you learn afterwards.
+Score each point quickly on Apple Watch. PadelWrist 2.3 includes Match Assistant for serving and changes of ends, Play Again for a quick rematch and refined controls. iPhone keeps the match visible and Insights help you learn afterwards.
 
 ## Why score padel on Apple Watch?
 

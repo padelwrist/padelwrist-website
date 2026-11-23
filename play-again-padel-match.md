@@ -36,11 +36,11 @@ For example, a stored match may tell PadelWrist which players participated but n
 
 These actions solve different problems. **Resume Match** continues an unfinished match from its existing score and progress. **Play Again** starts a different match, from zero, based on a previous setup. Use Resume when play was interrupted; use Play Again for another game, a rematch or a repeated weekly pairing.
 
-Direct Play Again on the Watch is separate development work and should not be confused with preparing a new rematch from iPhone for Watch scoring.
+Since version 2.2, you can also choose Play Again directly on Apple Watch after completing a Standard or Fixed Points match. Preparing a rematch from iPhone remains useful when you want to review the setup on a larger screen.
 
 ## Make the next game easier.
 
-Open Match History on iPhone or iPad, choose the result and select Play Again. You can keep building useful [Insights](https://padelwrist.com/padel-player-statistics/) as new results are saved.
+Open Match History on iPhone or iPad and choose Play Again, or start again directly after completing a match on Apple Watch. You can keep building useful [Insights](https://padelwrist.com/padel-player-statistics/) as new results are saved.
 
 [Get PadelWrist on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 

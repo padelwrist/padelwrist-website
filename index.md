@@ -1,10 +1,10 @@
 # For every match. And every matchday.
 
-Score every match on Apple Watch, iPhone and iPad. In version 2.0, clubs and social hosts can bring Americano and Mexicano players, courts, rounds and standings together in the same app.
+Score every match on Apple Watch, iPhone and iPad. PadelWrist 2.3 includes smoother scoring, improved match recovery and Americano/Mexicano Events for clubs and social hosts.
 
 [Get PadelWrist](https://apps.apple.com/gb/app/padelwrist/id6799725420) [Explore Clubs](https://padelwrist.com/clubs/)
 
-Personal scoring available now · [Explore player features](https://padelwrist.com/players/) · Americano and Mexicano Events in 2.0
+PadelWrist 2.3 is available now · [Explore player features](https://padelwrist.com/players/) · Americano and Mexicano Events
 
 One sport. Two ways to play.
 
@@ -26,7 +26,7 @@ Keep score from your Apple Watch, share live matches, revisit results, Play Agai
 
 [Explore player features](https://padelwrist.com/players/)
 
-For clubs & tournament hosts · Version 2.0
+For clubs & tournament hosts · Available now
 
 ### Organise less. Play more.
 
@@ -40,7 +40,7 @@ Prepare an Americano or Mexicano with player rosters, smart pairings, court assi
 
 [Explore Events for organisers](https://padelwrist.com/clubs/)
 
-PadelWrist 2.0 combines individual scoring with Americano and Mexicano tournament organisation for clubs, coaches and social hosts.
+PadelWrist 2.3 combines individual scoring with Americano and Mexicano tournament organisation for clubs, coaches and social hosts.
 
 Why PadelWrist
 
@@ -68,21 +68,21 @@ Open from your Watch face or Smart Stack. Match Assistant helps with the next se
 
 Companion **iPhone**
 
-Prepare matches or organise Americano and Mexicano Events in 2.0, follow live scores, search Match History and explore Insights.
+Prepare matches or organise Americano and Mexicano Events, follow live scores, search Match History and explore Insights.
 
 Bigger canvas **iPad**
 
-Use more space for tournament rosters, court assignments and standings in 2.0 alongside match setup, history and analysis.
+Use more space for tournament rosters, court assignments and standings alongside match setup, history and analysis.
 
-Latest release · PadelWrist 2.0
+Latest release · PadelWrist 2.3
 
-## Your match. Your tournament.
+## Better matches. Better matchdays.
 
-PadelWrist expands from individual scoring to Americano and Mexicano Events. Give every round a draw, every player a court and every result its place in the standings.
+Version 2.3 brings more reliable Watch scoring and recovery, easier rematches, refined accessibility and better event management for clubs and social hosts.
 
 For players **Keep scoring from Apple Watch.**
 
-Quick point controls, spoken scores, Match Assistant, Play Again, match sharing and Insights remain central to PadelWrist.
+Refined Watch controls, optional Apple Health recording, Match Assistant, Play Again, match sharing and Insights keep the focus on playing.
 
 [Explore player features](https://padelwrist.com/players/) For organisers **Run Americano or Mexicano.**
 
@@ -92,13 +92,13 @@ Build a roster, set courts and point targets, review pairings, enter results and
 
 Share published fixtures and standings by code or link while the organiser retains control of official scores.
 
-[What's new in 2.0](https://padelwrist.com/whats-new/#v2-0)
+[What's new in 2.3](https://padelwrist.com/whats-new/#v2-3)
 
 For clubs, coaches and social hosts
 
 ## A better way to run a night of padel.
 
-PadelWrist 2.0 brings native Events to iPhone and iPad. Organisers stay in control of the draws, scores and standings while the app handles the structure.
+Events arrived in 2.0 and have continued to improve. In 2.3, clubs and social organisers can choose their organiser type while retaining control of draws, scores and standings.
 
 Before the first serve **Set up players and courts.**
 
@@ -158,7 +158,7 @@ New in 1.8, Match Assistant guides you to the first server, the next server and 
 
 Can I repeat a previous match?
 
-Yes. Play Again in 1.9 lets you review and reuse settings from Match History on iPhone and iPad, with iPhone preparation for Apple Watch.
+Yes. Play Again is available in Match History on iPhone and iPad and directly on Apple Watch after completing a supported match.
 
 Can I score in Spanish?
 
@@ -170,17 +170,17 @@ Yes. Share a six-digit Match Code so other PadelWrist users can join as players 
 
 Is PadelWrist just for individual players?
 
-PadelWrist supports individual match scoring today. Version 2.0 includes Americano and Mexicano Events for organisers. [Explore Events](https://padelwrist.com/events/) .
+PadelWrist 2.3 supports both individual match scoring and Americano and Mexicano Events for organisers. [Explore Events](https://padelwrist.com/events/) .
 
 Can PadelWrist record a padel workout?
 
 Yes. When scoring on Apple Watch, you can optionally record a workout in Apple Health. Workout recording is not required to keep score.
 
-PadelWrist 2.0 · Americano & Mexicano Events
+PadelWrist 2.3 · Players & Events
 
 ## Score the match. Learn from it.
 
-Keep score from your wrist or organise a social tournament with Americano and Mexicano Events in version 2.0.
+Score from your wrist or organise a social tournament on iPhone and iPad with the latest PadelWrist 2.3.
 
 [Download on the App Store](https://apps.apple.com/gb/app/padelwrist/id6799725420)
 

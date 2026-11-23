@@ -2,7 +2,7 @@
 
 From weekly Americano socials to competitive Mexicano evenings, set up your players and courts, manage pairings, publish rounds and follow standings from one native iPhone or iPad app.
 
-**PadelWrist 2.0 Events.** Manage Americano and Mexicano sessions on iPhone and iPad, from the opening draw to the final podium.
+**PadelWrist 2.3 Events.** Manage Americano and Mexicano sessions on iPhone and iPad, from the opening draw to the final podium. Optionally identify your session as club-hosted or an individual/social event.
 
 [Explore the tournament app](https://padelwrist.com/padel-tournament-app/) [See the benefits](https://padelwrist.com/clubs/#club-benefits)
 
@@ -36,7 +36,7 @@ Share published pairings, opponents, courts and standings by event code or link,
 
 Use confirmed match scores to follow individual standings across rounds instead of calculating the leaderboard by hand.
 
-PadelWrist 2.0 brings these organiser features together, including player-facing read-only event sharing.
+PadelWrist 2.3 builds on these organiser features, including read-only event following, results corrections and an optional club or social organiser choice.
 
 Choose your club format
 
@@ -94,7 +94,7 @@ Score Standard Match and Fixed Points games on Apple Watch, iPhone or iPad, with
 
 [Explore Players →](https://padelwrist.com/players/)
 
-Events · Version 2.0
+Events · Version 2.3
 
 ### Run the whole social.
 
@@ -108,7 +108,7 @@ Common club questions
 
 Can I organise a tournament with PadelWrist today?
 
-Yes. PadelWrist 2.0 provides Americano and Mexicano tournament organisation on iPhone and iPad, with draws, court assignments, scores and individual standings.
+Yes. PadelWrist 2.3 provides Americano and Mexicano event organisation on iPhone and iPad, with draws, court assignments, scores and individual standings.
 
 What is the difference between Americano and Mexicano?
 
@@ -116,7 +116,7 @@ Americano typically follows a planned rotation of partners and opponents. Mexica
 
 Can players follow their courts and standings?
 
-Version 2.0 includes read-only event following through a code or link, so participants can view published courts, partners, results and standings without changing official scores.
+Yes. Participants can follow published courts, partners, results and standings by event code or link without changing official scores.
 
 Do clubs need court booking or payment software?
 
