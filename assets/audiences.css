@@ -11,7 +11,9 @@
 .audience-choice-label { margin: 0 0 28px; font-size: 12px; line-height: 1.5; letter-spacing: .06em; text-transform: uppercase; color: #b2c3ff; font-weight: 750; }
 .audience-choice-card h3 { font-family: var(--pw-display); font-size: clamp(26px,3.2vw,43px); line-height: 1.12; letter-spacing: -.03em; margin: 0; }
 .audience-choice-card > p:not(.audience-choice-label) { margin: 20px 0 0; line-height: 1.75; color: #cad5e6; font-size: 15px; max-width: 56ch; }
-.audience-choice-card ul { margin: 18px 0 30px; padding-left: 20px; color: #bfccdf; font-size: 14px; line-height: 2; }
+.audience-choice-card ul { margin: var(--space-6) 0 var(--space-8); padding: 0; list-style: none; color: #bfccdf; font-size: var(--type-body-md); line-height: var(--type-body-md-line); }
+.audience-choice-card ul li { position: relative; margin-bottom: var(--space-3); padding-left: var(--space-6); }
+.audience-choice-card ul li::before { content: ""; position: absolute; top: 8px; left: var(--space-1); width: 5px; height: 5px; border-radius: 50%; background: var(--pw-neon); }
 .audience-choice-card a { margin-top: auto; display: inline-flex; align-items: center; min-height: 48px; padding: 11px 22px; gap: 16px; border-radius: 999px; background: #e9efff; color: #07112b; font-weight: 750; font-size: 14px; text-decoration: none; }
 .audience-choice-card a:hover { background: #bfd0ff; }
 .audience-choice-card a:focus-visible { outline: 3px solid #d2ddff; outline-offset: 3px; }

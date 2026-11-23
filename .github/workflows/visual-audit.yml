@@ -39,9 +39,13 @@ jobs:
           sleep 2
       - name: Capture responsive audit
         run: node scripts/visual-audit.mjs
+      - name: Sweep sitemap layouts and release grids
+        run: node scripts/layout-sweep.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: visual-audit
-          path: visual-audit/
+          path: |
+            visual-audit/
+            layout-sweep/
           retention-days: 7

@@ -145,18 +145,18 @@ body.page-body {
   position: relative;
   min-height: 48px;
   padding: var(--space-3) 0 var(--space-3) var(--space-6);
-  display: flex;
-  align-items: center;
+  display: block;
   border-top: 1px solid var(--pw-outline-variant);
   color: var(--pw-muted);
   font-size: var(--type-body-lg);
   line-height: var(--type-body-lg-line);
+  overflow-wrap: break-word;
 }
 .page-body .check-list.plain li::before {
   content: "";
   position: absolute;
   left: var(--space-1);
-  top: 23px;
+  top: 22px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -550,18 +550,26 @@ body.page-body {
 }
 
 
-/* What's New: one consistent, accessible structure for every release. */
+/* What's New uses the shared Material 3 12/8/4 grid, spacing and surface tokens. */
+.page-body .guide-copy.release-history {
+  grid-column: 1 / span 10;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
 .page-body .release-history .release-index {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  align-items: stretch;
   gap: var(--space-2);
   margin-bottom: var(--space-10);
-  padding-bottom: var(--space-6);
-  border-bottom: 1px solid var(--pw-outline-variant);
+  padding: var(--space-6);
+  border: 1px solid var(--pw-outline-variant);
+  border-radius: var(--pw-radius-lg);
+  background: var(--pw-surface-1);
 }
 .page-body .release-index-label {
-  flex-basis: 100%;
+  grid-column: 1 / -1;
   margin-bottom: var(--space-2);
   color: var(--pw-muted);
   font-size: var(--type-label-md);
@@ -589,16 +597,42 @@ body.page-body {
 }
 .page-body .release-history > .release-entry {
   scroll-margin-top: 100px;
-  padding-block: var(--space-10);
+  margin-bottom: var(--space-6);
+  padding: var(--space-8);
+  border: 1px solid var(--pw-outline-variant);
+  border-radius: var(--pw-radius-lg);
+  background: var(--pw-surface-1);
+}
+.page-body .release-history > .release-entry:last-of-type {
+  border: 1px solid var(--pw-outline-variant);
+}
+.page-body .release-entry > h2 {
+  margin-bottom: var(--space-4);
+}
+.page-body .release-entry > .check-list.plain {
+  margin-top: var(--space-6);
+}
+.page-body .release-entry .check-list.plain li strong {
+  display: inline;
+  font-weight: 700;
+  margin: 0;
+}
+.page-body .release-entry .check-list.plain li {
+  max-width: 100%;
+  text-align: start;
+}
+.page-body .release-entry > p:not(.eyebrow) {
+  margin-top: var(--space-4);
+  max-width: 68ch;
 }
 .page-body .release-history > .release-entry--latest {
-  padding-inline: var(--space-6);
-  border: 1px solid rgba(128,153,249,.35);
-  border-radius: var(--pw-radius-lg);
-  background: linear-gradient(130deg, rgba(51,95,255,.12), transparent 55%), var(--pw-surface-1);
+  border-color: rgba(128,153,249,.48);
+  background: linear-gradient(130deg, rgba(51,95,255,.10), transparent 60%), var(--pw-surface-1);
 }
-.page-body .release-entry > .eyebrow { margin-bottom: var(--space-3); }
-.page-body .release-entry > p:not(.eyebrow) { max-width: 68ch; }
+.page-body .release-entry > .eyebrow {
+  margin: 0 0 var(--space-3);
+  color: var(--pw-lilac);
+}
 .page-body .release-entry > .release-links {
   margin-top: var(--space-6);
   color: var(--pw-muted);
@@ -612,8 +646,13 @@ body.page-body {
   font-weight: 700;
   text-underline-offset: 4px;
 }
+@media (max-width: 839px) {
+  .page-body .guide-copy.release-history { grid-column: 1 / -1; max-width: 100%; }
+}
 @media (max-width: 599px) {
-  .page-body .release-history > .release-entry { padding-block: var(--space-8); }
-  .page-body .release-history > .release-entry--latest { padding-inline: var(--space-4); }
-  .page-body .release-history .release-index { margin-bottom: var(--space-6); }
+  .page-body .release-history > .release-entry { padding: var(--space-6) var(--space-4); }
+  .page-body .release-history .release-index {
+    padding: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
 }
