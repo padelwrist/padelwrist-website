@@ -40,6 +40,8 @@ Then open `http://localhost:4173`.
 
 The GitHub Actions SEO audit checks page titles, descriptions, canonical URLs, H1s, Open Graph metadata, image alt text and JSON-LD. Keep it green when adding or changing pages.
 
+The visual audit runs Playwright at 390, 768 and 1440px, and `scripts/layout-sweep.mjs` additionally checks every sitemap route for overflow, proper text-aligned bullets and a consistent 14-version release template. The home product gallery is asserted against the 4/8/12-column responsive layout, with screenshots saved for Home, What's New, Players, Clubs and Events. The audit uses the existing Material 3-inspired tokens and avoids new ad hoc stylesheets.
+
 ## Cloudflare
 
 The site uses plain HTML, CSS and JavaScript and requires no build step. Cloudflare Workers serves the repository root as static assets using `wrangler.jsonc`.
