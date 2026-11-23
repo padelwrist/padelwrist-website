@@ -20,6 +20,7 @@ for (const language of ['en', 'es']) {
 
 const pages = [
   ['home', '/'],
+  ['whats-new', '/whats-new/'],
   ['players', '/players/'],
   ['clubs', '/clubs/'],
   ['guides', '/guides/'],
@@ -84,6 +85,19 @@ for (const [viewportName, width, height] of viewports) {
       await page.goto(`${base}${pathname}`,{waitUntil:'domcontentloaded'});
     }
 
+    if (pageName === 'whats-new') {
+      const versionIds = await page.locator('.release-entry[id]').evaluateAll(sections => sections.map(section => section.id));
+      const jumpIds = await page.locator('.release-index a[href^="#"]').evaluateAll(links => links.map(link => link.getAttribute('href').slice(1)));
+      if (versionIds.length !== 14 || JSON.stringify(versionIds) !== JSON.stringify(jumpIds)) {
+        throw new Error('What\'s New release structure or jump navigation is incomplete');
+      }
+      const latest = page.locator('.release-entry--latest');
+      if (await latest.count() !== 1 || !await latest.isVisible()) throw new Error('Missing latest release section');
+      const shortTargets = await page.locator('.release-index a').evaluateAll(links =>
+        links.filter(link => link.getBoundingClientRect().height < 43).map(link => link.textContent.trim())
+      );
+      if (shortTargets.length) throw new Error('What\'s New jump targets are too small: ' + shortTargets.join(', '));
+    }
     if(await page.locator('script[src*="googletagmanager"]').count())throw new Error('Production analytics loaded in preview');
     const diagnostics = await page.evaluate(() => {
       const rect = (selector) => {
