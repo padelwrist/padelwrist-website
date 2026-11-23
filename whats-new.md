@@ -8,17 +8,17 @@ Latest release · 22 November 2026
 
 PadelWrist 2.3 makes every match smoother, from first serve to final point. It refines the Apple Watch experience, improves match reliability and makes Events and accessibility better for players and organisers.
 
-- **More reliable matches:** Scoring, synchronisation and recovery improvements between Apple Watch and iPhone.
+- More reliable matches: Scoring, synchronisation and recovery improvements between Apple Watch and iPhone.
 
-- **Better Watch controls:** Clearer match navigation, improved optional Apple Health workout handling and a smoother Play Again experience.
+- Better Watch controls: Clearer match navigation, improved optional Apple Health workout handling and a smoother Play Again experience.
 
-- **Events for every organiser:** An optional club or individual/social organiser selection for Americano and Mexicano Events.
+- Events for every organiser: An optional club or individual/social organiser selection for Americano and Mexicano Events.
 
-- **Visual refinement:** Improved layout consistency, navigation and accessibility across Apple Watch, iPhone and iPad.
+- Visual refinement: Improved layout consistency, navigation and accessibility across Apple Watch, iPhone and iPad.
 
-- **Language and stability:** Additional Spanish translations and accessibility improvements.
+- Language and stability: Additional Spanish translations and accessibility improvements.
 
-Event organisation is available on iPhone and iPad. Apple Health workouts are optional; the organiser choice does not request location access.
+Event organisation remains on iPhone and iPad. Apple Health workout recording is optional.
 
 [Explore Players →](https://padelwrist.com/players/) · [Explore Clubs →](https://padelwrist.com/clubs/)
 
@@ -64,17 +64,17 @@ A more polished experience for players, clubs and event organisers, with simpler
 
 Version 2.0 introduced native Events for clubs, coaches and tournament hosts on iPhone and iPad. Run Americano and Mexicano sessions with players, courts, round-by-round fixtures, official results and individual standings in one place.
 
-- **Organise an event:** Choose Americano or Mexicano, enter players, courts and your point target.
+- Organise an event: Choose Americano or Mexicano, enter players, courts and your point target.
 
-- **Review smart draws:** Plan Americano rotations or let confirmed standings inform later Mexicano pairings.
+- Review smart draws: Plan Americano rotations or let confirmed standings inform later Mexicano pairings.
 
-- **Keep each round moving:** Publish court assignments, record official scores and progress to the next draw when ready.
+- Keep each round moving: Publish court assignments, record official scores and progress to the next draw when ready.
 
-- **Share with participants:** Players can follow published fixtures, courts, results and standings by code or link in read-only mode.
+- Share with participants: Players can follow published fixtures, courts, results and standings by code or link in read-only mode.
 
-- **Handle real club sessions:** Manage resting players, withdrawals, score corrections and early finishes.
+- Handle real club sessions: Manage resting players, withdrawals, score corrections and early finishes.
 
-- **Finish with the results:** Review the final individual leaderboard, podium and completed event history.
+- Finish with the results: Review the final individual leaderboard, podium and completed event history.
 
 Apple Watch match scoring, Match Assistant, live match sharing, History, Insights and Play Again remain available. Events is managed on iPhone and iPad, not on Apple Watch.
 
@@ -162,6 +162,8 @@ Version 1.6 makes it easier to support PadelWrist, without interrupting your gam
 
 - Further reliability and experience refinements
 
+[Support and feedback →](https://padelwrist.com/support/)
+
 2 October 2026 · Spanish support
 
 ## Version 1.5
@@ -181,6 +183,8 @@ PadelWrist now speaks your language. English and Spanish are supported across th
 - Spoken score announcements in English and Spanish, using padel terminology
 
 - Further localisation, reliability, performance and accessibility improvements
+
+[Apple Watch scoring guide →](https://padelwrist.com/apple-watch-padel-scoring/)
 
 1 September 2026 · Match intelligence
 
@@ -262,6 +266,8 @@ A major refinement release focused on making the core scoring experience smoothe
 
 - Further accessibility and interface polish
 
+[Explore player features →](https://padelwrist.com/players/)
+
 20 August 2026 · Reliability update
 
 ## Version 1.1
@@ -279,6 +285,8 @@ The first update concentrated on the reliability issues and interface details di
 - Landscape layout and alignment fixes
 
 - General stability and release polish
+
+[Get support →](https://padelwrist.com/support/)
 
 Initial release · Core scoring
 
@@ -307,6 +315,8 @@ The first public release established PadelWrist as a native Apple Watch-first pa
 - Multi-device match continuity and recovery
 
 - No PadelWrist account required
+
+[Explore PadelWrist for players →](https://padelwrist.com/players/)
 
 ## Get the latest PadelWrist
 
